@@ -1,0 +1,218 @@
+:root {
+    --color-primary: #CF0F47;
+    --color-bg: #000000;
+    --color-text: #ffffff;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --gradient-radial-primary: radial-gradient(34.02% 44.73% at 50% 55.27%,
+            var(--color-primary) 0%,
+            var(--color-bg) 100%);
+
+    --gradient-linear-primary: linear-gradient(90deg,
+            var(--color-primary) 1.71%,
+            rgba(255, 255, 255, 0) 100%);
+
+    --gradient-card-primary: linear-gradient(180deg,
+            var(--color-primary) -2.32%,
+            rgba(207, 15, 71, 0) 86.28%);
+
+    --btn-primary-bg: var(--color-primary);
+    --btn-primary-text: var(--color-white);
+
+    --btn-secondary-bg: var(--color-white);
+    --btn-secondary-text: var(--color-primary);
+
+    --footer-heading-color: var(--color-black);
+
+    --header-bg: var(--color-bg);
+    --header-text: var(--color-text);
+
+    --icon-color: var(--color-primary);
+    --nav-hover-bg: var(--color-primary);
+
+    --transition-fast: 0.3s ease-in-out;
+    --radius-pill: 30px;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+
+    --fs-hero-heading: 3rem;
+    --fs-heading: 2rem;
+    --fs-text: 1.5rem;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karantina", sans-serif;
+}
+
+@font-face {
+    font-family: "Karantina";
+    src: url("/assets/fonts/Karantina-Bold.ttf");
+}
+
+body {
+    background: var(--gradient-radial-primary);
+}
+
+
+.hreo-heading {
+    font-size: var(--fs-hero-heading);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: var(--fs-heading);
+}
+
+p,
+span,
+ul,
+li,
+a,
+input,
+button {
+    font-size: var(--fs-text);
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 5rem;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+.img-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.main-nav ul li a {
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-pill);
+    transition: all var(--transition-fast);
+}
+
+.main-nav ul li a:hover {
+    background-color: var(--nav-hover-bg);
+}
+
+.header-right ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-right .fa-solid {
+    color: var(--icon-color);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    gap: 30px;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+}
+
+footer hr {
+    background-color: var(--color-black);
+    border: none;
+    height: 0.2rem;
+    /* margin-bottom: ; */
+}
+
+.footer-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.img-footer-logo {
+    width: 6rem;
+    height: 6rem;
+    border: 3px solid #000;
+}
+
+.footer-nav ul {
+    text-transform: uppercase;
+}
+
+.footer-nav ul li span {
+    text-transform: lowercase;
+}
+
+.news-letter input[type="email"] {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text);
+    text-transform: none;
+}
+
+.news-letter input[type="email"]::placeholder {
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.news-letter input[type="email"]:focus {
+    outline: none;
+}
+
+.news-letter-form {
+    border: 1px solid var(--color-black);
+}
+
+.news-letter-form button {
+    background-color: var(--color-bg);
+    border: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.copy-right a {
+    color: var(--color-black);
+}
