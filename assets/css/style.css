@@ -35,6 +35,7 @@
     --radius-pill: 30px;
     --radius-sm: 6px;
     --radius-md: 12px;
+    --radius-circle: 50%;
 
     --fs-hero-heading: 3rem;
     --fs-heading: 2rem;
@@ -211,6 +212,31 @@ footer hr {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-black);
+    border-radius: var(--radius-circle);
+    padding: 0.6rem;
 }
 
 .copy-right a {
