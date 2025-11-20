@@ -17,11 +17,12 @@
             var(--color-primary) -2.32%,
             rgba(207, 15, 71, 0) 86.28%);
 
-    --btn-primary-bg: var(--color-primary);
-    --btn-primary-text: var(--color-white);
+    --btn-primary-bg: var(--color-white);
+    --btn-primary-text: var(--color-primary);
 
-    --btn-secondary-bg: var(--color-white);
-    --btn-secondary-text: var(--color-primary);
+    --btn-secondary-bg: var(--color-primary);
+    --btn-secondary-text: var(--color-white);
+
 
     --footer-heading-color: var(--color-black);
 
@@ -54,11 +55,6 @@
     font-family: "Karantina";
     src: url("/assets/fonts/Karantina-Bold.ttf");
 }
-
-body {
-    background: var(--gradient-radial-primary);
-}
-
 
 .hreo-heading {
     font-size: var(--fs-hero-heading);
@@ -97,6 +93,31 @@ ol {
 
 img {
     display: block;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.btn-primary span {
+    color: var(--btn-primary-text);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
 }
 
 /* Header */
@@ -241,4 +262,46 @@ footer hr {
 
 .copy-right a {
     color: var(--color-black);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    background: var(--gradient-radial-primary);
+    padding: 1rem 0;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-images::before {
+    content: "EarBuds \A EarBuds";
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 16rem;
+    color: var(--color-text);
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.hero-images img {
+    height: 24rem;
+}
+
+.hero-images img:first-child {
+    align-self: flex-end;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
 }
