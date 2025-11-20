@@ -34,6 +34,7 @@
 
     --transition-fast: 0.3s ease-in-out;
     --radius-pill: 30px;
+    --radius-card: 17px;
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-circle: 50%;
@@ -44,6 +45,11 @@
 }
 
 /* CSS Reset */
+@font-face {
+    font-family: "Karantina";
+    src: url("/assets/fonts/Karantina-Bold.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -51,13 +57,12 @@
     font-family: "Karantina", sans-serif;
 }
 
-@font-face {
-    font-family: "Karantina";
-    src: url("/assets/fonts/Karantina-Bold.ttf");
-}
-
 .hreo-heading {
     font-size: var(--fs-hero-heading);
+}
+
+body {
+    background-color: var(--color-bg);
 }
 
 h1,
@@ -120,6 +125,31 @@ img {
     color: var(--btn-secondary-text);
 }
 
+.btn-cirlce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--color-white);
+    border-radius: var(--radius-circle);
+    padding: 0.6rem;
+}
+
+.section-title {
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-primary);
+    text-transform: uppercase;
+    font-size: var(--fs-text);
+    align-self: flex-start;
+}
+
+.product-name {
+    color: var(--color-text);
+    font-size: var(--fs-text);
+}
+
+
 /* Header */
 header {
     display: flex;
@@ -173,7 +203,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: var(--color-primary);
-    gap: 30px;
+    gap: 2rem;
     padding: 1rem 5rem;
     text-transform: uppercase;
 }
@@ -249,15 +279,9 @@ footer hr {
     gap: 1rem;
 }
 
+
 .social-icons ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
     background-color: var(--color-black);
-    border-radius: var(--radius-circle);
-    padding: 0.6rem;
 }
 
 .copy-right a {
@@ -304,4 +328,57 @@ footer hr {
 .hero-buttons {
     display: flex;
     gap: 1rem;
+}
+
+/* Most Sold Products Section */
+.most-sold-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-bg);
+    padding: 1rem 5rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--gradient-card-primary);
+    border-radius: var(--radius-card);
+    padding: 2rem;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-card);
+    width: 20rem;
+}
+
+/* .product-image img {
+    width: 18rem;
+    height: 20rem;
+} */
+
+.product-info,
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .product-actions {
+    display: flex;
+} */
+
+.product-actions .fa-bag-shopping {
+    background-color: var(--color-primary);
 }
