@@ -39,7 +39,6 @@
     --radius-md: 12px;
     --radius-circle: 50%;
 
-    --fs-hero-heading: 3rem;
     --fs-heading: 2rem;
     --fs-text: 1.5rem;
 }
@@ -57,9 +56,6 @@
     font-family: "Karantina", sans-serif;
 }
 
-.hreo-heading {
-    font-size: var(--fs-hero-heading);
-}
 
 body {
     background-color: var(--color-bg);
@@ -72,6 +68,7 @@ h4,
 h5,
 h6 {
     font-size: var(--fs-heading);
+    color: var(--color-text);
 }
 
 p,
@@ -304,22 +301,30 @@ footer hr {
     padding: 1rem 0;
 }
 
+.hero-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+
+.hero-text h1 {
+    font-size: 16rem;
+}
+
+
+
 .hero-images {
     display: flex;
     justify-content: center;
     height: 30rem;
     position: relative;
     z-index: 1;
-}
-
-.hero-images::before {
-    content: "EarBuds \A EarBuds";
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 16rem;
-    color: var(--color-text);
-    z-index: -1;
-    opacity: 0.1;
 }
 
 .hero-images img {
@@ -360,8 +365,6 @@ footer hr {
     box-sizing: border-box;
 }
 
-
-
 .product-image {
     height: 23rem;
 }
@@ -386,16 +389,6 @@ footer hr {
     justify-content: space-between;
 }
 
-/* .product-actions {
-    display: flex;
-} */
-
 .product-actions .btn-circle {
     background-color: var(--color-primary);
 }
-
-/* @media screen and (max-width:767px) {
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-} */
