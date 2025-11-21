@@ -133,6 +133,7 @@ img {
     align-items: center;
     width: 2.5rem;
     height: 2.5rem;
+    background-color: var(--btn-secondary-bg);
     color: var(--color-white);
     border-radius: var(--radius-circle);
     padding: 0.6rem;
@@ -238,6 +239,11 @@ footer hr {
     text-transform: lowercase;
 }
 
+.footer-links h2,
+.news-letter h2 {
+    color: var(--color-black);
+}
+
 .news-letter input[type="email"] {
     padding: 0.5rem 1rem;
     background-color: transparent;
@@ -301,13 +307,15 @@ footer hr {
     padding: 1rem 0;
 }
 
-.hero-content {
+.hero-content,
+.new-products-content {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.hero-text {
+.hero-text,
+.new-products-text {
     position: absolute;
     text-transform: uppercase;
     opacity: 0.1;
@@ -317,9 +325,13 @@ footer hr {
     font-size: 16rem;
 }
 
+.new-products-text h2 {
+    font-size: 13rem;
+}
 
 
-.hero-images {
+.hero-images,
+.new-products-image {
     display: flex;
     justify-content: center;
     height: 30rem;
@@ -391,4 +403,26 @@ footer hr {
 
 .product-actions .btn-circle {
     background-color: var(--color-primary);
+}
+
+/* New Products Section */
+.new-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-bg);
+    padding: 1rem 5rem;
+}
+
+.new-products-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    background: var(--gradient-radial-primary);
+    padding: 1rem 0;
+
 }
