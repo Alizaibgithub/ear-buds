@@ -152,6 +152,34 @@ img {
     font-size: var(--fs-text);
 }
 
+/* Swiper Slider */
+.swiper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-buttons {
+    position: relative;
+    width: 10%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1rem;
+}
+
+.swiper .product-actions {
+    width: 20%;
+}
+
+.swiper-bottom {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
 
 /* Header */
 header {
