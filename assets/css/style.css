@@ -41,6 +41,7 @@
 
     --fs-heading: 2rem;
     --fs-text: 1.5rem;
+    --fs-sm: 1.2rem;
 }
 
 /* CSS Reset */
@@ -69,6 +70,7 @@ h5,
 h6 {
     font-size: var(--fs-heading);
     color: var(--color-text);
+    text-transform: uppercase;
 }
 
 p,
@@ -456,11 +458,95 @@ footer hr {
 
 }
 
+.new-product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.info-title h2 {
+    font-size: var(--fs-text);
+}
+
+.infot-text ul li {
+    font-size: var(--fs-sm);
+}
+
+.product-info-left {
+    align-self: flex-start;
+}
+
+.product-info-left,
+.product-info-right {
+    height: 50%;
+    position: relative;
+    padding: 1rem;
+}
+
+
+.product-info-left::before,
+.product-info-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    padding: 0.3rem;
+    background: linear-gradient(180deg, #CF0F47 0%, #CF0F47 61%, rgba(0, 0, 0, 0) 97%);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.connector-line {
+    position: absolute;
+    top: 15%;
+    width: 50px;
+    height: 2px;
+    background: #D9D9D9;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.connector-left {
+    right: -21%;
+}
+
+.connector-right {
+    left: -21%;
+}
+
+.connector-line::after {
+    content: '';
+    position: absolute;
+    width: 225px;
+    height: 2px;
+    background: #D9D9D9;
+}
+
+.connector-left::after {
+    left: 100%;
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+
+.connector-right::after {
+    right: 100%;
+    transform-origin: right;
+    transform: rotate(-45deg);
+}
+
+
 /* New Deal */
 .new-deal-slide {
     position: relative;
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     overflow: hidden;
     border-radius: var(--radius-card);
 }
@@ -473,6 +559,7 @@ footer hr {
 .new-deal-slide .slide-image img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
 }
 
 .new-deal-slide-content {
