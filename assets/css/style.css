@@ -1,3 +1,4 @@
+/* ===== CSS Variables (Root) ===== */
 :root {
     /* ===== Colors ===== */
     --color-primary: #CF0F47;
@@ -38,7 +39,7 @@
     --space-md: 1rem;
     --space-lg: 1.5rem;
     --space-xl: 5rem;
-
+    --section-padding: var(--space-md) var(--space-xl);
     /* ===== Radius ===== */
     --radius-pill: 30px;
     --radius-card: 17px;
@@ -54,7 +55,7 @@
     /* ===== Layout ===== */
 }
 
-/* CSS Reset */
+/* ===== CSS Reset ===== */
 @font-face {
     font-family: "Karantina";
     src: url("/assets/fonts/Karantina-Bold.ttf");
@@ -164,7 +165,7 @@ img {
     font-size: var(--fs-text);
 }
 
-/* Swiper Slider */
+/* ===== Swiper Slider ===== */
 .swiper {
     display: flex;
     flex-direction: column;
@@ -192,14 +193,14 @@ img {
     justify-content: space-between;
 }
 
-/* Header */
+/* ===== Section: Header ===== */
 header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     gap: var(--space-sm);
-    padding: var(--space-md) var(--space-xl);
+    padding: var(--section-padding);
     background-color: var(--color-dark);
 }
 
@@ -247,13 +248,13 @@ header {
     color: var(--icon-color-primary);
 }
 
-/* Footer */
+/* ===== Section: Footer ===== */
 footer {
     display: flex;
     flex-direction: column;
     background-color: var(--color-primary);
     gap: var(--space-lg);
-    padding: var(--space-md) var(--space-xl);
+    padding: var(--section-padding);
     text-transform: uppercase;
 }
 
@@ -341,7 +342,7 @@ footer hr {
     color: var(--color-dark);
 }
 
-/* Hero Section */
+/* ===== Section: Hero ===== */
 .hero {
     display: flex;
     flex-direction: column;
@@ -397,7 +398,7 @@ footer hr {
     gap: var(--space-lg);
 }
 
-/* Most Sold Products Section */
+/* ===== Section: Most Sold Products ===== */
 .most-sold-products {
     display: flex;
     flex-direction: column;
@@ -405,7 +406,7 @@ footer hr {
     align-items: center;
     gap: var(--space-lg);
     background-color: var(--color-dark);
-    padding: var(--space-md) var(--space-xl);
+    padding: var(--section-padding);
 }
 
 .products-grid {
@@ -452,7 +453,7 @@ footer hr {
     background-color: var(--color-primary);
 }
 
-/* New Products Section */
+/* ===== Section: New Products ===== */
 .new-products,
 .new-deal {
     display: flex;
@@ -549,8 +550,7 @@ footer hr {
     transform: rotate(-45deg);
 }
 
-
-/* New Deal */
+/* ===== Section: New Deal ===== */
 .new-deal-slide {
     position: relative;
     width: 100%;
