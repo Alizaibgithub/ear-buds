@@ -1,4 +1,6 @@
-/* ===== CSS Variables (Root) ===== */
+/* ================================================================================
+                             CSS Variables (Root)
+ ================================================================================ */
 :root {
     /* ===== Colors ===== */
     --color-primary: #cf0f47;
@@ -58,7 +60,9 @@
     /* ===== Layout ===== */
 }
 
-/* ===== CSS Reset ===== */
+/* ================================================================================
+                                 CSS Reset
+ ================================================================================ */
 @font-face {
     font-family: "Karantina";
     src: url("/assets/fonts/Karantina-Bold.ttf");
@@ -119,6 +123,7 @@ img {
 /* ================================================================================
                                 Common Styles
  ================================================================================ */
+
 .section-title {
     align-self: flex-start;
     border-bottom: 2px solid var(--color-primary);
@@ -131,6 +136,7 @@ img {
 .btn {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: var(--btn-width);
     max-width: var(--btn-max-width);
     padding: var(--space-sm) var(--space-md);
@@ -176,7 +182,6 @@ img {
 
 .swiper-bottom {
     display: flex;
-    flex-flow: row-reverse wrap;
     justify-content: space-between;
 }
 
@@ -194,6 +199,9 @@ img {
     font-size: var(--fs-text);
 }
 
+/* ================================================================================
+                               Section Styles
+ ================================================================================ */
 /* ===== Section: Header ===== */
 header {
     display: flex;
