@@ -1,45 +1,37 @@
 /* ===== Section: Footer ===== */
-footer {
+.footer {
     background: var(--color-primary) !important;
     text-transform: uppercase;
 }
 
-footer hr {
+.footer-divider {
     height: 0.2rem;
     border: none;
     background-color: var(--color-dark);
 }
 
-.footer-logo {
+.footer-logo-container {
     height: 6rem;
 }
 
-.img-footer-logo {
+.footer-logo {
     height: 100%;
     border: 3px solid var(--color-dark);
 }
 
-.footer-nav ul {
-    text-transform: uppercase;
+.footer-heading {
+    color: var(--color-dark);
 }
 
-.footer-nav ul li span {
+.footer-nav-link span {
     text-transform: lowercase;
-}
-
-.footer-links h2 {
-    color: var(--color-dark);
-}
-
-.news-letter h2 {
-    color: var(--color-dark);
 }
 
 .news-letter-form {
     border: 1px solid var(--color-dark);
 }
 
-.news-letter input[type="email"] {
+.news-letter-input {
     padding: var(--space-sm);
     border: none;
     background-color: transparent;
@@ -48,16 +40,16 @@ footer hr {
     text-transform: none;
 }
 
-.news-letter input[type="email"]::placeholder {
+.news-letter-input::placeholder {
     color: var(--color-secondary);
     text-transform: uppercase;
 }
 
-.news-letter input[type="email"]:focus {
+.news-letter-input:focus {
     outline: none;
 }
 
-.news-letter-form button {
+.news-letter-btn {
     padding: var(--btn-padding);
     border: none;
     background-color: var(--color-dark);
@@ -65,10 +57,10 @@ footer hr {
     cursor: pointer;
 }
 
-.social-icons ul li a {
+.social-icon {
     background-color: var(--color-dark);
 }
 
-.copy-right a {
+.copy-right-link {
     color: var(--color-dark);
 }

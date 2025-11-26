@@ -1,9 +1,13 @@
 /* ===== Section: Header ===== */
+.header {
+    text-transform: uppercase;
+}
+
 .header-left {
     height: 3rem;
 }
 
-.img-logo {
+.header-logo {
     height: 100%;
 }
 
@@ -15,7 +19,6 @@
     padding: var(--btn-padding);
     border-radius: var(--radius-pill);
     transition: all var(--transition-fast);
-    text-transform: uppercase;
 }
 
 .nav-link:hover {

@@ -22,10 +22,10 @@
 
   <body>
     <!-- ===== Section: Header ===== -->
-    <header class="section flex-between flex-wrap gap-lg">
+    <header class="section header flex-between flex-wrap gap-lg">
       <div class="header-left">
         <a href="/"
-          ><img class="img-logo" src="assets/images/logo.png" alt="earbuds"
+          ><img class="header-logo" src="assets/images/logo.png" alt="earbuds"
         /></a>
       </div>
       <nav class="main-nav">
@@ -267,52 +267,60 @@
       </div>
     </section>
     <!-- ===== Section: Footer ===== -->
-    <footer class="section flex flex-col gap-lg">
-      <hr />
+    <footer class="section footer flex flex-col gap-lg">
+      <hr class="footer-divider" />
       <div class="footer-top flex justify-between flex-wrap">
-        <div class="footer-logo">
+        <div class="footer-logo-container">
           <a href="/"
             ><img
-              class="img-footer-logo"
+              class="footer-logo"
               src="assets/images/logo.png"
               alt="earbuds"
           /></a>
         </div>
         <div class="footer-links">
-          <h2>Pages</h2>
+          <h2 class="footer-heading">Pages</h2>
           <nav class="footer-nav footer-nav-pages">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#sale">Sale</a></li>
-              <li><a href="#buy">Buy</a></li>
-              <li><a href="#cart">Cart</a></li>
+              <li><a href="#home" class="footer-nav-link">Home</a></li>
+              <li><a href="#about" class="footer-nav-link">About</a></li>
+              <li><a href="#sale" class="footer-nav-link">Sale</a></li>
+              <li><a href="#buy" class="footer-nav-link">Buy</a></li>
+              <li><a href="#cart" class="footer-nav-link">Cart</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer-links">
-          <h2>Help</h2>
+          <h2 class="footer-heading">Help</h2>
           <nav class="footer-nav footer-nav-help">
             <ul>
-              <li><a href="#faq">Faq</a><span>s</span></li>
-              <li><a href="#policy">Policies</a></li>
-              <li><a href="#delivery">Delivery</a></li>
-              <li><a href="#return">Return</a></li>
+              <li>
+                <a href="#faq" class="footer-nav-link">Faq<span>s</span></a>
+              </li>
+              <li><a href="#policy" class="footer-nav-link">Policies</a></li>
+              <li><a href="#delivery" class="footer-nav-link">Delivery</a></li>
+              <li><a href="#return" class="footer-nav-link">Return</a></li>
             </ul>
           </nav>
         </div>
         <div class="news-letter">
-          <h2>Newss Letter</h2>
-          <form action="" class="news-letter-form">
-            <input name="news-letter-email" type="email" placeholder="Email" />
-            <button type="submit">Subscribe</button>
+          <h2 class="footer-heading">Newss Letter</h2>
+          <form action="" class="news-letter-form flex">
+            <input
+              name="news-letter-email"
+              type="email"
+              class="news-letter-input"
+              placeholder="Email"
+            />
+            <button type="submit" class="news-letter-btn">Subscribe</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom flex justify-between items-center">
         <div class="copy-right">
           <span
-            >&copy; Copyright 2025 <a href="/">EarBuds</a> | all rights
+            >&copy; Copyright 2025
+            <a href="/" class="copy-right-link">EarBuds</a> | all rights
             reserved</span
           >
         </div>
@@ -321,21 +329,21 @@
             <li>
               <a
                 href="https://www.instagram.com/"
-                class="fa-brands fa-instagram btn-circle"
+                class="social-icon btn-circle fa-brands fa-instagram"
                 target="_blank"
               ></a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/"
-                class="fa-brands fa-linkedin btn-circle"
+                class="social-icon btn-circle fa-brands fa-linkedin"
                 target="_blank"
               ></a>
             </li>
             <li>
               <a
                 href="https://www.tiktok.com/"
-                class="fa-brands fa-tiktok btn-circle"
+                class="social-icon btn-circle fa-brands fa-tiktok"
                 target="_blank"
               ></a>
             </li>
