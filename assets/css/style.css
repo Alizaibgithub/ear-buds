@@ -183,6 +183,7 @@ img {
 .swiper-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .swiper .product-actions {
@@ -274,6 +275,7 @@ header {
 .hero-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -290,6 +292,7 @@ header {
 .hero-images {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     height: 30rem;
     z-index: 1;
@@ -301,6 +304,10 @@ header {
 
 .hero-images img:first-child {
     align-self: flex-end;
+}
+
+.hero-images img:nth-child(2) {
+    align-self: flex-start;
 }
 
 .hero-buttons {
