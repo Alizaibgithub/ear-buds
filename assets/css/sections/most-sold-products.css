@@ -1,14 +1,4 @@
 /* ===== Section: Most Sold Products ===== */
-/* .most-sold-products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-lg);
-    padding: var(--section-padding);
-    background-color: var(--color-dark);
-} */
-
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));

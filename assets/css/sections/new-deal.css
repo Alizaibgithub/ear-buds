@@ -1,13 +1,4 @@
 /* ===== Section: New Deal ===== */
-/* .new-deal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-md);
-    padding: var(--section-padding);
-    background-color: var(--color-dark);
-} */
 .new-deal-slide {
     position: relative;
     width: 100%;

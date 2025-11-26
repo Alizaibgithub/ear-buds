@@ -1,18 +1,9 @@
 /* ===== Section: Hero ===== */
 .hero {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-lg);
-    padding: var(--section-padding); */
     background: var(--gradient-surface-section);
 }
 
 .hero-content {
-    /* display: flex;
-        justify-content: center;
-        align-items: center; */
     position: relative;
 }
 
@@ -27,9 +18,6 @@
 }
 
 .hero-images {
-    /* display: flex;
-        justify-content: center;
-        align-items: center; */
     position: relative;
     height: 30rem;
     z-index: 1;
@@ -46,8 +34,3 @@
 .hero-images img:nth-child(2) {
     align-self: flex-start;
 }
-
-/* .hero-buttons {
-    display: flex;
-    gap: var(--space-lg);
-} */
