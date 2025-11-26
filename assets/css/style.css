@@ -651,10 +651,12 @@ footer hr {
     justify-content: space-between;
     align-items: flex-start;
 } */
+.footer-logo {
+    height: 6rem;
+}
 
 .img-footer-logo {
-    width: 6rem;
-    height: 6rem;
+    height: 100%;
     border: 3px solid var(--color-dark);
 }
 
