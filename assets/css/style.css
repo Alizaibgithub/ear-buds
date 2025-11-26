@@ -76,7 +76,7 @@
 }
 
 body {
-    background-color: var(--color-dark);
+    background: var(--color-dark);
 }
 
 h1,
@@ -180,6 +180,22 @@ img {
     gap: var(--space-lg);
 }
 
+.section {
+    padding: var(--section-padding);
+    background: var(--color-dark);
+}
+
+.hero,
+.most-sold-products,
+.new-products,
+.new-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
 .section-title {
     align-self: flex-start;
     border-bottom: 2px solid var(--color-primary);
@@ -261,15 +277,15 @@ img {
  ================================================================================ */
 
 /* ===== Section: Header ===== */
-header {
-    /* display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: var(--space-sm); */
+/* header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-sm);
     padding: var(--section-padding);
     background-color: var(--color-dark);
-}
+} */
 
 .header-left {
     height: 3rem;
@@ -322,11 +338,11 @@ header {
 /* ===== Section: Hero ===== */
 .hero {
     /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-lg); */
-    padding: var(--section-padding);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--section-padding); */
     background: var(--gradient-surface-section);
 }
 
@@ -374,15 +390,15 @@ header {
 } */
 
 /* ===== Section: Most Sold Products ===== */
-.most-sold-products {
-    /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: var(--space-lg); */
+/* .most-sold-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
     padding: var(--section-padding);
     background-color: var(--color-dark);
-}
+} */
 
 .products-grid {
     display: grid;
@@ -439,15 +455,15 @@ header {
 }
 
 /* ===== Section: New Products ===== */
-.new-products {
-    /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-md); */
+/* .new-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
     padding: var(--section-padding);
     background-color: var(--color-dark);
-}
+} */
 
 .new-products-content {
     display: flex;
@@ -567,15 +583,15 @@ header {
 }
 
 /* ===== Section: New Deal ===== */
-.new-deal {
-    /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-md); */
+/* .new-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
     padding: var(--section-padding);
     background-color: var(--color-dark);
-}
+} */
 
 .new-deal-slide {
     position: relative;
@@ -616,10 +632,10 @@ header {
 /* ===== Section: Footer ===== */
 footer {
     /* display: flex;
-    flex-direction: column;
-    gap: var(--space-lg); */
-    padding: var(--section-padding);
-    background-color: var(--color-primary);
+            flex-direction: column;
+            gap: var(--space-lg);
+            padding: var(--section-padding); */
+    background: var(--color-primary) !important;
     text-transform: uppercase;
 }
 
