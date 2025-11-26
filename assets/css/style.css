@@ -123,6 +123,62 @@ img {
 /* ================================================================================
                                 Common Styles
  ================================================================================ */
+/* ========== Flex Utilities ========== */
+/* ===== Common Combinations ===== */
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/*===== Individual Utilities ===== */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* .justify-center {
+    justify-content: center;
+} */
+
+.items-center {
+    align-items: center;
+}
+
+.gap-sm {
+    gap: var(--space-sm);
+}
+
+.gap-md {
+    gap: var(--space-md);
+}
+
+.gap-lg {
+    gap: var(--space-lg);
+}
 
 .section-title {
     align-self: flex-start;
@@ -203,13 +259,14 @@ img {
 /* ================================================================================
                                Section Styles
  ================================================================================ */
+
 /* ===== Section: Header ===== */
 header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-sm);
+    /* display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-sm); */
     padding: var(--section-padding);
     background-color: var(--color-dark);
 }
@@ -223,11 +280,11 @@ header {
 }
 
 .main-nav ul {
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: var(--space-sm);
+    gap: var(--space-sm); */
     text-transform: uppercase;
 }
 
@@ -249,7 +306,7 @@ header {
     background-color: var(--btn-secondary-bg-color);
 }
 
-.header-right ul {
+/* .header-right ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -257,25 +314,26 @@ header {
     gap: var(--space-md);
 }
 
+*/
 .header-right .fa-solid {
     color: var(--icon-color-primary);
 }
 
 /* ===== Section: Hero ===== */
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-lg);
-    padding: var(--space-sm) var(--space-xl);
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-lg); */
+    padding: var(--section-padding);
     background: var(--gradient-surface-section);
 }
 
 .hero-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
     position: relative;
 }
 
@@ -290,9 +348,9 @@ header {
 }
 
 .hero-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
     position: relative;
     height: 30rem;
     z-index: 1;
@@ -310,18 +368,18 @@ header {
     align-self: flex-start;
 }
 
-.hero-buttons {
+/* .hero-buttons {
     display: flex;
     gap: var(--space-lg);
-}
+} */
 
 /* ===== Section: Most Sold Products ===== */
 .most-sold-products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-lg);
+    /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-lg); */
     padding: var(--section-padding);
     background-color: var(--color-dark);
 }
@@ -382,18 +440,19 @@ header {
 
 /* ===== Section: New Products ===== */
 .new-products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-lg) var(--space-xl);
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-md); */
+    padding: var(--section-padding);
     background-color: var(--color-dark);
 }
 
 .new-products-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -410,9 +469,14 @@ header {
 .new-products-image {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     height: 30rem;
     z-index: 1;
+}
+
+.new-products-image img {
+    height: 100%;
 }
 
 .new-products-slide {
@@ -504,12 +568,12 @@ header {
 
 /* ===== Section: New Deal ===== */
 .new-deal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-lg) var(--space-xl);
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-md); */
+    padding: var(--section-padding);
     background-color: var(--color-dark);
 }
 
@@ -551,9 +615,9 @@ header {
 
 /* ===== Section: Footer ===== */
 footer {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: var(--space-lg);
+    gap: var(--space-lg); */
     padding: var(--section-padding);
     background-color: var(--color-primary);
     text-transform: uppercase;
@@ -565,12 +629,12 @@ footer hr {
     background-color: var(--color-dark);
 }
 
-.footer-top {
+/* .footer-top {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-}
+} */
 
 .img-footer-logo {
     width: 6rem;
@@ -624,19 +688,19 @@ footer hr {
     cursor: pointer;
 }
 
-.footer-bottom {
+/* .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-.social-icons ul {
+/* .social-icons ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: var(--space-md);
-}
+} */
 
 .social-icons ul li a {
     background-color: var(--color-dark);

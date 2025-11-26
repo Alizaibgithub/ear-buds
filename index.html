@@ -23,14 +23,14 @@
 
   <body>
     <!-- ===== Section: Header ===== -->
-    <header>
+    <header class="flex-between flex-wrap gap-lg">
       <div class="header-left">
-        <a href="/" s
+        <a href="/"
           ><img class="img-logo" src="assets/images/logo.png" alt="earbuds"
         /></a>
       </div>
       <nav class="main-nav">
-        <ul>
+        <ul class="flex-center flex-wrap gap-sm">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -42,7 +42,7 @@
         </ul>
       </nav>
       <div class="header-right">
-        <ul>
+        <ul class="flex-center flex-wrap gap-md">
           <li>
             <a href="/" class="fa-solid fa-user"></a>
           </li>
@@ -56,18 +56,18 @@
       </div>
     </header>
     <!-- ===== Section: Hero ===== -->
-    <section class="hero">
-      <div class="hero-content">
+    <section class="hero flex-center flex-col gap-lg">
+      <div class="hero-content flex-center">
         <div class="hero-text">
           <h1>EarBuds<br />EarBuds</h1>
         </div>
-        <div class="hero-images">
+        <div class="hero-images flex-center">
           <img src="/assets//images/hero/ear-bud-left.png" alt="earbuds" />
           <img src="/assets//images/hero/ear-bud-right.png" alt="earbuds" />
         </div>
       </div>
 
-      <div class="hero-buttons">
+      <div class="hero-buttons flex gap-lg">
         <a href="#details" class="btn btn-primary">
           <span>See Details</span> <i class="fa-solid fa-angle-down"></i>
         </a>
@@ -77,7 +77,7 @@
       </div>
     </section>
     <!-- ===== Section: Most Sold Products ===== -->
-    <section class="most-sold-products">
+    <section class="most-sold-products flex-center flex-col gap-lg">
       <h2 class="section-title">Most Sold</h2>
       <div class="products-grid">
         <article class="product-card">
@@ -157,7 +157,7 @@
       </div>
     </section>
     <!-- ===== Section: New Products ===== -->
-    <section class="new-products">
+    <section class="new-products flex-center flex-col gap-lg">
       <h2 class="section-title">New Products</h2>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -309,7 +309,7 @@
       </div>
     </section>
     <!-- ===== Section: New Deal ===== -->
-    <section class="new-deal">
+    <section class="new-deal flex-center flex-col gap-lg">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -373,9 +373,9 @@
       </div>
     </section>
     <!-- ===== Section: Footer ===== -->
-    <footer>
+    <footer class="flex flex-col gap-lg">
       <hr />
-      <div class="footer-top">
+      <div class="footer-top flex justify-between flex-wrap">
         <div class="footer-logo">
           <a href="/"
             ><img
@@ -415,7 +415,7 @@
           </form>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom flex justify-between items-center">
         <div class="copy-right">
           <span
             >&copy; Copyright 2025 <a href="/">EarBuds</a> | all rights
@@ -423,7 +423,7 @@
           >
         </div>
         <div class="social-icons">
-          <ul>
+          <ul class="flex-center flex-wrap gap-md">
             <li>
               <a
                 href="https://www.instagram.com/"
