@@ -7,30 +7,29 @@
     position: relative;
 }
 
-.hero-text {
+.hero-text-container {
     position: absolute;
-    text-transform: uppercase;
     opacity: 0.1;
 }
 
-.hero-text h1 {
+.hero-heading {
     font-size: 16rem;
 }
 
-.hero-images {
+.hero-images-container {
     position: relative;
     height: 30rem;
     z-index: 1;
 }
 
-.hero-images img {
+.hero-image {
     height: 24rem;
 }
 
-.hero-images img:first-child {
+.hero-image-left {
     align-self: flex-end;
 }
 
-.hero-images img:nth-child(2) {
+.hero-image-right {
     align-self: flex-start;
 }
