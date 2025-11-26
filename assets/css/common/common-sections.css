@@ -1,0 +1,87 @@
+.section {
+    padding: var(--section-padding);
+    background: var(--color-dark);
+}
+
+.hero,
+.most-sold-products,
+.new-products,
+.new-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.section-title {
+    align-self: flex-start;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: var(--fs-text);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--btn-width);
+    max-width: var(--btn-max-width);
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    border-radius: var(--radius-md);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary-bg-color);
+    color: var(--btn-primary-text-color);
+}
+
+.btn-primary span {
+    color: var(--btn-primary-text-color);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg-color);
+    color: var(--btn-secondary-text-color);
+}
+
+.btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--btn-circle-size);
+    height: var(--btn-circle-size);
+    padding: var(--space-sm);
+    border-radius: var(--radius-circle);
+    background-color: var(--btn-secondary-bg-color);
+    color: var(--color-secondary);
+}
+
+/* ===== Swiper Slider ===== */
+.swiper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-md);
+}
+
+.swiper-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-buttons {
+    position: relative;
+    width: 10%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: var(--fs-text);
+}

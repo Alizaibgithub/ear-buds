@@ -1,0 +1,45 @@
+/* ===== Section: New Deal ===== */
+/* .new-deal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--section-padding);
+    background-color: var(--color-dark);
+} */
+.new-deal-slide {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+
+.new-deal-slide .slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.new-deal-slide .slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.new-deal-slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--space-md);
+    background: var(--gradient-surface-overlay);
+    text-transform: uppercase;
+}
+
+.new-deal-slide-content .slide-text {
+    font-size: var(--fs-xl);
+}

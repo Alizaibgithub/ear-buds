@@ -1,0 +1,65 @@
+/* ===== Section: Most Sold Products ===== */
+/* .most-sold-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--section-padding);
+    background-color: var(--color-dark);
+} */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    width: 100%;
+    gap: var(--space-xl) var(--space-lg);
+    margin-top: 10%;
+}
+
+.product-card {
+    box-sizing: border-box;
+    padding: 0 var(--space-md);
+    border-radius: var(--radius-card);
+    background: var(--gradient-surface-card);
+}
+
+.product-image {
+    height: 24rem;
+}
+
+.product-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: translateY(-35%);
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name {
+    font-size: var(--fs-text);
+    color: var(--color-secondary);
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.product-actions .btn-circle {
+    background-color: var(--color-primary);
+}

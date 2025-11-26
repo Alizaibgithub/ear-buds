@@ -1,0 +1,59 @@
+/* ================================================================================
+                                 CSS Reset
+ ================================================================================ */
+@font-face {
+    font-family: "Karantina";
+    src: url("/assets/fonts/Karantina-Bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+body {
+    background: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: var(--fs-heading);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}
+
+p,
+span,
+ul,
+li,
+a,
+input,
+button {
+    font-size: var(--fs-text);
+    color: var(--color-secondary);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+}

@@ -1,0 +1,12 @@
+@import './global/variables.css';
+@import './global/reset.css';
+@import './global/utilities.css';
+
+@import './common/common-sections.css';
+
+@import './sections/header.css';
+@import './sections/footer.css';
+@import './sections/hero.css';
+@import './sections/most-sold-products.css';
+@import './sections/new-products.css';
+@import './sections/new-deal.css';
