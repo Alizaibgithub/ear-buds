@@ -455,6 +455,14 @@ img {
 }
 
 /* ===== Section: New Products ===== */
+.new-product-img {
+    width: 100%;
+}
+
+.new-product-img img {
+    width: 75%;
+}
+
 /* .new-products {
     display: flex;
     flex-direction: column;
@@ -464,8 +472,7 @@ img {
     padding: var(--section-padding);
     background-color: var(--color-dark);
 } */
-
-.new-products-content {
+/* .new-products-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -582,6 +589,7 @@ img {
     transform: rotate(-45deg);
 }
 
+*/
 /* ===== Section: New Deal ===== */
 /* .new-deal {
     display: flex;
