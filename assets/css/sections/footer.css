@@ -58,7 +58,7 @@ footer hr {
 }
 
 .news-letter-form button {
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--btn-padding);
     border: none;
     background-color: var(--color-dark);
     text-transform: uppercase;

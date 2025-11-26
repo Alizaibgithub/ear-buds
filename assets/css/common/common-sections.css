@@ -29,7 +29,7 @@
     align-items: center;
     width: var(--btn-width);
     max-width: var(--btn-max-width);
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--btn-padding);
     border: none;
     border-radius: var(--radius-md);
     text-transform: uppercase;

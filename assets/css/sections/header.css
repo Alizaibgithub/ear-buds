@@ -3,34 +3,29 @@
     height: 3rem;
 }
 
-.header-right ul li a {
-    color: var(--icon-color-primary);
-}
-
 .img-logo {
     height: 100%;
 }
 
-.main-nav ul {
+.header-icon {
+    color: var(--icon-color-primary);
+}
+
+.nav-link {
+    padding: var(--btn-padding);
+    border-radius: var(--radius-pill);
+    transition: all var(--transition-fast);
     text-transform: uppercase;
 }
 
-.main-nav ul li a {
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius-pill);
-    transition: all var(--transition-fast);
-}
-
-
-
-.main-nav ul li a:hover {
+.nav-link:hover {
     background-color: var(--btn-secondary-bg-color);
 }
 
-.main-nav ul li a:active {
+.nav-link:active {
     background-color: var(--btn-secondary-bg-color);
 }
 
-.main-nav ul li a:focus {
+.nav-link:focus {
     background-color: var(--btn-secondary-bg-color);
 }

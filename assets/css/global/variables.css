@@ -42,6 +42,7 @@
         --space-lg: 1.5rem;
         --space-xl: 5rem;
         --section-padding: var(--space-md) var(--space-xl);
+        --btn-padding: var(--space-sm) var(--space-md);
 
         /* ===== Radius ===== */
         --radius-pill: 30px;
