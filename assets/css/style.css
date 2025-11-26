@@ -258,10 +258,6 @@ img {
     align-items: center;
 }
 
-.swiper .product-actions {
-    width: 20%;
-}
-
 .swiper-buttons {
     position: relative;
     width: 10%;
@@ -448,6 +444,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--space-lg);
 }
 
 .product-actions .btn-circle {
