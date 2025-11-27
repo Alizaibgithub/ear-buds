@@ -7,18 +7,17 @@
     overflow: hidden;
 }
 
-.new-deal-slide .slide-image {
+.new-deal-image-container {
     width: 100%;
     height: 100%;
 }
 
-.new-deal-slide .slide-image img {
+.new-deal-image {
     width: 100%;
     height: 100%;
-    object-fit: fill;
 }
 
-.new-deal-slide-content {
+.new-deal-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +30,6 @@
     text-transform: uppercase;
 }
 
-.new-deal-slide-content .slide-text {
+.new-deal-text {
     font-size: var(--fs-xl);
 }
