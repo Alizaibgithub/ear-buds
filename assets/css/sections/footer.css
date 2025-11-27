@@ -23,8 +23,23 @@
     color: var(--color-dark);
 }
 
+.footer-nav-link {
+    transition: all var(--transition-fast);
+}
+
 .footer-nav-link span {
     text-transform: lowercase;
+    transition: all var(--transition-fast);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:hover span {
+    color: #670723;
+}
+
+.footer-nav-link.active,
+.footer-nav-link.active span {
+    color: #670723;
 }
 
 .news-letter-form {
