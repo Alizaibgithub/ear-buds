@@ -1,211 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!-- Swiper Slider Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <title>earbuds</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Swiper Slider Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <body>
-    <!-- ===== Section: Header ===== -->
-    <header class="section header flex-between flex-wrap gap-lg">
-      <div class="header-left">
-        <a href="/"
-          ><img class="header-logo" src="assets/images/logo.png" alt="earbuds"
-        /></a>
-      </div>
-      <nav class="main-nav">
-        <ul class="flex-center flex-wrap gap-sm">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="#series" class="nav-link">Series</a></li>
-          <li><a href="#products" class="nav-link">Products</a></li>
-          <li><a href="#shop" class="nav-link">Shop</a></li>
-          <li><a href="#new" class="nav-link">New</a></li>
-          <li><a href="#deals" class="nav-link">Deals</a></li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <ul class="flex-center flex-wrap gap-md">
-          <li>
-            <a href="/" class="header-icon fa-solid fa-user"></a>
-          </li>
-          <li>
-            <a href="/" class="header-icon fa-solid fa-magnifying-glass"></a>
-          </li>
-          <li>
-            <a href="/" class="header-icon fa-solid fa-bag-shopping"></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- ===== Section: Hero ===== -->
-    <section class="section hero">
-      <div class="hero-content flex-center">
-        <div class="hero-text-container">
-          <h1 class="hero-heading">EarBuds<br />EarBuds</h1>
-        </div>
-        <div class="hero-images-container flex-center">
-          <img
-            src="/assets//images/hero/ear-bud-left.png"
-            alt="earbuds"
-            class="hero-image hero-image-left"
-          />
-          <img
-            src="/assets//images/hero/ear-bud-right.png"
-            alt="earbuds"
-            class="hero-image hero-image-right"
-          />
-        </div>
-      </div>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>earbuds</title>
+</head>
 
-      <div class="action-buttons">
-        <a href="#details" class="btn btn-primary">
-          <span>See Details</span> <i class="fa-solid fa-angle-down"></i>
-        </a>
-        <a href="#shop" class="btn btn-secondary">
-          Buy Now<i class="fa-solid fa-bag-shopping"></i>
-        </a>
+<body>
+  <!-- ===== Section: Header ===== -->
+  <header class="section header flex-between flex-wrap gap-lg">
+    <div class="header-left">
+      <a href="/"><img class="header-logo" src="assets/images/logo.png" alt="earbuds" /></a>
+    </div>
+    <nav class="main-nav">
+      <ul class="flex-center flex-wrap gap-sm">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#series" class="nav-link">Series</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#new" class="nav-link">New</a></li>
+        <li><a href="#deals" class="nav-link">Deals</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <ul class="flex-center flex-wrap gap-md">
+        <li>
+          <a href="/" class="header-icon fa-solid fa-user"></a>
+        </li>
+        <li>
+          <a href="/" class="header-icon fa-solid fa-magnifying-glass"></a>
+        </li>
+        <li>
+          <a href="/" class="header-icon fa-solid fa-bag-shopping"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- ===== Section: Hero ===== -->
+  <section class="section hero">
+    <div class="hero-content flex-center">
+      <div class="hero-text-container">
+        <h1 class="hero-heading">EarBuds<br />EarBuds</h1>
       </div>
-    </section>
-    <!-- ===== Section: Most Sold Products ===== -->
-    <section class="section most-sold-products">
-      <h2 class="section-title">Most Sold</h2>
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image-container">
-            <img
-              src="/assets/images/most-sold-products/ear-pords-pro.png"
-              alt="Ear Pord Pro"
-              class="product-image"
-            />
-          </div>
-          <div class="product-details">
-            <div class="product-info">
-              <h3 class="product-name">Earpods pro</h3>
-              <span class="product-price">$11</span>
-            </div>
-            <div class="action-buttons">
-              <a href="#details" class="btn btn-primary">
-                <span>See Details</span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <button class="btn-circle">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image-container">
-            <img
-              src="/assets/images/most-sold-products/head-set.png"
-              alt="Ear Pord Pro"
-              class="product-image"
-            />
-          </div>
-          <div class="product-details">
-            <div class="product-info">
-              <h3 class="product-name">Earpods pro</h3>
-              <span class="product-price">$11</span>
-            </div>
-            <div class="action-buttons">
-              <a href="#details" class="btn btn-primary">
-                <span>See Details</span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <button class="btn-circle">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image-container">
-            <img
-              src="/assets/images/most-sold-products/in-ear-pro.png"
-              alt="Ear Pord Pro"
-              class="product-image"
-            />
-          </div>
-          <div class="product-details">
-            <div class="product-info">
-              <h3 class="product-name">Earpods pro</h3>
-              <span class="product-price">$11</span>
-            </div>
-            <div class="action-buttons">
-              <a href="#details" class="btn btn-primary">
-                <span>See Details</span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <button class="btn-circle">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </article>
+      <div class="hero-images-container flex-center">
+        <img src="/assets//images/hero/ear-bud-left.png" alt="earbuds" class="hero-image hero-image-left" />
+        <img src="/assets//images/hero/ear-bud-right.png" alt="earbuds" class="hero-image hero-image-right" />
       </div>
-      <div class="section-footer">
-        <a href="#shop" class="btn btn-secondary">
-          See All<i class="fa-solid fa-chevron-right"></i>
-        </a>
-      </div>
-    </section>
-    <!-- ===== Section: New Products ===== -->
-    <section class="section new-products">
-      <h2 class="section-title">New Products</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <article class="new-product-slide">
-              <div class="new-product-image-container">
-                <img
-                  src="/assets/images/new-products/new-product-slider-img.png"
-                  alt="New Products"
-                  class="new-product-img"
-                />
-              </div>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="new-product-slide">
-              <div class="new-product-image-container">
-                <img
-                  src="/assets/images/new-products/new-product-slider-img.png"
-                  alt="New Products"
-                  class="new-product-img"
-                />
-              </div>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="new-product-slide">
-              <div class="new-product-image-container">
-                <img
-                  src="/assets/images/new-products/new-product-slider-img.png"
-                  alt="New Products"
-                  class="new-product-img"
-                />
-              </div>
-            </article>
-          </div>
+    </div>
+
+    <div class="action-buttons">
+      <a href="#details" class="btn btn-primary">
+        <span>See Details</span> <i class="fa-solid fa-angle-down"></i>
+      </a>
+      <a href="#shop" class="btn btn-secondary">
+        Buy Now<i class="fa-solid fa-bag-shopping"></i>
+      </a>
+    </div>
+  </section>
+  <!-- ===== Section: Most Sold Products ===== -->
+  <section class="section most-sold-products">
+    <h2 class="section-title">Most Sold</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <div class="product-image-container">
+          <img src="/assets/images/most-sold-products/ear-pords-pro.png" alt="Ear Pord Pro" class="product-image" />
         </div>
-        <div class="swiper-bottom">
+        <div class="product-details">
+          <div class="product-info">
+            <h3 class="product-name">Earpods pro</h3>
+            <span class="product-price">$11</span>
+          </div>
           <div class="action-buttons">
             <a href="#details" class="btn btn-primary">
               <span>See Details</span>
@@ -215,139 +90,203 @@
               <i class="fa-solid fa-bag-shopping"></i>
             </button>
           </div>
-          <div class="swiper-buttons">
-            <div class="btn-circle swiper-button-next"></div>
-            <div class="btn-circle swiper-button-prev"></div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- ===== Section: New Deal ===== -->
-    <section class="section new-deal">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <article class="new-deal-slide">
-              <div class="new-deal-image-container">
-                <img
-                  src="assets/images/new-deal/new-deal.png"
-                  alt=""
-                  class="new-deal-image"
-                />
-              </div>
-              <div class="new-deal-content">
-                <h3 class="new-deal-title">New Deal</h3>
-                <p class="new-deal-text">
-                  Upto 10% <br />
-                  Off
-                </p>
-                <p class="new-deal-subtext">On All Products</p>
-              </div>
-            </article>
-          </div>
+      </article>
+      <article class="product-card">
+        <div class="product-image-container">
+          <img src="/assets/images/most-sold-products/head-set.png" alt="Ear Pord Pro" class="product-image" />
         </div>
-        <div class="swiper-bottom">
-          <div>
-            <a href="#deal" class="btn btn-primary">
-              <span>View Deal</span>
+        <div class="product-details">
+          <div class="product-info">
+            <h3 class="product-name">Earpods pro</h3>
+            <span class="product-price">$11</span>
+          </div>
+          <div class="action-buttons">
+            <a href="#details" class="btn btn-primary">
+              <span>See Details</span>
               <i class="fa-solid fa-chevron-right"></i>
             </a>
+            <button class="btn-circle">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
           </div>
-          <div class="swiper-buttons">
-            <div class="btn-circle swiper-button-next"></div>
-            <div class="btn-circle swiper-button-prev"></div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="product-image-container">
+          <img src="/assets/images/most-sold-products/in-ear-pro.png" alt="Ear Pord Pro" class="product-image" />
+        </div>
+        <div class="product-details">
+          <div class="product-info">
+            <h3 class="product-name">Earpods pro</h3>
+            <span class="product-price">$11</span>
           </div>
+          <div class="action-buttons">
+            <a href="#details" class="btn btn-primary">
+              <span>See Details</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <button class="btn-circle">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-footer">
+      <a href="#shop" class="btn btn-secondary">
+        See All<i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </section>
+  <!-- ===== Section: New Products ===== -->
+  <section class="section new-products">
+    <h2 class="section-title">New Products</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="new-product-slide">
+            <div class="new-product-image-container">
+              <img src="/assets/images/new-products/new-product-slider-img.png" alt="New Products"
+                class="new-product-img" />
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="new-product-slide">
+            <div class="new-product-image-container">
+              <img src="/assets/images/new-products/new-product-slider-img.png" alt="New Products"
+                class="new-product-img" />
+            </div>
+          </article>
+        </div>
+        <div class="swiper-slide">
+          <article class="new-product-slide">
+            <div class="new-product-image-container">
+              <img src="/assets/images/new-products/new-product-slider-img.png" alt="New Products"
+                class="new-product-img" />
+            </div>
+          </article>
         </div>
       </div>
-    </section>
-    <!-- ===== Section: Footer ===== -->
-    <footer class="section footer flex flex-col gap-lg">
-      <hr class="footer-divider" />
-      <div class="footer-top flex justify-between flex-wrap">
-        <div class="footer-logo-container">
-          <a href="/"
-            ><img
-              class="footer-logo"
-              src="assets/images/logo.png"
-              alt="earbuds"
-          /></a>
+      <div class="swiper-bottom">
+        <div class="action-buttons">
+          <a href="#details" class="btn btn-primary">
+            <span>See Details</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <button class="btn-circle">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
         </div>
-        <div class="footer-links">
-          <h2 class="footer-heading">Pages</h2>
-          <nav class="footer-nav footer-nav-pages">
-            <ul>
-              <li><a href="#home" class="footer-nav-link">Home</a></li>
-              <li><a href="#about" class="footer-nav-link">About</a></li>
-              <li><a href="#sale" class="footer-nav-link">Sale</a></li>
-              <li><a href="#buy" class="footer-nav-link">Buy</a></li>
-              <li><a href="#cart" class="footer-nav-link">Cart</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-links">
-          <h2 class="footer-heading">Help</h2>
-          <nav class="footer-nav footer-nav-help">
-            <ul>
-              <li>
-                <a href="#faq" class="footer-nav-link">Faq<span>s</span></a>
-              </li>
-              <li><a href="#policy" class="footer-nav-link">Policies</a></li>
-              <li><a href="#delivery" class="footer-nav-link">Delivery</a></li>
-              <li><a href="#return" class="footer-nav-link">Return</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="news-letter">
-          <h2 class="footer-heading">Newss Letter</h2>
-          <form action="" class="news-letter-form flex">
-            <input
-              name="news-letter-email"
-              type="email"
-              class="news-letter-input"
-              placeholder="Email"
-            />
-            <button type="submit" class="news-letter-btn">Subscribe</button>
-          </form>
+        <div class="swiper-buttons">
+          <div class="btn-circle swiper-button-next"></div>
+          <div class="btn-circle swiper-button-prev"></div>
         </div>
       </div>
-      <div class="footer-bottom flex justify-between items-center">
-        <div class="copy-right">
-          <span
-            >&copy; Copyright 2025
-            <a href="/" class="copy-right-link">EarBuds</a> | all rights
-            reserved</span
-          >
+    </div>
+  </section>
+  <!-- ===== Section: New Deal ===== -->
+  <section class="section new-deal">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="new-deal-slide">
+            <div class="new-deal-image-container">
+              <img src="assets/images/new-deal/new-deal.png" alt="" class="new-deal-image" />
+            </div>
+            <div class="new-deal-content">
+              <h3 class="new-deal-title">New Deal</h3>
+              <p class="new-deal-text">
+                Upto 10% <br />
+                Off
+              </p>
+              <p class="new-deal-subtext">On All Products</p>
+            </div>
+          </article>
         </div>
-        <div class="social-icons">
-          <ul class="flex-center flex-wrap gap-md">
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                class="social-icon btn-circle fa-brands fa-instagram"
-                target="_blank"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                class="social-icon btn-circle fa-brands fa-linkedin"
-                target="_blank"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/"
-                class="social-icon btn-circle fa-brands fa-tiktok"
-                target="_blank"
-              ></a>
-            </li>
+      </div>
+      <div class="swiper-bottom">
+        <div>
+          <a href="#deal" class="btn btn-primary">
+            <span>View Deal</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="swiper-buttons">
+          <div class="btn-circle swiper-button-next"></div>
+          <div class="btn-circle swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Section: Footer ===== -->
+  <footer class="section footer flex flex-col gap-lg">
+    <hr class="footer-divider" />
+    <div class="footer-top flex justify-between flex-wrap">
+      <div class="footer-logo-container">
+        <a href="/"><img class="footer-logo" src="assets/images/logo.png" alt="earbuds" /></a>
+      </div>
+      <div class="footer-links">
+        <h2 class="footer-heading">Pages</h2>
+        <nav class="footer-nav footer-nav-pages">
+          <ul>
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="#sale" class="footer-nav-link">Sale</a></li>
+            <li><a href="#buy" class="footer-nav-link">Buy</a></li>
+            <li><a href="#cart" class="footer-nav-link">Cart</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </footer>
-    <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <!-- Main Script -->
-    <script src="assets/js/script.js"></script>
-  </body>
+      <div class="footer-links">
+        <h2 class="footer-heading">Help</h2>
+        <nav class="footer-nav footer-nav-help">
+          <ul>
+            <li>
+              <a href="#faq" class="footer-nav-link">Faq<span>s</span></a>
+            </li>
+            <li><a href="#policy" class="footer-nav-link">Policies</a></li>
+            <li><a href="#delivery" class="footer-nav-link">Delivery</a></li>
+            <li><a href="#return" class="footer-nav-link">Return</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="news-letter">
+        <h2 class="footer-heading">Newss Letter</h2>
+        <form action="" class="news-letter-form flex">
+          <input name="news-letter-email" type="email" class="news-letter-input" placeholder="Email" />
+          <button type="submit" class="news-letter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom flex justify-between items-center">
+      <div class="copy-right">
+        <span>&copy; Copyright 2025
+          <a href="/" class="copy-right-link">EarBuds</a> | all rights
+          reserved</span>
+      </div>
+      <div class="social-icons">
+        <ul class="flex-center flex-wrap gap-md">
+          <li>
+            <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+              target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+              target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
