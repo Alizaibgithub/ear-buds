@@ -41,10 +41,3 @@
     font-size: var(--fs-text);
     color: var(--color-secondary);
 }
-
-.product-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-lg);
-}
