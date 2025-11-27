@@ -1,8 +1,15 @@
 /* ===== Section: New Products ===== */
-.new-product-img {
+.new-product-slide {
     width: 100%;
+    height: 30rem;
 }
 
-.new-product-img img {
-    width: 75%;
+.new-product-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.new-product-img {
+    width: 100%;
+    height: 100%;
 }
