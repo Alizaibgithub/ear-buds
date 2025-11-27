@@ -28,10 +28,6 @@
     background-color: var(--btn-secondary-bg-color);
 }
 
-.nav-link:active {
-    background-color: var(--btn-secondary-bg-color);
-}
-
-.nav-link:focus {
+.nav-link.active {
     background-color: var(--btn-secondary-bg-color);
 }
