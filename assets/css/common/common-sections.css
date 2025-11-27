@@ -62,13 +62,6 @@
     color: var(--color-secondary);
 }
 
-.action-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-lg);
-}
-
 /* ===== Swiper Slider ===== */
 .swiper {
     display: flex;
