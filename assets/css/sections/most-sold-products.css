@@ -40,4 +40,5 @@
 .product-name {
     font-size: var(--fs-text);
     color: var(--color-secondary);
+    text-transform: capitalize;
 }
