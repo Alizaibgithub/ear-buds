@@ -77,24 +77,19 @@
     gap: var(--space-md);
 }
 
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .swiper-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.swiper-buttons {
-    position: relative;
-    width: 10%;
+.swiper-navigation {
+    display: flex;
+    gap: var(--space-lg);
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    font-size: var(--fs-text);
+.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
 }
