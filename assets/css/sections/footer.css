@@ -34,12 +34,12 @@
 
 .footer-nav-link:hover,
 .footer-nav-link:hover span {
-    color: #670723;
+    color: var(--color-dark);
 }
 
 .footer-nav-link.active,
 .footer-nav-link.active span {
-    color: #670723;
+    color: var(--color-dark);
 }
 
 .news-letter-form {
