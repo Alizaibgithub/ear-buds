@@ -76,6 +76,6 @@
     background-color: var(--color-dark);
 }
 
-.copy-right-link {
-    color: var(--color-dark);
+.copy-right {
+    text-transform: capitalize;
 }
