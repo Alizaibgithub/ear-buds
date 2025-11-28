@@ -1,5 +1,5 @@
 // ===== Swiper Slider =====
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
