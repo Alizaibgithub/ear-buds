@@ -50,14 +50,14 @@
         <p class="page-subtitle">Redefining Sound. Enhancing Your Experience.</p>
     </section>
     <!-- ===== Section: Brand Intro ===== -->
-    <section class="section brand-intro">
-        <div class="intro-image-container">
-            <img src="../images/about/brand-intro.png" alt="Our Brand" class="intro-image">
+    <section class="section image-with-text brand-intro">
+        <div class="image-with-text__media">
+            <img src="../images/about/brand-intro.png" alt="Our Brand" class="image-with-text__image">
         </div>
 
-        <div class="intro-content">
-            <h2 class="intro-title">Who We Are</h2>
-            <p class="intro-text">
+        <div class="image-with-text__content">
+            <h2 class="image-with-text__title">Who We Are?</h2>
+            <p class="image-with-text__text">
                 We are a modern audio-tech brand focused on creating stylish,
                 high-performance earbuds and headphones. Our goal is simple—deliver
                 premium sound with comfort, durability, and an experience that
@@ -68,46 +68,39 @@
     <!-- ===== Section: Mission & Vision ===== -->
     <section class="section mission-vision">
         <h2 class="section-title">Mission & Vision</h2>
-        <div class="mission-vision-flex">
-            <article class="mission-vision-card">
-                <div class="mission-vision-icon">
+        <div class="cards-grid">
+            <article class="card">
+                <div class="card-media card-media--icon">
                     <i class="fa-brands fa-accusoft"></i>
                 </div>
-                <div class="mission-vision-info">
-                    <h3>Our Mission</h3>
-                    <p>To design audio products that combine immersive sound, modern
+                <div class="card-info">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">To design audio products that combine immersive sound, modern
                         aesthetics, and reliable performance for everyday users.</p>
                 </div>
 
             </article>
-            <article class="mission-vision-card">
-                <div class="mission-vision-icon">
+            <article class="card">
+                <div class="card-media card-media--icon">
                     <i class="fa-brands fa-audible"></i>
                 </div>
-                <div class="mission-vision-info">
-                    <h3>Our Vision</h3>
-                    <p>To become the most trusted audio brand recognized for innovation,
+                <div class="card-info">
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="card-text">To become the most trusted audio brand recognized for innovation,
                         quality, and user-centric technology.</p>
                 </div>
 
             </article>
         </div>
-        <!-- <div class="mv-card">
-            <h3>Our Mission</h3>
-            <p>
-                To design audio products that combine immersive sound, modern
-                aesthetics, and reliable performance for everyday users.
-            </p>
-        </div>
-
-        <div class="mv-card">
-            <h3>Our Vision</h3>
-            <p>
-                To become the most trusted audio brand recognized for innovation,
-                quality, and user-centric technology.
-            </p>
-        </div> -->
     </section>
+
+    <!-- ===== Section: CTA ===== -->
+    <!-- <section class="about-cta section">
+            <div class="container">
+                <h2>Your Sound Journey Starts Here</h2>
+                <a href="products.html" class="btn btn-primary">Explore Products</a>
+            </div>
+        </section> -->
     <!-- ===== Section: Footer ===== -->
     <footer class="section footer flex flex-col gap-lg">
         <hr class="footer-divider" />
@@ -170,6 +163,10 @@
             </div>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
