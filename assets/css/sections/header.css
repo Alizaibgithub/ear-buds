@@ -15,19 +15,19 @@
 }
 
 .header-icon {
-    color: var(--icon-color-primary);
+    color: var(--color-primary);
 }
 
 .nav-link {
-    padding: var(--btn-padding);
+    padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-pill);
-    transition: all var(--transition-fast);
+    transition: var(--transition);
 }
 
 .nav-link:hover {
-    background-color: var(--btn-secondary-bg-color);
+    background-color: var(--color-primary);
 }
 
 .nav-link.active {
-    background-color: var(--btn-secondary-bg-color);
+    background-color: var(--color-primary);
 }

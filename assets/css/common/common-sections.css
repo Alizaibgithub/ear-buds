@@ -1,6 +1,6 @@
 .section {
-    padding: var(--section-padding);
-    background: var(--color-dark);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: var(--color-bg);
 }
 
 .hero,
@@ -11,14 +11,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--space-lg);
+    gap: var(--spacing-lg);
 }
 
 .section-title {
     align-self: flex-start;
     border-bottom: 2px solid var(--color-primary);
-    font-size: var(--fs-text);
-    color: var(--color-secondary);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
     text-transform: uppercase;
 }
 
@@ -27,9 +27,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: var(--btn-width);
-    max-width: var(--btn-max-width);
-    padding: var(--btn-padding);
+    width: 10rem;
+    max-width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
     border: none;
     border-radius: var(--radius-md);
     text-transform: uppercase;
@@ -37,36 +37,36 @@
 }
 
 .btn-primary {
-    background-color: var(--btn-primary-bg-color);
-    color: var(--btn-primary-text-color);
+    background-color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .btn-primary span {
-    color: var(--btn-primary-text-color);
+    color: var(--color-primary);
 }
 
 .btn-secondary {
-    background-color: var(--btn-secondary-bg-color);
-    color: var(--btn-secondary-text-color);
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .btn-circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--btn-circle-size);
-    height: var(--btn-circle-size);
-    padding: var(--space-sm);
-    border-radius: var(--radius-circle);
-    background-color: var(--btn-secondary-bg-color);
-    color: var(--color-secondary);
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-full);
+    background-color: var(--color-primary);
+    color: #ffffff;
 }
 
 .action-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--space-lg);
+    gap: var(--spacing-lg);
 }
 
 /* ===== Swiper Slider ===== */
@@ -74,7 +74,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: var(--space-md);
+    gap: var(--spacing-md);
 }
 
 .swiper-bottom {
@@ -85,7 +85,7 @@
 
 .swiper-navigation {
     display: flex;
-    gap: var(--space-lg);
+    gap: var(--spacing-lg);
 }
 
 .swiper-button-disabled {

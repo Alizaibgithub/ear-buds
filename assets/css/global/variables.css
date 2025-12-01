@@ -1,60 +1,30 @@
 /* ===== CSS Variables (Root) ===== */
 :root {
-        /* ===== Colors ===== */
+        /* === Colors === */
         --color-primary: #cf0f47;
-        --color-secondary: #ffffff;
-        --color-dark: #000000;
+        --color-black: #000000;
+        --color-white: #ffffff;
+        --color-bg: #000000;
+        --color-text: #ffffff;
 
-        /* ===== Typography ===== */
-        --font-main: "Karantina", sans-serif;
-        --fs-sm: 1.2rem;
-        --fs-text: 1.5rem;
-        --fs-heading: 2rem;
-        --fs-xl: 8rem;
+        /* === Typography === */
+        --font-size-base: 1.5rem;
+        --font-size-lg: 2rem;
+        --font-size-xl: 8rem;
 
-        /* ===== Buttons ===== */
-        --btn-width: 10rem;
-        --btn-max-width: 100%;
-        --btn-primary-bg-color: var(--color-secondary);
-        --btn-primary-text-color: var(--color-primary);
-        --btn-secondary-bg-color: var(--color-primary);
-        --btn-secondary-text-color: var(--color-secondary);
-        --btn-circle-size: 2.5rem;
+        /* === Spacing === */
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 5rem;
 
-        /* ===== Gradients ===== */
-        --gradient-surface-section: radial-gradient(34.02% 44.73% at 50% 55.27%,
-                        var(--color-primary) 0%,
-                        var(--color-dark) 100%);
-        --gradient-surface-card: linear-gradient(180deg,
-                        var(--color-primary) -2.32%,
-                        rgba(207, 15, 71, 0) 86.28%);
-        --gradient-surface-overlay: linear-gradient(90deg,
-                        var(--color-primary) 1.71%,
-                        rgba(255, 255, 255, 0) 100%);
-
-        /* ===== Icons ===== */
-        --icon-color-primary: var(--color-primary);
-        --icon-color-secondary: var(--color-secondary);
-
-        /* ===== Spacing ===== */
-        --space-sm: 0.5rem;
-        --space-md: 1rem;
-        --space-lg: 1.5rem;
-        --space-xl: 5rem;
-        --section-padding: var(--space-md) var(--space-xl);
-        --btn-padding: var(--space-sm) var(--space-md);
-
-        /* ===== Radius ===== */
-        --radius-pill: 30px;
-        --radius-card: 17px;
+        /* === Border Radius === */
         --radius-sm: 6px;
         --radius-md: 12px;
-        --radius-circle: 50%;
+        --radius-lg: 17px;
+        --radius-pill: 30px;
+        --radius-full: 50%;
 
-        /* ===== Shadows ===== */
-
-        /* ===== Effects ===== */
-        --transition-fast: 0.3s ease-in-out;
-
-        /* ===== Layout ===== */
+        /* === Transitions === */
+        --transition: 0.3s ease-in-out;
 }

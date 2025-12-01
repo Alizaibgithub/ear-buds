@@ -1,6 +1,8 @@
 /* ===== Section: Hero ===== */
 .hero {
-    background: var(--gradient-surface-section);
+    background: radial-gradient(34.02% 44.73% at 50% 55.27%,
+            var(--color-primary) 0%,
+            var(--color-bg) 100%);
 }
 
 .hero-content {
