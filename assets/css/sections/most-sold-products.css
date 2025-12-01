@@ -5,9 +5,13 @@
     width: 100%;
     gap: var(--spacing-xl) var(--spacing-lg);
     margin-top: 10%;
+    /* display: flex;
+        flex-flow: row wrap;
+        gap: var(--spacing-lg); */
 }
 
 .product-card {
+    flex: 1 1 30%;
     padding: 0 var(--spacing-md);
     border-radius: var(--radius-lg);
     background: linear-gradient(180deg,
