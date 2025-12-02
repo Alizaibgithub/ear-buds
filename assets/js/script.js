@@ -1,5 +1,6 @@
 // ===== Swiper Slider =====
-var swiper = new Swiper(".swiper", {
+// ===== Section: New Products =====
+var newProductSwiper = new Swiper(".new-product-swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -7,28 +8,47 @@ var swiper = new Swiper(".swiper", {
     disableOnInteraction: false,
   },
   navigation: {
-    nextEl: ".swiper-btn-next",
-    prevEl: ".swiper-btn-prev",
+    nextEl: ".new-product-swiper-btn-next",
+    prevEl: ".new-product-swiper-btn-prev",
   },
 });
 
-// var swiper = new Swiper(".swiper", {
-//   slidesPerView: 3,
-//   direction: getDirection(),
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   on: {
-//     resize: function () {
-//       swiper.changeDirection(getDirection());
-//     },
-//   },
-// });
+// ===== Section: New Deal =====
+var newDealSwiper = new Swiper(".new-deal-swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".new-deal-swiper-btn-next",
+    prevEl: ".new-deal-swiper-btn-prev",
+  },
+});
 
-// function getDirection() {
-//   var windowWidth = window.innerWidth;
-//   var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
-
-//   return direction;
-// }
+// ===== Section: Team =====
+var teamSwiper = new Swiper(".team-swiper", {
+  spaceBetween: 30,
+  loop: true,
+  watchOverflow: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".team-swiper-btn-next",
+    prevEl: ".team-swiper-btn-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
