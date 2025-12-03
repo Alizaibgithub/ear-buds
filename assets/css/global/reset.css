@@ -31,7 +31,9 @@ span,
 ul,
 li,
 a,
+label,
 input,
+textarea,
 button {
     font-size: var(--font-size-base);
     color: var(--color-text);

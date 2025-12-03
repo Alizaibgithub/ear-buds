@@ -1,0 +1,51 @@
+/* =====Section: Contact Form===== */
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    width: 100%;
+    max-width: 40rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.form-required {
+    color: var(--color-primary);
+    font-size: var(--font-size-base);
+}
+
+.form-input,
+.form-textarea {
+    padding: var(--spacing-sm);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    background: rgba(207, 15, 71, 0.05);
+    border-color: var(--color-primary);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 6rem;
+    max-height: 15rem;
+}
+
+.btn-submit {
+    align-self: center;
+    justify-content: center;
+}
