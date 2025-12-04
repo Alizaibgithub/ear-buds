@@ -45,12 +45,11 @@
 .image-with-text {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: var(--spacing-lg);
 }
 
 .image-with-text__media {
-    flex: 1 1 35%;
+    flex: 1 1 37%;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
@@ -67,6 +66,14 @@
 
 .image-with-text__title {
     color: var(--color-primary);
+}
+
+.image-with-text__text {
+    margin-bottom: var(--spacing-sm);
+}
+
+.image-with-text__text:last-child {
+    margin-bottom: 0;
 }
 
 /* =====Section: Call to Action===== */
