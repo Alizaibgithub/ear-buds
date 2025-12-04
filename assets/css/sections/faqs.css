@@ -1,0 +1,96 @@
+/* ===== FAQ Section ===== */
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 800px;
+    width: 100%;
+}
+
+.faq-details {
+    background: transparent;
+}
+
+.faq-item {
+    border: 2px solid rgba(207, 15, 71, 0.3);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(207, 15, 71, 0.6);
+}
+
+/* ===== FAQ Question ===== */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    padding: var(--spacing-md);
+}
+
+.faq-question:hover {
+    background: rgba(207, 15, 71, 0.08);
+}
+
+.faq-question-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+/* ===== FAQ Icon ===== */
+.faq-icon {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    color: var(--color-primary);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.faq-details[open] .faq-icon {
+    transform: rotate(180deg);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.faq-details[open] {
+    background: rgba(207, 15, 71, 0.1);
+}
+
+/* ===== FAQ Answer ===== */
+.faq-answer {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    animation: fadeIn 0.3s ease;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
