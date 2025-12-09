@@ -16,6 +16,8 @@
 .most-sold-products,
 .products,
 .new-products,
+.new-arrivals,
+.deals,
 .new-deal {
     display: flex;
     flex-direction: column;
@@ -125,6 +127,11 @@
     background-color: #E53935;
 }
 
+.sale-percent {
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
 .product-image {
     position: relative;
     top: -35%;
@@ -150,6 +157,22 @@
     font-size: var(--font-size-base);
     color: var(--color-text);
     text-transform: capitalize;
+}
+
+.product-price {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: baseline;
+}
+
+.deals .price-regular .price-currency,
+.deals .price-regular .price-amount {
+    color: #888;
+}
+
+.deals .price-regular {
+    text-decoration: line-through;
+    text-decoration-color: #888;
 }
 
 /* =====Section: Call to Action===== */
