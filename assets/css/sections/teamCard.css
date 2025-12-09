@@ -6,6 +6,10 @@
     padding-top: var(--spacing-md);
 }
 
+.category-swiper {
+    width: 100%;
+}
+
 .team-card {
     display: flex;
     flex-direction: column;

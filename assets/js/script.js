@@ -52,3 +52,28 @@ var teamSwiper = new Swiper(".team-swiper", {
     },
   },
 });
+// ===== Section: Category =====
+var categorySwiper = new Swiper(".category-swiper", {
+  spaceBetween: 30,
+  loop: true,
+  watchOverflow: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".category-swiper-btn-next",
+    prevEl: ".category-swiper-btn-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
