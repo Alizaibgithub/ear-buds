@@ -94,12 +94,35 @@
 }
 
 .product-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: var(--radius-lg);
     background: linear-gradient(180deg,
             var(--color-primary) -2.32%,
             rgba(114, 57, 73, 0) 86.28%);
+}
+
+.product-badge {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 10;
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.badge-new {
+    background-color: #D1476E;
+}
+
+.badge-sale {
+    background-color: #E53935;
 }
 
 .product-image {
