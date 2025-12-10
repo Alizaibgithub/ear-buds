@@ -46,7 +46,34 @@
         <h1 class="page-title">Our Products</h1>
         <p class="page-subtitle">Explore our wide range of products, from best-sellers to the latest arrivals.</p>
     </section>
-    <!-- ===== Section: Most Sold Products ===== -->
+    <!-- ===== Section: Products Toolbar ===== -->
+    <section class="section products-toolbar-section">
+        <div class="products-toolbar">
+            <div class="toolbar-left">
+                <button class="btn-filter"><i class="fa-solid fa-filter"></i><span>Show Filters</span></button>
+            </div>
+            <div class="toolbar-right">
+                <div class="view-toggle">
+                    <button class="btn-view view-list"><i class="fa-solid fa-list"></i></button>
+                    <button class="btn-view view-grid active"><i class="fa-solid fa-border-all"></i></button>
+                </div>
+                <div class="sort-wrapper">
+                    <label for="sort-select" class="sort-label">Sort by:</label>
+                    <select id="sort-select" name="sort" class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="best-selling">Best Selling</option>
+                        <option value="name-az">Alphabetically, A-Z</option>
+                        <option value="name-za">Alphabetically, Z-A</option>
+                        <option value="price-low-high">Price, Low to High</option>
+                        <option value="price-high-low">Price, High to Low</option>
+                        <option value="date-old-new">Date, Old to New</option>
+                        <option value="date-new-old">Date, New to Old</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Section: Products ===== -->
     <section class="section products">
         <div class="products-grid">
             <article class="product-card">

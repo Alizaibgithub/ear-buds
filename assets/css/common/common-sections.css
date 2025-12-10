@@ -175,6 +175,29 @@
     text-decoration-color: #888;
 }
 
+/* =====Section: Products Toolbar===== */
+.products-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-text);
+    padding: var(--spacing-md) 0;
+}
+
+.btn-filter,
+.view-toggle,
+.sort-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.toolbar-right {
+    display: flex;
+    gap: var(--spacing-xl);
+}
 
 /* =====Section: Call to Action===== */
 .call-to-action {
