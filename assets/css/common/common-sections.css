@@ -84,7 +84,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    gap: 7rem 4rem;
+    gap: 10rem 4rem;
     margin-top: 12%;
     justify-items: center;
 }
@@ -127,6 +127,10 @@
     background-color: #E53935;
 }
 
+.badge-mostsold {
+    background-color: #C8A33A;
+}
+
 .sale-percent {
     font-size: 1rem;
     color: var(--color-white);
@@ -165,12 +169,12 @@
     align-items: baseline;
 }
 
-.deals .price-regular .price-currency,
-.deals .price-regular .price-amount {
+.sale-card .price-regular .price-currency,
+.sale-card .price-regular .price-amount {
     color: #888;
 }
 
-.deals .price-regular {
+.sale-card .price-regular {
     text-decoration: line-through;
     text-decoration-color: #888;
 }
