@@ -1,33 +1,51 @@
 /* ===== Section: New Deal ===== */
 .deal-slide {
-    position: relative;
     width: 100%;
     height: 30rem;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
 
-.deal-image-container {
-    width: 100%;
-    height: 100%;
+.deal-slide-1 {
+    background: var(--color-primary) url('../../images/deal/deal-slide-1.png') no-repeat center/cover;
 }
 
-.deal-image {
+.deal-slide-2 {
+    background: var(--color-primary) url('../../images/deal/deal-slide-2.png') no-repeat center/cover;
+}
+
+.deal-slide-3 {
+    background: var(--color-primary) url('../../images/deal/deal-slide-3.png') no-repeat center/cover;
+}
+
+.deal-overlay {
     width: 100%;
     height: 100%;
+    background: linear-gradient(90deg,
+            var(--color-primary) 1.71%,
+            rgba(255, 255, 255, 0) 100%);
 }
 
 .deal-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
-    padding: var(--spacing-md);
-    background: linear-gradient(90deg,
-            var(--color-primary) 1.71%,
-            rgba(255, 255, 255, 0) 100%);
+    padding-left: var(--spacing-lg);
     text-transform: uppercase;
+}
+
+.deal-badge,
+.deal-description {
+    font-size: var(--font-size-lg);
+}
+
+.deal-percentage,
+.deal-discount {
+    font-size: 5rem;
+}
+
+.deal-label {
+    font-size: 14rem;
 }
