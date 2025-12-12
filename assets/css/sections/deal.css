@@ -1,5 +1,5 @@
 /* ===== Section: New Deal ===== */
-.new-deal-slide {
+.deal-slide {
     position: relative;
     width: 100%;
     height: 30rem;
@@ -7,17 +7,17 @@
     overflow: hidden;
 }
 
-.new-deal-image-container {
+.deal-image-container {
     width: 100%;
     height: 100%;
 }
 
-.new-deal-image {
+.deal-image {
     width: 100%;
     height: 100%;
 }
 
-.new-deal-content {
+.deal-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,8 +30,4 @@
             var(--color-primary) 1.71%,
             rgba(255, 255, 255, 0) 100%);
     text-transform: uppercase;
-}
-
-.new-deal-text {
-    font-size: var(--font-size-xl);
 }

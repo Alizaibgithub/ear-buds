@@ -18,7 +18,7 @@
 .new-products,
 .new-arrivals,
 .deals,
-.new-deal {
+.deal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +280,7 @@
 
 /* ===== Swiper Slider ===== */
 .new-product-swiper,
-.new-deal-swiper {
+.deal-swiper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -288,14 +288,14 @@
 }
 
 .new-product-swiper-bottom,
-.new-deal-swiper-bottom {
+.deal-swiper-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .new-product-swiper-navigation,
-.new-deal-swiper-navigation {
+.deal-swiper-navigation {
     display: flex;
     gap: var(--spacing-lg);
 }

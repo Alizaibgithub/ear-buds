@@ -14,7 +14,7 @@ var newProductSwiper = new Swiper(".new-product-swiper", {
 });
 
 // ===== Section: New Deal =====
-var newDealSwiper = new Swiper(".new-deal-swiper", {
+var newDealSwiper = new Swiper(".deal-swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -22,8 +22,8 @@ var newDealSwiper = new Swiper(".new-deal-swiper", {
     disableOnInteraction: false,
   },
   navigation: {
-    nextEl: ".new-deal-swiper-btn-next",
-    prevEl: ".new-deal-swiper-btn-prev",
+    nextEl: ".deal-swiper-btn-next",
+    prevEl: ".deal-swiper-btn-prev",
   },
 });
 
