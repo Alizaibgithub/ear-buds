@@ -45,37 +45,39 @@
 }
 
 /* ===== Section: Image With Text ===== */
-.image-with-text {
+.image-text {
     display: flex;
+    justify-content: center;
+    gap: 2rem 8rem;
     flex-wrap: wrap;
-    gap: var(--spacing-lg);
 }
 
-.image-with-text__media {
-    flex: 1 1 37%;
+.image-text__media {
+    flex: 1 1 40%;
+    height: 100%;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
 
-.image-with-text__image {
+.image-text__image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-.image-with-text__content {
-    flex: 1 1 60%;
+.image-text__content {
+    flex: 1 1 40%;
 }
 
-.image-with-text__title {
+.image-text__title {
     color: var(--color-primary);
 }
 
-.image-with-text__text {
+.image-text__text {
     margin-bottom: var(--spacing-sm);
 }
 
-.image-with-text__text:last-child {
+.image-text__text:last-child {
     margin-bottom: 0;
 }
 
