@@ -171,12 +171,12 @@
     align-items: baseline;
 }
 
-.sale-card .price-regular .price-currency,
-.sale-card .price-regular .price-amount {
+.sale-product .price-regular .price-currency,
+.sale-product .price-regular .price-amount {
     color: #888;
 }
 
-.sale-card .price-regular {
+.sale-product .price-regular {
     text-decoration: line-through;
     text-decoration-color: #888;
 }
