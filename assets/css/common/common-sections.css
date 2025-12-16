@@ -12,13 +12,22 @@
     text-transform: uppercase;
 }
 
+.section-heading {
+    display: inline-block;
+    align-self: center;
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
 .hero,
 .most-sold-products,
 .products,
 .new-products,
 .new-arrivals,
 .deals,
-.deal {
+.deal,
+.related-products {
     display: flex;
     flex-direction: column;
     justify-content: center;
