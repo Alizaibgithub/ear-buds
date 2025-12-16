@@ -88,29 +88,46 @@
                     </div>
                 </header>
                 <div class="product-options">
-                    <div class="product-option">
-                        <label for="" class="product-option-label">Color:</label>
-                        <div class="product-option-values">
-                            <input type="radio">
-                            <input type="radio">
-                            <input type="radio">
+                    <div class="option-group option-color-swatches">
+                        <div class="option-header">
+                            <span class="option-label">Color:</span>
+                            <span class="option-selected color-selected">White</span>
+                        </div>
+                        <div class="option-values color-swatches">
+                            <div class="color-swatch">
+                                <input type="radio" name="color" value="White" id="white" class="color-swatch__input"
+                                    checked>
+                                <label for="white" class="color-swatch__label">
+                                    <span class="color-swatch__visual color-swatch__visual--white"></span>
+                                </label>
+                            </div>
+                            <div class="color-swatch">
+                                <input type="radio" name="color" value="black" id="black" class="color-swatch__input">
+                                <label for="black" class="color-swatch__label">
+                                    <span class="color-swatch__visual color-swatch__visual--black"></span>
+                                </label>
+                            </div>
+                            <div class="color-swatch">
+                                <input type="radio" name="color" value="red" id="red" class="color-swatch__input">
+                                <label for="red" class="color-swatch__label">
+                                    <span class="color-swatch__visual color-swatch__visual--red"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="product-quantity-selector">
-                    <label for="" class="quantity-label">Quantity</label>
+                    <label for="quantity-count" class="quantity-label">Quantity</label>
                     <div class="quantity-selector-wrapper">
-                        <button></button>
-                        <input type="text">
-                        <button></button>
+                        <button class="btn-minus"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" name="quantity-count" id="quantity-count" class="quantity-count" value="1">
+                        <button class="btn-plus"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
                 <div class="product-actions">
-                    <button class="btn btn-primary"><span>Add to Cart</span><i
-                            class="fa-solid fa-bag-shopping"></i></button>
+                    <button type="submit" class="btn btn-secondary btn-atc"><span>Add to Cart</span></button>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- ===== Section: Footer ===== -->

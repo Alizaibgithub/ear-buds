@@ -237,6 +237,7 @@
 /* ===== Buttons ===== */
 .btn {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: var(--spacing-md);
     max-width: 100%;

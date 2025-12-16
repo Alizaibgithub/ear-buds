@@ -38,9 +38,14 @@ input,
 textarea,
 button,
 select,
-option {
+option,
+legend {
     font-size: var(--font-size-base);
     color: var(--color-text);
+}
+
+fieldset {
+    border: none;
 }
 
 a {
