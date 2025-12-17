@@ -78,6 +78,7 @@ var categorySwiper = new Swiper(".category-swiper", {
   },
 });
 
+// ===== Cart Drawer Functionality =====
 const body = document.body;
 const cartButton = document.querySelector(".header-btn-cart");
 const cartSection = document.querySelector(".cart-drawer-section");
