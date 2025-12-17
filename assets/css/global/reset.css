@@ -1,6 +1,11 @@
 /* ===== CSS Reset ===== */
 @font-face {
-    font-family: "Karantina";
+    font-family: "Karantina-Regular";
+    src: url("/assets/fonts/Karantina-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Karantina-Bold";
     src: url("/assets/fonts/Karantina-Bold.ttf");
 }
 
@@ -8,7 +13,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Karantina", sans-serif;
+    font-family: "Karantina-Regular", sans-serif;
 }
 
 body {
@@ -24,6 +29,16 @@ h6 {
     font-size: var(--font-size-lg);
     color: var(--color-text);
     text-transform: uppercase;
+    font-family: "Karantina-Bold", sans-serif;
+}
+
+a,
+button,
+button span,
+label,
+select,
+option {
+    font-family: "Karantina-Bold", sans-serif;
 }
 
 p,
@@ -44,6 +59,8 @@ legend {
     color: var(--color-text);
 }
 
+
+
 fieldset {
     border: none;
 }
@@ -51,6 +68,10 @@ fieldset {
 a {
     cursor: pointer;
     text-decoration: none;
+}
+
+a span {
+    font-family: "Karantina-Bold", sans-serif;
 }
 
 button {

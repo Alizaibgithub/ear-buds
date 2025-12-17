@@ -22,6 +22,7 @@
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-pill);
     transition: var(--transition);
+    font-family: "Karantina-Bold", sans-serif;
 }
 
 .nav-link:hover {

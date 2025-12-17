@@ -40,8 +40,8 @@
     background-color: var(--color-black);
 }
 
-.item-count-wraper,
-.item-count {
+.cart-item__count-wraper,
+.cart-item__count {
     color: #888;
 }
 

@@ -25,6 +25,7 @@
 
 .footer-nav-link {
     transition: all var(--transition);
+    font-family: "Karantina-Bold", sans-serif;
 }
 
 .footer-nav-link span {
@@ -78,4 +79,8 @@
 
 .copy-right {
     text-transform: capitalize;
+}
+
+.copy-right span {
+    font-family: "Karantina-Bold", sans-serif;
 }
