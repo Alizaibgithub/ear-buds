@@ -1,3 +1,7 @@
+body.no-scroll {
+    overflow: hidden;
+}
+
 .section {
     padding: var(--spacing-lg) var(--spacing-xl);
     background: var(--color-bg);
@@ -405,4 +409,23 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ===== Background Overlay ===== */
+.background-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: 9998;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.background-overlay.active {
+    display: block;
+    opacity: 1;
 }
