@@ -3,7 +3,7 @@
     top: 0;
     right: 0;
     z-index: 9999;
-    max-width: 28rem;
+    max-width: 25rem;
     width: 90%;
     height: 100%;
     background-color: var(--color-black);
@@ -75,8 +75,8 @@
 
 .cart-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: var(--spacing-sm);
     padding: var(--spacing-md);
 }
 
