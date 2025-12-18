@@ -34,10 +34,7 @@ h6 {
 
 a,
 button,
-button span,
-label,
-select,
-option {
+button span {
     font-family: "Karantina-Bold", sans-serif;
 }
 
@@ -59,6 +56,16 @@ legend {
     color: var(--color-text);
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    accent-color: #cf0f47;
+    cursor: pointer;
+}
 
 
 fieldset {

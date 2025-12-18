@@ -214,6 +214,10 @@ body.no-scroll {
     gap: var(--spacing-md);
 }
 
+.btn-filter span {
+    font-family: "Karantina-Regular", sans-serif;
+}
+
 .toolbar-right {
     display: flex;
     gap: var(--spacing-xl);

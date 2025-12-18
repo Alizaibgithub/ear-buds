@@ -19,4 +19,5 @@
 @import './sections/faqs.css';
 @import './sections/categoryCard.css';
 @import './sections/product-details.css';
-@import './sections/cartDrawer.css'
+@import './sections/cartDrawer.css';
+@import './sections/checkout.css'
