@@ -91,11 +91,11 @@
 .quantity-selector-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 2px solid #fff;
     border-radius: var(--radius-sm);
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 
 .quantity-count {
@@ -117,6 +117,10 @@
 
 .quantity-count::-webkit-inner-spin-button {
     display: none;
+}
+
+.btn-cart-item_delete {
+    font-size: 1rem;
 }
 
 .product-options {

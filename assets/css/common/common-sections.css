@@ -429,3 +429,7 @@ body.no-scroll {
     display: block;
     opacity: 1;
 }
+
+.cart-item__actions .product-quantity-selector {
+    max-width: 50%;
+}
