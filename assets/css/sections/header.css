@@ -32,3 +32,25 @@
 .nav-link.active {
     background-color: var(--color-primary);
 }
+
+.header-btn-cart {
+    position: relative;
+}
+
+.cart-badge {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+}
+
+.cart-badge .cart-item__count {
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
