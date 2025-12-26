@@ -21,11 +21,11 @@
                     <a href="/">
                         <h1 class="site-name">EarBuds</h1>
                     </a>
-                    <button type="button" class="checkout-btn-cart">
+                    <button type="button" class="checkout__btn-cart">
                         <i class="fa-solid fa-bag-shopping"></i> </button>
                 </header>
                 <main class="customer-details__main">
-                    <form class="shipping-form">
+                    <form action="" method="post" class="shipping-form">
                         <div class="contact-wrapper form-group">
                             <div class="contact__header">
                                 <h2 class="contact-heading">
@@ -37,7 +37,7 @@
                                 <input type="email" id="name" name="name" class="form-input" placeholder="Email"
                                     required>
                             </div>
-                            <div class="email-confirm-checkbox">
+                            <div class="form-checkbox">
                                 <input type="checkbox" id="email-confirm" name="email-confirm" checked>
                                 <label for="email-confirm" class="email-confirm-label">Email me with news and
                                     offers</label>
@@ -67,9 +67,9 @@
                                 <input type="text" id="zip-code" name="zip-code" class="form-input"
                                     placeholder="Postal Code (optional)">
                             </div>
-                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone">
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone" required>
                         </div>
-                        <div class="save-info-checkbox">
+                        <div class="form-checkbox">
                             <input type="checkbox" id="save-info" name="save-info" checked>
                             <label for="save-info" class="save-info-label">Save this information for next time</label>
                         </div>
@@ -108,8 +108,9 @@
                                 </div>
                                 <div class="billing-address form-group">
                                     <div class="region-select-wrapper">
-                                        <label for="region-select" class="region-label">Country / Region</label>
-                                        <select id="region-select" name="region-select" class="region-select" required>
+                                        <label for="billing-region-select" class="region-label">Country / Region</label>
+                                        <select id="billing-region-select" name="billing-region-select"
+                                            class="region-select" required>
                                             <option value="punjab" selected>Punjab</option>
                                             <option value="kpk">KPK</option>
                                             <option value="balochistan">Balochistan</option>
@@ -117,20 +118,21 @@
                                         </select>
                                     </div>
                                     <div class="full-name-input">
-                                        <input type="text" id="fName" name="fName" class="form-input"
+                                        <input type="text" id="billing-fName" name="fbilling-Name" class="form-input"
                                             placeholder="First Name" required>
-                                        <input type="text" id="lName" name="lName" class="form-input"
+                                        <input type="text" id="billing-lName" name="billing-lName" class="form-input"
                                             placeholder="Last Name" required>
                                     </div>
-                                    <input type="text" id="address" name="address" class="form-input"
+                                    <input type="text" id="billing-address" name="billing-address" class="form-input"
                                         placeholder="Address" required>
                                     <div class="city-input">
-                                        <input type="text" id="city" name="city" class="form-input" placeholder="City"
-                                            required>
-                                        <input type="text" id="zip-code" name="zip-code" class="form-input"
-                                            placeholder="Postal Code (optional)">
+                                        <input type="text" id="billing-city" name="billing-city" class="form-input"
+                                            placeholder="City" required>
+                                        <input type="text" id="billing-zip-code" name="billing-zip-code"
+                                            class="form-input" placeholder="Postal Code (optional)">
                                     </div>
-                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone">
+                                    <input type="tel" id="billing-phone" name="billing-phone" class="form-input"
+                                        placeholder="Phone" required>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +142,7 @@
                     </form>
                 </main>
                 <footer class="customer-details__footer">
-                    <nav class="order-nav order-nav-pages">
+                    <nav class="order-nav">
                         <ul>
                             <li><a href="/assets/pages/shipping-delivery.html" class="order-nav-link">Shipping &
                                     Delivery</a></li>
@@ -161,7 +163,7 @@
         <aside class="order-review">
             <div class="order-review__container">
                 <div class="checkout-items">
-                    <form class="cart-items__form">
+                    <form action="" method="post" class="cart-items__form">
                         <div class="cart-item sale-product">
                             <div class="cart-item__image-wrapper">
                                 <a href="assets/pages/product-details.html">
@@ -265,9 +267,36 @@
                     </form>
                 </div>
                 <div class="discount-code__wrapper">
-                    <form action=""></form>
+                    <form action="" method="post" class="discount-code__form">
+                        <input name="discount-code" type="text" class="discount-code-input form-input"
+                            placeholder="Discount Code">
+                        <button type="submit" class="btn btn-secondary btn-discount-code">Apply</button>
+                    </form>
                 </div>
-                <div class="checkout-total"></div>
+                <div class="checkout-total__wrapper">
+                    <div class="cart-total">
+                        <div class="cart-total-info">
+                            <h2 class="cart-total-title">Subtotal</h2>
+                            <span class="cart-total-info-separator">·</span>
+                            <span class="cart-item__count-wraper"><span class="cart-item__count">4</span> Items</span>
+                        </div>
+                        <div class="cart-total-price">
+                            <span class="price-currency">PKR</span>
+                            <span class="price-amount">17,237</span>
+                        </div>
+                    </div>
+                    <div class="shipping-amount">
+                        <h2 class="shipping-title">Shipping</h2>
+                        <p>Free</p>
+                    </div>
+                    <div class="checkout-total">
+                        <h2 class="checkout-total-title">Total</h2>
+                        <div class="checkout-total-price">
+                            <span class="price-currency">PKR</span>
+                            <span class="price-amount">17,237</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </aside>
     </section>

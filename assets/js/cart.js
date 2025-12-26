@@ -164,7 +164,7 @@ document.body.insertAdjacentHTML(
         <div class="cart-footer">
             <div class="cart-summary">
                 <div class="cart-total">
-                    <h2 class="cart-total-heading">Total</h2>
+                    <h2 class="cart-total-title">Subtotal</h2>
                     <div class="cart-total-price">
                         <span class="price-currency">PKR</span>
                         <span class="price-amount">17,237</span>
