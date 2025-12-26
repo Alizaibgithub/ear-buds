@@ -12,10 +12,15 @@
     background-color: #090909;
     border-right: 1px solid #888;
     padding: 2rem;
-    padding-left: 7rem;
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
     gap: var(--spacing-md);
+}
+
+.customer-details__container,
+.order-review__container {
+    width: 75%;
 }
 
 .customer-details__header {
@@ -178,7 +183,6 @@
     top: 0;
     right: 0;
     padding: 2rem;
-    padding-right: 7rem;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
