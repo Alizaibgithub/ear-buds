@@ -7,7 +7,7 @@
     background-color: var(--color-bg);
 }
 
-.order-content {
+.customer-details {
     height: 100%;
     background-color: #090909;
     border-right: 1px solid #888;
@@ -18,23 +18,10 @@
     gap: var(--spacing-md);
 }
 
-.order-content__header {
+.customer-details__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.order-summary {
-    width: 50%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 2rem;
-    padding-right: 7rem;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
 }
 
 .contact__header {
@@ -48,7 +35,7 @@
     font-family: "Karantina-Regular", sans-serif;
 }
 
-.order-form {
+.shipping-form {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
@@ -182,4 +169,22 @@
 .order-nav-link {
     font-family: "Karantina-Regular", sans-serif;
     text-decoration: underline;
+}
+
+.order-review {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    padding-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.checkout-items {
+    height: 60%;
+    overflow: auto;
 }
