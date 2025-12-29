@@ -21,11 +21,11 @@
                     <a href="/">
                         <h1 class="site-name">EarBuds</h1>
                     </a>
-                    <button type="button" class="checkout__btn-cart">
+                    <button type="button" class="checkout-btn-cart">
                         <i class="fa-solid fa-bag-shopping"></i> </button>
                 </header>
                 <main class="customer-details__main">
-                    <form action="" method="post" class="shipping-form">
+                    <form action="" method="post" class="customer-details-form">
                         <div class="contact-wrapper form-group">
                             <div class="contact__header">
                                 <h2 class="contact-heading">
@@ -34,7 +34,7 @@
                                 <a href="" class="sign-in-link">Sign in</a>
                             </div>
                             <div class="contact-field">
-                                <input type="email" id="name" name="name" class="form-input" placeholder="Email"
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Email"
                                     required>
                             </div>
                             <div class="form-checkbox">
@@ -43,8 +43,8 @@
                                     offers</label>
                             </div>
                         </div>
-                        <div class="delivery-wrapper form-group">
-                            <h2 class="delivery-heading">Delivery</h2>
+                        <div class="shipping-wrapper form-group">
+                            <h2 class="shipping-heading">Shipping Address</h2>
                             <div class="region-select-wrapper">
                                 <label for="region-select" class="region-label">Country / Region</label>
                                 <select id="region-select" name="region-select" class="region-select" required>
@@ -77,7 +77,7 @@
                             <h2 class="shipping-method-heading">
                                 Shipping Method
                             </h2>
-                            <div class="shipping-method">
+                            <div class="shipping-method-text">
                                 <p>Standard</p>
                                 <p>Free</p>
                             </div>
@@ -118,7 +118,7 @@
                                         </select>
                                     </div>
                                     <div class="full-name-input">
-                                        <input type="text" id="billing-fName" name="fbilling-Name" class="form-input"
+                                        <input type="text" id="billing-fName" name="billing-fName" class="form-input"
                                             placeholder="First Name" required>
                                         <input type="text" id="billing-lName" name="billing-lName" class="form-input"
                                             placeholder="Last Name" required>
@@ -163,118 +163,116 @@
         <aside class="order-review">
             <div class="order-review__container">
                 <div class="checkout-items">
-                    <form action="" method="post" class="cart-items__form">
-                        <div class="cart-item sale-product">
-                            <div class="cart-item__image-wrapper">
-                                <img src="/assets/images/products/headphones/basspods-max.png" alt="Earpods Pro"
-                                    class="cart-item__image">
-                                <span class="cart-item-count">1</span>
-                            </div>
-                            <div class="cart-item__content">
-                                <div class="cart-item__info">
-                                    <h3 class="product-title">BassPods Max</h3>
-                                    <div class="color-swatches-header">
-                                        <span class="color-swatches-label">Color:</span>
-                                        <span class="color-selected">White</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span class="price-regular">
-                                            <span class="price-currency">PKR</span>
-                                            <span class="price-amount">7,999</span>
-                                        </span>
-                                        <span class="price-sale">
-                                            <span class="price-currency">PKR</span>
-                                            <span class="price-amount">4,799</span>
-                                        </span>
-                                    </div>
+                    <div class="cart-item sale-product">
+                        <div class="cart-item__image-wrapper">
+                            <img src="/assets/images/products/headphones/basspods-max.png" alt="BassPods Max"
+                                class="cart-item__image">
+                            <span class="cart-item-count">1</span>
+                        </div>
+                        <div class="cart-item__content">
+                            <div class="cart-item__info">
+                                <h3 class="product-title">BassPods Max</h3>
+                                <div class="product-variant">
+                                    <span class="color-swatches-label">Color:</span>
+                                    <span class="color-selected">White</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-regular">
+                                        <span class="price-currency">PKR</span>
+                                        <span class="price-amount">7,999</span>
+                                    </span>
+                                    <span class="price-sale">
+                                        <span class="price-currency">PKR</span>
+                                        <span class="price-amount">4,799</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-item">
-                            <div class="cart-item__image-wrapper">
-                                <img src="/assets/images/products/neckband-wireless/neckband-pro.png" alt="Earpods Pro"
-                                    class="cart-item__image">
-                                <span class="cart-item-count">1</span>
-                            </div>
-                            <div class="cart-item__content">
-                                <div class="cart-item__info">
-                                    <h3 class="product-title">Neckband Pro</h3>
-                                    <div class="color-swatches-header">
-                                        <span class="color-swatches-label">Color:</span>
-                                        <span class="color-selected">Black</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span class="price-regular">
-                                            <span class="price-currency">PKR</span>
-                                            <span class="price-amount">4,500</span>
-                                        </span>
-                                    </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item__image-wrapper">
+                            <img src="/assets/images/products/neckband-wireless/neckband-pro.png" alt="Neckband Pro"
+                                class="cart-item__image">
+                            <span class="cart-item-count">1</span>
+                        </div>
+                        <div class="cart-item__content">
+                            <div class="cart-item__info">
+                                <h3 class="product-title">Neckband Pro</h3>
+                                <div class="product-variant">
+                                    <span class="color-swatches-label">Color:</span>
+                                    <span class="color-selected">Black</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-regular">
+                                        <span class="price-currency">PKR</span>
+                                        <span class="price-amount">4,500</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-item sale-product">
-                            <div class="cart-item__image-wrapper">
-                                <img src="/assets/images/products/in-ear-earphones/noisecut-pro.png" alt="Earpods Pro"
-                                    class="cart-item__image">
-                                <span class="cart-item-count">1</span>
-                            </div>
-                            <div class="cart-item__content">
-                                <div class="cart-item__info">
-                                    <h3 class="product-title">NoiseCut Pro</h3>
-                                    <div class="color-swatches-header">
-                                        <span class="color-swatches-label">Color:</span>
-                                        <span class="color-selected">Blue</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span class="price-regular">
-                                            <span class="price-currency">PKR</span>
-                                            <span class="price-amount">5,199</span>
-                                        </span>
-                                        <span class="price-sale">
-                                            <span class="price-currency">PKR</span>
-                                            <span class="price-amount">3,639</span>
-                                        </span>
-                                    </div>
+                    </div>
+                    <div class="cart-item sale-product">
+                        <div class="cart-item__image-wrapper">
+                            <img src="/assets/images/products/in-ear-earphones/noisecut-pro.png" alt="NoiseCut Pro"
+                                class="cart-item__image">
+                            <span class="cart-item-count">1</span>
+                        </div>
+                        <div class="cart-item__content">
+                            <div class="cart-item__info">
+                                <h3 class="product-title">NoiseCut Pro</h3>
+                                <div class="product-variant">
+                                    <span class="color-swatches-label">Color:</span>
+                                    <span class="color-selected">Blue</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-regular">
+                                        <span class="price-currency">PKR</span>
+                                        <span class="price-amount">5,199</span>
+                                    </span>
+                                    <span class="price-sale">
+                                        <span class="price-currency">PKR</span>
+                                        <span class="price-amount">3,639</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="cart-item">
-                            <div class="cart-item__image-wrapper">
-                                <img src="/assets/images/products/earpods/sonicpods-edge.png" alt="Earpods Pro"
-                                    class="cart-item__image">
-                                <span class="cart-item-count">1</span>
-                            </div>
-                            <div class="cart-item__content">
-                                <div class="cart-item__info">
-                                    <h3 class="product-title">SonicPods Edge</h3>
-                                    <div class="color-swatches-header">
-                                        <span class="color-swatches-label">Color:</span>
-                                        <span class="color-selected">Blue</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span class="price-regular">
-                                            <span class="price-currency">PKR</span>
-                                            <span class="price-amount">4,299</span>
-                                        </span>
-                                    </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item__image-wrapper">
+                            <img src="/assets/images/products/earpods/sonicpods-edge.png" alt="SonicPods Edge"
+                                class="cart-item__image">
+                            <span class="cart-item-count">1</span>
+                        </div>
+                        <div class="cart-item__content">
+                            <div class="cart-item__info">
+                                <h3 class="product-title">SonicPods Edge</h3>
+                                <div class="product-variant">
+                                    <span class="color-swatches-label">Color:</span>
+                                    <span class="color-selected">Blue</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price-regular">
+                                        <span class="price-currency">PKR</span>
+                                        <span class="price-amount">4,299</span>
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
-                <div class="discount-code__wrapper">
-                    <form action="" method="post" class="discount-code__form">
+                <div class="discount-code-wrapper">
+                    <form action="" method="post" class="discount-code-form">
                         <input name="discount-code" type="text" class="discount-code-input form-input"
                             placeholder="Discount Code">
                         <button type="submit" class="btn btn-secondary btn-discount-code">Apply</button>
                     </form>
                 </div>
-                <div class="checkout-total__wrapper">
+                <div class="checkout-total-wrapper">
                     <div class="cart-total">
                         <div class="cart-total-info">
                             <h2 class="cart-total-title">Subtotal</h2>
                             <span class="cart-total-info-separator">·</span>
-                            <span class="cart-item__count-wraper"><span class="cart-item__count">4</span> Items</span>
+                            <span class="cart-item-count-wrapper"><span class="cart-item__count">4</span> Items</span>
                         </div>
                         <div class="cart-total-price">
                             <span class="price-currency">PKR</span>
