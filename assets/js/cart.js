@@ -17,7 +17,7 @@ document.body.insertAdjacentHTML(
                 <form class="cart-items__form">
                     <div class="cart-item sale-product">
                         <div class="cart-item__image-wrapper">
-                            <a href="assets/pages/product-details.html">
+                            <a href="/assets/pages/product-details.html">
                                 <img src="/assets/images/products/headphones/basspods-max.png" alt="Earpods Pro"
                                     class="cart-item__image">
                             </a>
@@ -55,7 +55,7 @@ document.body.insertAdjacentHTML(
                     </div>
                     <div class="cart-item">
                         <div class="cart-item__image-wrapper">
-                            <a href="assets/pages/product-details.html">
+                            <a href="#">
                                 <img src="/assets/images/products/neckband-wireless/neckband-pro.png" alt="Earpods Pro"
                                     class="cart-item__image"> </a>
                         </div>
@@ -88,7 +88,7 @@ document.body.insertAdjacentHTML(
                     </div>
                     <div class="cart-item sale-product">
                         <div class="cart-item__image-wrapper">
-                            <a href="assets/pages/product-details.html">
+                            <a href="#">
                                 <img src="/assets/images/products/in-ear-earphones/noisecut-pro.png" alt="Earpods Pro"
                                     class="cart-item__image">
                             </a>
@@ -126,7 +126,7 @@ document.body.insertAdjacentHTML(
                     </div>
                     <div class="cart-item">
                         <div class="cart-item__image-wrapper">
-                            <a href="assets/pages/product-details.html">
+                            <a href="#">
                                 <img src="/assets/images/products/earpods/sonicpods-edge.png" alt="Earpods Pro"
                                     class="cart-item__image">
                             </a>
