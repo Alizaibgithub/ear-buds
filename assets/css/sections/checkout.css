@@ -273,3 +273,16 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.shipping-address-map {
+    height: 13rem;
+}
+
+.customer-name {
+    font-size: var(--font-size-lg);
+}
+
+.site-name,
+.checkout-btn-cart {
+    color: var(--color-primary);
+}
