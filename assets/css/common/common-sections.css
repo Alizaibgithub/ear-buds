@@ -195,6 +195,21 @@ body.no-scroll {
     text-decoration-color: #888;
 }
 
+.cart-item-count {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
+
 /* =====Section: Products Toolbar===== */
 .products-toolbar {
     display: flex;

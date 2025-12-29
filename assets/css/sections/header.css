@@ -37,7 +37,7 @@
     position: relative;
 }
 
-.cart-badge {
+.cart-count {
     width: 1.2rem;
     height: 1.2rem;
     display: flex;
@@ -48,9 +48,6 @@
     right: -50%;
     background-color: var(--color-white);
     border-radius: var(--radius-full);
-}
-
-.cart-badge .cart-item__count {
     font-size: 1.2rem;
     color: var(--color-black);
 }
