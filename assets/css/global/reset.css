@@ -16,6 +16,11 @@
     font-family: "Karantina-Regular", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-bg);
 }

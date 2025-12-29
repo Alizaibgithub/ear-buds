@@ -452,3 +452,22 @@ body.no-scroll {
 .cart-item__actions .product-quantity-selector {
     max-width: 50%;
 }
+
+#btn-scrollToTop {
+    position: fixed;
+    top: 80%;
+    right: 2%;
+    z-index: 9999;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+#btn-scrollToTop.active {
+    opacity: 1;
+    transform: translateX(0%);
+}
