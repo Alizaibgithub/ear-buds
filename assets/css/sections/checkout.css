@@ -256,7 +256,8 @@
     gap: var(--spacing-md);
 }
 
-.order-details-container h2 {
+.order-details-container h2,
+h3 {
     font-size: var(--font-size-base);
 }
 
