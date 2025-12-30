@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/png" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Shopping Cart | EarBuds</title>
+</head>
+
+<body>
+    <!-- ===== Section: Header ===== -->
+    <header class="section header flex-between-center flex-wrap gap-lg">
+        <div class="header-left">
+            <a href="/"><img class="header-logo" src="../images/logo.png" alt="earbuds" /></a>
+        </div>
+        <nav class="main-nav">
+            <ul class="flex-center flex-wrap gap-sm">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/assets/pages/categories.html" class="nav-link">Categories</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <ul class="flex-center flex-wrap gap-md">
+                <li>
+                    <button type="button" class="header-icon header-btn-account">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="header-icon header-btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="header-icon header-btn-cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count">4</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- ===== Section: Cart Page ===== -->
+    <section class="section cart-section">
+        <div class="cart-container">
+            <div class="cart-header cart-page-header">
+                <h2 class="cart-heading">Shopping Cart</h2>
+                <a href="/assets/pages/products.html" class="cart-btn-continue">Continue Shopping</a>
+                <!-- <span class="cart-item__count-wraper"><span class="cart-item__count">4</span> Items</span> -->
+            </div>
+            <div class="cart-body">
+                <div class="cart-items">
+                    <form class="cart-items__form" action="#" method="post">
+                        <div class="cart-item sale-product">
+                            <div class="cart-item__image-wrapper">
+                                <a href="/assets/pages/product-details.html">
+                                    <img src="/assets/images/products/headphones/basspods-max.png" alt="Earpods Pro"
+                                        class="cart-item__image">
+                                </a>
+                            </div>
+
+                            <div class="cart-item__content">
+                                <div class="cart-item__details">
+                                    <div class="cart-item__info">
+                                        <h3 class="product-title">BassPods Max</h3>
+                                        <div class="color-swatches-header">
+                                            <span class="color-swatches-label">Color:</span>
+                                            <span class="color-selected">White</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-price">
+                                        <span class="price-regular">
+                                            <span class="price-currency">PKR</span>
+                                            <span class="price-amount">7,999</span>
+                                        </span>
+                                        <span class="price-sale">
+                                            <span class="price-currency">PKR</span>
+                                            <span class="price-amount">4,799</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item__actions">
+                                    <div class="product-quantity-selector">
+                                        <div class="quantity-selector-wrapper">
+                                            <button type="button" class="btn-quantity btn-minus"
+                                                aria-label="Decrease quantity"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                                min="1" aria-label="Quantity">
+                                            <button type="button" class="btn-quantity btn-plus"
+                                                aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="cart-item__image-wrapper">
+                                <a href="/assets/pages/product-details.html">
+                                    <img src="/assets/images/products/neckband-wireless/neckband-pro.png"
+                                        alt="Neckband Pro" class="cart-item__image">
+                                </a>
+                            </div>
+
+                            <div class="cart-item__content">
+                                <div class="cart-item__details">
+                                    <div class="cart-item__info">
+                                        <h3 class="product-title">Neckband Pro</h3>
+                                        <div class="color-swatches-header">
+                                            <span class="color-swatches-label">Color:</span>
+                                            <span class="color-selected">Black</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-price">
+                                        <span class="price-regular">
+                                            <span class="price-currency">PKR</span>
+                                            <span class="price-amount">4,500</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item__actions">
+                                    <div class="product-quantity-selector">
+                                        <div class="quantity-selector-wrapper">
+                                            <button type="button" class="btn-quantity btn-minus"
+                                                aria-label="Decrease quantity"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                                min="1" aria-label="Quantity">
+                                            <button type="button" class="btn-quantity btn-plus"
+                                                aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item sale-product">
+                            <div class="cart-item__image-wrapper">
+                                <a href="/assets/pages/product-details.html">
+                                    <img src="/assets/images/products/in-ear-earphones/noisecut-pro.png"
+                                        alt="NoiseCut Pro" class="cart-item__image">
+                                </a>
+                            </div>
+
+                            <div class="cart-item__content">
+                                <div class="cart-item__details">
+                                    <div class="cart-item__info">
+                                        <h3 class="product-title">NoiseCut Pro</h3>
+                                        <div class="color-swatches-header">
+                                            <span class="color-swatches-label">Color:</span>
+                                            <span class="color-selected">Blue</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-price">
+                                        <span class="price-regular">
+                                            <span class="price-currency">PKR</span>
+                                            <span class="price-amount">5,199</span>
+                                        </span>
+                                        <span class="price-sale">
+                                            <span class="price-currency">PKR</span>
+                                            <span class="price-amount">3,639</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item__actions">
+                                    <div class="product-quantity-selector">
+                                        <div class="quantity-selector-wrapper">
+                                            <button type="button" class="btn-quantity btn-minus"
+                                                aria-label="Decrease quantity"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                                min="1" aria-label="Quantity">
+                                            <button type="button" class="btn-quantity btn-plus"
+                                                aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="cart-item__image-wrapper">
+                                <a href="/assets/pages/product-details.html">
+                                    <img src="/assets/images/products/earpods/sonicpods-edge.png" alt="SonicPods Edge"
+                                        class="cart-item__image">
+                                </a>
+                            </div>
+
+                            <div class="cart-item__content">
+                                <div class="cart-item__details">
+                                    <div class="cart-item__info">
+                                        <h3 class="product-title">SonicPods Edge</h3>
+                                        <div class="color-swatches-header">
+                                            <span class="color-swatches-label">Color:</span>
+                                            <span class="color-selected">Blue</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-price">
+                                        <span class="price-regular">
+                                            <span class="price-currency">PKR</span>
+                                            <span class="price-amount">4,299</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item__actions">
+                                    <div class="product-quantity-selector">
+                                        <div class="quantity-selector-wrapper">
+                                            <button type="button" class="btn-quantity btn-minus"
+                                                aria-label="Decrease quantity"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                                min="1" aria-label="Quantity">
+                                            <button type="button" class="btn-quantity btn-plus"
+                                                aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                            class="fa-solid fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cart-footer cart-page-footer">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <h2 class="cart-total-title">Subtotal</h2>
+                        <div class="cart-total-price">
+                            <span class="price-currency">PKR</span>
+                            <span class="price-amount">17,237</span>
+                        </div>
+                    </div>
+                    <p class="tax-shipping-info">
+                        Taxes and shipping calculated at checkout
+                    </p>
+                </div>
+                <a href="/assets/pages/checkout.html" class="btn btn-secondary btn-checkout"><span>Checkout</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Section: Footer ===== -->
+    <footer class="section footer flex flex-col gap-lg">
+        <hr class="footer-divider" />
+        <div class="footer-top flex justify-between flex-wrap">
+            <div class="footer-logo-container">
+                <a href="/"><img class="footer-logo" src="../images/logo.png" alt="earbuds" /></a>
+            </div>
+            <div class="footer-links">
+                <h2 class="footer-heading">Shop</h2>
+                <nav class="footer-nav footer-nav-pages">
+                    <ul>
+                        <li><a href="/assets/pages/categories.html" class="footer-nav-link">Categories</a></li>
+                        <li><a href="/assets/pages/products.html" class="footer-nav-link">Products</a></li>
+                        <li><a href="/assets/pages/new-arrivals.html" class="footer-nav-link">New Arrivals</a></li>
+                        <li><a href="/assets/pages/deals.html" class="footer-nav-link">Deals</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-links">
+                <h2 class="footer-heading">Support</h2>
+                <nav class="footer-nav footer-nav-help">
+                    <ul>
+                        <li>
+                            <a href="/assets/pages/faqs.html" class="footer-nav-link">Faq<span>s</span></a>
+                        </li>
+                        <li><a href="/assets/pages/contact.html" class="footer-nav-link">Contact Us</a></li>
+                        <li><a href="/assets/pages/shipping-delivery.html" class="footer-nav-link">Shipping &
+                                Delivery</a>
+                        </li>
+                        <li><a href="/assets/pages/returns-refunds.html" class="footer-nav-link">Returns & Refunds</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-links">
+                <h2 class="footer-heading">COMPANY</h2>
+                <nav class="footer-nav footer-nav-help">
+                    <ul>
+                        <li><a href="/assets/pages/about.html" class="footer-nav-link active">About Us</a></li>
+                        <li><a href="/assets/pages/privacy-policy.html" class="footer-nav-link">Privacy Policy</a></li>
+                        <li><a href="/assets/pages/terms-conditions.html" class="footer-nav-link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="news-letter">
+                <h2 class="footer-heading">News Letter</h2>
+                <form action="" class="news-letter-form flex">
+                    <input name="news-letter-email" type="email" class="news-letter-input" placeholder="Email" />
+                    <button type="submit" class="news-letter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom flex justify-between items-center">
+            <div class="copy-right">
+                <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
+            </div>
+            <div class="social-icons">
+                <ul class="flex-center flex-wrap gap-md">
+                    <li>
+                        <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                            target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                            target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok"
+                            target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Cart Script -->
+    <script src="../js/cart.js"></script>
+    <!-- scrollToTop Button -->
+    <script src="../js/scrollToTop.js"></script>
+</body>
+
+</html>

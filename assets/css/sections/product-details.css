@@ -119,10 +119,6 @@
     display: none;
 }
 
-.btn-cart-item_delete {
-    font-size: 1rem;
-}
-
 .product-options {
     display: flex;
     flex-direction: column;

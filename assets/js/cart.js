@@ -14,7 +14,7 @@ document.body.insertAdjacentHTML(
         </div>
         <div class="cart-body">
             <div class="cart-items">
-                <form class="cart-items__form">
+                <form class="cart-items__form" action="#" method="post">
                     <div class="cart-item sale-product">
                         <div class="cart-item__image-wrapper">
                             <a href="/assets/pages/product-details.html">
@@ -22,13 +22,17 @@ document.body.insertAdjacentHTML(
                                     class="cart-item__image">
                             </a>
                         </div>
+
                         <div class="cart-item__content">
-                            <div class="cart-item__info">
-                                <h3 class="product-title">BassPods Max</h3>
-                                <div class="color-swatches-header">
-                                    <span class="color-swatches-label">Color:</span>
-                                    <span class="color-selected">White</span>
+                            <div class="cart-item__details">
+                                <div class="cart-item__info">
+                                    <h3 class="product-title">BassPods Max</h3>
+                                    <div class="color-swatches-header">
+                                        <span class="color-swatches-label">Color:</span>
+                                        <span class="color-selected">White</span>
+                                    </div>
                                 </div>
+
                                 <div class="product-price">
                                     <span class="price-regular">
                                         <span class="price-currency">PKR</span>
@@ -40,32 +44,42 @@ document.body.insertAdjacentHTML(
                                     </span>
                                 </div>
                             </div>
+
                             <div class="cart-item__actions">
                                 <div class="product-quantity-selector">
                                     <div class="quantity-selector-wrapper">
-                                        <button class="btn-quantity btn-minus"><i
-                                                class="fa-solid fa-minus"></i></button>
-                                        <input type="number" name="quantity-count" class="quantity-count" value="1">
-                                        <button class="btn-quantity btn-plus"><i class="fa-solid fa-plus"></i></button>
+                                        <button type="button" class="btn-quantity btn-minus"
+                                            aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                            min="1" aria-label="Quantity">
+                                        <button type="button" class="btn-quantity btn-plus"
+                                            aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
                                     </div>
                                 </div>
-                                <button class="btn-cart-item_delete"><i class="fa-solid fa-trash"></i></button>
+                                <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                        class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
                     </div>
+
                     <div class="cart-item">
                         <div class="cart-item__image-wrapper">
-                            <a href="#">
-                                <img src="/assets/images/products/neckband-wireless/neckband-pro.png" alt="Earpods Pro"
-                                    class="cart-item__image"> </a>
+                            <a href="/assets/pages/product-details.html">
+                                <img src="/assets/images/products/neckband-wireless/neckband-pro.png" alt="Neckband Pro"
+                                    class="cart-item__image">
+                            </a>
                         </div>
+
                         <div class="cart-item__content">
-                            <div class="cart-item__info">
-                                <h3 class="product-title">Neckband Pro</h3>
-                                <div class="color-swatches-header">
-                                    <span class="color-swatches-label">Color:</span>
-                                    <span class="color-selected">Black</span>
+                            <div class="cart-item__details">
+                                <div class="cart-item__info">
+                                    <h3 class="product-title">Neckband Pro</h3>
+                                    <div class="color-swatches-header">
+                                        <span class="color-swatches-label">Color:</span>
+                                        <span class="color-selected">Black</span>
+                                    </div>
                                 </div>
+
                                 <div class="product-price">
                                     <span class="price-regular">
                                         <span class="price-currency">PKR</span>
@@ -73,33 +87,42 @@ document.body.insertAdjacentHTML(
                                     </span>
                                 </div>
                             </div>
+
                             <div class="cart-item__actions">
                                 <div class="product-quantity-selector">
                                     <div class="quantity-selector-wrapper">
-                                        <button class="btn-quantity btn-minus"><i
-                                                class="fa-solid fa-minus"></i></button>
-                                        <input type="number" name="quantity-count" class="quantity-count" value="1">
-                                        <button class="btn-quantity btn-plus"><i class="fa-solid fa-plus"></i></button>
+                                        <button type="button" class="btn-quantity btn-minus"
+                                            aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                            min="1" aria-label="Quantity">
+                                        <button type="button" class="btn-quantity btn-plus"
+                                            aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
                                     </div>
                                 </div>
-                                <button class="btn-cart-item_delete"><i class="fa-solid fa-trash"></i></button>
+                                <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                        class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
                     </div>
+
                     <div class="cart-item sale-product">
                         <div class="cart-item__image-wrapper">
-                            <a href="#">
-                                <img src="/assets/images/products/in-ear-earphones/noisecut-pro.png" alt="Earpods Pro"
+                            <a href="/assets/pages/product-details.html">
+                                <img src="/assets/images/products/in-ear-earphones/noisecut-pro.png" alt="NoiseCut Pro"
                                     class="cart-item__image">
                             </a>
                         </div>
+
                         <div class="cart-item__content">
-                            <div class="cart-item__info">
-                                <h3 class="product-title">NoiseCut Pro</h3>
-                                <div class="color-swatches-header">
-                                    <span class="color-swatches-label">Color:</span>
-                                    <span class="color-selected">Blue</span>
+                            <div class="cart-item__details">
+                                <div class="cart-item__info">
+                                    <h3 class="product-title">NoiseCut Pro</h3>
+                                    <div class="color-swatches-header">
+                                        <span class="color-swatches-label">Color:</span>
+                                        <span class="color-selected">Blue</span>
+                                    </div>
                                 </div>
+
                                 <div class="product-price">
                                     <span class="price-regular">
                                         <span class="price-currency">PKR</span>
@@ -111,33 +134,42 @@ document.body.insertAdjacentHTML(
                                     </span>
                                 </div>
                             </div>
+
                             <div class="cart-item__actions">
                                 <div class="product-quantity-selector">
                                     <div class="quantity-selector-wrapper">
-                                        <button class="btn-quantity btn-minus"><i
-                                                class="fa-solid fa-minus"></i></button>
-                                        <input type="number" name="quantity-count" class="quantity-count" value="1">
-                                        <button class="btn-quantity btn-plus"><i class="fa-solid fa-plus"></i></button>
+                                        <button type="button" class="btn-quantity btn-minus"
+                                            aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                            min="1" aria-label="Quantity">
+                                        <button type="button" class="btn-quantity btn-plus"
+                                            aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
                                     </div>
                                 </div>
-                                <button class="btn-cart-item_delete"><i class="fa-solid fa-trash"></i></button>
+                                <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                        class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
                     </div>
+
                     <div class="cart-item">
                         <div class="cart-item__image-wrapper">
-                            <a href="#">
-                                <img src="/assets/images/products/earpods/sonicpods-edge.png" alt="Earpods Pro"
+                            <a href="/assets/pages/product-details.html">
+                                <img src="/assets/images/products/earpods/sonicpods-edge.png" alt="SonicPods Edge"
                                     class="cart-item__image">
                             </a>
                         </div>
+
                         <div class="cart-item__content">
-                            <div class="cart-item__info">
-                                <h3 class="product-title">SonicPods Edge</h3>
-                                <div class="color-swatches-header">
-                                    <span class="color-swatches-label">Color:</span>
-                                    <span class="color-selected">Blue</span>
+                            <div class="cart-item__details">
+                                <div class="cart-item__info">
+                                    <h3 class="product-title">SonicPods Edge</h3>
+                                    <div class="color-swatches-header">
+                                        <span class="color-swatches-label">Color:</span>
+                                        <span class="color-selected">Blue</span>
+                                    </div>
                                 </div>
+
                                 <div class="product-price">
                                     <span class="price-regular">
                                         <span class="price-currency">PKR</span>
@@ -145,16 +177,20 @@ document.body.insertAdjacentHTML(
                                     </span>
                                 </div>
                             </div>
+
                             <div class="cart-item__actions">
                                 <div class="product-quantity-selector">
                                     <div class="quantity-selector-wrapper">
-                                        <button class="btn-quantity btn-minus"><i
-                                                class="fa-solid fa-minus"></i></button>
-                                        <input type="number" name="quantity-count" class="quantity-count" value="1">
-                                        <button class="btn-quantity btn-plus"><i class="fa-solid fa-plus"></i></button>
+                                        <button type="button" class="btn-quantity btn-minus"
+                                            aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" name="quantity-count" class="quantity-count" value="1"
+                                            min="1" aria-label="Quantity">
+                                        <button type="button" class="btn-quantity btn-plus"
+                                            aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
                                     </div>
                                 </div>
-                                <button class="btn-cart-item_delete"><i class="fa-solid fa-trash"></i></button>
+                                <button type="button" class="btn-cart-item_delete" aria-label="Remove item"><i
+                                        class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
                     </div>
