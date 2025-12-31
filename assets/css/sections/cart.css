@@ -60,6 +60,10 @@
 }
 
 .cart-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     max-width: 100%;
     display: flex;
     flex-direction: column;
