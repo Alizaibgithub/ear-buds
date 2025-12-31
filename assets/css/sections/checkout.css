@@ -287,3 +287,7 @@ h3 {
 .checkout-btn-cart {
     color: var(--color-primary);
 }
+
+.cart-item-count-wrapper {
+    color: #888;
+}

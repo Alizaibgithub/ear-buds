@@ -92,6 +92,7 @@
 }
 
 .cart-item__image-wrapper {
+    position: relative;
     height: auto;
     border: 1px solid #fff;
     border-radius: var(--radius-md);
