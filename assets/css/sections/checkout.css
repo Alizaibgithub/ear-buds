@@ -291,3 +291,18 @@ h3 {
 .cart-item-count-wrapper {
     color: #888;
 }
+
+.checkout-item-count {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    background-color: var(--color-white);
+    border-radius: var(--radius-sm);
+    font-size: 1.2rem;
+    color: var(--color-black);
+}
