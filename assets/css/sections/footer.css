@@ -48,6 +48,7 @@
 }
 
 .news-letter-input {
+    width: 100%;
     padding: var(--spacing-sm);
     border: none;
     background-color: transparent;
