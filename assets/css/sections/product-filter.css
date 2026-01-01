@@ -1,0 +1,121 @@
+.product-filter-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-width: 25rem;
+    width: 90%;
+    height: 100%;
+    background-color: var(--color-black);
+    opacity: 1;
+    /* transform: translateX(-100%); */
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-filter-section.active {
+    transform: translateX(0%);
+}
+
+.product-filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.product-filter__btn-close {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    z-index: 500;
+}
+
+.product-filter__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--color-white);
+    background-color: var(--color-black);
+}
+
+.product-quantity,
+.product-quantity-count {
+    color: #888;
+}
+
+.product-filter__body {
+    overflow-y: auto;
+    background-color: var(--color-black);
+}
+
+/* .cart-body::-webkit-scrollbar {
+    display: none;
+} */
+.product-filter__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--color-white);
+    background-color: var(--color-black);
+    margin-top: auto;
+}
+
+
+.price-input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 2px solid #1a1a1a;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm);
+}
+
+.price-input-wrapper:focus-within {
+    width: 100%;
+    background: rgba(207, 15, 71, 0.05);
+    border: 2px solid #cf0f47;
+}
+
+.price-input {
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    outline: none;
+    border: none;
+    text-align: right;
+}
+
+.price-input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.price-count-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+}
+
+.price__filter-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.filter-label {
+    cursor: pointer;
+}
+
+.product-filter__btn-clear {
+    text-decoration: underline;
+}

@@ -20,4 +20,5 @@
 @import './sections/categoryCard.css';
 @import './sections/product-details.css';
 @import './sections/checkout.css';
-@import './sections/cart.css'
+@import './sections/cart.css';
+@import './sections/product-filter.css'
