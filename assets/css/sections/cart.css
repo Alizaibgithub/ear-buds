@@ -142,6 +142,6 @@
 
 .cart-page-footer {
     justify-self: flex-end;
-    min-width: 40%;
+    max-width: 40%;
     border: none;
 }
