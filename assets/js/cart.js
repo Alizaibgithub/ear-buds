@@ -1,10 +1,7 @@
 // ===== Cart Drawer Functionality =====
 document.body.insertAdjacentHTML(
   "beforeend",
-  `<!-- ===== Section: Background Overlay ===== -->
-<section class="background-overlay">
-</section>
-<!-- ===== Section: Cart Drawer ===== -->
+  `<!-- ===== Section: Cart Drawer ===== -->
 <section class="cart-drawer-section">
     <div class="cart-drawer">
         <button type="button" class="cart-btn-close"><i class="fa-solid fa-xmark"></i></button>
@@ -221,7 +218,6 @@ const body = document.body;
 const cartButton = document.querySelector(".header-btn-cart");
 const cartSection = document.querySelector(".cart-drawer-section");
 const cartCloseButton = document.querySelector(".cart-btn-close");
-const backgroundOverlay = document.querySelector(".background-overlay");
 
 const openCart = () => {
   cartSection.classList.add("active");
