@@ -64,7 +64,6 @@ document.body.insertAdjacentHTML(
     </section>`
 );
 
-// const body = document.body;
 const productFilterButton = document.querySelector(".btn-product-filter");
 const productFilterSection = document.querySelector(".product-filter-section");
 const productFilterCloseButton = document.querySelector(
@@ -74,12 +73,12 @@ const productFilterCloseButton = document.querySelector(
 const openProductFilter = () => {
   productFilterSection.classList.add("active");
   backgroundOverlay.classList.add("active");
-  body.classList.add("no-scroll");
+  document.body.classList.add("no-scroll");
 };
 const closeProductFilter = () => {
   productFilterSection.classList.remove("active");
   backgroundOverlay.classList.remove("active");
-  body.classList.remove("no-scroll");
+  document.body.classList.remove("no-scroll");
 };
 productFilterButton.addEventListener("click", openProductFilter);
 productFilterCloseButton.addEventListener("click", closeProductFilter);
