@@ -34,13 +34,13 @@
 }
 
 .gap-sm {
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .gap-md {
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .gap-lg {
-    gap: var(--spacing-lg);
+    gap: 1.5rem;
 }

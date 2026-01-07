@@ -2,7 +2,7 @@
 .deal-slide {
     width: 100%;
     height: 30rem;
-    border-radius: var(--radius-lg);
+    border-radius: 17px;
     overflow: hidden;
 }
 
@@ -32,23 +32,29 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding-left: var(--spacing-lg);
+    padding-left: 1.5rem;
     text-transform: uppercase;
+}
+
+.deal-content p,
+.deal-content span {
+    font-weight: 900;
 }
 
 .deal-badge,
 .deal-description {
-    font-size: var(--font-size-lg);
-    font-family: "Karantina-Bold", sans-serif;
+    font-size: 2rem;
+    /* font-family: "Poppins-Regular", sans-serif; */
 }
 
 .deal-percentage,
 .deal-discount {
-    font-size: 5rem;
-    font-family: "Karantina-Bold", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    /* font-family: "Poppins-Regular", sans-serif; */
 }
 
 .deal-label {
-    font-size: 14rem;
-    font-family: "Karantina-Bold", sans-serif;
+    font-size: 9rem;
+    /* font-family: "Poppins-Regular", sans-serif; */
 }

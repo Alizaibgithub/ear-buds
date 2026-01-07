@@ -6,7 +6,7 @@
     max-width: 25rem;
     width: 90%;
     height: 100%;
-    background-color: var(--color-black);
+    background-color: #000;
     opacity: 1;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
@@ -34,10 +34,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-    border-bottom: 1px solid var(--color-white);
-    background-color: var(--color-black);
+    gap: 0.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
 }
 
 .btn-cart-item_delete {
@@ -52,7 +52,7 @@
 
 .cart-body {
     overflow-y: auto;
-    background-color: var(--color-black);
+    background-color: #000;
 }
 
 .cart-body::-webkit-scrollbar {
@@ -63,10 +63,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md);
-    border-top: 1px solid var(--color-white);
-    background-color: var(--color-black);
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #fff;
+    background-color: #000;
     margin-top: auto;
 }
 
@@ -77,10 +77,10 @@
 
 .cart-item {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
-    gap: var(--spacing-md);
-    padding: var(--spacing-md);
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .cart-item .color-swatches-label,
@@ -96,7 +96,7 @@
     position: relative;
     height: auto;
     border: 1px solid #fff;
-    border-radius: var(--radius-md);
+    border-radius: 12px;
 }
 
 .cart-item__image {
@@ -114,20 +114,26 @@
     align-items: center;
 }
 
+.cart-item__actions {
+    flex: 1 1 20%;
+}
+
 .cart-item__content {
     display: flex;
     flex-flow: row wrap;
-    gap: var(--spacing-sm) 7rem;
+    gap: 0.5rem 7rem;
 }
 
 .cart-item__info {
+    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
 }
 
 .cart-item .product-price {
+    flex: 1 1 60%;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 /* Specific for Cart Page */
@@ -145,4 +151,12 @@
     width: 28rem;
     max-width: 100%;
     border: none;
+}
+
+.tax-shipping-info {
+    font-size: 1rem;
+}
+
+.cart-section .cart-item {
+    grid-template-columns: 1fr 14fr;
 }

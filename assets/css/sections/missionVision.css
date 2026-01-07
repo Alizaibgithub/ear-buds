@@ -2,8 +2,8 @@
 .mv-cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: var(--spacing-md);
-    padding-top: var(--spacing-md);
+    gap: 1rem;
+    padding-top: 1rem;
 }
 
 .mv-card {
@@ -11,8 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-md);
-    border-radius: var(--radius-lg);
+    padding: 1rem;
+    border-radius: 17px;
     background: #1a1a1a;
 }
 
@@ -22,11 +22,11 @@
     align-items: center;
     width: 4rem;
     height: 4rem;
-    padding: var(--spacing-sm);
+    padding: 0.5rem;
     background: var(--color-primary);
-    color: var(--color-white);
-    font-size: var(--font-size-lg);
-    border-radius: var(--radius-full);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
 }
 
 .mv-card-info {

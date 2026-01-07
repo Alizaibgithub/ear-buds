@@ -2,8 +2,8 @@
 .category-swiper-wrapper {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    padding-top: var(--spacing-md);
+    gap: 0.5rem;
+    padding-top: 1rem;
 }
 
 .category-card {

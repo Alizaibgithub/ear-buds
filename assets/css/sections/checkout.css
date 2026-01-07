@@ -20,14 +20,14 @@
 .customer-details-form {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .customer-details__container,
 .order-review__container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .customer-details__container,
@@ -49,18 +49,16 @@
 
 .sign-in-link {
     text-decoration: underline;
-    font-family: "Karantina-Regular", sans-serif;
 }
 
 /* .shipping-form {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 } */
 
 .email-confirm-label,
 .save-info-label {
-    font-family: "Karantina-Regular", sans-serif;
     cursor: pointer;
 }
 
@@ -68,15 +66,15 @@
 .billing-radio-button {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .region-select-wrapper {
     display: flex;
     flex-direction: column;
     border: 2px solid #1a1a1a;
-    border-radius: var(--radius-md);
-    padding: var(--spacing-sm);
+    border-radius: 12px;
+    padding: 0.5rem;
 }
 
 .region-label {
@@ -112,7 +110,7 @@
 .full-name-input,
 .city-input {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .shipping-method-wrapper,
@@ -120,22 +118,22 @@
 .billing-wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .shipping-method-text,
 .payment {
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing-sm);
+    padding: 0.5rem;
     background: rgba(207, 15, 71, 0.05);
     border: 2px solid var(--color-primary);
-    border-radius: var(--radius-md);
+    border-radius: 12px;
 }
 
 .shipping-method p,
 .payment p {
-    font-size: var(--font-size-base);
+    font-size: 1.2rem;
     text-transform: capitalize;
 }
 
@@ -143,15 +141,15 @@
     display: flex;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
     border: 2px solid #1a1a1a;
-    border-radius: var(--radius-md);
-    padding: var(--spacing-sm);
+    border-radius: 12px;
+    padding: 0.5rem;
 }
 
 .billing-radio-button {
-    padding: var(--spacing-sm);
-    border-radius: var(--radius-md);
+    padding: 0.5rem;
+    border-radius: 12px;
 }
 
 .billing-radio-button:has(.billing-btn:checked) {
@@ -184,7 +182,6 @@
 }
 
 .order-nav-link {
-    font-family: "Karantina-Regular", sans-serif;
     text-decoration: underline;
 }
 
@@ -205,13 +202,13 @@
 
 .discount-code-form {
     display: flex;
-    gap: var(--spacing-md)
+    gap: 1rem
 }
 
 .checkout-total-wrapper {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 .shipping-amount,
@@ -223,14 +220,14 @@
 .cart-total-info {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
 }
 
 /* Order Completion Pgae */
 .thank-you {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .thank-you__icon {
@@ -241,24 +238,24 @@
 .order-confirm,
 .order-details {
     border: 1px solid #888;
-    border-radius: var(--spacing-md);
-    padding: var(--spacing-md);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .customer-details__main {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .order-details-container {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .order-details-container h2,
 h3 {
-    font-size: var(--font-size-base);
+    font-size: 1.2rem;
 }
 
 .order-details,
@@ -266,7 +263,7 @@ h3 {
 .order-details__right {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .customer-details__actions {
@@ -280,7 +277,7 @@ h3 {
 }
 
 .customer-name {
-    font-size: var(--font-size-lg);
+    font-size: 1.5rem;
 }
 
 .site-name,
@@ -301,8 +298,8 @@ h3 {
     position: absolute;
     top: -15%;
     right: -15%;
-    background-color: var(--color-white);
-    border-radius: var(--radius-sm);
+    background-color: #fff;
+    border-radius: 6px;
     font-size: 1.2rem;
-    color: var(--color-black);
+    color: #000;
 }
