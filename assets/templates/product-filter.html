@@ -1,0 +1,62 @@
+<!-- ===== Section: Product Filter ===== -->
+<section class="product-filter-section">
+    <div class="product-filter">
+        <button type="button" class="product-filter__btn-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="product-filter__header">
+            <h2 class="">Filters</h2>
+            <!-- <span class="product-quantity"><span class="product-quantity-count">12</span> Items</span> -->
+        </div>
+        <div class="product-filter__body">
+            <div class="product-filter__form">
+                <div class="filter-group">
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="stock-filter" name="stock-filter" class="filter-input">
+                        <label for="stock-filter" class="filter-label">In stock only</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3 class="filter-group__title">Price</h3>
+                    <div class="price__filter-group">
+                        <div class="price-count-wrapper">
+                            <span>From</span>
+                            <div class="price-input-wrapper">
+                                <span class="price-currency">PKR</span>
+                                <input type="number" name="price-min" id="price-min" class="price-input">
+                            </div>
+                        </div>
+                        <div class="price-count-wrapper">
+                            <span>To</span>
+                            <div class="price-input-wrapper">
+                                <span class="price-currency">PKR</span>
+                                <input type="number" name="price-max" id="price-max" class="price-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3 class="filter-group__title">Categories</h3>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="cat-earpods" name="category" class="filter-input">
+                        <label for="cat-earpods" class="filter-label">EarPods</label>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="cat-neckbandWireless" name="category" class="filter-input">
+                        <label for="cat-neckbandWireless" class="filter-label">Neckband Wireless</label>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="cat-inEarEarphones" name="category" class="filter-input">
+                        <label for="cat-inEarEarphones" class="filter-label">In-Ear-Earphones</label>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="cat-headphones" name="category" class="filter-input">
+                        <label for="cat-headphones" class="filter-label">Headphones</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-filter__footer">
+            <button type="reset" class="product-filter__btn-clear">Clear</button>
+            <button type="submit" class="product-filter__btn-apply btn btn-secondary">Apply</button>
+        </div>
+    </div>
+</section>
