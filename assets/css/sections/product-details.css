@@ -107,7 +107,7 @@
 }
 
 .btn-quantity {
-    color: #888;
+    color: var(--color-muted);
 }
 
 .btn-minus,
@@ -145,7 +145,7 @@
     height: 2.5rem;
     display: inline-block;
     padding: 0.2rem;
-    border: 2px solid #888;
+    border: 2px solid var(--color-muted);
     border-radius: 50%;
     cursor: pointer;
 }

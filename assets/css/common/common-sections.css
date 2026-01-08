@@ -91,9 +91,9 @@ body.no-scroll {
     color: var(--color-primary);
 }
 
-.image-text__text {
-    /* margin-bottom: 0.5rem; */
-}
+/* .image-text__text { */
+/* margin-bottom: 0.5rem; */
+/* } */
 
 .image-text__text:last-child {
     margin-bottom: 0;
@@ -206,12 +206,12 @@ body.no-scroll {
 .sale-product .price-regular .price-currency,
 .sale-product .price-regular .price-amount {
     font-size: 0.9rem;
-    color: #ff2f2f;
+    color: var(--color-danger);
 }
 
 .sale-product .price-regular {
     text-decoration: line-through;
-    text-decoration-color: #ff2f2f;
+    text-decoration-color: var(--color-danger);
 }
 
 .cart-item-count {

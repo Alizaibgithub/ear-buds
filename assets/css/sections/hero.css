@@ -6,6 +6,9 @@
 }
 
 .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -20,6 +23,9 @@
 }
 
 .hero-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 30rem;
     z-index: 1;

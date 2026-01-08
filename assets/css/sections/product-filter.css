@@ -43,7 +43,7 @@
 
 .product-quantity,
 .product-quantity-count {
-    color: #888;
+    color: var(--color-muted);
 }
 
 .product-filter__body {

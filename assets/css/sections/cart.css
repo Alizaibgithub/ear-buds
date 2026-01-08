@@ -47,7 +47,7 @@
 
 .cart-item__count-wraper,
 .cart-item__count {
-    color: #888;
+    color: var(--color-muted);
 }
 
 .cart-body {
@@ -85,11 +85,11 @@
 
 .cart-item .color-swatches-label,
 .cart-item .color-selected {
-    color: #888;
+    color: var(--color-muted);
 }
 
 .cart-item:not(:last-child) {
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid var(--color-muted);
 }
 
 .cart-item__image-wrapper {

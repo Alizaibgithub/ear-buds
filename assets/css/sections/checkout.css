@@ -11,7 +11,7 @@
 .customer-details {
     height: 100%;
     background-color: #090909;
-    border-right: 1px solid #888;
+    border-right: 1px solid var(--color-muted);
     padding: 2rem;
     display: flex;
     justify-content: flex-end;
@@ -231,13 +231,13 @@
 }
 
 .thank-you__icon {
-    color: #008000;
+    color: var(--color-success);
     font-size: 3rem;
 }
 
 .order-confirm,
 .order-details {
-    border: 1px solid #888;
+    border: 1px solid var(--color-muted);
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -286,7 +286,7 @@ h3 {
 }
 
 .cart-item-count-wrapper {
-    color: #888;
+    color: var(--color-muted);
 }
 
 .checkout-item-count {

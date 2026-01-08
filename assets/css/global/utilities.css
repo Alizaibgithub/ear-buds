@@ -1,19 +1,20 @@
 /* ========== Flex Utilities ========== */
 /* ===== Common Combinations ===== */
-.flex-between-center {
+/* .flex-between-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /*===== Individual Utilities ===== */
-.flex {
+/* .flex {
     display: flex;
 }
 
@@ -43,4 +44,4 @@
 
 .gap-lg {
     gap: 1.5rem;
-}
+} */
