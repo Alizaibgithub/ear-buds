@@ -1,7 +1,4 @@
-// ===== Cart Drawer Functionality =====
-document.body.insertAdjacentHTML(
-  "beforeend",
-  `<!-- ===== Section: Cart Drawer ===== -->
+<!-- ===== Section: Cart Drawer ===== -->
 <section class="cart-drawer-section">
     <div class="cart-drawer">
         <button type="button" class="cart-btn-close"><i class="fa-solid fa-xmark"></i></button>
@@ -211,29 +208,4 @@ document.body.insertAdjacentHTML(
             </a>
         </div>
     </div>
-</section>`
-);
-
-const cartButton = document.querySelector(".header-btn-cart");
-const cartSection = document.querySelector(".cart-drawer-section");
-const cartCloseButton = document.querySelector(".cart-btn-close");
-
-const openCart = () => {
-  cartSection.classList.add("active");
-  backgroundOverlay.classList.add("active");
-  document.body.classList.add("no-scroll");
-};
-const closeCart = () => {
-  cartSection.classList.remove("active");
-  backgroundOverlay.classList.remove("active");
-  document.body.classList.remove("no-scroll");
-};
-cartButton.addEventListener("click", openCart);
-cartCloseButton.addEventListener("click", closeCart);
-backgroundOverlay.addEventListener("click", closeCart);
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    closeCart();
-  }
-});
+</section>
