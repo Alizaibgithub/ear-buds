@@ -21,4 +21,7 @@
 @import './sections/product-details.css';
 @import './sections/checkout.css';
 @import './sections/cart.css';
-@import './sections/product-filter.css'
+@import './sections/product-filter.css';
+
+/* ===== Responsive ===== */
+@import './global/responsive.css';

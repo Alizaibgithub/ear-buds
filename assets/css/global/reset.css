@@ -31,6 +31,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-size: 1.5rem;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--color-text);
@@ -85,7 +86,7 @@ input[type="radio"] {
     width: 1rem;
     height: 1rem;
     outline: none;
-    accent-color: #cf0f47;
+    accent-color: var(--color-primary);
     cursor: pointer;
 }
 

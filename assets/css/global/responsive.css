@@ -1,0 +1,106 @@
+@media screen and (max-width:768px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    span,
+    ul,
+    li,
+    details,
+    summary,
+    label,
+    input,
+    textarea,
+    select,
+    option,
+    legend,
+    a,
+    button,
+    a span,
+    button span {
+        font-size: 1rem;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .section {
+        padding: 1rem 2rem;
+    }
+
+    .header,
+    .main-nav-list {
+        /* display: none; */
+        /* flex-direction: column; */
+    }
+
+    .hero,
+    .most-sold-products,
+    .products,
+    .new-products,
+    .new-arrivals,
+    .deals,
+    .deal,
+    .related-products,
+    .accordion-section {
+        gap: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-title {
+        font-size: 1rem;
+    }
+
+    .price-regular .price-currency,
+    .price-regular .price-amount,
+    .price-sale .price-currency,
+    .price-sale .price-amount {
+        font-size: 0.9rem;
+    }
+
+    .sale-product .price-regular .price-currency,
+    .sale-product .price-regular .price-amount {
+        font-size: 0.8rem;
+    }
+
+    .products-toolbar {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image-wrapper {
+        max-height: 17rem;
+    }
+
+    .products-toolbar {
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+}
