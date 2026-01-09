@@ -299,7 +299,6 @@ body.no-scroll {
 .content-heading {
     text-transform: capitalize;
     color: var(--color-primary);
-    font-size: 1.5rem;
 }
 
 /* ===== Buttons ===== */
