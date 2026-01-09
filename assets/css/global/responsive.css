@@ -6,6 +6,92 @@
     h4,
     h5,
     h6 {
+        font-size: 1.35rem;
+    }
+
+    p,
+    span,
+    ul,
+    li,
+    details,
+    summary,
+    label,
+    input,
+    textarea,
+    select,
+    option,
+    legend,
+    a,
+    button,
+    a span,
+    button span {
+        font-size: 1.1rem;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .section {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .hero,
+    .most-sold-products,
+    .products,
+    .new-products,
+    .new-arrivals,
+    .deals,
+    .deal,
+    .related-products,
+    .accordion-section {
+        gap: 1rem;
+    }
+
+    .page-title {
+        font-size: 2.4rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-title {
+        font-size: 1.1rem;
+    }
+
+    .price-regular .price-currency,
+    .price-regular .price-amount,
+    .price-sale .price-currency,
+    .price-sale .price-amount {
+        font-size: 0.95rem;
+    }
+
+    .sale-product .price-regular .price-currency,
+    .sale-product .price-regular .price-amount {
+        font-size: 0.85rem;
+    }
+
+    .products-toolbar {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 1.2rem;
     }
 
@@ -35,37 +121,15 @@
     }
 
     .section {
-        padding: 1rem 2rem;
-    }
-
-    .header,
-    .main-nav-list {
-        /* display: none; */
-        /* flex-direction: column; */
-    }
-
-    .hero,
-    .most-sold-products,
-    .products,
-    .new-products,
-    .new-arrivals,
-    .deals,
-    .deal,
-    .related-products,
-    .accordion-section {
-        gap: 1rem;
+        padding: 1.25rem 1rem;
     }
 
     .page-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .page-subtitle {
-        font-size: 1rem;
-    }
-
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.1rem;
     }
 
     .product-title {
@@ -76,21 +140,15 @@
     .price-regular .price-amount,
     .price-sale .price-currency,
     .price-sale .price-amount {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .sale-product .price-regular .price-currency,
     .sale-product .price-regular .price-amount {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
-    .products-toolbar {
-        margin-bottom: 2rem;
-    }
-}
-
-
-@media screen and (max-width:480px) {
+    /* ===== Section: Products Grid ===== */
     .products-grid {
         grid-template-columns: 1fr;
     }
@@ -99,10 +157,10 @@
         max-height: 17rem;
     }
 
+    /* =====Section: Products Toolbar===== */
     .products-toolbar {
         margin-bottom: 4rem;
         padding: 0.8rem 0;
-        /* grid-template-columns: 1fr 1fr; */
     }
 
     .view-toggle {
@@ -122,8 +180,5 @@
         gap: 0.2rem;
     }
 
-    .sort-select,
-    .sort-select option {
-        /* font-size: 0.8rem; */
-    }
+
 }
