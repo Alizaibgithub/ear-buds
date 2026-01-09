@@ -5,7 +5,8 @@
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    .accordion-question-text {
         font-size: 1.35rem;
     }
 
@@ -84,15 +85,25 @@
 
     .products-toolbar {
         margin-bottom: 2rem;
+        padding: 0.9rem 0;
     }
 
-    .content-container {
+    .content-container,
+    .accordion-container {
         gap: 0.75rem;
     }
 
     .btn-circle {
         width: 2.25rem;
         height: 2.25rem;
+    }
+
+    .accordion-question {
+        padding: 0.9rem;
+    }
+
+    .accordion-answer {
+        padding: 0 0.9rem 0.9rem;
     }
 }
 
@@ -104,7 +115,8 @@
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    .accordion-question-text {
         font-size: 1.2rem;
     }
 
@@ -180,7 +192,8 @@
         display: none;
     }
 
-    .content-container {
+    .content-container,
+    .accordion-container {
         gap: 0.5rem;
     }
 
@@ -195,5 +208,19 @@
     .btn-product-filter,
     .sort-wrapper {
         gap: 0.2rem;
+    }
+
+    .accordion-question {
+        padding: 0.8rem;
+    }
+
+    .accordion-answer {
+        padding: 0 0.9rem 0.9rem;
+    }
+
+    .accordion-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 0.9rem;
     }
 }
