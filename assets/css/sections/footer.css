@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .footer-logo-container {
@@ -89,6 +90,7 @@
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
+    gap: 0.25rem;
 }
 
 .social-icons-list {
