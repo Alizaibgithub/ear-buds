@@ -81,6 +81,11 @@
     .products-toolbar {
         margin-bottom: 2rem;
     }
+
+    .btn-circle {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
 }
 
 
@@ -179,6 +184,4 @@
     .sort-wrapper {
         gap: 0.2rem;
     }
-
-
 }
