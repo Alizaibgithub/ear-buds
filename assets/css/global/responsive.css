@@ -46,7 +46,11 @@
     .deals,
     .deal,
     .related-products,
-    .accordion-section {
+    .accordion-section,
+    .new-product-swiper,
+    .deal-swiper,
+    .new-product-swiper-navigation,
+    .deal-swiper-navigation {
         gap: 1rem;
     }
 
