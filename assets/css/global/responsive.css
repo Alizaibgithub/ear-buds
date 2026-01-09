@@ -100,7 +100,30 @@
     }
 
     .products-toolbar {
-        flex-wrap: wrap;
         margin-bottom: 4rem;
+        padding: 0.8rem 0;
+        /* grid-template-columns: 1fr 1fr; */
+    }
+
+    .view-toggle {
+        display: none;
+    }
+
+    .btn-product-filter,
+    .btn-product-filter span,
+    .sort-label,
+    .sort-select,
+    .sort-select option {
+        font-size: 0.8rem;
+    }
+
+    .btn-product-filter,
+    .sort-wrapper {
+        gap: 0.2rem;
+    }
+
+    .sort-select,
+    .sort-select option {
+        /* font-size: 0.8rem; */
     }
 }
