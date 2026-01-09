@@ -111,6 +111,14 @@
         height: 2.5rem;
         font-size: 1.5rem;
     }
+
+    .footer {
+        gap: 1.5rem;
+    }
+
+    .copy-right span {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -228,5 +236,9 @@
         width: 1.75rem;
         height: 1.75rem;
         font-size: 0.9rem;
+    }
+
+    .copy-right span {
+        font-size: 0.8rem;
     }
 }
