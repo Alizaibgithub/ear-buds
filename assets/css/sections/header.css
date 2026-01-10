@@ -1,9 +1,8 @@
-/* ===== Section: Header ===== */
+/* ========== Section: Header ========== */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1.5rem;
     position: sticky;
     top: 0;
@@ -11,7 +10,8 @@
     text-transform: uppercase;
 }
 
-.header-left {
+/* ===== Logo Container ===== */
+.header-logo-container {
     height: 3rem;
 }
 
@@ -19,10 +19,7 @@
     height: 100%;
 }
 
-.header-icon {
-    color: var(--color-primary);
-}
-
+/* ===== Nav List ===== */
 .main-nav-list {
     display: flex;
     justify-content: center;
@@ -38,20 +35,21 @@
     font-family: "Poppins-Regular", sans-serif;
 }
 
-.nav-link:hover {
-    background-color: var(--color-primary);
-}
-
+.nav-link:hover,
 .nav-link.active {
     background-color: var(--color-primary);
 }
 
+/* ===== Header Buttons ===== */
 .header-btn-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.header-icon {
+    color: var(--color-primary);
 }
 
 .header-btn-cart {
