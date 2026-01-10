@@ -116,6 +116,118 @@
         font-size: 1.5rem;
     }
 
+    /* ========== Section: Header ========== */
+    .header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        z-index: 9997;
+    }
+
+    .header-btn-list {
+        justify-self: flex-start;
+    }
+
+    /* ===== Logo Container ===== */
+    .header-logo-container {
+        justify-self: center;
+        order: 1;
+    }
+
+    /* ===== Header Buttons ===== */
+
+    li:has(.header-btn-account),
+    .hero {
+        display: none;
+    }
+
+    li:has(.header-btn-search) {
+        order: 1;
+    }
+
+    .cart-count {
+        width: 0.8rem;
+        height: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+
+    /* ===== Section: Menu ===== */
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        max-width: 30rem;
+        width: 75%;
+        height: 100%;
+        background-color: #000;
+        opacity: 1;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav.active {
+        transform: translateX(0%);
+    }
+
+    /* ===== Nav List ===== */
+    .main-nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: none;
+        border-radius: 0;
+        color: var(--color-primary);
+    }
+
+    .menu-header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        background-color: #000;
+        padding: 1rem 2rem;
+    }
+
+    .btn-menu-toggle {
+        display: block;
+        order: 2;
+        justify-self: flex-end;
+    }
+
+    .menu-btn-account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu-btn-account:hover,
+    .menu-btn-account:hover i,
+    .menu-btn-account:hover span {
+        color: var(--color-primary);
+    }
+
+    .menu-social-icons {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-social-icons .social-icon {
+        background-color: var(--color-primary);
+    }
+
+    /* ========== Section: Footer ========== */
     .footer {
         gap: 1.5rem;
     }

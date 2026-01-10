@@ -2,9 +2,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9998;
+    z-index: 9997;
     max-width: 25rem;
-    width: 90%;
+    width: 75%;
     height: 100%;
     background-color: #000;
     opacity: 1;
@@ -24,18 +24,19 @@
 
 }
 
-.product-filter__btn-close {
+/* .product-filter__btn-close {
     position: absolute;
     top: 3%;
     right: 5%;
     z-index: 500;
-}
+} */
 
 .product-filter__header {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    /* gap: 0.5rem; */
     padding: 1rem;
     border-bottom: 1px solid #fff;
     background-color: #000;

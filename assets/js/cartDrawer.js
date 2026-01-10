@@ -12,11 +12,13 @@ fetch("/assets/templates/cart-drawer.html")
       cartSection.classList.add("active");
       backgroundOverlay.classList.add("active");
       document.body.classList.add("no-scroll");
+      document.querySelector(".header").style.opacity = "0.5";
     };
     const closeCart = () => {
       cartSection.classList.remove("active");
       backgroundOverlay.classList.remove("active");
       document.body.classList.remove("no-scroll");
+      document.querySelector(".header").style.opacity = "1";
     };
     cartButton.addEventListener("click", openCart);
     cartCloseButton.addEventListener("click", closeCart);

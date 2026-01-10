@@ -19,12 +19,36 @@
             <a href="/"><img class="header-logo" src="../images/logo.png" alt="earbuds" /></a>
         </div>
         <nav class="main-nav">
+            <div class="menu-header">
+                <h2 class="menu-heading">Menu</h2>
+                <button type="button" class="menu-btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <ul class="main-nav-list">
                 <li><a href="/" class="nav-link">Home</a></li>
                 <li><a href="/assets/pages/categories.html" class="nav-link">Categories</a></li>
                 <li><a href="/assets/pages/products.html" class="nav-link">Products</a></li>
                 <li><a href="/assets/pages/about.html" class="nav-link">About Us</a></li>
                 <li><a href="/assets/pages/contact.html" class="nav-link">Contact Us</a></li>
+                <li><button type="button" class="menu-btn-account"><i class="fa-solid fa-user"></i><span>Sign In</span>
+                    </button></li>
+                <li class="menu-social-icons">
+                    <div class="social-icons">
+                        <ul class="social-icons-list">
+                            <li>
+                                <a href="https://www.instagram.com/"
+                                    class="social-icon btn-circle fa-brands fa-instagram" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                                    target="_blank"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok"
+                                    target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -47,8 +71,9 @@
                 </li>
             </ul>
         </div>
-
-
+        <button type="button" class="btn-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
     <!-- ===== Section: Page Header ===== -->
     <section class="section page-header">
@@ -193,6 +218,8 @@
     <!-- Cart Script -->
     <!-- Background Overlay -->
     <script src="../js/backgroundOverlay.js"></script>
+    <!-- Menu Toggle -->
+    <script src="../js/menuToggle.js"></script>
     <!-- Cart Script -->
     <script src="../js/cartDrawer.js"></script>
     <!-- scrollToTop Button -->
