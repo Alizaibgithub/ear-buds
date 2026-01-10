@@ -53,6 +53,10 @@ legend {
     color: var(--color-text);
 }
 
+i {
+    font-size: 1.2rem;
+}
+
 ul,
 ol {
     list-style: none;

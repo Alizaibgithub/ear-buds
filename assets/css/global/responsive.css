@@ -29,6 +29,10 @@
         font-size: 1.1rem;
     }
 
+    i {
+        font-size: 1.1rem;
+    }
+
     input[type="checkbox"],
     input[type="radio"] {
         width: 0.9rem;
@@ -150,6 +154,10 @@
     button,
     a span,
     button span {
+        font-size: 1rem;
+    }
+
+    i {
         font-size: 1rem;
     }
 
