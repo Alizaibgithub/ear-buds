@@ -162,6 +162,7 @@ body.no-scroll {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 17px;
     background: linear-gradient(180deg,
             var(--color-primary) -2.32%,
@@ -221,7 +222,7 @@ body.no-scroll {
 .product-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .product-title {
@@ -233,6 +234,10 @@ body.no-scroll {
     display: flex;
     gap: 0 0.3rem;
     align-items: baseline;
+}
+
+.product-card .product-price {
+    flex-direction: column;
 }
 
 .price-regular,
