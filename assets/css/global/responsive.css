@@ -80,6 +80,22 @@
         font-size: 12rem;
     }
 
+    /* ===== Section: New Deal ===== */
+    .deal-badge,
+    .deal-description {
+        font-size: 1.5rem;
+    }
+
+    .deal-percentage,
+    .deal-discount {
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+
+    .deal-label {
+        font-size: 6rem;
+    }
+
     .price-regular .price-currency,
     .price-regular .price-amount,
     .price-sale .price-currency,
@@ -299,8 +315,25 @@
         font-size: 1rem;
     }
 
+    /* ===== Section: Hero ===== */
     .hero-heading {
         font-size: 8rem;
+    }
+
+    /* ===== Section: New Deal ===== */
+    .deal-badge,
+    .deal-description {
+        font-size: 1.2rem;
+    }
+
+    .deal-percentage,
+    .deal-discount {
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+
+    .deal-label {
+        font-size: 4rem;
     }
 
     .price-regular .price-currency,
