@@ -75,6 +75,11 @@
         font-size: 1.1rem;
     }
 
+    /* ===== Section: Hero ===== */
+    .hero-heading {
+        font-size: 12rem;
+    }
+
     .price-regular .price-currency,
     .price-regular .price-amount,
     .price-sale .price-currency,
@@ -135,8 +140,7 @@
 
     /* ===== Header Buttons ===== */
 
-    li:has(.header-btn-account),
-    .hero {
+    li:has(.header-btn-account) {
         display: none;
     }
 
@@ -293,6 +297,10 @@
 
     .product-title {
         font-size: 1rem;
+    }
+
+    .hero-heading {
+        font-size: 8rem;
     }
 
     .price-regular .price-currency,
