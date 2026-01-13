@@ -33,7 +33,6 @@ var newDealSwiper = new Swiper(".deal-swiper", {
 var teamSwiper = new Swiper(".team-swiper", {
   loop: true,
   spaceBetween: 30,
-  loop: true,
   watchOverflow: true,
   autoplay: {
     delay: 2500,
@@ -59,7 +58,6 @@ var teamSwiper = new Swiper(".team-swiper", {
 var categorySwiper = new Swiper(".category-swiper", {
   loop: true,
   spaceBetween: 30,
-  loop: true,
   watchOverflow: true,
   autoplay: {
     delay: 2500,
