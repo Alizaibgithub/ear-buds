@@ -385,6 +385,26 @@
         gap: 0.2rem;
     }
 
+    /* =====Section: Swiper Buttons===== */
+    .swiper-btn,
+    .swiper-navigation {
+        display: none;
+    }
+
+    .swiper-action-buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .deal-swiper-bottom:has(.swiper-action-buttons) {
+        justify-content: center;
+    }
+
+    .deal-swiper-bottom .swiper-action-buttons {
+        width: 50%;
+    }
+
+    /* =====Section: Accordion ===== */
     .accordion-question {
         padding: 0.8rem;
     }
