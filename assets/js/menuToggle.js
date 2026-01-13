@@ -6,7 +6,6 @@ const openMenu = () => {
   mainNavSection.classList.add("active");
   backgroundOverlay.classList.add("active");
   document.body.classList.add("no-scroll");
-  menuToggleButton.style.opacity = "0.5";
 };
 const closeMenu = () => {
   mainNavSection.classList.remove("active");
