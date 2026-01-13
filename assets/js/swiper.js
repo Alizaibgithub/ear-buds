@@ -1,6 +1,7 @@
 // ===== Swiper Slider =====
 // ===== Section: New Products =====
 var newProductSwiper = new Swiper(".new-product-swiper", {
+  loop: true,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -15,6 +16,7 @@ var newProductSwiper = new Swiper(".new-product-swiper", {
 
 // ===== Section: New Deal =====
 var newDealSwiper = new Swiper(".deal-swiper", {
+  loop: true,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -29,6 +31,7 @@ var newDealSwiper = new Swiper(".deal-swiper", {
 
 // ===== Section: Team =====
 var teamSwiper = new Swiper(".team-swiper", {
+  loop: true,
   spaceBetween: 30,
   loop: true,
   watchOverflow: true,
@@ -54,6 +57,7 @@ var teamSwiper = new Swiper(".team-swiper", {
 });
 // ===== Section: Category =====
 var categorySwiper = new Swiper(".category-swiper", {
+  loop: true,
   spaceBetween: 30,
   loop: true,
   watchOverflow: true,
