@@ -401,7 +401,7 @@
     }
 
     .deal-swiper-bottom .swiper-action-buttons {
-        width: 50%;
+        width: auto;
     }
 
     /* =====Section: Accordion ===== */
