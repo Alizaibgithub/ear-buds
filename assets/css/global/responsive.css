@@ -131,10 +131,19 @@
         padding: 0 0.9rem 0.9rem;
     }
 
+    #btn-scrollToTop,
+    .btn-whatsapp {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
     #btn-scrollToTop {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
+        bottom: 3.7rem;
+    }
+
+    #btn-scrollToTop i,
+    .btn-whatsapp i {
+        font-size: 1.4rem;
     }
 
     /* ========== Section: Header ========== */
