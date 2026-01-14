@@ -22,12 +22,13 @@ body.no-scroll {
 .deals,
 .deal,
 .related-products,
-.accordion-section {
+.accordion-section,
+.mission-vision {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 /* ===== Background Overlay ===== */
@@ -451,6 +452,10 @@ body.no-scroll {
     cursor: not-allowed;
     pointer-events: none;
 }
+
+/* .category-swiper {
+    width: 100%;
+} */
 
 /* ===== Animations ===== */
 @keyframes fadeIn {

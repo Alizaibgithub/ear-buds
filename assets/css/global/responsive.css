@@ -247,6 +247,20 @@
         background-color: var(--color-primary);
     }
 
+    /* =====Section: Team Card ===== */
+    .team-card-media {
+        padding: 0.8rem 0;
+    }
+
+    .team-image-container {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .team-card-body {
+        padding: 0.8rem;
+    }
+
     /* ========== Section: Footer ========== */
     .footer {
         gap: 1.5rem;
