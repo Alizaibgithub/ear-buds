@@ -7,14 +7,14 @@
 }
 
 .contact-form-wrapper {
-    flex: 1 1 60%;
+    flex: 1 1 50%;
     display: flex;
     align-items: center;
 }
 
 .contact-form {
     width: 100%;
-    max-width: 40rem;
+    /* max-width: 40rem; */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -69,7 +69,7 @@
     flex: 1 1 30%;
     background: var(--color-primary);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .contact-info-list {
@@ -79,15 +79,13 @@
 }
 
 .contact-info-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 2rem;
-    padding: 0.5rem;
-    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
     background-color: #000;
+}
+
+.contact-info-icon i {
+    font-size: 1.5rem;
 }
 
 .contact-info-item {
@@ -98,4 +96,9 @@
 
 .contact-info-label {
     color: #000;
+    text-transform: capitalize;
+}
+
+.contact-info-content a {
+    font-weight: 300;
 }

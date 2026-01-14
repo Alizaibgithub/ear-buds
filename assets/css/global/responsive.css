@@ -132,7 +132,8 @@
     }
 
     #btn-scrollToTop,
-    .btn-whatsapp {
+    .btn-whatsapp,
+    .contact-info-icon {
         width: 2.7rem;
         height: 2.7rem;
     }
@@ -142,7 +143,8 @@
     }
 
     #btn-scrollToTop i,
-    .btn-whatsapp i {
+    .btn-whatsapp i,
+    .contact-info-icon i {
         font-size: 1.4rem;
     }
 
