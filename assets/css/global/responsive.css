@@ -145,23 +145,23 @@
     }
 
     .header-btn-list {
-        justify-self: flex-start;
+        justify-self: flex-end;
     }
 
     /* ===== Logo Container ===== */
     .header-logo-container {
         justify-self: center;
-        order: 1;
+        order: 2;
+    }
+
+    .header-actions {
+        order: 3;
     }
 
     /* ===== Header Buttons ===== */
 
     li:has(.header-btn-account) {
         display: none;
-    }
-
-    li:has(.header-btn-search) {
-        order: 1;
     }
 
     .cart-count {
@@ -221,8 +221,8 @@
 
     .btn-menu-toggle {
         display: block;
-        order: 2;
-        justify-self: flex-end;
+        order: 1;
+        justify-self: flex-start;
     }
 
     .menu-btn-account {
