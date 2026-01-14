@@ -261,6 +261,11 @@
         padding: 0.8rem;
     }
 
+    /* =====Section: Call To Action ===== */
+    .call-to-action {
+        gap: 0.5rem;
+    }
+
     /* ========== Section: Footer ========== */
     .footer {
         gap: 1.5rem;
