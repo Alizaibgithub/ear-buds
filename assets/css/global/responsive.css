@@ -272,9 +272,15 @@
         padding: 0.8rem;
     }
 
+
     /* =====Section: Call To Action ===== */
     .call-to-action {
         gap: 0.5rem;
+    }
+
+    /* =====Section: Map container ===== */
+    .contact-map-container {
+        height: 20rem;
     }
 
     /* ========== Section: Footer ========== */
@@ -432,6 +438,11 @@
 
     .deal-swiper-bottom .swiper-action-buttons {
         width: auto;
+    }
+
+    /* =====Section: Map container ===== */
+    .contact-map-container {
+        height: 15rem;
     }
 
     /* =====Section: Accordion ===== */
