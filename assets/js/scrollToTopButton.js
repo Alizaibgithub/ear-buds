@@ -1,6 +1,6 @@
 document.body.insertAdjacentHTML(
   "beforeend",
-  ` <button class="btn-circle" id="btn-scrollToTop"><i class="fa-solid fa-angle-up"></i></button>`
+  `<button class="btn-circle" id="btn-scrollToTop"><i class="fa-solid fa-angle-up"></i></button>`
 );
 
 document.addEventListener("DOMContentLoaded", () => {
