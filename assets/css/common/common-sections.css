@@ -312,12 +312,16 @@ body.no-scroll {
 /* ===== Section: Image With Text ===== */
 .image-text {
     display: flex;
-    gap: 0.9rem 4rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
+.image-text__title {
+    color: var(--color-primary);
+}
+
 .image-text__media {
-    flex: 1 1 45%;
+    flex: 1 1 48%;
     height: 100%;
     border-radius: 17px;
     overflow: hidden;
@@ -330,12 +334,10 @@ body.no-scroll {
 }
 
 .image-text__content {
-    flex: 1 1 45%;
+    flex: 1 1 50%;
 }
 
-.image-text__title {
-    color: var(--color-primary);
-}
+
 
 /* ===== Section: Content ===== */
 .content {
