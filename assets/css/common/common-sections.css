@@ -59,16 +59,15 @@ body.no-scroll {
     background: radial-gradient(34.02% 44.73% at 50% 55.27%,
             var(--color-primary) 0%,
             var(--color-bg) 100%);
+    text-align: center;
 }
 
 .page-title {
     font-size: 3rem;
-    text-align: center;
 }
 
 .page-subtitle {
     font-size: 1.5rem;
-    text-align: center;
 }
 
 /* ===== Buttons ===== */
