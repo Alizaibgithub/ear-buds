@@ -12,6 +12,6 @@
 
 @media (max-width: 768px) {
     .new-product-img {
-        aspect-ratio: 4 / 2;
+        aspect-ratio: 3.5 / 2;
     }
 }

@@ -6,7 +6,7 @@ var newProductSwiper = new Swiper(".new-product-swiper", {
   // centeredSlides: true,
   autoplay: {
     delay: 3000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".new-product-swiper-btn-next",
