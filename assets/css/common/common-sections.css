@@ -312,7 +312,7 @@ body.no-scroll {
 /* ===== Section: Image With Text ===== */
 .image-text {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem 2rem;
     flex-wrap: wrap;
 }
 
@@ -321,7 +321,7 @@ body.no-scroll {
 }
 
 .image-text__media {
-    flex: 1 1 48%;
+    flex: 1 1 46%;
     height: 100%;
     border-radius: 17px;
     overflow: hidden;
