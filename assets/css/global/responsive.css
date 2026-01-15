@@ -108,8 +108,8 @@
         font-size: 0.85rem;
     }
 
+    /* =====Section: Products Toolbar===== */
     .products-toolbar {
-        margin-bottom: 2rem;
         padding: 0.9rem 0;
     }
 
@@ -403,8 +403,11 @@
     }
 
     /* =====Section: Products Toolbar===== */
+        /* .products-toolbar-section {
+            margin-bottom: 5rem;
+        } */
+
     .products-toolbar {
-        margin-bottom: 4rem;
         padding: 0.8rem 0;
     }
 

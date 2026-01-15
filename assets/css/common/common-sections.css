@@ -31,6 +31,10 @@ body.no-scroll {
     gap: 1rem;
 }
 
+.most-sold-products .section-title {
+    margin-bottom: 7rem;
+}
+
 /* ===== Background Overlay ===== */
 .background-overlay {
     width: 100%;
@@ -159,7 +163,6 @@ body.no-scroll {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 8rem 4rem;
-    margin-top: 12%;
     justify-items: center;
 }
 
@@ -271,6 +274,10 @@ body.no-scroll {
 }
 
 /* ===== Section: Products Toolbar ===== */
+.products-toolbar-section {
+    margin-bottom: 6rem;
+}
+
 .products-toolbar {
     display: flex;
     justify-content: space-between;
