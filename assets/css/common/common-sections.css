@@ -66,6 +66,11 @@ body.no-scroll {
     font-size: 3rem;
 }
 
+.page-title span {
+    text-transform: lowercase;
+    font-size: 3rem;
+}
+
 .page-subtitle {
     font-size: 1.5rem;
 }
