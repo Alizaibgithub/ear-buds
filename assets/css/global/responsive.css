@@ -272,6 +272,15 @@
         padding: 0.8rem;
     }
 
+    /* =====Section: Image Text Section ===== */
+    .mv-card-icon {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .mv-card-icon i {
+        font-size: 2rem;
+    }
 
     /* =====Section: Call To Action ===== */
     .call-to-action {

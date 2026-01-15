@@ -1,11 +1,12 @@
 /* Section: Mission & Vision */
 .mv-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 2rem;
 }
 
 .mv-card {
+    flex: 1 1 47%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,19 +20,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    padding: 0.5rem;
+    width: 5rem;
+    height: 5rem;
     background: var(--color-primary);
-    color: #fff;
     font-size: 1.5rem;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.mv-card-icon i {
+    font-size: 2.5rem;
 }
 
 .mv-card-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
