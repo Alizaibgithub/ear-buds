@@ -234,6 +234,21 @@
         padding: 1rem 2rem;
     }
 
+    .menu-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        border-top: 1px solid #fff;
+        background-color: #000;
+        margin-top: auto;
+    }
+
+    .menu-footer .copy-right span {
+        font-size: 0.65rem;
+    }
+
     .btn-menu-toggle {
         display: block;
         order: 1;
