@@ -1,7 +1,7 @@
 /* ===== Global ===== */
 @import './global/variables.css';
 @import './global/reset.css';
-@import './global/utilities.css';
+@import './global/global.css';
 
 /* ===== Common ===== */
 @import './common/common-sections.css';
