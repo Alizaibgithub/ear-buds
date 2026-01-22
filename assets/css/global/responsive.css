@@ -245,6 +245,10 @@
         margin-top: auto;
     }
 
+    .menu-footer .copy-right {
+        display: block;
+    }
+
     .menu-footer .copy-right span {
         font-size: 0.65rem;
     }

@@ -78,3 +78,7 @@
 .menu-social-icons {
     display: none;
 }
+
+.menu-footer .copy-right {
+    display: none;
+}
