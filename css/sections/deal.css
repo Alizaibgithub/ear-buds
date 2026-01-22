@@ -7,15 +7,15 @@
 }
 
 .deal-slide-1 {
-    background: var(--color-primary) url('../../images/deal/deal-slide-1.png') no-repeat center/cover;
+    background: var(--color-primary) url('../../assets/images/deal/deal-slide-1.png') no-repeat center/cover;
 }
 
 .deal-slide-2 {
-    background: var(--color-primary) url('../../images/deal/deal-slide-2.png') no-repeat center/cover;
+    background: var(--color-primary) url('../../assets/images/deal/deal-slide-2.png') no-repeat center/cover;
 }
 
 .deal-slide-3 {
-    background: var(--color-primary) url('../../images/deal/deal-slide-3.png') no-repeat center/cover;
+    background: var(--color-primary) url('../../assets/images/deal/deal-slide-3.png') no-repeat center/cover;
 }
 
 .deal-overlay {

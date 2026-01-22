@@ -1,5 +1,5 @@
 // ===== Cart Drawer Functionality =====
-fetch("/assets/templates/cart-drawer.html")
+fetch("../templates/cart-drawer.html")
   .then((res) => res.text())
   .then((html) => {
     document.body.insertAdjacentHTML("beforeend", html);

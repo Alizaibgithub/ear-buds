@@ -1,14 +1,14 @@
-fetch("/assets/templates/product-filter.html")
+fetch("../templates/product-filter.html")
   .then((res) => res.text())
   .then((html) => {
     document.body.insertAdjacentHTML("beforeend", html);
 
     const productFilterButton = document.querySelector(".btn-product-filter");
     const productFilterSection = document.querySelector(
-      ".product-filter-section"
+      ".product-filter-section",
     );
     const productFilterCloseButton = document.querySelector(
-      ".product-filter__btn-close"
+      ".product-filter__btn-close",
     );
     const headerActions = document.querySelector(".header-actions");
     const headerLogo = document.querySelector(".header-logo-container");

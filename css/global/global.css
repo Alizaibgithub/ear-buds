@@ -1,12 +1,12 @@
 /* ===== CSS Global ===== */
 @font-face {
     font-family: "Karantina-Bold";
-    src: url("../../fonts/Karantina-Bold.ttf");
+    src: url("../../assets/fonts/Karantina-Bold.ttf");
 }
 
 @font-face {
     font-family: "Poppins-Regular";
-    src: url("../../fonts/Poppins-Regular.ttf");
+    src: url("../../assets/fonts/Poppins-Regular.ttf");
 }
 
 body {
