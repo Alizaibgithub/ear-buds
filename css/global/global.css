@@ -9,8 +9,11 @@
     src: url("../../assets/fonts/Poppins-Regular.ttf");
 }
 
-body {
+* {
     font-family: "Poppins-Regular", sans-serif;
+}
+
+body {
     background: var(--color-bg);
     color: var(--color-text);
 }
