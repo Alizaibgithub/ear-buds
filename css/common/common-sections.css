@@ -152,7 +152,7 @@ body.no-scroll {
 }
 
 /* =====Section: Call to Action===== */
-.call-to-action {
+.call-to-action-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@ body.no-scroll {
   text-align: center;
 }
 
-.call-to-action h2 {
+.call-to-action-container h2 {
   text-transform: capitalize;
 }
 
