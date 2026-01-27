@@ -45,11 +45,9 @@
   .hero-container,
   .most-sold-products-container,
   .products,
-  .new-products-container,
   .new-arrivals,
   .deals,
   .deal-container,
-  .related-products-container,
   .accordion-section,
   .new-product-swiper,
   .deal-swiper,
@@ -364,7 +362,9 @@
     width: 0.8rem;
     height: 0.8rem;
   }
-
+  .new-products-container {
+    gap: 5rem;
+  }
   .section {
     padding: 1.25rem 1rem;
   }

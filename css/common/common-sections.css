@@ -30,7 +30,9 @@ body.no-scroll {
   align-items: center;
   gap: 1rem;
 }
-
+.related-products-container {
+  gap: 7rem;
+}
 .most-sold-products .section-title {
   margin-bottom: 7rem;
 }
