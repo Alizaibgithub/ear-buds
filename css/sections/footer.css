@@ -1,112 +1,113 @@
 /* ===== Section: Footer ===== */
 .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background: var(--color-primary);
-    position: relative;
-    z-index: 9994;
+  background: var(--color-primary);
+  position: relative;
+  z-index: 9994;
 }
-
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .footer-divider {
-    height: 0.1rem;
-    border: none;
-    background-color: #000;
+  height: 0.1rem;
+  border: none;
+  background-color: #000;
 }
 
 .footer-top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .footer-logo-container {
-    height: 6rem;
+  height: 6rem;
 }
 
 .footer-logo {
-    height: 100%;
-    border: 3px solid #000;
+  height: 100%;
+  border: 3px solid #000;
 }
 
 .footer-heading {
-    color: #000;
+  color: #000;
 }
 
 .footer-nav-link {
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-nav-link span {
-    font-size: 1rem;
-    text-transform: lowercase;
-    transition: 0.3s ease-in-out;
+  font-size: 1rem;
+  text-transform: lowercase;
+  transition: 0.3s ease-in-out;
 }
 
 .footer-nav-link:hover,
 .footer-nav-link:hover span {
-    color: #000;
+  color: #000;
 }
 
 .footer-nav-link.active,
 .footer-nav-link.active span {
-    color: #000;
+  color: #000;
 }
 
 .news-letter-form {
-    display: flex;
-    border: 1px solid #000;
+  display: flex;
+  border: 1px solid #000;
 }
 
 .news-letter-input {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    background-color: transparent;
-    font-size: 1.2rem;
-    color: var(--color-text);
-    text-transform: none;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  text-transform: none;
 }
 
 .news-letter-input::placeholder {
-    color: var(--color-text);
-    text-transform: uppercase;
+  color: var(--color-text);
+  text-transform: uppercase;
 }
 
 .news-letter-input:focus {
-    outline: none;
+  outline: none;
 }
 
 .news-letter-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #000;
-    text-transform: uppercase;
-    cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 
 .social-icons-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .social-icon {
-    background-color: #000;
+  background-color: #000;
 }
 
 .copy-right span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
