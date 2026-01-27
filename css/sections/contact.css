@@ -1,103 +1,103 @@
 /* =====Section: Contact Form===== */
-.contact {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 1.25rem 2rem;
+.contact-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.25rem 2rem;
 }
 
 .contact-form-wrapper {
-    flex: 1 1 50%;
-    display: flex;
-    align-items: center;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
 }
 
 .contact-form {
-    width: 100%;
-    /* max-width: 40rem; */
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  width: 100%;
+  /* max-width: 40rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .form-required {
-    color: var(--color-primary);
-    font-size: 1.2rem;
+  color: var(--color-primary);
+  font-size: 1.2rem;
 }
 
 .form-input,
 .form-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    background: transparent;
-    border: 2px solid #1a1a1a;
-    border-radius: 12px;
-    outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 12px;
+  outline: none;
 }
 
 .form-input:focus,
 .form-textarea:focus {
-    background: rgba(207, 15, 71, 0.05);
-    border-color: var(--color-primary);
+  background: rgba(207, 15, 71, 0.05);
+  border-color: var(--color-primary);
 }
 
 .form-textarea {
-    resize: vertical;
-    min-height: 6rem;
-    max-height: 15rem;
+  resize: vertical;
+  min-height: 6rem;
+  max-height: 15rem;
 }
 
 .btn-submit {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .contact-map-container {
-    width: 100%;
-    height: 25rem;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: #1a1a1a;
+  width: 100%;
+  height: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #1a1a1a;
 }
 
 .contact-info-wrapper {
-    flex: 1 1 30%;
-    background: var(--color-primary);
-    border-radius: 12px;
-    padding: 1rem;
+  flex: 1 1 30%;
+  background: var(--color-primary);
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 .contact-info-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .contact-info-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: #000;
+  width: 3rem;
+  height: 3rem;
+  background-color: #000;
 }
 
 .contact-info-icon i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .contact-info-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .contact-info-label {
-    color: #000;
-    text-transform: capitalize;
+  color: #000;
+  text-transform: capitalize;
 }
 
 .contact-info-content a {
-    font-weight: 300;
+  font-weight: 300;
 }
