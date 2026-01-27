@@ -5,7 +5,7 @@ fetch("../templates/cart-drawer.html")
     document.body.insertAdjacentHTML("beforeend", html);
 
     const cartButton = document.querySelector(".header-btn-cart");
-    const cartSection = document.querySelector(".cart-drawer-section");
+    const cartSection = document.querySelector(".cart-drawer");
     const cartCloseButton = document.querySelector(".cart-btn-close");
     const menuToggleButton = document.querySelector(".btn-menu-toggle");
     const headerLogo = document.querySelector(".header-logo-container");
