@@ -1,5 +1,5 @@
 .checkout-container,
-.order-confirm-section {
+.order-confirm-container {
   width: 100%;
   height: 100%;
   position: relative;
@@ -236,7 +236,7 @@
   font-size: 3rem;
 }
 
-.order-confirm,
+.order-confirm-content,
 .order-details {
   border: 1px solid var(--color-muted);
   border-radius: 1rem;
