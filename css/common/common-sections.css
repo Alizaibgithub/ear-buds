@@ -487,6 +487,12 @@ body.no-scroll {
   font-size: 1.5rem;
 }
 
+.google-map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
 /* .category-swiper {
     width: 100%;
 } */

@@ -55,13 +55,8 @@
 .btn-submit {
   align-self: flex-start;
 }
-
-.contact-map-container {
-  width: 100%;
+.contact-google-map-container {
   height: 25rem;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: #1a1a1a;
 }
 
 .contact-info-wrapper {
