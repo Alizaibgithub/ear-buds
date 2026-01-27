@@ -14,7 +14,7 @@ body.no-scroll {
   border-bottom: 2px solid var(--color-primary);
 }
 
-.hero,
+.hero-container,
 .most-sold-products,
 .products,
 .new-products,
