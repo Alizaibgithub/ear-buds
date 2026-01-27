@@ -61,6 +61,8 @@ body.no-scroll {
     var(--color-primary) 0%,
     var(--color-bg) 100%
   );
+}
+.page-header-container {
   text-align: center;
 }
 
