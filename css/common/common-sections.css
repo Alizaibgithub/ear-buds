@@ -326,7 +326,7 @@ body.no-scroll {
 }
 
 /* ===== Section: Image With Text ===== */
-.image-text {
+.image-text-container {
   display: flex;
   gap: 1.25rem 2rem;
   flex-wrap: wrap;
