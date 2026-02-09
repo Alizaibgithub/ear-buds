@@ -303,11 +303,11 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -15%;
-  right: -15%;
+  top: -5px;
+  right: -5px;
   background-color: #fff;
-  border-radius: 6px;
-  font-size: 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
   color: #000;
 }
 
@@ -379,4 +379,9 @@
     max-width: 100%;
     width: 100%;
   }
+    .checkout-item-count {
+      width: 0.85rem;
+      height: 0.85rem;
+      font-size: 0.75rem;
+    }
 }
