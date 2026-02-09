@@ -1,326 +1,175 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
-    <!-- ===== Third Party CSS Libraries ===== -->
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--  ===== Custom Stylesheets ===== -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>Checkout | EarBuds</title>
-  </head>
 
-  <body>
-    <main>
-      <!-- ===== Section: Checkout ===== -->
-      <section class="checkout">
-        <div class="checkout-container">
-          <!-- Customer Details -->
-          <article class="customer-details">
-            <div class="customer-details-container">
-              <header class="customer-details-header">
-                <a href="/">
-                  <h1 class="site-name">EarBuds</h1>
-                </a>
-                <a
-                  href="/pages/cart.html"
-                  type="button"
-                  class="checkout-btn-cart"
-                >
-                  <i class="fa-solid fa-bag-shopping"></i>
-                </a>
-              </header>
-              <main class="customer-details-main">
-                <form action="" method="post" class="customer-details-form">
-                  <div class="contact-wrapper form-group">
-                    <div class="contact-header">
-                      <h2 class="contact-heading">Contact</h2>
-                      <a href="" class="sign-in-link">Sign in</a>
-                    </div>
-                    <div class="contact-field">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="form-input"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                    <div class="form-checkbox">
-                      <input
-                        type="checkbox"
-                        id="email-confirm"
-                        name="email-confirm"
-                        checked
-                      />
-                      <label for="email-confirm" class="email-confirm-label"
-                        >Email me with news and offers</label
-                      >
-                    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
+  <!-- ===== Third Party CSS Libraries ===== -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--  ===== Custom Stylesheets ===== -->
+  <link rel="stylesheet" href="../css/main.css" /> 
+   <title>Checkout | EarBuds</title>
+</head>
+
+<body>
+  <main>
+    <!-- ===== Section: Checkout ===== -->
+    <section class="checkout">
+      <div class="checkout-container">
+        <!-- Customer Details -->
+        <article class="customer-details">
+          <div class="customer-details-container">
+            <header class="customer-details-header">
+              <a href="/">
+                <h1 class="site-name">EarBuds</h1>
+              </a>
+              <a href="/pages/cart.html" type="button" class="checkout-btn-cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </header>
+            <main class="customer-details-main">
+              <form action="" method="post" class="customer-details-form">
+                <div class="contact-wrapper form-group">
+                  <div class="contact-header">
+                    <h2 class="contact-heading">Contact</h2>
+                    <a href="" class="sign-in-link">Sign in</a>
                   </div>
-                  <div class="shipping-wrapper form-group">
-                    <h2 class="shipping-heading">Shipping Address</h2>
-                    <div class="region-select-wrapper">
-                      <label for="region-select" class="region-label"
-                        >Country / Region</label
-                      >
-                      <select
-                        id="region-select"
-                        name="region-select"
-                        class="region-select"
-                        required
-                      >
-                        <option value="punjab" selected>Punjab</option>
-                        <option value="kpk">KPK</option>
-                        <option value="balochistan">Balochistan</option>
-                        <option value="sindh">Sindh</option>
-                      </select>
-                    </div>
-                    <div class="full-name-input">
-                      <input
-                        type="text"
-                        id="fName"
-                        name="fName"
-                        class="form-input"
-                        placeholder="First Name"
-                        required
-                      />
-                      <input
-                        type="text"
-                        id="lName"
-                        name="lName"
-                        class="form-input"
-                        placeholder="Last Name"
-                        required
-                      />
-                    </div>
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      class="form-input"
-                      placeholder="Address"
-                      required
-                    />
-                    <div class="city-input">
-                      <input
-                        type="text"
-                        id="city"
-                        name="city"
-                        class="form-input"
-                        placeholder="City"
-                        required
-                      />
-                      <input
-                        type="text"
-                        id="zip-code"
-                        name="zip-code"
-                        class="form-input"
-                        placeholder="Postal Code (Opt)"
-                      />
-                    </div>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      class="form-input"
-                      placeholder="Phone"
-                      required
-                    />
+                  <div class="contact-field">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Email" required />
                   </div>
                   <div class="form-checkbox">
-                    <input
-                      type="checkbox"
-                      id="save-info"
-                      name="save-info"
-                      checked
-                    />
-                    <label for="save-info" class="save-info-label"
-                      >Save this information for next time</label
-                    >
+                    <input type="checkbox" id="email-confirm" name="email-confirm" checked />
+                    <label for="email-confirm" class="email-confirm-label">Email me with news and offers</label>
                   </div>
-                  <div class="shipping-method-wrapper">
-                    <h2 class="shipping-method-heading">Shipping Method</h2>
-                    <div class="shipping-method-text">
-                      <p>Standard</p>
-                      <p>Free</p>
+                </div>
+                <div class="shipping-wrapper form-group">
+                  <h2 class="shipping-heading">Shipping Address</h2>
+                  <div class="region-select-wrapper">
+                    <label for="region-select" class="region-label">Country / Region</label>
+                    <select id="region-select" name="region-select" class="region-select" required>
+                      <option value="punjab" selected>Punjab</option>
+                      <option value="kpk">KPK</option>
+                      <option value="balochistan">Balochistan</option>
+                      <option value="sindh">Sindh</option>
+                    </select>
+                  </div>
+                  <div class="full-name-input">
+                    <input type="text" id="fName" name="fName" class="form-input" placeholder="First Name" required />
+                    <input type="text" id="lName" name="lName" class="form-input" placeholder="Last Name" required />
+                  </div>
+                  <input type="text" id="address" name="address" class="form-input" placeholder="Address" required />
+                  <div class="city-input">
+                    <input type="text" id="city" name="city" class="form-input" placeholder="City" required />
+                    <input type="text" id="zip-code" name="zip-code" class="form-input"
+                      placeholder="Postal Code (Opt)" />
+                  </div>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone" required />
+                </div>
+                <div class="form-checkbox">
+                  <input type="checkbox" id="save-info" name="save-info" checked />
+                  <label for="save-info" class="save-info-label">Save this information for next time</label>
+                </div>
+                <div class="shipping-method-wrapper">
+                  <h2 class="shipping-method-heading">Shipping Method</h2>
+                  <div class="shipping-method-text">
+                    <p>Standard</p>
+                    <p>Free</p>
+                  </div>
+                </div>
+                <div class="payment-wrapper">
+                  <h2 class="payment-heading">Payment</h2>
+                  <div class="payment">
+                    <p>Cash on Delivery (COD)</p>
+                  </div>
+                </div>
+                <div class="billing-wrapper">
+                  <h2 class="billing-heading">Billing Address</h2>
+                  <div class="billing-radio-buttons">
+                    <div class="billing-radio-button">
+                      <input type="radio" name="billing" id="billing-same" class="billing-btn billing-same" checked />
+                      <label for="billing-same" class="billing-label">Same as Shipping Address</label>
+                    </div>
+                    <div class="billing-radio-button">
+                      <input type="radio" name="billing" id="billing-diff" class="billing-btn billing-diff" />
+                      <label for="billing-diff" class="billing-label">Use a different Billing Address</label>
+                    </div>
+                    <div class="billing-address form-group">
+                      <div class="region-select-wrapper">
+                        <label for="billing-region-select" class="region-label">Country / Region</label>
+                        <select id="billing-region-select" name="billing-region-select" class="region-select" required>
+                          <option value="punjab" selected>Punjab</option>
+                          <option value="kpk">KPK</option>
+                          <option value="balochistan">Balochistan</option>
+                          <option value="sindh">Sindh</option>
+                        </select>
+                      </div>
+                      <div class="full-name-input">
+                        <input type="text" id="billing-fName" name="billing-fName" class="form-input"
+                          placeholder="First Name" required />
+                        <input type="text" id="billing-lName" name="billing-lName" class="form-input"
+                          placeholder="Last Name" required />
+                      </div>
+                      <input type="text" id="billing-address" name="billing-address" class="form-input"
+                        placeholder="Address" required />
+                      <div class="city-input">
+                        <input type="text" id="billing-city" name="billing-city" class="form-input" placeholder="City"
+                          required />
+                        <input type="text" id="billing-zip-code" name="billing-zip-code" class="form-input"
+                          placeholder="Postal Code (Opt)" />
+                      </div>
+                      <input type="tel" id="billing-phone" name="billing-phone" class="form-input" placeholder="Phone"
+                        required />
                     </div>
                   </div>
-                  <div class="payment-wrapper">
-                    <h2 class="payment-heading">Payment</h2>
-                    <div class="payment">
-                      <p>Cash on Delivery (COD)</p>
-                    </div>
-                  </div>
-                  <div class="billing-wrapper">
-                    <h2 class="billing-heading">Billing Address</h2>
-                    <div class="billing-radio-buttons">
-                      <div class="billing-radio-button">
-                        <input
-                          type="radio"
-                          name="billing"
-                          id="billing-same"
-                          class="billing-btn billing-same"
-                          checked
-                        />
-                        <label for="billing-same" class="billing-label"
-                          >Same as Shipping Address</label
-                        >
-                      </div>
-                      <div class="billing-radio-button">
-                        <input
-                          type="radio"
-                          name="billing"
-                          id="billing-diff"
-                          class="billing-btn billing-diff"
-                        />
-                        <label for="billing-diff" class="billing-label"
-                          >Use a different Billing Address</label
-                        >
-                      </div>
-                      <div class="billing-address form-group">
-                        <div class="region-select-wrapper">
-                          <label
-                            for="billing-region-select"
-                            class="region-label"
-                            >Country / Region</label
-                          >
-                          <select
-                            id="billing-region-select"
-                            name="billing-region-select"
-                            class="region-select"
-                            required
-                          >
-                            <option value="punjab" selected>Punjab</option>
-                            <option value="kpk">KPK</option>
-                            <option value="balochistan">Balochistan</option>
-                            <option value="sindh">Sindh</option>
-                          </select>
-                        </div>
-                        <div class="full-name-input">
-                          <input
-                            type="text"
-                            id="billing-fName"
-                            name="billing-fName"
-                            class="form-input"
-                            placeholder="First Name"
-                            required
-                          />
-                          <input
-                            type="text"
-                            id="billing-lName"
-                            name="billing-lName"
-                            class="form-input"
-                            placeholder="Last Name"
-                            required
-                          />
-                        </div>
-                        <input
-                          type="text"
-                          id="billing-address"
-                          name="billing-address"
-                          class="form-input"
-                          placeholder="Address"
-                          required
-                        />
-                        <div class="city-input">
-                          <input
-                            type="text"
-                            id="billing-city"
-                            name="billing-city"
-                            class="form-input"
-                            placeholder="City"
-                            required
-                          />
-                          <input
-                            type="text"
-                            id="billing-zip-code"
-                            name="billing-zip-code"
-                            class="form-input"
-                            placeholder="Postal Code (Opt)"
-                          />
-                        </div>
-                        <input
-                          type="tel"
-                          id="billing-phone"
-                          name="billing-phone"
-                          class="form-input"
-                          placeholder="Phone"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <a
-                      href="/pages/order-confirmation.html"
-                      class="btn btn-secondary"
-                      >Confirm Order</a
-                    >
-                  </div>
-                </form>
-              </main>
-              <footer class="customer-details-footer">
-                <nav class="order-nav">
-                  <ul>
-                    <li>
-                      <a
-                        href="/pages/shipping-delivery.html"
-                        class="order-nav-link"
-                        >Shipping & Delivery</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/pages/returns-refunds.html"
-                        class="order-nav-link"
-                        >Returns & Refunds</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/pages/privacy-policy.html"
-                        class="order-nav-link"
-                        >Privacy Policy</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="/pages/terms-conditions.html"
-                        class="order-nav-link"
-                        >Terms & Conditions</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/pages/contact.html" class="order-nav-link"
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </footer>
-              <!-- ===== JavaScript Files ===== -->
-              <!-- Whatsapp Button -->
-              <script src="../js/whatsappButton.js" defer></script>
-            </div>
-          </article>
-          <!-- Order Review -->
-          <aside class="order-review">
-            <div class="order-review-container">
+                </div>
+                <div>
+                  <a href="/pages/order-confirmation.html" class="btn btn-secondary">Confirm Order</a>
+                </div>
+              </form>
+            </main>
+            <footer class="customer-details-footer">
+              <nav class="order-nav">
+                <ul>
+                  <li>
+                    <a href="/pages/shipping-delivery.html" class="order-nav-link">Shipping & Delivery</a>
+                  </li>
+                  <li>
+                    <a href="/pages/returns-refunds.html" class="order-nav-link">Returns & Refunds</a>
+                  </li>
+                  <li>
+                    <a href="/pages/privacy-policy.html" class="order-nav-link">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="/pages/terms-conditions.html" class="order-nav-link">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="/pages/contact.html" class="order-nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </footer>
+            <!-- ===== JavaScript Files ===== -->
+            <!-- Whatsapp Button -->
+            <script src="../js/whatsappButton.js" defer></script>
+          </div>
+        </article>
+        <!-- Order Review -->
+        <aside class="order-review">
+            <details class="order-review-container" open>
+              <summary>
+                <h2>Order Summary <i class="fa-solid fa-chevron-down order-summary-icon"></i> </h2>
+                <div class="checkout-total-price">
+                  <span class="price-currency">PKR</span>
+                  <span class="price-amount">17,237</span>
+                </div>
+              </summary>
               <div class="checkout-items">
                 <div class="cart-item sale-product">
                   <div class="cart-item-image-wrapper">
-                    <img
-                      src="../assets/images/products/headphones/basspods-max.png"
-                      alt="Earpods"
-                      class="cart-item-image" loading="lazy"
-                    />
+                    <img src="../assets/images/products/headphones/basspods-max.png" alt="Earpods"
+                      class="cart-item-image" loading="lazy" />
                     <span class="checkout-item-count">4</span>
                   </div>
                   <div class="cart-item-content">
@@ -348,11 +197,8 @@
                 </div>
                 <div class="cart-item">
                   <div class="cart-item-image-wrapper">
-                    <img
-                      src="../assets/images/products/neckband-wireless/neckband-pro.png"
-                      alt="Neckband"
-                      class="cart-item-image" loading="lazy"
-                    />
+                    <img src="../assets/images/products/neckband-wireless/neckband-pro.png" alt="Neckband"
+                      class="cart-item-image" loading="lazy" />
                     <span class="checkout-item-count">4</span>
                   </div>
                   <div class="cart-item-content">
@@ -375,11 +221,8 @@
                 </div>
                 <div class="cart-item sale-product">
                   <div class="cart-item-image-wrapper">
-                    <img
-                      src="../assets/images/products/in-ear-earphones/noisecut-pro.png"
-                      alt="NoiseCut"
-                      class="cart-item-image" loading="lazy"
-                    />
+                    <img src="../assets/images/products/in-ear-earphones/noisecut-pro.png" alt="NoiseCut"
+                      class="cart-item-image" loading="lazy" />
                     <span class="checkout-item-count">4</span>
                   </div>
 
@@ -408,11 +251,8 @@
                 </div>
                 <div class="cart-item">
                   <div class="cart-item-image-wrapper">
-                    <img
-                      src="../assets/images/products/earpods/sonicpods-edge.png"
-                      alt="SonicPods"
-                      class="cart-item-image" loading="lazy"
-                    />
+                    <img src="../assets/images/products/earpods/sonicpods-edge.png" alt="SonicPods"
+                      class="cart-item-image" loading="lazy" />
                     <span class="checkout-item-count">4</span>
                   </div>
 
@@ -436,52 +276,50 @@
                   </div>
                 </div>
               </div>
-              <div class="discount-code-wrapper">
-                <form action="" method="post" class="discount-code-form">
-                  <input
-                    name="discount-code"
-                    type="text"
-                    class="discount-code-input form-input"
-                    placeholder="Discount Code"
-                  />
-                  <button
-                    type="submit"
-                    class="btn btn-secondary btn-discount-code"
-                  >
-                    Apply
-                  </button>
-                </form>
-              </div>
-              <div class="checkout-total-wrapper">
-                <div class="cart-total">
-                  <div class="cart-total-info">
-                    <h2 class="cart-total-title">Subtotal</h2>
-                    <span class="cart-total-info-separator">·</span>
-                    <span class="cart-item-count-wrapper"
-                      ><span class="cart-item-count">4</span> Items</span
-                    >
-                  </div>
-                  <div class="cart-total-price">
-                    <span class="price-currency">PKR</span>
-                    <span class="price-amount">17,237</span>
-                  </div>
+<div class="order-review-bottom">
+                <div class="discount-code-wrapper">
+                  <form action="" method="post" class="discount-code-form">
+                    <input name="discount-code" type="text" class="discount-code-input form-input" placeholder="Discount Code" />
+                    <button type="submit" class="btn btn-secondary btn-discount-code">
+                      Apply
+                    </button>
+                  </form>
                 </div>
-                <div class="shipping-amount">
-                  <h2 class="shipping-title">Shipping</h2>
-                  <p>Free</p>
-                </div>
-                <div class="checkout-total">
-                  <h2 class="checkout-total-title">Total</h2>
-                  <div class="checkout-total-price">
-                    <span class="price-currency">PKR</span>
-                    <span class="price-amount">17,237</span>
+                <div class="checkout-total-wrapper">
+                  <div class="cart-total">
+                    <div class="cart-total-info">
+                      <h2 class="cart-total-title">Subtotal</h2>
+                      <span class="cart-total-info-separator">·</span>
+                      <span class="cart-item-count-wrapper"><span class="cart-item-count">4</span> Items</span>
+                    </div>
+                    <div class="cart-total-price">
+                      <span class="price-currency">PKR</span>
+                      <span class="price-amount">17,237</span>
+                    </div>
+                  </div>
+                  <div class="shipping-amount">
+                    <h2 class="shipping-title">Shipping</h2>
+                    <p>Free</p>
+                  </div>
+                  <div class="checkout-total">
+                    <h2 class="checkout-total-title">Total</h2>
+                    <div class="checkout-total-price">
+                      <span class="price-currency">PKR</span>
+                      <span class="price-amount">17,237</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </main>
-  </body>
+</div>
+            </details>
+        </aside>
+      </div>
+    </section>
+  </main>
+      <script>
+        if (window.innerWidth <= 768) {
+          document.querySelector(".order-review-container")?.removeAttribute("open");
+        }
+      </script>
+</body>
+
 </html>
