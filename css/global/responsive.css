@@ -321,6 +321,9 @@
   .copy-right span {
     font-size: 0.9rem;
   }
+.product-quantity-selector{
+  max-width: 42%;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -517,4 +520,7 @@
     flex-direction: column-reverse;
     align-items: center;
   }
+.product-quantity-selector {
+  max-width: 40%;
+}
 }
