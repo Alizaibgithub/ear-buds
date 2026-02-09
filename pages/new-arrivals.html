@@ -1,498 +1,419 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
-    <!-- ===== Third Party CSS Libraries ===== -->
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--  ===== Custom Stylesheets ===== -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>New Arrivals | EarBuds</title>
-  </head>
 
-  <body>
-    <!-- ===== Section: Header ===== -->
-    <header class="section header">
-      <div class="header-container">
-        <div class="header-logo-container">
-          <a href="/"
-            ><img
-              class="header-logo"
-              src="../assets/images/logo.png"
-              alt="earbuds"
-          /></a>
-        </div>
-        <nav class="main-nav">
-          <div class="menu-header">
-            <h2 class="menu-heading">Menu</h2>
-            <button type="button" class="menu-btn-close">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <ul class="main-nav-list">
-            <li><a href="/" class="nav-link">Home</a></li>
-            <li>
-              <a href="/pages/categories.html" class="nav-link">Categories</a>
-            </li>
-            <li>
-              <a href="/pages/products.html" class="nav-link">Products</a>
-            </li>
-            <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
-            <li>
-              <a href="/pages/contact.html" class="nav-link">Contact Us</a>
-            </li>
-            <li>
-              <button type="button" class="menu-btn-account">
-                <i class="fa-solid fa-user"></i><span>Sign In</span>
-              </button>
-            </li>
-          </ul>
-          <div class="menu-footer">
-            <div class="menu-social-icons">
-              <ul class="social-icons-list">
-                <li>
-                  <a
-                    href="https://www.instagram.com/"
-                    class="social-icon btn-circle fa-brands fa-instagram"
-                    target="_blank"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    class="social-icon btn-circle fa-brands fa-linkedin"
-                    target="_blank"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.tiktok.com/"
-                    class="social-icon btn-circle fa-brands fa-tiktok"
-                    target="_blank"
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copy-right">
-              <span>Copyright © 2025 EarBuds. All rights reserved.</span>
-            </div>
-          </div>
-        </nav>
-        <div class="header-actions">
-          <ul class="header-btn-list">
-            <li>
-              <button type="button" class="header-icon header-btn-account">
-                <i class="fa-solid fa-user"></i>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="header-icon header-btn-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="header-icon header-btn-cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="cart-count">4</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="btn-menu-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
+  <!-- ===== Third Party CSS Libraries ===== -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--  ===== Custom Stylesheets ===== -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- ===== JavaScript Files ===== -->
+  <!-- Whatsapp Button -->
+  <script src="../js/whatsappButton.js" defer></script>
+  <!-- Background Overlay -->
+  <script src="../js/backgroundOverlay.js" defer></script>
+  <!-- Menu Toggle -->
+  <script src="../js/menuToggle.js" defer></script>
+  <!-- Cart Drawer -->
+  <script src="../js/cartDrawer.js" defer></script>
+  <!-- Product Filter -->
+  <script src="../js/productFilter.js"></script>
+  <!-- scrollToTop Button -->
+  <script src="../js/scrollToTopButton.js" defer></script>
+  <title>New Arrivals | EarBuds</title>
+</head>
+
+<body>
+  <!-- ===== Section: Header ===== -->
+  <header class="section header">
+    <div class="header-container">
+      <div class="header-logo-container">
+        <a href="/"><img class="header-logo" src="../assets/images/logo.png" alt="earbuds" /></a>
       </div>
-    </header>
-    <main>
-      <!-- ===== Section: Page Header ===== -->
-      <section class="section page-header">
-        <div class="page-header-container">
-          <h1 class="page-title">New Arrivals</h1>
-          <p class="page-subtitle">
-            Discover the latest products added to our collection and stay ahead
-            with new trends
-          </p>
+      <nav class="main-nav">
+        <div class="menu-header">
+          <h2 class="menu-heading">Menu</h2>
+          <button type="button" class="menu-btn-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-      </section>
-      <!-- ===== Section: Products Toolbar ===== -->
-      <section class="section products-toolbar">
-        <div class="products-toolbar-container">
-          <div class="toolbar-left">
-            <button class="btn-product-filter">
-              <i class="fa-solid fa-sliders"></i><span>Show Filters</span>
+        <ul class="main-nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li>
+            <a href="/pages/categories.html" class="nav-link">Categories</a>
+          </li>
+          <li>
+            <a href="/pages/products.html" class="nav-link">Products</a>
+          </li>
+          <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
+          <li>
+            <a href="/pages/contact.html" class="nav-link">Contact Us</a>
+          </li>
+          <li>
+            <button type="button" class="menu-btn-account">
+              <i class="fa-solid fa-user"></i><span>Sign In</span>
             </button>
-          </div>
-          <div class="toolbar-right">
-            <div class="view-toggle">
-              <button class="btn-view-two">
-                <i class="fa-solid fa-grip-vertical"></i>
-              </button>
-              <button class="btn-view-three">
-                <i class="fa-solid fa-grip"></i>
-              </button>
-            </div>
-            <div class="sort-wrapper">
-              <label for="sort-select" class="sort-label">Sort by:</label>
-              <select id="sort-select" name="sort-select" class="sort-select">
-                <option value="featured">Featured Products</option>
-                <option value="best-selling">Most Sold Products</option>
-                <option value="name-az">Alphabetically, A-Z</option>
-                <option value="name-za">Alphabetically, Z-A</option>
-                <option value="price-low-high">Price, Low to High</option>
-                <option value="price-high-low">Price, High to Low</option>
-                <option value="date-old-new">Date, Old to New</option>
-                <option value="date-new-old">Date, New to Old</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Section: New Arrivals ===== -->
-      <section class="section new-arrivals">
-        <div class="new-arrivals-container">
-          <div class="products-grid">
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/neckband-wireless/airflex-mini.png"
-                  alt="AirFlex"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">AirFlex</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">3,999</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons">
-                  <a href="/pages/products.html" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/in-ear-earphones/echobuds-neo.png"
-                  alt="EchoBuds"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">EchoBuds</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">3,899</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons">
-                  <a href="/pages/products.html" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/earpods/sonicpods-edge.png"
-                  alt="SonicPods"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">SonicPods</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">4,299</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons">
-                  <a href="/pages/products.html" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/headphones/audiocore-max.png"
-                  alt="AudioCore"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">AudioCore</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">7,499</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons product-actions">
-                  <a href="/pages/products.html" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/neckband-wireless/flexband-nova.png"
-                  alt="FlexBand"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">FlexBand</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">4,799</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons product-actions">
-                  <a href="/pages/products.html" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/in-ear-earphones/audiofit-slim.png"
-                  alt="AudioFit"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">AudioFit</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">4,499</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons product-actions">
-                  <a href="/pages/products.html" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="section-footer">
-            <a href="#" class="btn btn-secondary">
-              Show More<i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- ===== Section: Footer ===== -->
-    <footer class="section footer">
-      <div class="footer-container">
-        <hr class="footer-divider" />
-        <div class="footer-top">
-          <div class="footer-logo-container">
-            <a href="/"
-              ><img
-                class="footer-logo"
-                src="../assets/images/logo.png"
-                alt="earbuds"
-            /></a>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">Shop</h2>
-            <nav class="footer-nav footer-nav-pages">
-              <ul>
-                <li>
-                  <a href="/pages/categories.html" class="footer-nav-link"
-                    >Categories</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/products.html" class="footer-nav-link"
-                    >Products</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/pages/new-arrivals.html"
-                    class="footer-nav-link active"
-                    >New Arrivals</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/deals.html" class="footer-nav-link">Deals</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">Support</h2>
-            <nav class="footer-nav footer-nav-help">
-              <ul>
-                <li>
-                  <a href="/pages/faqs.html" class="footer-nav-link"
-                    >FAQ<span>s</span></a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/contact.html" class="footer-nav-link"
-                    >Contact Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/pages/shipping-delivery.html"
-                    class="footer-nav-link"
-                    >Shipping & Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/returns-refunds.html" class="footer-nav-link"
-                    >Returns & Refunds</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">COMPANY</h2>
-            <nav class="footer-nav footer-nav-help">
-              <ul>
-                <li>
-                  <a href="/pages/about.html" class="footer-nav-link"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/privacy-policy.html" class="footer-nav-link"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/terms-conditions.html" class="footer-nav-link"
-                    >Terms & Conditions</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="news-letter">
-            <h2 class="footer-heading">News Letter</h2>
-            <form action="" class="news-letter-form">
-              <input
-                name="news-letter-email"
-                type="email"
-                class="news-letter-input"
-                placeholder="Email"
-              />
-              <button type="submit" class="news-letter-btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="copy-right">
-            <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
-          </div>
-          <div class="social-icons">
+          </li>
+        </ul>
+        <div class="menu-footer">
+          <div class="menu-social-icons">
             <ul class="social-icons-list">
               <li>
-                <a
-                  href="https://www.instagram.com/"
-                  class="social-icon btn-circle fa-brands fa-instagram"
-                  target="_blank"
-                ></a>
+                <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                  target="_blank"></a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  class="social-icon btn-circle fa-brands fa-linkedin"
-                  target="_blank"
-                ></a>
+                <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                  target="_blank"></a>
               </li>
               <li>
-                <a
-                  href="https://www.tiktok.com/"
-                  class="social-icon btn-circle fa-brands fa-tiktok"
-                  target="_blank"
-                ></a>
+                <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok"
+                  target="_blank"></a>
               </li>
             </ul>
           </div>
+          <div class="copy-right">
+            <span>Copyright © 2025 EarBuds. All rights reserved.</span>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <ul class="header-btn-list">
+          <li>
+            <button type="button" class="header-icon header-btn-account">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header-icon header-btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header-icon header-btn-cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart-count">4</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- ===== Section: Page Header ===== -->
+    <section class="section page-header">
+      <div class="page-header-container">
+        <h1 class="page-title">New Arrivals</h1>
+        <p class="page-subtitle">
+          Discover the latest products added to our collection and stay ahead
+          with new trends
+        </p>
+      </div>
+    </section>
+    <!-- ===== Section: Products Toolbar ===== -->
+    <section class="section products-toolbar">
+      <div class="products-toolbar-container">
+        <div class="toolbar-left">
+          <button class="btn-product-filter">
+            <i class="fa-solid fa-sliders"></i><span>Show Filters</span>
+          </button>
+        </div>
+        <div class="toolbar-right">
+          <div class="view-toggle">
+            <button class="btn-view-two">
+              <i class="fa-solid fa-grip-vertical"></i>
+            </button>
+            <button class="btn-view-three">
+              <i class="fa-solid fa-grip"></i>
+            </button>
+          </div>
+          <div class="sort-wrapper">
+            <label for="sort-select" class="sort-label">Sort by:</label>
+            <select id="sort-select" name="sort-select" class="sort-select">
+              <option value="featured">Featured Products</option>
+              <option value="best-selling">Most Sold Products</option>
+              <option value="name-az">Alphabetically, A-Z</option>
+              <option value="name-za">Alphabetically, Z-A</option>
+              <option value="price-low-high">Price, Low to High</option>
+              <option value="price-high-low">Price, High to Low</option>
+              <option value="date-old-new">Date, Old to New</option>
+              <option value="date-new-old">Date, New to Old</option>
+            </select>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- ===== JavaScript Files ===== -->
-    <!-- Whatsapp Button -->
-    <script src="../js/whatsappButton.js"></script>
-    <!-- Background Overlay -->
-    <script src="../js/backgroundOverlay.js"></script>
-    <!-- Menu Toggle -->
-    <script src="../js/menuToggle.js"></script>
-    <!-- Cart Drawer -->
-    <script src="../js/cartDrawer.js"></script>
-    <!-- Product Filter -->
-    <script src="../js/productFilter.js"></script>
-    <!-- scrollToTop Button -->
-    <script src="../js/scrollToTopButton.js"></script>
-  </body>
+    </section>
+    <!-- ===== Section: New Arrivals ===== -->
+    <section class="section new-arrivals">
+      <div class="new-arrivals-container">
+        <div class="products-grid">
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/neckband-wireless/airflex-mini.png" alt="AirFlex"
+                class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">AirFlex</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">3,999</span>
+                  </span>
+                </div>
+              </div>
+              <div class="action-buttons">
+                <a href="/pages/products.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/in-ear-earphones/echobuds-neo.png" alt="EchoBuds"
+                class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">EchoBuds</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">3,899</span>
+                  </span>
+                </div>
+              </div>
+              <div class="action-buttons">
+                <a href="/pages/products.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/earpods/sonicpods-edge.png" alt="SonicPods" class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">SonicPods</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">4,299</span>
+                  </span>
+                </div>
+              </div>
+              <div class="action-buttons">
+                <a href="/pages/products.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/headphones/audiocore-max.png" alt="AudioCore" class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">AudioCore</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">7,499</span>
+                  </span>
+                </div>
+              </div>
+              <div class="action-buttons product-actions">
+                <a href="/pages/products.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/neckband-wireless/flexband-nova.png" alt="FlexBand"
+                class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">FlexBand</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">4,799</span>
+                  </span>
+                </div>
+              </div>
+              <div class="action-buttons product-actions">
+                <a href="/pages/products.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/in-ear-earphones/audiofit-slim.png" alt="AudioFit"
+                class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">AudioFit</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">4,499</span>
+                  </span>
+                </div>
+              </div>
+              <div class="action-buttons product-actions">
+                <a href="/pages/products.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-footer">
+          <a href="#" class="btn btn-secondary">
+            Show More<i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Section: Footer ===== -->
+  <footer class="section footer">
+    <div class="footer-container">
+      <hr class="footer-divider" />
+      <div class="footer-top">
+        <div class="footer-logo-container">
+          <a href="/"><img class="footer-logo" src="../assets/images/logo.png" alt="earbuds" /></a>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Shop</h2>
+          <nav class="footer-nav footer-nav-pages">
+            <ul>
+              <li>
+                <a href="/pages/categories.html" class="footer-nav-link">Categories</a>
+              </li>
+              <li>
+                <a href="/pages/products.html" class="footer-nav-link">Products</a>
+              </li>
+              <li>
+                <a href="/pages/new-arrivals.html" class="footer-nav-link active">New Arrivals</a>
+              </li>
+              <li>
+                <a href="/pages/deals.html" class="footer-nav-link">Deals</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Support</h2>
+          <nav class="footer-nav footer-nav-help">
+            <ul>
+              <li>
+                <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
+              </li>
+              <li>
+                <a href="/pages/contact.html" class="footer-nav-link">Contact Us</a>
+              </li>
+              <li>
+                <a href="/pages/shipping-delivery.html" class="footer-nav-link">Shipping & Delivery</a>
+              </li>
+              <li>
+                <a href="/pages/returns-refunds.html" class="footer-nav-link">Returns & Refunds</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">COMPANY</h2>
+          <nav class="footer-nav footer-nav-help">
+            <ul>
+              <li>
+                <a href="/pages/about.html" class="footer-nav-link">About Us</a>
+              </li>
+              <li>
+                <a href="/pages/privacy-policy.html" class="footer-nav-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/pages/terms-conditions.html" class="footer-nav-link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="news-letter">
+          <h2 class="footer-heading">News Letter</h2>
+          <form action="" class="news-letter-form">
+            <input name="news-letter-email" type="email" class="news-letter-input" placeholder="Email" />
+            <button type="submit" class="news-letter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copy-right">
+          <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
+        </div>
+        <div class="social-icons">
+          <ul class="social-icons-list">
+            <li>
+              <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

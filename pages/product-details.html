@@ -1,622 +1,504 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
-    <!-- ===== Third Party CSS Libraries ===== -->
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--  ===== Custom Stylesheets ===== -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>Product Details | EarBuds</title>
-  </head>
 
-  <body>
-    <!-- ===== Section: Header ===== -->
-    <header class="section header">
-      <div class="header-container">
-        <div class="header-logo-container">
-          <a href="/"
-            ><img
-              class="header-logo"
-              src="../assets/images/logo.png"
-              alt="earbuds"
-          /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
+  <!-- ===== Third Party CSS Libraries ===== -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--  ===== Custom Stylesheets ===== -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- ===== JavaScript Files ===== -->
+  <!-- Whatsapp Button -->
+  <script src="../js/whatsappButton.js" defer></script>
+  <!-- Background Overlay -->
+  <script src="../js/backgroundOverlay.js" defer></script>
+  <!-- Menu Toggle -->
+  <script src="../js/menuToggle.js" defer></script>
+  <!-- Cart Drawer -->
+  <script src="../js/cartDrawer.js" defer></script>
+  <!-- scrollToTop Button -->
+  <script src="../js/scrollToTopButton.js" defer></script>
+  <title>Product Details | EarBuds</title>
+</head>
+
+<body>
+  <!-- ===== Section: Header ===== -->
+  <header class="section header">
+    <div class="header-container">
+      <div class="header-logo-container">
+        <a href="/"><img class="header-logo" src="../assets/images/logo.png" alt="earbuds" /></a>
+      </div>
+      <nav class="main-nav">
+        <div class="menu-header">
+          <h2 class="menu-heading">Menu</h2>
+          <button type="button" class="menu-btn-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-        <nav class="main-nav">
-          <div class="menu-header">
-            <h2 class="menu-heading">Menu</h2>
-            <button type="button" class="menu-btn-close">
-              <i class="fa-solid fa-xmark"></i>
+        <ul class="main-nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li>
+            <a href="/pages/categories.html" class="nav-link">Categories</a>
+          </li>
+          <li>
+            <a href="/pages/products.html" class="nav-link">Products</a>
+          </li>
+          <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
+          <li>
+            <a href="/pages/contact.html" class="nav-link">Contact Us</a>
+          </li>
+          <li>
+            <button type="button" class="menu-btn-account">
+              <i class="fa-solid fa-user"></i><span>Sign In</span>
+            </button>
+          </li>
+          <li class="menu-social-icons">
+            <div class="social-icons">
+              <ul class="social-icons-list">
+                <li>
+                  <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                    target="_blank"></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                    target="_blank"></a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok"
+                    target="_blank"></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <ul class="header-btn-list">
+          <li>
+            <button type="button" class="header-icon header-btn-account">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header-icon header-btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header-icon header-btn-cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart-count">4</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- ===== Section: Product Details ===== -->
+    <section class="section product-details">
+      <div class="product-details-container sale-product">
+        <div class="product-media">
+          <div class="product-thumbnails">
+            <button class="product-thumbnail">
+              <img src="../assets/images/product-details/basspods-max/basspods-max.png" alt=""
+                class="product-thumbnail-image" />
+            </button>
+            <button class="product-thumbnail">
+              <img src="../assets/images/product-details/basspods-max/basspods-max-2.png" alt=""
+                class="product-thumbnail-image" />
+            </button>
+            <button class="product-thumbnail">
+              <img src="../assets/images/product-details/basspods-max/basspods-max-3.png" alt=""
+                class="product-thumbnail-image" />
+            </button>
+            <button class="product-thumbnail">
+              <img src="../assets/images/product-details/basspods-max/basspods-max-4.png" alt=""
+                class="product-thumbnail-image" />
             </button>
           </div>
-          <ul class="main-nav-list">
-            <li><a href="/" class="nav-link">Home</a></li>
-            <li>
-              <a href="/pages/categories.html" class="nav-link">Categories</a>
-            </li>
-            <li>
-              <a href="/pages/products.html" class="nav-link">Products</a>
-            </li>
-            <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
-            <li>
-              <a href="/pages/contact.html" class="nav-link">Contact Us</a>
-            </li>
-            <li>
-              <button type="button" class="menu-btn-account">
-                <i class="fa-solid fa-user"></i><span>Sign In</span>
-              </button>
-            </li>
-            <li class="menu-social-icons">
-              <div class="social-icons">
-                <ul class="social-icons-list">
-                  <li>
-                    <a
-                      href="https://www.instagram.com/"
-                      class="social-icon btn-circle fa-brands fa-instagram"
-                      target="_blank"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
-                      class="social-icon btn-circle fa-brands fa-linkedin"
-                      target="_blank"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.tiktok.com/"
-                      class="social-icon btn-circle fa-brands fa-tiktok"
-                      target="_blank"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <ul class="header-btn-list">
-            <li>
-              <button type="button" class="header-icon header-btn-account">
-                <i class="fa-solid fa-user"></i>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="header-icon header-btn-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="header-icon header-btn-cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="cart-count">4</span>
-              </button>
-            </li>
-          </ul>
+          <figure class="product-media-main">
+            <img src="../assets/images/product-details/basspods-max/basspods-max.png" alt="EarBuds main image"
+              class="product-media-image" />
+          </figure>
         </div>
-        <button type="button" class="btn-menu-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </header>
-    <main>
-      <!-- ===== Section: Product Details ===== -->
-      <section class="section product-details">
-        <div class="product-details-container sale-product">
-          <div class="product-media">
-            <div class="product-thumbnails">
-              <button class="product-thumbnail">
-                <img
-                  src="../assets/images/product-details/basspods-max/basspods-max.png"
-                  alt=""
-                  class="product-thumbnail-image"
-                />
+        <div class="product-details-content">
+          <header class="product-header">
+            <div class="product-details-info">
+              <h3 class="product-title">BassPods</h3>
+              <p class="product-description-summary">
+                BassPods offer deep bass, clear audio, and a sleek wireless
+                design for everyday listening comfort.
+              </p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="product-price">
+                <span class="price-regular">
+                  <span class="price-currency">PKR</span>
+                  <span class="price-amount">7,999</span>
+                </span>
+                <span class="price-sale">
+                  <span class="price-currency">PKR</span>
+                  <span class="price-amount">4,799</span>
+                </span>
+              </div>
+            </div>
+          </header>
+          <div class="product-options">
+            <div class="option-group option-color-swatches">
+              <div class="option-header color-swatches-header">
+                <span class="option-label color-swatches-label">Color:</span>
+                <span class="option-selected color-selected">White</span>
+              </div>
+              <div class="option-values color-swatches">
+                <div class="color-swatch">
+                  <input type="radio" name="color" value="White" id="white" class="color-swatch__input" checked />
+                  <label for="white" class="color-swatch__label">
+                    <span class="color-swatch__visual color-swatch__visual--white"></span>
+                  </label>
+                </div>
+                <div class="color-swatch">
+                  <input type="radio" name="color" value="black" id="black" class="color-swatch__input" />
+                  <label for="black" class="color-swatch__label">
+                    <span class="color-swatch__visual color-swatch__visual--black"></span>
+                  </label>
+                </div>
+                <div class="color-swatch">
+                  <input type="radio" name="color" value="red" id="red" class="color-swatch__input" />
+                  <label for="red" class="color-swatch__label">
+                    <span class="color-swatch__visual color-swatch__visual--red"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-quantity-selector">
+            <label for="quantity-count" class="quantity-label">Quantity</label>
+            <div class="quantity-selector-wrapper">
+              <button class="btn-quantity btn-minus">
+                <i class="fa-solid fa-minus"></i>
               </button>
-              <button class="product-thumbnail">
-                <img
-                  src="../assets/images/product-details/basspods-max/basspods-max-2.png"
-                  alt=""
-                  class="product-thumbnail-image"
-                />
-              </button>
-              <button class="product-thumbnail">
-                <img
-                  src="../assets/images/product-details/basspods-max/basspods-max-3.png"
-                  alt=""
-                  class="product-thumbnail-image"
-                />
-              </button>
-              <button class="product-thumbnail">
-                <img
-                  src="../assets/images/product-details/basspods-max/basspods-max-4.png"
-                  alt=""
-                  class="product-thumbnail-image"
-                />
+              <input type="number" name="quantity-count" class="quantity-count" value="1" />
+              <button class="btn-quantity btn-plus">
+                <i class="fa-solid fa-plus"></i>
               </button>
             </div>
-            <figure class="product-media-main">
-              <img
-                src="../assets/images/product-details/basspods-max/basspods-max.png"
-                alt="EarBuds main image"
-                class="product-media-image"
-              />
-            </figure>
           </div>
-          <div class="product-details-content">
-            <header class="product-header">
-              <div class="product-details-info">
-                <h3 class="product-title">BassPods</h3>
-                <p class="product-description-summary">
-                  BassPods offer deep bass, clear audio, and a sleek wireless
-                  design for everyday listening comfort.
-                </p>
-                <div class="product-rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
+          <div class="product-actions">
+            <button type="submit" class="btn btn-secondary btn-atc">
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Section: Product Questions ===== -->
+    <section class="section accordion-section product-questions">
+      <div class="accordion-container">
+        <article class="accordion-item">
+          <details class="accordion-details" open>
+            <summary class="accordion-question">
+              <span class="accordion-question-text">Description</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="accordion-answer">
+              <ul>
+                <li>
+                  BassPods are designed for music enthusiasts who value deep
+                  bass, crisp audio clarity, and comfortable daily wear.
+                </li>
+                <li>
+                  Perfect for both casual listening and professional use,
+                  offering a seamless wireless experience.
+                </li>
+                <li>
+                  Audio Quality: Powerful bass, balanced mids, and
+                  crystal-clear highs for immersive listening.
+                </li>
+                <li>
+                  Design & Comfort: Lightweight ergonomic design with soft ear
+                  cushions and adjustable headband for long-term comfort.
+                </li>
+                <li>
+                  Wireless Connectivity: Bluetooth 5.2 ensures stable
+                  connections up to 10 meters with minimal latency.
+                </li>
+                <li>
+                  Battery Life: Up to 30 hours of playtime; quick charge gives
+                  3 hours of playback in just 15 minutes.
+                </li>
+                <li>
+                  Durability: Sweat and water-resistant build for everyday use
+                  and outdoor activities.
+                </li>
+                <li>
+                  Additional Features: Built-in microphone for hands-free
+                  calls, touch controls, and compatibility with voice
+                  assistants.
+                </li>
+              </ul>
+            </div>
+          </details>
+        </article>
+        <article class="accordion-item">
+          <details class="accordion-details">
+            <summary class="accordion-question">
+              <span class="accordion-question-text">Shipping & Delivery</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="accordion-answer">
+              <ul>
+                <li>
+                  Orders processed within 1–2 business days; delivery usually
+                  3–7 days.
+                </li>
+                <li>
+                  Free delivery for orders above PKR 2,000; PKR 199 for
+                  others.
+                </li>
+                <li>Tracking link provided via SMS/email after dispatch.</li>
+                <li>
+                  Delivery available across all major cities and remote
+                  regions in Pakistan.
+                </li>
+                <li>
+                  Contact support immediately for incorrect addresses or
+                  damaged/missing items.
+                </li>
+              </ul>
+            </div>
+          </details>
+        </article>
+        <article class="accordion-item">
+          <details class="accordion-details">
+            <summary class="accordion-question">
+              <span class="accordion-question-text">Returns & Refunds</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </summary>
+            <div class="accordion-answer">
+              <ul>
+                <li>
+                  Returns accepted within 14 days; items must be unused and in
+                  original packaging.
+                </li>
+                <li>
+                  Refunds processed within 5–7 business days to the original
+                  payment method.
+                </li>
+                <li>
+                  Exchanges available through customer support; certain items
+                  are non-returnable.
+                </li>
+                <li>
+                  Initiate returns by contacting support with order details;
+                  prepaid label provided if applicable.
+                </li>
+              </ul>
+            </div>
+          </details>
+        </article>
+      </div>
+    </section>
+    <!-- ===== Section: Related Products ===== -->
+    <section class="section related-products">
+      <div class="related-products-container">
+        <h2 class="section-heading">You May Also Like...</h2>
+        <div class="products-grid">
+          <article class="product-card sale-product">
+            <span class="product-badge badge-sale"><span class="sale-percent">45</span>% Off</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/headphones/wavepods-ultra.png" alt="WavePods" class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">WavePods</h3>
                 <div class="product-price">
                   <span class="price-regular">
                     <span class="price-currency">PKR</span>
-                    <span class="price-amount">7,999</span>
+                    <span class="price-amount">8,499</span>
                   </span>
                   <span class="price-sale">
                     <span class="price-currency">PKR</span>
-                    <span class="price-amount">4,799</span>
+                    <span class="price-amount">4,674</span>
                   </span>
                 </div>
               </div>
-            </header>
-            <div class="product-options">
-              <div class="option-group option-color-swatches">
-                <div class="option-header color-swatches-header">
-                  <span class="option-label color-swatches-label">Color:</span>
-                  <span class="option-selected color-selected">White</span>
-                </div>
-                <div class="option-values color-swatches">
-                  <div class="color-swatch">
-                    <input
-                      type="radio"
-                      name="color"
-                      value="White"
-                      id="white"
-                      class="color-swatch__input"
-                      checked
-                    />
-                    <label for="white" class="color-swatch__label">
-                      <span
-                        class="color-swatch__visual color-swatch__visual--white"
-                      ></span>
-                    </label>
-                  </div>
-                  <div class="color-swatch">
-                    <input
-                      type="radio"
-                      name="color"
-                      value="black"
-                      id="black"
-                      class="color-swatch__input"
-                    />
-                    <label for="black" class="color-swatch__label">
-                      <span
-                        class="color-swatch__visual color-swatch__visual--black"
-                      ></span>
-                    </label>
-                  </div>
-                  <div class="color-swatch">
-                    <input
-                      type="radio"
-                      name="color"
-                      value="red"
-                      id="red"
-                      class="color-swatch__input"
-                    />
-                    <label for="red" class="color-swatch__label">
-                      <span
-                        class="color-swatch__visual color-swatch__visual--red"
-                      ></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-quantity-selector">
-              <label for="quantity-count" class="quantity-label"
-                >Quantity</label
-              >
-              <div class="quantity-selector-wrapper">
-                <button class="btn-quantity btn-minus">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <input
-                  type="number"
-                  name="quantity-count"
-                  class="quantity-count"
-                  value="1"
-                />
-                <button class="btn-quantity btn-plus">
+              <div class="action-buttons product-actions">
+                <a href="#" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
                   <i class="fa-solid fa-plus"></i>
                 </button>
               </div>
             </div>
-            <div class="product-actions">
-              <button type="submit" class="btn btn-secondary btn-atc">
-                <span>Add to Cart</span>
-              </button>
+          </article>
+          <article class="product-card">
+            <span class="product-badge badge-new">New</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/headphones/audiocore-max.png" alt="AudioCore" class="product-image" />
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Section: Product Questions ===== -->
-      <section class="section accordion-section product-questions">
-        <div class="accordion-container">
-          <article class="accordion-item">
-            <details class="accordion-details" open>
-              <summary class="accordion-question">
-                <span class="accordion-question-text">Description</span>
-                <span class="accordion-icon" aria-hidden="true">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="accordion-answer">
-                <ul>
-                  <li>
-                    BassPods are designed for music enthusiasts who value deep
-                    bass, crisp audio clarity, and comfortable daily wear.
-                  </li>
-                  <li>
-                    Perfect for both casual listening and professional use,
-                    offering a seamless wireless experience.
-                  </li>
-                  <li>
-                    Audio Quality: Powerful bass, balanced mids, and
-                    crystal-clear highs for immersive listening.
-                  </li>
-                  <li>
-                    Design & Comfort: Lightweight ergonomic design with soft ear
-                    cushions and adjustable headband for long-term comfort.
-                  </li>
-                  <li>
-                    Wireless Connectivity: Bluetooth 5.2 ensures stable
-                    connections up to 10 meters with minimal latency.
-                  </li>
-                  <li>
-                    Battery Life: Up to 30 hours of playtime; quick charge gives
-                    3 hours of playback in just 15 minutes.
-                  </li>
-                  <li>
-                    Durability: Sweat and water-resistant build for everyday use
-                    and outdoor activities.
-                  </li>
-                  <li>
-                    Additional Features: Built-in microphone for hands-free
-                    calls, touch controls, and compatibility with voice
-                    assistants.
-                  </li>
-                </ul>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">AudioCore</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">7,499</span>
+                  </span>
+                </div>
               </div>
-            </details>
+              <div class="action-buttons product-actions">
+                <a href="#" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
           </article>
-          <article class="accordion-item">
-            <details class="accordion-details">
-              <summary class="accordion-question">
-                <span class="accordion-question-text">Shipping & Delivery</span>
-                <span class="accordion-icon" aria-hidden="true">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="accordion-answer">
-                <ul>
-                  <li>
-                    Orders processed within 1–2 business days; delivery usually
-                    3–7 days.
-                  </li>
-                  <li>
-                    Free delivery for orders above PKR 2,000; PKR 199 for
-                    others.
-                  </li>
-                  <li>Tracking link provided via SMS/email after dispatch.</li>
-                  <li>
-                    Delivery available across all major cities and remote
-                    regions in Pakistan.
-                  </li>
-                  <li>
-                    Contact support immediately for incorrect addresses or
-                    damaged/missing items.
-                  </li>
-                </ul>
+          <article class="product-card">
+            <span class="product-badge badge-mostsold">Most Sold</span>
+            <div class="product-image-wrapper">
+              <img src="../assets/images/products/headphones/beatforce-x1.png" alt="BeatForce" class="product-image" />
+            </div>
+            <div class="product-content">
+              <div class="product-info">
+                <h3 class="product-title">BeatForce</h3>
+                <div class="product-price">
+                  <span class="price-regular">
+                    <span class="price-currency">PKR</span>
+                    <span class="price-amount">6,999</span>
+                  </span>
+                </div>
               </div>
-            </details>
+              <div class="action-buttons product-actions">
+                <a href="#" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+                <button class="btn-circle">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
           </article>
-          <article class="accordion-item">
-            <details class="accordion-details">
-              <summary class="accordion-question">
-                <span class="accordion-question-text">Returns & Refunds</span>
-                <span class="accordion-icon" aria-hidden="true">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </summary>
-              <div class="accordion-answer">
-                <ul>
-                  <li>
-                    Returns accepted within 14 days; items must be unused and in
-                    original packaging.
-                  </li>
-                  <li>
-                    Refunds processed within 5–7 business days to the original
-                    payment method.
-                  </li>
-                  <li>
-                    Exchanges available through customer support; certain items
-                    are non-returnable.
-                  </li>
-                  <li>
-                    Initiate returns by contacting support with order details;
-                    prepaid label provided if applicable.
-                  </li>
-                </ul>
-              </div>
-            </details>
-          </article>
-        </div>
-      </section>
-      <!-- ===== Section: Related Products ===== -->
-      <section class="section related-products">
-        <div class="related-products-container">
-          <h2 class="section-heading">You May Also Like...</h2>
-          <div class="products-grid">
-            <article class="product-card sale-product">
-              <span class="product-badge badge-sale"
-                ><span class="sale-percent">45</span>% Off</span
-              >
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/headphones/wavepods-ultra.png"
-                  alt="WavePods"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">WavePods</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">8,499</span>
-                    </span>
-                    <span class="price-sale">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">4,674</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons product-actions">
-                  <a href="#" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-new">New</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/headphones/audiocore-max.png"
-                  alt="AudioCore"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">AudioCore</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">7,499</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons product-actions">
-                  <a href="#" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="product-card">
-              <span class="product-badge badge-mostsold">Most Sold</span>
-              <div class="product-image-wrapper">
-                <img
-                  src="../assets/images/products/headphones/beatforce-x1.png"
-                  alt="BeatForce"
-                  class="product-image"
-                />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h3 class="product-title">BeatForce</h3>
-                  <div class="product-price">
-                    <span class="price-regular">
-                      <span class="price-currency">PKR</span>
-                      <span class="price-amount">6,999</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="action-buttons product-actions">
-                  <a href="#" class="btn btn-primary">
-                    <span>See Details</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </a>
-                  <button class="btn-circle">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- ===== Section: Footer ===== -->
-    <footer class="section footer">
-      <div class="footer-container">
-        <hr class="footer-divider" />
-        <div class="footer-top">
-          <div class="footer-logo-container">
-            <a href="/"
-              ><img
-                class="footer-logo"
-                src="../assets/images/logo.png"
-                alt="earbuds"
-            /></a>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">Shop</h2>
-            <nav class="footer-nav footer-nav-pages">
-              <ul>
-                <li>
-                  <a href="/pages/categories.html" class="footer-nav-link"
-                    >Categories</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/products.html" class="footer-nav-link"
-                    >Products</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/new-arrivals.html" class="footer-nav-link"
-                    >New Arrivals</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/deals.html" class="footer-nav-link">Deals</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">Support</h2>
-            <nav class="footer-nav footer-nav-help">
-              <ul>
-                <li>
-                  <a href="/pages/faqs.html" class="footer-nav-link"
-                    >FAQ<span>s</span></a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/contact.html" class="footer-nav-link"
-                    >Contact Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/pages/shipping-delivery.html"
-                    class="footer-nav-link"
-                    >Shipping & Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/returns-refunds.html" class="footer-nav-link"
-                    >Returns & Refunds</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">COMPANY</h2>
-            <nav class="footer-nav footer-nav-help">
-              <ul>
-                <li>
-                  <a href="/pages/about.html" class="footer-nav-link"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/privacy-policy.html" class="footer-nav-link"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/terms-conditions.html" class="footer-nav-link"
-                    >Terms & Conditions</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="news-letter">
-            <h2 class="footer-heading">News Letter</h2>
-            <form action="" class="news-letter-form">
-              <input
-                name="news-letter-email"
-                type="email"
-                class="news-letter-input"
-                placeholder="Email"
-              />
-              <button type="submit" class="news-letter-btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="copy-right">
-            <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
-          </div>
-          <div class="social-icons">
-            <ul class="social-icons-list">
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  class="social-icon btn-circle fa-brands fa-instagram"
-                  target="_blank"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  class="social-icon btn-circle fa-brands fa-linkedin"
-                  target="_blank"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.tiktok.com/"
-                  class="social-icon btn-circle fa-brands fa-tiktok"
-                  target="_blank"
-                ></a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </footer>
-    <!-- ===== JavaScript Files ===== -->
-    <!-- Whatsapp Button -->
-    <script src="../js/whatsappButton.js"></script>
-    <!-- Background Overlay -->
-    <script src="../js/backgroundOverlay.js"></script>
-    <!-- Menu Toggle -->
-    <script src="../js/menuToggle.js"></script>
-    <!-- Cart Drawer -->
-    <script src="../js/cartDrawer.js"></script>
-    <!-- scrollToTop Button -->
-    <script src="../js/scrollToTopButton.js"></script>
-  </body>
+    </section>
+  </main>
+  <!-- ===== Section: Footer ===== -->
+  <footer class="section footer">
+    <div class="footer-container">
+      <hr class="footer-divider" />
+      <div class="footer-top">
+        <div class="footer-logo-container">
+          <a href="/"><img class="footer-logo" src="../assets/images/logo.png" alt="earbuds" /></a>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Shop</h2>
+          <nav class="footer-nav footer-nav-pages">
+            <ul>
+              <li>
+                <a href="/pages/categories.html" class="footer-nav-link">Categories</a>
+              </li>
+              <li>
+                <a href="/pages/products.html" class="footer-nav-link">Products</a>
+              </li>
+              <li>
+                <a href="/pages/new-arrivals.html" class="footer-nav-link">New Arrivals</a>
+              </li>
+              <li>
+                <a href="/pages/deals.html" class="footer-nav-link">Deals</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Support</h2>
+          <nav class="footer-nav footer-nav-help">
+            <ul>
+              <li>
+                <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
+              </li>
+              <li>
+                <a href="/pages/contact.html" class="footer-nav-link">Contact Us</a>
+              </li>
+              <li>
+                <a href="/pages/shipping-delivery.html" class="footer-nav-link">Shipping & Delivery</a>
+              </li>
+              <li>
+                <a href="/pages/returns-refunds.html" class="footer-nav-link">Returns & Refunds</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">COMPANY</h2>
+          <nav class="footer-nav footer-nav-help">
+            <ul>
+              <li>
+                <a href="/pages/about.html" class="footer-nav-link">About Us</a>
+              </li>
+              <li>
+                <a href="/pages/privacy-policy.html" class="footer-nav-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/pages/terms-conditions.html" class="footer-nav-link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="news-letter">
+          <h2 class="footer-heading">News Letter</h2>
+          <form action="" class="news-letter-form">
+            <input name="news-letter-email" type="email" class="news-letter-input" placeholder="Email" />
+            <button type="submit" class="news-letter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copy-right">
+          <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
+        </div>
+        <div class="social-icons">
+          <ul class="social-icons-list">
+            <li>
+              <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,334 +1,277 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
-    <!-- ===== Third Party CSS Libraries ===== -->
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!--  ===== Custom Stylesheets ===== -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <title>Shipping & Delivery | EarBuds</title>
-  </head>
 
-  <body>
-    <!-- ===== Section: Header ===== -->
-    <header class="section header">
-      <div class="header-container">
-        <div class="header-logo-container">
-          <a href="/"
-            ><img
-              class="header-logo"
-              src="../assets/images/logo.png"
-              alt="earbuds"
-          /></a>
-        </div>
-        <nav class="main-nav">
-          <div class="menu-header">
-            <h2 class="menu-heading">Menu</h2>
-            <button type="button" class="menu-btn-close">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <ul class="main-nav-list">
-            <li><a href="/" class="nav-link">Home</a></li>
-            <li>
-              <a href="/pages/categories.html" class="nav-link">Categories</a>
-            </li>
-            <li>
-              <a href="/pages/products.html" class="nav-link">Products</a>
-            </li>
-            <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
-            <li>
-              <a href="/pages/contact.html" class="nav-link">Contact Us</a>
-            </li>
-            <li>
-              <button type="button" class="menu-btn-account">
-                <i class="fa-solid fa-user"></i><span>Sign In</span>
-              </button>
-            </li>
-          </ul>
-          <div class="menu-footer">
-            <div class="menu-social-icons">
-              <ul class="social-icons-list">
-                <li>
-                  <a
-                    href="https://www.instagram.com/"
-                    class="social-icon btn-circle fa-brands fa-instagram"
-                    target="_blank"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    class="social-icon btn-circle fa-brands fa-linkedin"
-                    target="_blank"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.tiktok.com/"
-                    class="social-icon btn-circle fa-brands fa-tiktok"
-                    target="_blank"
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copy-right">
-              <span>Copyright © 2025 EarBuds. All rights reserved.</span>
-            </div>
-          </div>
-        </nav>
-        <div class="header-actions">
-          <ul class="header-btn-list">
-            <li>
-              <button type="button" class="header-icon header-btn-account">
-                <i class="fa-solid fa-user"></i>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="header-icon header-btn-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="header-icon header-btn-cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="cart-count">4</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <button type="button" class="btn-menu-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/png" />
+  <!-- ===== Third Party CSS Libraries ===== -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!--  ===== Custom Stylesheets ===== -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- ===== JavaScript Files ===== -->
+  <!-- Whatsapp Button -->
+  <script src="../js/whatsappButton.js" defer></script>
+  <!-- Background Overlay -->
+  <script src="../js/backgroundOverlay.js" defer></script>
+  <!-- Menu Toggle -->
+  <script src="../js/menuToggle.js" defer></script>
+  <!-- Cart Drawer -->
+  <script src="../js/cartDrawer.js" defer></script>
+  <!-- scrollToTop Button -->
+  <script src="../js/scrollToTopButton.js" defer></script>
+  <title>Shipping & Delivery | EarBuds</title>
+</head>
+
+<body>
+  <!-- ===== Section: Header ===== -->
+  <header class="section header">
+    <div class="header-container">
+      <div class="header-logo-container">
+        <a href="/"><img class="header-logo" src="../assets/images/logo.png" alt="earbuds" /></a>
       </div>
-    </header>
-    <main>
-      <!-- ===== Section: Page Header ===== -->
-      <section class="section page-header">
-        <div class="page-header-container">
-          <h1 class="page-title">Shipping & Delivery</h1>
-          <p class="page-subtitle">
-            Get clear information about our delivery process, shipping charges,
-            and estimated arrival times
-          </p>
+      <nav class="main-nav">
+        <div class="menu-header">
+          <h2 class="menu-heading">Menu</h2>
+          <button type="button" class="menu-btn-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-      </section>
-      <!-- ===== Section: Shipping & Delivery ===== -->
-      <section class="section content shipping">
-        <div class="content-container">
-          <article class="content-block">
-            <h2 class="content-heading">Shipping Time</h2>
-            <p class="content-text">
-              We process all orders within 1–2 business days, and most
-              deliveries arrive within 3–7 business days depending on your
-              location and courier availability.
-            </p>
-          </article>
-
-          <article class="content-block">
-            <h2 class="content-heading">Shipping Charges</h2>
-            <p class="content-text">
-              Orders above PKR 2,000 are delivered free of cost, while a
-              standard delivery fee of PKR 199 applies to orders below this
-              amount.
-            </p>
-          </article>
-
-          <article class="content-block">
-            <h2 class="content-heading">Order Tracking</h2>
-            <p class="content-text">
-              After your order is dispatched, you will receive a tracking link
-              via SMS or email so you can monitor your delivery status anytime.
-            </p>
-          </article>
-
-          <article class="content-block">
-            <h2 class="content-heading">Delivery Coverage</h2>
-            <p class="content-text">
-              We deliver to all major cities and remote regions across Pakistan,
-              ensuring reliable shipping no matter where you are located.
-            </p>
-          </article>
-
-          <article class="content-block">
-            <h2 class="content-heading">Possible Delays</h2>
-            <p class="content-text">
-              Deliveries may take additional time during holidays, weather
-              disruptions, or courier issues, but we always keep you informed if
-              delays occur.
-            </p>
-          </article>
-
-          <article class="content-block">
-            <h2 class="content-heading">Incorrect Address</h2>
-            <p class="content-text">
-              If your shipping address contains any errors, please contact us
-              immediately; orders already dispatched cannot be updated or
-              redirected.
-            </p>
-          </article>
-
-          <article class="content-block">
-            <h2 class="content-heading">Damaged or Missing Items</h2>
-            <p class="content-text">
-              If your order arrives damaged or an item is missing, please notify
-              us within 48 hours with photos so we can resolve the issue
-              quickly.
-            </p>
-          </article>
-        </div>
-      </section>
-    </main>
-    <!-- ===== Section: Footer ===== -->
-    <footer class="section footer">
-      <div class="footer-container">
-        <hr class="footer-divider" />
-        <div class="footer-top">
-          <div class="footer-logo-container">
-            <a href="/"
-              ><img
-                class="footer-logo"
-                src="../assets/images/logo.png"
-                alt="earbuds"
-            /></a>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">Shop</h2>
-            <nav class="footer-nav footer-nav-pages">
-              <ul>
-                <li>
-                  <a href="/pages/categories.html" class="footer-nav-link"
-                    >Categories</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/products.html" class="footer-nav-link"
-                    >Products</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/new-arrivals.html" class="footer-nav-link"
-                    >New Arrivals</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/deals.html" class="footer-nav-link">Deals</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">Support</h2>
-            <nav class="footer-nav footer-nav-help">
-              <ul>
-                <li>
-                  <a href="/pages/faqs.html" class="footer-nav-link"
-                    >FAQ<span>s</span></a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/contact.html" class="footer-nav-link"
-                    >Contact Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/pages/shipping-delivery.html"
-                    class="footer-nav-link active"
-                    >Shipping & Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/returns-refunds.html" class="footer-nav-link"
-                    >Returns & Refunds</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-links">
-            <h2 class="footer-heading">COMPANY</h2>
-            <nav class="footer-nav footer-nav-help">
-              <ul>
-                <li>
-                  <a href="/pages/about.html" class="footer-nav-link"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/privacy-policy.html" class="footer-nav-link"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li>
-                  <a href="/pages/terms-conditions.html" class="footer-nav-link"
-                    >Terms & Conditions</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="news-letter">
-            <h2 class="footer-heading">News Letter</h2>
-            <form action="" class="news-letter-form">
-              <input
-                name="news-letter-email"
-                type="email"
-                class="news-letter-input"
-                placeholder="Email"
-              />
-              <button type="submit" class="news-letter-btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="copy-right">
-            <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
-          </div>
-          <div class="social-icons">
+        <ul class="main-nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li>
+            <a href="/pages/categories.html" class="nav-link">Categories</a>
+          </li>
+          <li>
+            <a href="/pages/products.html" class="nav-link">Products</a>
+          </li>
+          <li><a href="/pages/about.html" class="nav-link">About Us</a></li>
+          <li>
+            <a href="/pages/contact.html" class="nav-link">Contact Us</a>
+          </li>
+          <li>
+            <button type="button" class="menu-btn-account">
+              <i class="fa-solid fa-user"></i><span>Sign In</span>
+            </button>
+          </li>
+        </ul>
+        <div class="menu-footer">
+          <div class="menu-social-icons">
             <ul class="social-icons-list">
               <li>
-                <a
-                  href="https://www.instagram.com/"
-                  class="social-icon btn-circle fa-brands fa-instagram"
-                  target="_blank"
-                ></a>
+                <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                  target="_blank"></a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  class="social-icon btn-circle fa-brands fa-linkedin"
-                  target="_blank"
-                ></a>
+                <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                  target="_blank"></a>
               </li>
               <li>
-                <a
-                  href="https://www.tiktok.com/"
-                  class="social-icon btn-circle fa-brands fa-tiktok"
-                  target="_blank"
-                ></a>
+                <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok"
+                  target="_blank"></a>
               </li>
             </ul>
           </div>
+          <div class="copy-right">
+            <span>Copyright © 2025 EarBuds. All rights reserved.</span>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <ul class="header-btn-list">
+          <li>
+            <button type="button" class="header-icon header-btn-account">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header-icon header-btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="header-icon header-btn-cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart-count">4</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <main>
+    <!-- ===== Section: Page Header ===== -->
+    <section class="section page-header">
+      <div class="page-header-container">
+        <h1 class="page-title">Shipping & Delivery</h1>
+        <p class="page-subtitle">
+          Get clear information about our delivery process, shipping charges,
+          and estimated arrival times
+        </p>
+      </div>
+    </section>
+    <!-- ===== Section: Shipping & Delivery ===== -->
+    <section class="section content shipping">
+      <div class="content-container">
+        <article class="content-block">
+          <h2 class="content-heading">Shipping Time</h2>
+          <p class="content-text">
+            We process all orders within 1–2 business days, and most
+            deliveries arrive within 3–7 business days depending on your
+            location and courier availability.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="content-heading">Shipping Charges</h2>
+          <p class="content-text">
+            Orders above PKR 2,000 are delivered free of cost, while a
+            standard delivery fee of PKR 199 applies to orders below this
+            amount.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="content-heading">Order Tracking</h2>
+          <p class="content-text">
+            After your order is dispatched, you will receive a tracking link
+            via SMS or email so you can monitor your delivery status anytime.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="content-heading">Delivery Coverage</h2>
+          <p class="content-text">
+            We deliver to all major cities and remote regions across Pakistan,
+            ensuring reliable shipping no matter where you are located.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="content-heading">Possible Delays</h2>
+          <p class="content-text">
+            Deliveries may take additional time during holidays, weather
+            disruptions, or courier issues, but we always keep you informed if
+            delays occur.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="content-heading">Incorrect Address</h2>
+          <p class="content-text">
+            If your shipping address contains any errors, please contact us
+            immediately; orders already dispatched cannot be updated or
+            redirected.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="content-heading">Damaged or Missing Items</h2>
+          <p class="content-text">
+            If your order arrives damaged or an item is missing, please notify
+            us within 48 hours with photos so we can resolve the issue
+            quickly.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Section: Footer ===== -->
+  <footer class="section footer">
+    <div class="footer-container">
+      <hr class="footer-divider" />
+      <div class="footer-top">
+        <div class="footer-logo-container">
+          <a href="/"><img class="footer-logo" src="../assets/images/logo.png" alt="earbuds" /></a>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Shop</h2>
+          <nav class="footer-nav footer-nav-pages">
+            <ul>
+              <li>
+                <a href="/pages/categories.html" class="footer-nav-link">Categories</a>
+              </li>
+              <li>
+                <a href="/pages/products.html" class="footer-nav-link">Products</a>
+              </li>
+              <li>
+                <a href="/pages/new-arrivals.html" class="footer-nav-link">New Arrivals</a>
+              </li>
+              <li>
+                <a href="/pages/deals.html" class="footer-nav-link">Deals</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">Support</h2>
+          <nav class="footer-nav footer-nav-help">
+            <ul>
+              <li>
+                <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
+              </li>
+              <li>
+                <a href="/pages/contact.html" class="footer-nav-link">Contact Us</a>
+              </li>
+              <li>
+                <a href="/pages/shipping-delivery.html" class="footer-nav-link active">Shipping & Delivery</a>
+              </li>
+              <li>
+                <a href="/pages/returns-refunds.html" class="footer-nav-link">Returns & Refunds</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h2 class="footer-heading">COMPANY</h2>
+          <nav class="footer-nav footer-nav-help">
+            <ul>
+              <li>
+                <a href="/pages/about.html" class="footer-nav-link">About Us</a>
+              </li>
+              <li>
+                <a href="/pages/privacy-policy.html" class="footer-nav-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/pages/terms-conditions.html" class="footer-nav-link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="news-letter">
+          <h2 class="footer-heading">News Letter</h2>
+          <form action="" class="news-letter-form">
+            <input name="news-letter-email" type="email" class="news-letter-input" placeholder="Email" />
+            <button type="submit" class="news-letter-btn">Subscribe</button>
+          </form>
         </div>
       </div>
-    </footer>
-    <!-- ===== JavaScript Files ===== -->
-    <!-- Whatsapp Button -->
-    <script src="../js/whatsappButton.js"></script>
-    <!-- Background Overlay -->
-    <script src="../js/backgroundOverlay.js"></script>
-    <!-- Menu Toggle -->
-    <script src="../js/menuToggle.js"></script>
-    <!-- Cart Drawer -->
-    <script src="../js/cartDrawer.js"></script>
-    <!-- scrollToTop Button -->
-    <script src="../js/scrollToTopButton.js"></script>
-  </body>
+      <div class="footer-bottom">
+        <div class="copy-right">
+          <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
+        </div>
+        <div class="social-icons">
+          <ul class="social-icons-list">
+            <li>
+              <a href="https://www.instagram.com/" class="social-icon btn-circle fa-brands fa-instagram"
+                target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="social-icon btn-circle fa-brands fa-linkedin"
+                target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
