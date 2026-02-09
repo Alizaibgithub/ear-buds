@@ -37,6 +37,7 @@
 
 .footer-nav-link {
   font-size: 1rem;
+  font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 
