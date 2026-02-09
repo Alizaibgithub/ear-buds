@@ -334,24 +334,24 @@ body.no-scroll {
   flex-wrap: wrap;
 }
 
-.image-text__title {
+.image-text-title {
   color: var(--color-primary);
 }
 
-.image-text__media {
+.image-text-media {
   flex: 1 1 46%;
   height: 100%;
   border-radius: 17px;
   overflow: hidden;
 }
 
-.image-text__image {
+.image-text-image {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.image-text__content {
+.image-text-content {
   flex: 1 1 50%;
 }
 

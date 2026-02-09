@@ -136,11 +136,11 @@
   gap: 0.5rem;
 }
 
-.color-swatch__input {
+.color-swatch-input {
   display: none;
 }
 
-.color-swatch__label {
+.color-swatch-label {
   width: 2.5rem;
   height: 2.5rem;
   display: inline-block;
@@ -150,26 +150,26 @@
   cursor: pointer;
 }
 
-.color-swatch__visual {
+.color-swatch-visual {
   display: inline-block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.color-swatch__input:checked + .color-swatch__label {
+.color-swatch-input:checked + .color-swatch-label {
   border-color: #cf0f47;
 }
 
-.color-swatch__visual--white {
+.color-swatch-visual--white {
   background: #fff;
 }
 
-.color-swatch__visual--black {
+.color-swatch-visual--black {
   background: #000;
 }
 
-.color-swatch__visual--red {
+.color-swatch-visual--red {
   background: #e53935;
 }
 

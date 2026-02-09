@@ -6,7 +6,7 @@ fetch("../templates/product-filter.html")
     const productFilterButton = document.querySelector(".btn-product-filter");
     const productFilterSection = document.querySelector(".product-filter");
     const productFilterCloseButton = document.querySelector(
-      ".product-filter__btn-close",
+      ".product-filter-btn-close",
     );
     const headerActions = document.querySelector(".header-actions");
     const headerLogo = document.querySelector(".header-logo-container");
