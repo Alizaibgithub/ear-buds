@@ -5,12 +5,13 @@ fetch("../templates/cart-drawer.html")
     document.body.insertAdjacentHTML("beforeend", html);
 
     const cartButton = document.querySelector(".header-btn-cart");
+    const addToCartButtons = document.querySelectorAll(".btn-atc");
     const cartSection = document.querySelector(".cart-drawer");
     const cartCloseButton = document.querySelector(".cart-btn-close");
     const menuToggleButton = document.querySelector(".btn-menu-toggle");
     const headerLogo = document.querySelector(".header-logo-container");
 
-    const openCart = () => {
+     const openCart = () => {
       cartSection.classList.add("active");
       backgroundOverlay.classList.add("active");
       document.body.classList.add("no-scroll");
@@ -25,6 +26,11 @@ fetch("../templates/cart-drawer.html")
       headerLogo.style.opacity = "1";
     };
     cartButton.addEventListener("click", openCart);
+    addToCartButtons.forEach((addToCartButtons)=>{
+      addToCartButtons.addEventListener("click", ()=>{
+        openCart();
+      })
+    })
     cartCloseButton.addEventListener("click", closeCart);
     backgroundOverlay.addEventListener("click", closeCart);
 
