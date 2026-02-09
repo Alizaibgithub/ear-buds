@@ -321,9 +321,12 @@
   gap: 0.5rem;
   padding: 1rem;
 }
-
+.help{
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 768px) {
-  .checkout-container {
+  .checkout-container, .order-confirm-container {
     display: flex;
     flex-direction: column-reverse;
   }
