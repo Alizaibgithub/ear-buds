@@ -25,7 +25,7 @@
 }
 
 .customer-details-container,
-.order-review-container {
+.order-summary-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -35,7 +35,7 @@
   max-width: 75%;
 }
 
-.order-review-container {
+.order-summary-container {
   height: 100%;
   max-width: 75%;
 }
@@ -192,7 +192,7 @@
   font-size: clamp(0.75rem, 2vw, 0.9rem);
 }
 
-.order-review {
+.order-summary {
   width: 50%;
   height: 100%;
   position: fixed;
@@ -311,28 +311,32 @@
   color: #000;
 }
 
-.order-review-container summary {
+.order-summary-container summary {
   display: none;
 }
 
-.order-review-bottom {
+.order-summary-bottom {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
 }
-.help{
+
+.help {
   display: flex;
   flex-direction: column;
 }
+
 @media screen and (max-width: 768px) {
-  .checkout-container, .order-confirm-container {
+
+  .checkout-container,
+  .order-confirm-container {
     display: flex;
     flex-direction: column-reverse;
   }
 
   .customer-details-container,
-  .order-review-container {
+  .order-summary-container {
     max-width: 80%;
     width: 80%;
   }
@@ -347,21 +351,21 @@
     border-top: 1px solid var(--color-muted);
   }
 
-  .order-review {
+  .order-summary {
     position: static;
     width: 100%;
     justify-content: center;
     padding: 1rem 2rem 0;
   }
 
-  .order-review-container summary {
+  .order-summary-container summary {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .order-review-container summary::-webkit-details-marker {
+  .order-summary-container summary::-webkit-details-marker {
     display: none;
   }
 
@@ -369,7 +373,7 @@
     transition: transform 0.3s ease;
   }
 
-  .order-review-container[open] .order-summary-icon {
+  .order-summary-container[open] .order-summary-icon {
     transform: rotate(180deg);
   }
 
@@ -378,13 +382,14 @@
 @media screen and (max-width:480px) {
 
   .customer-details-container,
-  .order-review-container {
+  .order-summary-container {
     max-width: 100%;
     width: 100%;
   }
-    .checkout-item-count {
-      width: 0.85rem;
-      height: 0.85rem;
-      font-size: 0.75rem;
-    }
+
+  .checkout-item-count {
+    width: 0.85rem;
+    height: 0.85rem;
+    font-size: 0.75rem;
+  }
 }
