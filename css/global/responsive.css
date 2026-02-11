@@ -111,7 +111,7 @@
 
   /* =====Section: Products Toolbar===== */
   .products-toolbar {
-    padding: 0.9rem 0;
+    padding: 0.9rem;
   }
 
   .content-container,
@@ -436,7 +436,7 @@
         } */
 
   .products-toolbar {
-    padding: 0.8rem 0;
+    padding: 0.8rem;
   }
 
   .view-toggle {
