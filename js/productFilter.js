@@ -4,7 +4,7 @@ fetch("../templates/product-filter.html")
     document.body.insertAdjacentHTML("beforeend", html);
 
     const productFilterButton = document.querySelector(".btn-product-filter");
-    const productFilterSection = document.querySelector(".product-filter");
+    const productFilterSection = document.querySelector(".product-filter-section");
     const productFilterCloseButton = document.querySelector(
       ".product-filter-btn-close",
     );

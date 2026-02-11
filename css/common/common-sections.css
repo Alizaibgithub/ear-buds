@@ -33,12 +33,12 @@ body.no-scroll {
 .related-products-container {
   gap: 7rem;
 }
-.most-sold-products .section-title {
+.most-sold-products-section .section-title {
   margin-bottom: 7rem;
 }
 
 /* ===== Background Overlay ===== */
-.background-overlay {
+.background-overlay-section {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -51,13 +51,13 @@ body.no-scroll {
   transition: opacity 0.5s ease-in-out;
 }
 
-.background-overlay.active {
+.background-overlay-section.active {
   display: block;
   opacity: 1;
 }
 
 /* ===== Section: Page Header ===== */
-.page-header {
+.page-header-section {
   background: radial-gradient(
     34.02% 44.73% at 50% 55.27%,
     var(--color-primary) 0%,
@@ -285,7 +285,7 @@ body.no-scroll {
 }
 
 /* ===== Section: Products Toolbar ===== */
-.products-toolbar {
+.products-toolbar-section {
   margin-bottom: 6rem;
 }
 
@@ -356,7 +356,7 @@ body.no-scroll {
 }
 
 /* ===== Section: Content ===== */
-.content {
+.content-section {
   display: flex;
   justify-content: center;
   align-items: center;

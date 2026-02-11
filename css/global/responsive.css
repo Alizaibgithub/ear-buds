@@ -45,8 +45,8 @@
   .hero-container,
   .most-sold-products-container,
   .products,
-  .new-arrivals,
-  .deals,
+  .new-arrivals-section,
+  .deals-section,
   .deal-container,
   .accordion-section,
   .new-product-swiper,
@@ -110,7 +110,7 @@
   }
 
   /* =====Section: Products Toolbar===== */
-  .products-toolbar {
+  .products-toolbar-section {
     padding: 0.9rem;
   }
 
@@ -150,7 +150,7 @@
   }
 
   /* ========== Section: Header ========== */
-  .header {
+  .header-section{
     z-index: 9997;
   }
   .header-container {
@@ -304,7 +304,7 @@
   }
 
   /* =====Section: Call To Action ===== */
-  .call-to-action {
+  .call-to-action-section {
     gap: 0.5rem;
   }
 
