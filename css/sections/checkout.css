@@ -137,12 +137,6 @@
   border-radius: 12px;
 }
 
-.shipping-method p,
-.payment p {
-  font-size: 1.2rem;
-  text-transform: capitalize;
-}
-
 .billing-radio-buttons {
   display: flex;
   display: flex;
