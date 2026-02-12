@@ -78,12 +78,21 @@
 
 .cart-item {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 6fr;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
 }
-
+@media screen and (max-width:768px) {
+  .cart-item {
+      grid-template-columns: 1fr 4fr;
+    }
+  }
+@media screen and (max-width:480px) {
+  .cart-item {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
 .cart-item .color-swatches-label,
 .cart-item .color-selected {
   color: var(--color-muted);
