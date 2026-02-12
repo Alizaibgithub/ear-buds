@@ -25,17 +25,19 @@
 }
 
 .customer-details-container,
-.order-summary-container {
+.order-summary-details {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
+.order-summary-container{
+  width: 100%;
+}
 .customer-details-container {
   max-width: 75%;
 }
 
-.order-summary-container {
+.order-summary-details {
   height: 100%;
   max-width: 75%;
 }
@@ -316,7 +318,7 @@
   color: #000;
 }
 
-.order-summary-container summary {
+.order-summary-details summary {
   display: none;
 }
 
@@ -332,7 +334,7 @@
   flex-direction: column;
 }
 @media screen and (min-width: 768px) and (max-width:1024px) {
-  .customer-details-container, .order-summary-container{
+  .customer-details-container, .order-summary-details{
     max-width: 100%;
   }
 }
@@ -345,13 +347,14 @@
   }
 
   .customer-details-container,
-  .order-summary-container {
-    max-width: 80%;
-    width: 80%;
+  .order-summary-details {
+    max-width: 100%;
+    width: 100%;
   }
 
   .checkout-items {
     overflow: inherit;
+    max-height: 100%;
   }
 
   .customer-details {
@@ -364,17 +367,17 @@
     position: static;
     width: 100%;
     justify-content: center;
-    padding: 1rem 2rem 0;
+    padding: 1rem 2rem 0 ;
   }
 
-  .order-summary-container summary {
+  .order-summary-details summary {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .order-summary-container summary::-webkit-details-marker {
+  .order-summary-details summary::-webkit-details-marker {
     display: none;
   }
 
@@ -382,7 +385,7 @@
     transition: transform 0.3s ease;
   }
 
-  .order-summary-container[open] .order-summary-icon {
+  .order-summary-details[open] .order-summary-icon {
     transform: rotate(180deg);
   }
 
@@ -391,7 +394,7 @@
 @media screen and (max-width:480px) {
 
   .customer-details-container,
-  .order-summary-container {
+  .order-summary-details {
     max-width: 100%;
     width: 100%;
   }
@@ -404,4 +407,10 @@
   .order-details-container{
     flex-direction: column;
   }
+        .order-summary {
+          position: static;
+          width: 100%;
+          justify-content: center;
+          padding: 1rem 1rem 0;
+        }
 }
