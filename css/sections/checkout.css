@@ -39,7 +39,12 @@
   height: 100%;
   max-width: 75%;
 }
-
+.order-summary-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 .customer-details-header {
   display: flex;
   justify-content: space-between;
