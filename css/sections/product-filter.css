@@ -15,8 +15,10 @@
 .product-filter-section.active {
   transform: translateX(0%);
 }
-
-.product-filter-container {
+.product-filter-container{
+  height: 100%;
+}
+.product-filter-form {
   display: flex;
   flex-direction: column;
   width: 100%;

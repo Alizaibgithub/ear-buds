@@ -8,6 +8,7 @@ fetch("../templates/product-filter.html")
     const productFilterCloseButton = document.querySelector(
       ".product-filter-btn-close",
     );
+    const productFilterApplyButton = document.querySelector(".product-filter-btn-apply");
     const headerActions = document.querySelector(".header-actions");
     const headerLogo = document.querySelector(".header-logo-container");
 
@@ -27,6 +28,7 @@ fetch("../templates/product-filter.html")
     };
     productFilterButton.addEventListener("click", openProductFilter);
     productFilterCloseButton.addEventListener("click", closeProductFilter);
+    productFilterApplyButton.addEventListener("click", closeProductFilter)
     backgroundOverlay.addEventListener("click", closeProductFilter);
 
     document.addEventListener("keydown", (e) => {

@@ -1,65 +1,67 @@
 <!-- ===== Section: Product Filter ===== -->
 <section class="product-filter-section">
   <div class="product-filter-container">
-    <div class="product-filter-header">
-      <h2 class="filter-heading">Filters</h2>
-      <button type="button" class="product-filter-btn-close">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-    <div class="product-filter-body">
-      <div class="product-filter-form">
-        <div class="filter-group">
-          <div class="form-checkbox">
-            <input type="checkbox" id="stock-filter" name="stock-filter" class="filter-input" />
-            <label for="stock-filter" class="filter-label">In stock only</label>
-          </div>
-        </div>
-        <div class="filter-group">
-          <h3 class="filter-group-title">Price</h3>
-          <div class="price-filter-group">
-            <div class="price-count-wrapper">
-              <span>From</span>
-              <div class="price-input-wrapper">
-                <span class="price-currency">PKR</span>
-                <input type="number" name="price-min" id="price-min" class="price-input" />
-              </div>
-            </div>
-            <div class="price-count-wrapper">
-              <span>To</span>
-              <div class="price-input-wrapper">
-                <span class="price-currency">PKR</span>
-                <input type="number" name="price-max" id="price-max" class="price-input" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="filter-group">
-          <h3 class="filter-group-title">Categories</h3>
-          <div class="form-checkbox">
-            <input type="checkbox" id="cat-earpods" name="category" class="filter-input" />
-            <label for="cat-earpods" class="filter-label">EarPods</label>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" id="cat-neckbandWireless" name="category" class="filter-input" />
-            <label for="cat-neckbandWireless" class="filter-label">Neckband</label>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" id="cat-inEarEarphones" name="category" class="filter-input" />
-            <label for="cat-inEarEarphones" class="filter-label">Earphones</label>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" id="cat-headphones" name="category" class="filter-input" />
-            <label for="cat-headphones" class="filter-label">Headphones</label>
-          </div>
-        </div>
+    <form class="product-filter-form">
+      <div class="product-filter-header">
+        <h2 class="filter-heading">Filters</h2>
+        <button type="button" class="product-filter-btn-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-    </div>
-    <div class="product-filter-footer">
-      <button type="reset" class="product-filter-btn-clear">Clear</button>
-      <button type="submit" class="product-filter-btn-apply btn btn-secondary">
-        Apply
-      </button>
-    </div>
+      <div class="product-filter-body">
+        <div class="product-filter-form">
+          <div class="filter-group">
+            <div class="form-checkbox">
+              <input type="checkbox" id="stock-filter" name="stock-filter" class="filter-input" />
+              <label for="stock-filter" class="filter-label">In stock only</label>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3 class="filter-group-title">Price</h3>
+            <div class="price-filter-group">
+              <div class="price-count-wrapper">
+                <span>From</span>
+                <div class="price-input-wrapper">
+                  <span class="price-currency">PKR</span>
+                  <input type="number" name="price-min" id="price-min" class="price-input" />
+                </div>
+              </div>
+              <div class="price-count-wrapper">
+                <span>To</span>
+                <div class="price-input-wrapper">
+                  <span class="price-currency">PKR</span>
+                  <input type="number" name="price-max" id="price-max" class="price-input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3 class="filter-group-title">Categories</h3>
+            <div class="form-checkbox">
+              <input type="checkbox" id="cat-earpods" name="category" class="filter-input" />
+              <label for="cat-earpods" class="filter-label">EarPods</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="cat-neckbandWireless" name="category" class="filter-input" />
+              <label for="cat-neckbandWireless" class="filter-label">Neckband</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="cat-inEarEarphones" name="category" class="filter-input" />
+              <label for="cat-inEarEarphones" class="filter-label">Earphones</label>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="cat-headphones" name="category" class="filter-input" />
+              <label for="cat-headphones" class="filter-label">Headphones</label>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="product-filter-footer">
+        <button type="reset" class="product-filter-btn-clear">Clear</button>
+        <button type="button" class="product-filter-btn-apply btn btn-secondary">
+          Apply
+        </button>
+      </div>
+    </form>
   </div>
 </section>
