@@ -8,11 +8,17 @@
   <!-- ===== Third Party CSS Libraries ===== -->
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Swiper CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!--  ===== Custom Stylesheets ===== -->
   <link rel="stylesheet" href="../css/main.css" />
   <!-- ===== JavaScript Files ===== -->
   <!-- Whatsapp Button -->
   <script src="../js/whatsappButton.js" defer></script>
+  <!-- Swiper CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
+  <!-- Swiper -->
+  <script src="../js/swiper.js" defer></script>
   <!-- Background Overlay -->
   <script src="../js/backgroundOverlay.js" defer></script>
   <!-- Menu Toggle -->
@@ -70,7 +76,8 @@
                   target="_blank"></a>
               </li>
               <li>
-                <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok" target="_blank"></a>
+                <a href="https://www.tiktok.com/" class="social-icon btn-circle fa-brands fa-tiktok"
+                  target="_blank"></a>
               </li>
             </ul>
           </div>
@@ -109,32 +116,56 @@
     <section class="section product-details-section">
       <div class="product-details-container sale-product">
         <div class="product-media">
-          <div class="product-thumbnails">
-            <button class="product-thumbnail">
-              <img src="../assets/images/product-details/basspods-max/basspods-max.png" alt=""
-                class="product-thumbnail-image" loading="lazy" />
-            </button>
-            <button class="product-thumbnail">
-              <img src="../assets/images/product-details/basspods-max/basspods-max-2.png" alt=""
-                class="product-thumbnail-image" loading="lazy" />
-            </button>
-            <button class="product-thumbnail">
-              <img src="../assets/images/product-details/basspods-max/basspods-max-3.png" alt=""
-                class="product-thumbnail-image" loading="lazy" />
-            </button>
-            <button class="product-thumbnail">
-              <img src="../assets/images/product-details/basspods-max/basspods-max-4.png" alt=""
-                class="product-thumbnail-image" loading="lazy" />
-            </button>
-            <button class="product-thumbnail">
-              <img src="../assets/images/product-details/basspods-max/basspods-max-5.png" alt=""
-                class="product-thumbnail-image" loading="lazy" />
-            </button>
+          <div style="--swiper-navigation-color: #000; --swiper-navigation-size: 2rem"
+            class="swiper product-media-main-swiper product-media-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/images/product-details/basspods-max/basspods-max.png" class="product-media-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-2.png"
+                  class="product-media-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-3.png"
+                  class="product-media-image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-4.png" class="product-media-image"
+                  loadin />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-5.png"
+                  class="product-media-image" />
+              </div>
+            </div>
+            <div class="swiper-button-next product-media-swiper-btn-next"></div>
+            <div class="swiper-button-prev product-media-swiper-btn-prev"></div>
           </div>
-          <figure class="product-media-main">
-            <img src="../assets/images/product-details/basspods-max/basspods-max.png" alt="EarBuds main image"
-              class="product-media-image" />
-          </figure>
+          <div class="swiper product-thumbnail-swiper product-thumbnails">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-thumbnail">
+                <img src="../assets/images/product-details/basspods-max/basspods-max.png"
+                  class="product-thumbnail-image" loading="lazy" />
+              </div>
+              <div class="swiper-slide product-thumbnail">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-2.png"
+                  class="product-thumbnail-image" loading="lazy" />
+              </div>
+              <div class="swiper-slide product-thumbnail">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-3.png"
+                  class="product-thumbnail-image" loading="lazy" />
+              </div>
+              <div class="swiper-slide product-thumbnail">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-4.png"
+                  class="product-thumbnail-image" loading="lazy" />
+              </div>
+              <div class="swiper-slide product-thumbnail">
+                <img src="../assets/images/product-details/basspods-max/basspods-max-5.png"
+                  class="product-thumbnail-image" loading="lazy" />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="product-details-content">
           <div class="product-header">
@@ -332,7 +363,8 @@
           <article class="product-card sale-product">
             <span class="product-badge badge-sale"><span class="sale-percent">45</span>% Off</span>
             <div class="product-image-wrapper">
-              <img src="../assets/images/products/headphones/wavepods-ultra.png" alt="WavePods" class="product-image" loading="lazy" />
+              <img src="../assets/images/products/headphones/wavepods-ultra.png" alt="WavePods" class="product-image"
+                loading="lazy" />
             </div>
             <div class="product-content">
               <div class="product-info">
@@ -349,12 +381,12 @@
                 </div>
               </div>
               <div class="action-buttons product-actions">
-                    <a href="/pages/product-details.html" class="btn btn-primary">
-                        <span>See Details</span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+                <a href="/pages/product-details.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
                 <button class="btn-circle btn-atc">
-                    <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-plus"></i>
                 </button>
               </div>
             </div>
@@ -362,7 +394,8 @@
           <article class="product-card">
             <span class="product-badge badge-new">New</span>
             <div class="product-image-wrapper">
-              <img src="../assets/images/products/headphones/audiocore-max.png" alt="AudioCore" class="product-image" loading="lazy" />
+              <img src="../assets/images/products/headphones/audiocore-max.png" alt="AudioCore" class="product-image"
+                loading="lazy" />
             </div>
             <div class="product-content">
               <div class="product-info">
@@ -375,12 +408,12 @@
                 </div>
               </div>
               <div class="action-buttons product-actions">
-                    <a href="/pages/product-details.html" class="btn btn-primary">
-                        <span>See Details</span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+                <a href="/pages/product-details.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
                 <button class="btn-circle btn-atc">
-                    <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-plus"></i>
                 </button>
               </div>
             </div>
@@ -388,7 +421,8 @@
           <article class="product-card">
             <span class="product-badge badge-mostsold">Most Sold</span>
             <div class="product-image-wrapper">
-              <img src="../assets/images/products/headphones/beatforce-x1.png" alt="BeatForce" class="product-image" loading="lazy" />
+              <img src="../assets/images/products/headphones/beatforce-x1.png" alt="BeatForce" class="product-image"
+                loading="lazy" />
             </div>
             <div class="product-content">
               <div class="product-info">
@@ -401,12 +435,12 @@
                 </div>
               </div>
               <div class="action-buttons product-actions">
-                    <a href="/pages/product-details.html" class="btn btn-primary">
-                        <span>See Details</span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+                <a href="/pages/product-details.html" class="btn btn-primary">
+                  <span>See Details</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
                 <button class="btn-circle btn-atc">
-                    <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-plus"></i>
                 </button>
               </div>
             </div>

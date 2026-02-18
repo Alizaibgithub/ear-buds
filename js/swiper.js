@@ -54,6 +54,7 @@ var teamSwiper = new Swiper(".team-swiper", {
     },
   },
 });
+
 // ===== Section: Category =====
 var categorySwiper = new Swiper(".category-swiper", {
   loop: true,
@@ -77,5 +78,25 @@ var categorySwiper = new Swiper(".category-swiper", {
     1024: {
       slidesPerView: 3,
     },
+  },
+});
+
+// ===== Section: Product Details =====
+var productThumbnailSwiper = new Swiper(".product-thumbnail-swiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var productMediaSwiper = new Swiper(".product-media-main-swiper", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".product-media-swiper-btn-next",
+    prevEl: ".product-media-swiper-btn-prev",
+  },
+  thumbs: {
+    swiper: productThumbnailSwiper,
   },
 });
