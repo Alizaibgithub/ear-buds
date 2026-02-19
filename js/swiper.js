@@ -2,7 +2,7 @@
 // ===== Section: New Products =====
 var newProductSwiper = new Swiper(".new-product-swiper", {
   loop: true,
-  // spaceBetween: 30,
+  spaceBetween: 30,
   // centeredSlides: true,
   autoplay: {
     delay: 3000,
@@ -17,7 +17,7 @@ var newProductSwiper = new Swiper(".new-product-swiper", {
 // ===== Section: New Deal =====
 var newDealSwiper = new Swiper(".deal-swiper", {
   loop: true,
-  // spaceBetween: 30,
+  spaceBetween: 30,
   // centeredSlides: true,
   autoplay: {
     delay: 2500,
