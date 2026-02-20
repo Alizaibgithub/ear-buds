@@ -3,7 +3,6 @@ document.body.insertAdjacentHTML(
   `<button class="btn-circle" id="btn-scrollToTop"><i class="fa-solid fa-angle-up"></i></button>`
 );
 
-document.addEventListener("DOMContentLoaded", () => {
   const scrollBtn = document.getElementById("btn-scrollToTop");
 
   window.addEventListener("scroll", () => {
@@ -21,4 +20,3 @@ document.addEventListener("DOMContentLoaded", () => {
       top: 0,
     });
   });
-});
