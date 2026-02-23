@@ -133,22 +133,26 @@
   }
 
   #btn-scrollToTop,
-  .btn-whatsapp,
   .contact-info-icon {
     width: 2.7rem;
     height: 2.7rem;
   }
+        .btn-whatsapp{
+          width: 3rem;
+          height: 3rem;
+        }
 
   #btn-scrollToTop {
-    bottom: 3.7rem;
+    bottom:4.45rem;
   }
 
   #btn-scrollToTop i,
-  .btn-whatsapp i,
   .contact-info-icon i {
     font-size: 1.4rem;
   }
-
+    .btn-whatsapp i{
+      font-size: 1.5rem;
+    }
   /* ========== Section: Header ========== */
   .header-section{
     z-index: 9997;
