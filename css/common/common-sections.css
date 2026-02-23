@@ -30,9 +30,11 @@ body.no-scroll {
   align-items: center;
   gap: 1rem;
 }
+
 .related-products-container {
   gap: 7rem;
 }
+
 .most-sold-products-section .section-title {
   margin-bottom: 7rem;
 }
@@ -58,12 +60,11 @@ body.no-scroll {
 
 /* ===== Section: Page Header ===== */
 .page-header-section {
-  background: radial-gradient(
-    34.02% 44.73% at 50% 55.27%,
-    var(--color-primary) 0%,
-    var(--color-bg) 100%
-  );
+  background: radial-gradient(34.02% 44.73% at 50% 55.27%,
+      var(--color-primary) 0%,
+      var(--color-bg) 100%);
 }
+
 .page-header-container {
   text-align: center;
 }
@@ -182,11 +183,9 @@ body.no-scroll {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 17px;
-  background: linear-gradient(
-    180deg,
-    var(--color-primary) -2.32%,
-    rgba(114, 57, 73, 0) 86.28%
-  );
+  background: linear-gradient(180deg,
+      var(--color-primary) -2.32%,
+      rgba(114, 57, 73, 0) 86.28%);
   width: 100%;
 }
 
@@ -204,28 +203,29 @@ body.no-scroll {
 
 .product-badge {
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 15px;
+  right: 0;
   z-index: 10;
-  padding: 0.2rem 0.4rem;
-  border-radius: 12px;
+  padding: 0.2rem 0.3rem;
+  min-width: 17%;
+  text-align: center;
   font-size: 0.7rem;
-  font-weight: 900;
+  font-weight: 500;
   text-transform: uppercase;
-  border: 2px solid #fff;
-  color: #fff;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .badge-new {
-  background-color: #d1476e;
+  background-color: rgba(33, 150, 243, 0.75);
 }
 
 .badge-sale {
-  background-color: #e53935;
+  background-color: rgba(229, 57, 53, 0.75);
 }
 
 .badge-mostsold {
-  background-color: #c8a33a;
+  background-color: rgba(200, 163, 58, 0.75);
 }
 
 .sale-percent {
@@ -486,9 +486,11 @@ body.no-scroll {
   animation: pulse 2s infinite;
   transition: transform 0.2s;
 }
+
 .btn-whatsapp i {
   font-size: 1.75rem;
 }
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -512,6 +514,7 @@ body.no-scroll {
   overflow: hidden;
   background-color: #1a1a1a;
 }
+
 /* .category-swiper {
     width: 100%;
 } */
