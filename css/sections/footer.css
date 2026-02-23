@@ -59,7 +59,10 @@
 
 .news-letter-form {
   display: flex;
-  border: 1px solid #000;
+  outline: 1px solid #000;
+}
+.news-letter-form:focus-within{
+outline-width: 2px;
 }
 
 .news-letter-input {
