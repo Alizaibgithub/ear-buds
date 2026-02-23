@@ -14,8 +14,6 @@ if (document.querySelector(".new-product-swiper")) {
       prevEl: ".new-product-swiper-btn-prev",
     },
   });
-  console.log("new-product swiper")
-
 }
 // ===== Section: New Deal =====
 if (document.querySelector(".deal-swiper")) {
