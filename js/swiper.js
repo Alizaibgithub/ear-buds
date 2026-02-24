@@ -25,6 +25,10 @@ if (document.querySelector(".deal-swiper")) {
       delay: 2500,
       disableOnInteraction: false,
     },
+    pagination: {
+      el: ".new-product-swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".deal-swiper-btn-next",
       prevEl: ".deal-swiper-btn-prev",
@@ -41,6 +45,10 @@ if (document.querySelector(".team-swiper")) {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".team-swiper-pagination",
+      clickable: true,
     },
     navigation: {
       nextEl: ".team-swiper-btn-next",

@@ -11,6 +11,21 @@
   gap: 0.5rem;
 }
 
+.team-swiper-pagination,
+.new-product-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-muted);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
 .team-card {
   background: var(--color-primary);
   border: 3px solid var(--color-primary);
