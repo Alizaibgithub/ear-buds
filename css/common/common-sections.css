@@ -490,6 +490,21 @@ body.no-scroll {
   cursor: not-allowed;
   pointer-events: none;
 }
+.team-swiper-pagination,
+.new-product-swiper-pagination,
+.category-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-muted);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
 
 .btn-whatsapp {
   position: fixed;

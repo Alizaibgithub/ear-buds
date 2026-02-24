@@ -55,7 +55,7 @@ if (document.querySelector(".team-swiper")) {
       prevEl: ".team-swiper-btn-prev",
     },
     breakpoints: {
-      640: {
+      320: {
         slidesPerView: 1,
       },
       768: {
@@ -67,34 +67,39 @@ if (document.querySelector(".team-swiper")) {
     },
   });
 }
-
-// ===== Section: Category =====
+// ===== Section: Categories =====
 if (document.querySelector(".category-swiper")) {
   var categorySwiper = new Swiper(".category-swiper", {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     watchOverflow: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".category-swiper-pagination",
+      clickable: true,
     },
     navigation: {
       nextEl: ".category-swiper-btn-next",
       prevEl: ".category-swiper-btn-prev",
     },
     breakpoints: {
-      640: {
-        slidesPerView: 1,
+      320: {
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
     },
   });
 }
+
+
 
 // ===== Section: Product Details =====
 if (document.querySelector(".product-thumbnail-swiper")) {
