@@ -24,7 +24,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+    /* 2.8vw --> 1.344rem */
     font-weight: 900;
     text-transform: uppercase;
     color: var(--color-text);
@@ -42,19 +43,22 @@ textarea,
 select,
 option,
 legend {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+    /* 2.3vw --> 1.104rem */
     color: var(--color-text);
 }
 
 i {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+    /* 2.3vw --> 1.104rem */
 }
 
 a,
 button,
 a span,
 button span {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+    /* 2.3vw --> 1.104rem */
     font-weight: 900;
     color: var(--color-text);
     cursor: pointer;
@@ -62,8 +66,10 @@ button span {
 
 input[type="checkbox"],
 input[type="radio"] {
-    width: 1rem;
-    height: 1rem;
+    min-width: clamp(0.8rem, 1.88vw, 1rem);
+    /* 1.88vw --> 0.902rem */
+    min-height: clamp(0.8rem, 1.88vw, 1rem);
+    /* 1.88vw --> 0.902rem */
     accent-color: var(--color-primary);
     cursor: pointer;
 }

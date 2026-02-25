@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
@@ -7,9 +7,9 @@
   h6,
   .accordion-question-text {
     font-size: 1.35rem;
-  }
+  } */
 
-  p,
+  /* p,
   span,
   ul,
   li,
@@ -30,13 +30,13 @@
 
   i {
     font-size: 1.1rem;
-  }
+  } */
 
-  input[type="checkbox"],
+  /* input[type="checkbox"],
   input[type="radio"] {
     width: 0.9rem;
     height: 0.9rem;
-  }
+  } */
 
   .section {
     padding: 1.5rem 2.5rem;
@@ -48,33 +48,35 @@
   .new-arrivals-section,
   .deals-section,
   .deal-container,
-  .accordion-section,
-  .new-product-swiper,
-  .deal-swiper,
-  .new-product-swiper-navigation,
-  .deal-swiper-navigation {
+  .accordion-section
+
+  /* .new-product-swiper, */
+  /* .deal-swiper, */
+  /* .new-product-swiper-navigation,
+  .deal-swiper-navigation */
+    {
     gap: 1rem;
   }
 
-  .page-title {
+  /* .page-title {
     font-size: 2.4rem;
-  }
+  } */
 
-  .page-title span {
+  /* .page-title span {
     font-size: 2.4rem;
-  }
+  } */
 
-  .page-subtitle {
+  /* .page-subtitle {
     font-size: 1.3rem;
-  }
+  } */
 
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .product-title {
+  /* .product-title {
     font-size: 1.1rem;
-  }
+  } */
 
   /* ===== Section: Hero ===== */
   .hero-heading {
@@ -97,66 +99,69 @@
     font-size: 6rem;
   }
 
-  .price-regular .price-currency,
+  /* .price-regular .price-currency,
   .price-regular .price-amount,
   .price-sale .price-currency,
   .price-sale .price-amount {
     font-size: 0.95rem;
-  }
+  } */
 
-  .sale-product .price-regular .price-currency,
+  /* .sale-product .price-regular .price-currency,
   .sale-product .price-regular .price-amount {
     font-size: 0.85rem;
-  }
+  } */
 
   /* =====Section: Products Toolbar===== */
-  .products-toolbar-section {
+  /* .products-toolbar-section {
     padding: 0.9rem;
-  }
+  } */
 
-  .content-container,
+  /* .content-container,
   .accordion-container {
     gap: 0.75rem;
-  }
+  } */
 
-  .btn-circle {
+  /* .btn-circle {
     width: 2.25rem;
     height: 2.25rem;
-  }
+  } */
 
-  .accordion-question {
+  /* .accordion-question {
     padding: 0.9rem;
-  }
+  } */
 
-  .accordion-answer {
-    padding: 0 0.9rem 0.9rem;
-  }
+  /* .accordion-answer {
+    padding: 0 0.8rem 0.8rem;
+  } */
 
-  #btn-scrollToTop,
+  /* #btn-scrollToTop, */
   .contact-info-icon {
     width: 2.7rem;
     height: 2.7rem;
   }
-        .btn-whatsapp{
+
+  /* .btn-whatsapp{
           width: 3rem;
           height: 3rem;
-        }
+        } */
 
   #btn-scrollToTop {
-    bottom:4.45rem;
+    bottom: 4.45rem;
   }
 
-  #btn-scrollToTop i,
+  /* #btn-scrollToTop i, */
   .contact-info-icon i {
     font-size: 1.4rem;
   }
-    .btn-whatsapp i{
+
+  /* .btn-whatsapp i{
       font-size: 1.5rem;
-    }
+    } */
   /* ========== Section: Header ========== */
-  .header-section{
+  .header-section {
     z-index: 9997;
   }
+
   .header-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -307,10 +312,7 @@
     font-size: 2rem;
   }
 
-  /* =====Section: Call To Action ===== */
-  .call-to-action-section {
-    gap: 0.5rem;
-  }
+
 
   /* =====Section: Map container ===== */
   .contact-google-map-container {
@@ -325,13 +327,14 @@
   .copy-right span {
     font-size: 0.9rem;
   }
-.product-quantity-selector{
-  max-width: 42%;
-}
+
+  .product-quantity-selector {
+    max-width: 42%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
@@ -339,9 +342,9 @@
   h6,
   .accordion-question-text {
     font-size: 1.2rem;
-  }
+  } */
 
-  p,
+  /* p,
   span,
   ul,
   li,
@@ -362,35 +365,32 @@
 
   i {
     font-size: 1rem;
-  }
-
+  } */
+  /* 
   input[type="checkbox"],
   input[type="radio"] {
     width: 0.8rem;
     height: 0.8rem;
-  }
-  .new-products-container {
-    gap: 5rem;
-  }
+  } */
   .section {
     padding: 1.25rem 1rem;
   }
 
-  .page-title {
+  /* .page-title {
     font-size: 1.9rem;
-  }
+  } */
 
-  .page-title span {
+  /* .page-title span {
     font-size: 1.9rem;
-  }
+  } */
 
-  .page-subtitle {
+  /* .page-subtitle {
     font-size: 1.1rem;
-  }
+  } */
 
-  .product-title {
+  /* .product-title {
     font-size: 1rem;
-  }
+  } */
 
   /* ===== Section: Hero ===== */
   .hero-heading {
@@ -413,25 +413,21 @@
     font-size: 4rem;
   }
 
-  .price-regular .price-currency,
+  /* .price-regular .price-currency,
   .price-regular .price-amount,
   .price-sale .price-currency,
   .price-sale .price-amount {
     font-size: 0.85rem;
-  }
+  } */
 
-  .sale-product .price-regular .price-currency,
+  /* .sale-product .price-regular .price-currency,
   .sale-product .price-regular .price-amount {
     font-size: 0.75rem;
-  }
+  } */
 
   /* ===== Section: Products Grid ===== */
   .products-grid {
     grid-template-columns: 1fr;
-  }
-
-  .product-image-wrapper {
-    max-height: 17rem;
   }
 
   /* =====Section: Products Toolbar===== */
@@ -447,23 +443,23 @@
     display: none;
   }
 
-  .content-container,
+  /* .content-container,
   .accordion-container {
     gap: 0.5rem;
-  }
+  } */
 
-  .btn-product-filter,
-  .btn-product-filter span,
-  .sort-label,
+  /* .btn-product-filter,
+  .btn-product-filter span, */
+  /* .sort-label,
   .sort-select,
   .sort-select option {
     font-size: 0.8rem;
-  }
+  } */
 
-  .btn-product-filter,
+  /* .btn-product-filter,
   .sort-wrapper {
     gap: 0.2rem;
-  }
+  } */
 
   /* =====Section: Swiper Buttons===== */
   .swiper-btn,
@@ -490,19 +486,19 @@
   }
 
   /* =====Section: Accordion ===== */
-  .accordion-question {
+  /* .accordion-question {
     padding: 0.8rem;
-  }
+  } */
 
-  .accordion-answer {
+  /* .accordion-answer {
     padding: 0 0.9rem 0.9rem;
-  }
+  } */
 
-  .accordion-icon {
+  /* .accordion-icon {
     width: 1.75rem;
     height: 1.75rem;
     font-size: 0.9rem;
-  }
+  } */
 
   .tax-shipping-info {
     font-size: 0.8rem;
@@ -524,7 +520,8 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-.product-quantity-selector {
-  max-width: 40%;
-}
+
+  .product-quantity-selector {
+    max-width: 40%;
+  }
 }
