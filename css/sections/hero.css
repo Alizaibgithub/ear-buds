@@ -18,7 +18,8 @@
 
 .hero-heading {
     font-family: 'Karantina-Bold', sans-serif;
-    font-size: 16rem;
+    font-size: clamp(8rem, 25vw, 16rem);
+    /* 25vw --> 12rem */
 }
 
 .hero-images-container {

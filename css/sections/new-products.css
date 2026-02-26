@@ -9,9 +9,3 @@
     height: auto;
     object-fit: cover;
 }
-
-@media (max-width: 768px) {
-    .new-product-img {
-        aspect-ratio: 3.5 / 2;
-    }
-}

@@ -1,163 +1,27 @@
-@media screen and (max-width: 768px) {
-  /* h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .accordion-question-text {
-    font-size: 1.35rem;
-  } */
+@media screen and (min-width: 768px) and (max-width:1023px) {
 
-  /* p,
-  span,
-  ul,
-  li,
-  details,
-  summary,
-  label,
-  input,
-  textarea,
-  select,
-  option,
-  legend,
-  a,
-  button,
-  a span,
-  button span {
-    font-size: 1.1rem;
+  .customer-details-container,
+  .order-summary-details {
+    max-width: 100%;
   }
 
-  i {
-    font-size: 1.1rem;
-  } */
+  .checkout-items .cart-item {
+    grid-template-columns: 1fr 6fr;
+  }
+}
 
-  /* input[type="checkbox"],
-  input[type="radio"] {
-    width: 0.9rem;
-    height: 0.9rem;
-  } */
+@media screen and (min-width:768px) {
+  .cart-container .cart-item {
+    grid-template-columns: 1fr 6fr;
+  }
+}
 
+@media screen and (max-width: 768px) {
   .section {
     padding: 1.5rem 2.5rem;
   }
 
-  .hero-container,
-  .most-sold-products-container,
-  .products,
-  .new-arrivals-section,
-  .deals-section,
-  .deal-container,
-  .accordion-section
-
-  /* .new-product-swiper, */
-  /* .deal-swiper, */
-  /* .new-product-swiper-navigation,
-  .deal-swiper-navigation */
-    {
-    gap: 1rem;
-  }
-
-  /* .page-title {
-    font-size: 2.4rem;
-  } */
-
-  /* .page-title span {
-    font-size: 2.4rem;
-  } */
-
-  /* .page-subtitle {
-    font-size: 1.3rem;
-  } */
-
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* .product-title {
-    font-size: 1.1rem;
-  } */
-
-  /* ===== Section: Hero ===== */
-  .hero-heading {
-    font-size: 12rem;
-  }
-
-  /* ===== Section: New Deal ===== */
-  .deal-badge,
-  .deal-description {
-    font-size: 1.5rem;
-  }
-
-  .deal-percentage,
-  .deal-discount {
-    font-size: 2.2rem;
-    font-weight: 900;
-  }
-
-  .deal-label {
-    font-size: 6rem;
-  }
-
-  /* .price-regular .price-currency,
-  .price-regular .price-amount,
-  .price-sale .price-currency,
-  .price-sale .price-amount {
-    font-size: 0.95rem;
-  } */
-
-  /* .sale-product .price-regular .price-currency,
-  .sale-product .price-regular .price-amount {
-    font-size: 0.85rem;
-  } */
-
-  /* =====Section: Products Toolbar===== */
-  /* .products-toolbar-section {
-    padding: 0.9rem;
-  } */
-
-  /* .content-container,
-  .accordion-container {
-    gap: 0.75rem;
-  } */
-
-  /* .btn-circle {
-    width: 2.25rem;
-    height: 2.25rem;
-  } */
-
-  /* .accordion-question {
-    padding: 0.9rem;
-  } */
-
-  /* .accordion-answer {
-    padding: 0 0.8rem 0.8rem;
-  } */
-
-  /* #btn-scrollToTop, */
-  .contact-info-icon {
-    width: 2.7rem;
-    height: 2.7rem;
-  }
-
-  /* .btn-whatsapp{
-          width: 3rem;
-          height: 3rem;
-        } */
-
-  #btn-scrollToTop {
-    bottom: 4.45rem;
-  }
-
-  /* #btn-scrollToTop i, */
-  .contact-info-icon i {
-    font-size: 1.4rem;
-  }
-
-  /* .btn-whatsapp i{
-      font-size: 1.5rem;
-    } */
-  /* ========== Section: Header ========== */
+  /* Section: Header */
   .header-section {
     z-index: 9997;
   }
@@ -167,32 +31,24 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .header-btn-list {
-    justify-self: flex-end;
-  }
-
-  /* ===== Logo Container ===== */
   .header-logo-container {
     justify-self: center;
     order: 2;
+  }
+
+  .header-btn-list {
+    justify-self: flex-end;
   }
 
   .header-actions {
     order: 3;
   }
 
-  /* ===== Header Buttons ===== */
-
   li:has(.header-btn-account) {
     display: none;
   }
 
-  .cart-count {
-    width: 0.8rem;
-    height: 0.8rem;
-    font-size: 0.6rem;
-  }
-
+  /* ===== Mobile Menu ===== */
   /* ===== Section: Menu ===== */
   .main-nav {
     display: flex;
@@ -214,7 +70,6 @@
     transform: translateX(0%);
   }
 
-  /* ===== Nav List ===== */
   .main-nav-list {
     flex-direction: column;
     align-items: flex-start;
@@ -233,12 +88,40 @@
     color: var(--color-primary);
   }
 
+  .btn-menu-toggle {
+    display: block;
+    order: 1;
+    justify-self: flex-start;
+  }
+
+  .menu-btn-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   .menu-header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #fff;
     background-color: #000;
     padding: 1rem 2rem;
+  }
+
+  .menu-btn-account:hover,
+  .menu-btn-account:hover i,
+  .menu-btn-account:hover span {
+    color: var(--color-primary);
+  }
+
+  .menu-social-icons {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-social-icons .social-icon {
+    background-color: var(--color-primary);
   }
 
   .menu-footer {
@@ -260,208 +143,119 @@
     font-size: 0.65rem;
   }
 
-  .btn-menu-toggle {
-    display: block;
-    order: 1;
-    justify-self: flex-start;
-  }
-
-  .menu-btn-account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .menu-btn-account:hover,
-  .menu-btn-account:hover i,
-  .menu-btn-account:hover span {
-    color: var(--color-primary);
-  }
-
-  .menu-social-icons {
-    display: block;
-    width: 100%;
-  }
-
-  .menu-social-icons .social-icon {
-    background-color: var(--color-primary);
-  }
-
-  /* =====Section: Team Card ===== */
-  .team-card-media {
-    padding: 0.8rem 0;
-  }
-
-  .team-image-container {
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .team-card-body {
-    padding: 0.8rem;
-  }
-
-  /* =====Section: Image Text Section ===== */
-  .mv-card-icon {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-
-  .mv-card-icon i {
-    font-size: 2rem;
-  }
-
-
-
-  /* =====Section: Map container ===== */
-  .contact-google-map-container {
-    height: 20rem;
-  }
-
-  /* ========== Section: Footer ========== */
-  .footer-container {
-    gap: 1.5rem;
-  }
-
-  .copy-right span {
-    font-size: 0.9rem;
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .product-quantity-selector {
     max-width: 42%;
   }
+
+  .contact-google-map-container {
+    height: 20rem;
+  }
+
+  #btn-scrollToTop {
+    bottom: 4.45rem;
+  }
+
+  /* Checkout/Confirm Order */
+  .checkout-container,
+  .order-confirm-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .customer-details-container,
+  .order-summary-details {
+    max-width: 100%;
+  }
+
+  .checkout-items {
+    overflow: inherit;
+    max-height: 100%;
+  }
+
+  .customer-details {
+    justify-content: center;
+    border-right: none;
+    border-top: 1px solid var(--color-muted);
+  }
+
+  .order-summary {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem 0;
+  }
+
+  .order-summary-details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-summary-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .order-summary-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .order-summary-details[open] .order-summary-icon {
+    transform: rotate(180deg);
+  }
+
+  .new-product-img {
+    aspect-ratio: 3.5 / 2;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  /* h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .accordion-question-text {
-    font-size: 1.2rem;
-  } */
-
-  /* p,
-  span,
-  ul,
-  li,
-  details,
-  summary,
-  label,
-  input,
-  textarea,
-  select,
-  option,
-  legend,
-  a,
-  button,
-  a span,
-  button span {
-    font-size: 1rem;
-  }
-
-  i {
-    font-size: 1rem;
-  } */
-  /* 
-  input[type="checkbox"],
-  input[type="radio"] {
-    width: 0.8rem;
-    height: 0.8rem;
-  } */
   .section {
     padding: 1.25rem 1rem;
   }
 
-  /* .page-title {
-    font-size: 1.9rem;
-  } */
-
-  /* .page-title span {
-    font-size: 1.9rem;
-  } */
-
-  /* .page-subtitle {
-    font-size: 1.1rem;
-  } */
-
-  /* .product-title {
-    font-size: 1rem;
-  } */
-
-  /* ===== Section: Hero ===== */
-  .hero-heading {
-    font-size: 8rem;
+  .footer-top {
+    flex-direction: column;
   }
 
-  /* ===== Section: New Deal ===== */
-  .deal-badge,
-  .deal-description {
-    font-size: 1.2rem;
+  .footer-logo-container {
+    align-self: center;
   }
 
-  .deal-percentage,
-  .deal-discount {
-    font-size: 1.8rem;
-    font-weight: 900;
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  .deal-label {
-    font-size: 4rem;
-  }
-
-  /* .price-regular .price-currency,
-  .price-regular .price-amount,
-  .price-sale .price-currency,
-  .price-sale .price-amount {
-    font-size: 0.85rem;
-  } */
-
-  /* .sale-product .price-regular .price-currency,
-  .sale-product .price-regular .price-amount {
-    font-size: 0.75rem;
-  } */
-
-  /* ===== Section: Products Grid ===== */
   .products-grid {
     grid-template-columns: 1fr;
   }
 
-  /* =====Section: Products Toolbar===== */
-  /* .products-toolbar {
-            margin-bottom: 5rem;
-        } */
+  .product-quantity-selector {
+    max-width: 40%;
+  }
 
-  .products-toolbar {
-    padding: 0.8rem;
+  .product-media {
+    width: 100%;
+  }
+
+  .cart .cart-item {
+    grid-template-columns: 1fr 3fr;
   }
 
   .view-toggle {
     display: none;
   }
 
-  /* .content-container,
-  .accordion-container {
-    gap: 0.5rem;
-  } */
+  .contact-google-map-container {
+    height: 15rem;
+  }
 
-  /* .btn-product-filter,
-  .btn-product-filter span, */
-  /* .sort-label,
-  .sort-select,
-  .sort-select option {
-    font-size: 0.8rem;
-  } */
-
-  /* .btn-product-filter,
-  .sort-wrapper {
-    gap: 0.2rem;
-  } */
-
-  /* =====Section: Swiper Buttons===== */
+  /* =====Section: Swiper ===== */
   .swiper-btn,
   .swiper-navigation {
     display: none;
@@ -480,48 +274,7 @@
     width: auto;
   }
 
-  /* =====Section: Map container ===== */
-  .contact-google-map-container {
-    height: 15rem;
-  }
-
-  /* =====Section: Accordion ===== */
-  /* .accordion-question {
-    padding: 0.8rem;
-  } */
-
-  /* .accordion-answer {
-    padding: 0 0.9rem 0.9rem;
-  } */
-
-  /* .accordion-icon {
-    width: 1.75rem;
-    height: 1.75rem;
-    font-size: 0.9rem;
-  } */
-
-  .tax-shipping-info {
-    font-size: 0.8rem;
-  }
-
-  .copy-right span {
-    font-size: 0.8rem;
-  }
-
-  .footer-top {
+  .order-details-container {
     flex-direction: column;
-  }
-
-  .footer-logo-container {
-    align-self: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .product-quantity-selector {
-    max-width: 40%;
   }
 }

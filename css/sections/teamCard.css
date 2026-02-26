@@ -26,12 +26,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  padding: clamp(0.8rem, 1.85vw, 1rem) 0;
+  /* 1.85vw --> 0.888rem */
 }
 
 .team-image-container {
-  width: 10rem;
-  height: 10rem;
+  max-width: clamp(7rem, 16.5vw, 9rem);
+  /* 16.5vw --> 7.92rem */
+  max-height: clamp(7rem, 16.5vw, 9rem);
+  /* 4vw --> 1.922rem */
+  aspect-ratio: 1 / 1;
   border: 3px solid #fff;
   border-radius: 50%;
   overflow: hidden;
@@ -45,7 +49,8 @@
 
 .team-card-body {
   text-align: center;
-  padding: 1rem;
+  padding: clamp(0.8rem, 1.85vw, 1rem);
+  /* 1.85vw --> 0.888rem */
   background: #1a1a1a;
 }
 

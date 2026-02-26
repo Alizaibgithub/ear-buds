@@ -55,23 +55,3 @@
 #most-sold-products-section {
   scroll-margin-top: 96px;
 }
-
-/* .categories-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
-  gap: 4rem;
-  justify-items: center;
-} */
-/* 
-@media screen and (max-width:768px) {
-  .categories-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width:480px) {
-  .categories-grid {
-    gap: 2rem 1.5rem;
-  }
-} */

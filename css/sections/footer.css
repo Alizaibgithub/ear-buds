@@ -4,11 +4,14 @@
   position: relative;
   z-index: 9994;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(1.5rem, 3.5vw, 2rem);
+  /* 3.5vw --> 1.68rem */
 }
+
 .footer-divider {
   height: 0.1rem;
   border: none;
@@ -43,6 +46,7 @@
 
 .footer-nav-link span {
   font-size: 1rem;
+  font-weight: 500;
   text-transform: lowercase;
   transition: 0.3s ease-in-out;
 }
@@ -61,8 +65,9 @@
   display: flex;
   outline: 1px solid #000;
 }
-.news-letter-form:focus-within{
-outline-width: 2px;
+
+.news-letter-form:focus-within {
+  outline-width: 2px;
 }
 
 .news-letter-input {
@@ -113,5 +118,6 @@ outline-width: 2px;
 }
 
 .copy-right span {
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  /* 2vw --> 0.962rem */
 }

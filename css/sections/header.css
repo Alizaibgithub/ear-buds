@@ -4,6 +4,7 @@
   top: 0;
   z-index: 1000;
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -37,8 +38,12 @@
 }
 
 .cart-count {
-  width: 1rem;
-  height: 1rem;
+  width: clamp(0.8rem, 2vw, 1rem);
+  /* 2vw --> 0.96 */
+  height: clamp(0.8rem, 2vw, 1rem);
+  /* 2vw --> 0.96 */
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+  /* 1.5vw --> 0.72 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +53,6 @@
   background-color: #fff;
   border: 1.5px solid #000;
   border-radius: 50%;
-  font-size: 0.8rem;
   color: #000;
 }
 
