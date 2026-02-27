@@ -12,7 +12,7 @@
 }
 
 .team-card {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
   border: 3px solid var(--color-primary);
   border-radius: 17px;
   overflow: hidden;
@@ -51,7 +51,7 @@
   text-align: center;
   padding: clamp(0.8rem, 1.85vw, 1rem);
   /* 1.85vw --> 0.888rem */
-  background: #1a1a1a;
+  background-color: #1a1a1a;
 }
 
 .team-role {

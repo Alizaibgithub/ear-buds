@@ -13,7 +13,7 @@
     align-items: center;
     padding: 1rem;
     border-radius: 17px;
-    background: #1a1a1a;
+    background-color: #1a1a1a;
 }
 
 .mv-card-icon {
@@ -24,7 +24,7 @@
     /* 9.5vw --> 4.56rem */
     min-height: clamp(4rem, 9.5vw, 5rem);
     /* 9.5vw --> 4.56rem */
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     border-radius: 50%;
     aspect-ratio: 1 / 1;
 }

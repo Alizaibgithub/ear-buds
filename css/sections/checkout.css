@@ -95,20 +95,19 @@
   cursor: pointer;
 }
 
-.region-select,
+/* .region-select,
 .region-select option {
   background-color: #090909;
-}
+} */
 
-.region-select:focus,
+/* .region-select:focus,
 .region-select:focus .region-label,
 .region-select:focus .region-select-wrapper {
   background: rgba(207, 15, 71, 0.05);
-}
+} */
 
-/* Styles the entire wrapper when the select is clicked/focused */
 .region-select-wrapper:focus-within {
-  background: rgba(207, 15, 71, 0.05);
+  background-color: rgba(207, 15, 71, 0.05);
   border: 2px solid #cf0f47;
 }
 
@@ -135,7 +134,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  background: rgba(207, 15, 71, 0.05);
+  background-color: rgba(207, 15, 71, 0.05);
   border: 2px solid var(--color-primary);
   border-radius: 12px;
 }
@@ -156,7 +155,7 @@
 }
 
 .billing-radio-button:has(.billing-btn:checked) {
-  background: rgba(207, 15, 71, 0.05);
+  background-color: rgba(207, 15, 71, 0.05);
   border: 2px solid var(--color-primary);
 }
 

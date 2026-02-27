@@ -74,7 +74,7 @@
 }
 
 .quantity-selector-wrapper:focus-within {
-  background: rgba(207, 15, 71, 0.05);
+  background-color: rgba(207, 15, 71, 0.05);
   border-color: #cf0f47;
 }
 
@@ -146,15 +146,15 @@
 }
 
 .color-swatch-visual--white {
-  background: #fff;
+  background-color: #fff;
 }
 
 .color-swatch-visual--black {
-  background: #000;
+  background-color: #000;
 }
 
 .color-swatch-visual--red {
-  background: #e53935;
+  background-color: #e53935;
 }
 
 .product-details-content .btn-atc {

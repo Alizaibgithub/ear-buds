@@ -14,7 +14,7 @@
 }
 
 body {
-    background: var(--color-bg);
+    background-color: var(--color-bg);
     color: var(--color-text);
 }
 
@@ -76,6 +76,6 @@ input[type="radio"] {
 
 select,
 option {
-    background: var(--color-bg);
+    background-color: var(--color-bg);
     cursor: pointer;
 }

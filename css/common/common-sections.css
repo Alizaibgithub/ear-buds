@@ -6,7 +6,7 @@ body.no-scroll {
 .section {
   padding: 1.5rem 5rem;
     /* padding: clamp(1.25rem, 3vw, 1.5rem) clamp(1.4rem, 5vw, 3rem); */
-  background: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 .section-title {
@@ -420,7 +420,7 @@ body.no-scroll {
 }
 
 .accordion-question:hover {
-  background: rgba(207, 15, 71, 0.08);
+  background-color: rgba(207, 15, 71, 0.08);
 }
 
 .accordion-question-text {
@@ -451,7 +451,7 @@ body.no-scroll {
 }
 
 .accordion-details[open] {
-  background: rgba(207, 15, 71, 0.1);
+  background-color: rgba(207, 15, 71, 0.1);
 }
 
 .accordion-details[open] .accordion-icon {
