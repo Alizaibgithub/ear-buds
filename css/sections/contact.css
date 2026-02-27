@@ -76,7 +76,7 @@
   /* 5.8vw --> 2.784rem */
   min-height: clamp(2.7rem, 5.8vw, 3rem);
   /* 5.8vw --> 2.784rem */
-  background-color: #000;
+  background-color: var(--color-bg);
   aspect-ratio: 1 / 1;
 }
 

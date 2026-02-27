@@ -15,7 +15,7 @@
 .footer-divider {
   height: 0.1rem;
   border: none;
-  background-color: #000;
+  background-color: var(--color-bg);
 }
 
 .footer-top {
@@ -92,7 +92,7 @@
 .news-letter-btn {
   padding: 0.5rem 1rem;
   border: none;
-  background-color: #000;
+  background-color: var(--color-bg);  
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -114,7 +114,7 @@
 }
 
 .social-icon {
-  background-color: #000;
+  background-color: var(--color-bg);
 }
 
 .copy-right span {

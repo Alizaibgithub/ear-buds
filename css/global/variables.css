@@ -2,8 +2,8 @@
 :root {
         /* === Colors === */
         --color-primary: #cf0f47;
-        --color-bg: #000000;
-        --color-text: #ffffff;
+        --color-bg: #000;
+        --color-text: #fff;
         --color-muted: #888888;
         --color-success: #28a745;
         --color-danger: #dc3545;

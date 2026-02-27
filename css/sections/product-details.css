@@ -75,7 +75,7 @@
 
 .quantity-selector-wrapper:focus-within {
   background-color: rgba(207, 15, 71, 0.05);
-  border-color: #cf0f47;
+  border-color: var(--color-primary);
 }
 
 .quantity-count {
@@ -142,7 +142,7 @@
 }
 
 .color-swatch-input:checked+.color-swatch-label {
-  border-color: #cf0f47;
+  border-color: var(--color-primary);
 }
 
 .color-swatch-visual--white {

@@ -122,7 +122,7 @@ body.no-scroll {
   min-height: clamp(2.25rem, 4.75vw, 2.5rem);
   border-radius: 50%;
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: #fff;
   aspect-ratio: 1 / 1;
 }
 

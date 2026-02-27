@@ -6,7 +6,7 @@
   max-width: 25rem;
   width: 90%;
   height: 100%;
-  background-color: #000;
+  background-color: var(--color-bg);
   opacity: 1;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
@@ -38,7 +38,7 @@
   /* gap: 0.5rem; */
   padding: 1rem;
   border-bottom: 1px solid #fff;
-  background-color: #000;
+  background-color: var(--color-bg);
 }
 
 /* .btn-cart-item-delete { */
@@ -56,7 +56,7 @@
 
 .cart-body {
   overflow-y: auto;
-  background-color: #000;
+  background-color: var(--color-bg);
 }
 
 .cart-body::-webkit-scrollbar {
@@ -70,7 +70,7 @@
   gap: 0.5rem;
   padding: 1rem;
   border-top: 1px solid #fff;
-  background-color: #000;
+  background-color: var(--color-bg);
   margin-top: auto;
 }
 

@@ -6,7 +6,7 @@
   max-width: 25rem;
   width: 75%;
   height: 100%;
-  background-color: #000;
+  background-color: var(--color-bg);
   opacity: 1;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
@@ -32,8 +32,7 @@
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid #fff;
-  background-color: #000;
-}
+  background-color: var(--color-bg);}
 
 .product-quantity,
 .product-quantity-count {
@@ -42,8 +41,7 @@
 
 .product-filter-body {
   overflow-y: auto;
-  background-color: #000;
-}
+  background-color: var(--color-bg);}
 
 .product-filter-footer {
   display: grid;
@@ -52,8 +50,7 @@
   gap: 0.5rem;
   padding: 1rem;
   border-top: 1px solid #fff;
-  background-color: #000;
-  margin-top: auto;
+  background-color: var(--color-bg);  margin-top: auto;
 }
 
 .price-input-wrapper {
@@ -67,7 +64,7 @@
 .price-input-wrapper:focus-within {
   width: 100%;
   background-color: rgba(207, 15, 71, 0.05);
-  border: 2px solid #cf0f47;
+  border: 2px solid var(--color-primary);
 }
 
 .price-input {
