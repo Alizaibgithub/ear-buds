@@ -147,7 +147,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .product-quantity-selector {
+    .product-details-content .quantity-selector-wrapper  {
     max-width: 42%;
   }
 
@@ -235,7 +235,7 @@
     grid-template-columns: 1fr;
   }
 
-  .product-quantity-selector {
+    .product-details-content .quantity-selector-wrapper  {
     max-width: 40%;
   }
 
