@@ -425,6 +425,7 @@ body.no-scroll {
   cursor: pointer;
   padding: clamp(0.8rem, 1.85vw, 1rem);
   /* 1.85vw --> 0.888rem */
+  gap: 0.5rem;
 }
 
 .accordion-question:hover {
