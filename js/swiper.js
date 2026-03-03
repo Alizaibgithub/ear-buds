@@ -109,6 +109,11 @@ if (document.querySelector(".product-thumbnail-swiper")) {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      1025: {
+        direction: 'vertical',
+      },
+    },
   });
   var productMediaSwiper = new Swiper(".product-media-main-swiper", {
     loop: true,
