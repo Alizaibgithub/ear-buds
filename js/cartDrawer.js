@@ -1,5 +1,5 @@
-// ===== Cart Drawer Functionality =====
-fetch("../templates/cart-drawer.html")
+// ===== Cart Drawer =====
+fetch("../partials/cart-drawer.html")
   .then((res) => res.text())
   .then((html) => {
     document.body.insertAdjacentHTML("beforeend", html);
@@ -11,26 +11,14 @@ fetch("../templates/cart-drawer.html")
     const menuToggleButton = document.querySelector(".btn-menu-toggle");
     const headerLogo = document.querySelector(".header-logo-container");
 
-     const openCart = () => {
-      cartSection.classList.add("active");
-      backgroundOverlay.classList.add("active");
-      document.body.classList.add("no-scroll");
-      menuToggleButton.style.opacity = "0.5";
-      headerLogo.style.opacity = "0.5";
-    };
-    const closeCart = () => {
-      cartSection.classList.remove("active");
-      backgroundOverlay.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-      menuToggleButton.style.opacity = "1";
-      headerLogo.style.opacity = "1";
-    };
+    const openCart = () => toggleOverlay(cartSection, [menuToggleButton, headerLogo], true);
+    const closeCart = () => toggleOverlay(cartSection, [menuToggleButton, headerLogo], false);
+
     cartButton.addEventListener("click", openCart);
-    addToCartButtons.forEach((addToCartButtons)=>{
-      addToCartButtons.addEventListener("click", ()=>{
-        openCart();
-      })
+    addToCartButtons.forEach((addToCartButton) => {
+      addToCartButton.addEventListener("click", openCart)
     })
+
     cartCloseButton.addEventListener("click", closeCart);
     backgroundOverlay.addEventListener("click", closeCart);
 

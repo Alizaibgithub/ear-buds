@@ -1,4 +1,5 @@
-fetch("../templates/product-filter.html")
+// ===== Product Filter =====
+fetch("../partials/product-filter.html")
   .then((res) => res.text())
   .then((html) => {
     document.body.insertAdjacentHTML("beforeend", html);
@@ -12,20 +13,9 @@ fetch("../templates/product-filter.html")
     const headerActions = document.querySelector(".header-actions");
     const headerLogo = document.querySelector(".header-logo-container");
 
-    const openProductFilter = () => {
-      productFilterSection.classList.add("active");
-      backgroundOverlay.classList.add("active");
-      document.body.classList.add("no-scroll");
-      headerActions.style.opacity = "0.5";
-      headerLogo.style.opacity = "0.5";
-    };
-    const closeProductFilter = () => {
-      productFilterSection.classList.remove("active");
-      backgroundOverlay.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-      headerActions.style.opacity = "1";
-      headerLogo.style.opacity = "1";
-    };
+    const openProductFilter = () => toggleOverlay(productFilterSection, [headerActions, headerLogo], true);
+    const closeProductFilter = () => toggleOverlay(productFilterSection, [headerActions, headerLogo], false);
+
     productFilterButton.addEventListener("click", openProductFilter);
     productFilterCloseButton.addEventListener("click", closeProductFilter);
     productFilterApplyButton.addEventListener("click", closeProductFilter)

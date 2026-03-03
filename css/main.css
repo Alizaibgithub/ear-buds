@@ -1,25 +1,25 @@
-/* ===== Global ===== */
-@import './global/variables.css';
-@import './global/reset.css';
-@import './global/global.css';
+/* ===== base ===== */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/global.css';
 
 /* ===== Common ===== */
-@import './common/common-sections.css';
+@import './common.css';
 
-/* ===== Sections ===== */
-@import './sections/header.css';
-@import './sections/footer.css';
-@import './sections/hero.css';
-@import './sections/new-products.css';
-@import './sections/deal.css';
-@import './sections/missionVision.css';
-@import './sections/teamCard.css';
-@import './sections/contact.css';
-@import './sections/category.css';
-@import './sections/product-details.css';
-@import './sections/checkout.css';
-@import './sections/cart.css';
-@import './sections/product-filter.css';
+/* ===== components ===== */
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/hero.css';
+@import './components/new-products.css';
+@import './components/deal.css';
+@import './components/missionVision.css';
+@import './components/teamCard.css';
+@import './components/contact.css';
+@import './components/category.css';
+@import './components/product-details.css';
+@import './components/checkout.css';
+@import './components/cart.css';
+@import './components/product-filter.css';
 
 /* ===== Responsive ===== */
-@import './global/responsive.css';
+@import './base/responsive.css';

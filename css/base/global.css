@@ -1,0 +1,81 @@
+/* ===== CSS Global ===== */
+@font-face {
+    font-family: "Karantina-Bold";
+    src: url("../../assets/fonts/Karantina-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+    font-family: "Poppins-Regular", sans-serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+    /* 2.8vw --> 1.344rem */
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+p,
+span,
+ul,
+li,
+details,
+summary,
+label,
+input,
+textarea,
+select,
+option,
+legend {
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+    /* 2.3vw --> 1.104rem */
+    color: var(--color-text);
+}
+
+i {
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+    /* 2.3vw --> 1.104rem */
+}
+
+a,
+button,
+a span,
+button span {
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+    /* 2.3vw --> 1.104rem */
+    font-weight: 900;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    min-width: clamp(0.8rem, 1.88vw, 1rem);
+    /* 1.88vw --> 0.902rem */
+    min-height: clamp(0.8rem, 1.88vw, 1rem);
+    /* 1.88vw --> 0.902rem */
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+select,
+option {
+    background-color: var(--color-bg);
+    cursor: pointer;
+}

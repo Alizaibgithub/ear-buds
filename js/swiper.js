@@ -1,10 +1,9 @@
 // ===== Swiper Slider =====
-// ===== Section: New Products =====
+// ===== Swiper: New Products =====
 if (document.querySelector(".new-product-swiper")) {
   var newProductSwiper = new Swiper(".new-product-swiper", {
     loop: true,
     spaceBetween: 30,
-    // centeredSlides: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -15,12 +14,12 @@ if (document.querySelector(".new-product-swiper")) {
     },
   });
 }
-// ===== Section: New Deal =====
+
+// ===== Swiper: Deal =====
 if (document.querySelector(".deal-swiper")) {
   var newDealSwiper = new Swiper(".deal-swiper", {
     loop: true,
     spaceBetween: 30,
-    // centeredSlides: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -36,7 +35,7 @@ if (document.querySelector(".deal-swiper")) {
   });
 }
 
-// ===== Section: Team =====
+// ===== Swiper: Team =====
 if (document.querySelector(".team-swiper")) {
   var teamSwiper = new Swiper(".team-swiper", {
     loop: true,
@@ -67,7 +66,7 @@ if (document.querySelector(".team-swiper")) {
     },
   });
 }
-// ===== Section: Categories =====
+// ===== Swiper: Categories =====
 if (document.querySelector(".category-swiper")) {
   var categorySwiper = new Swiper(".category-swiper", {
     loop: true,
@@ -99,9 +98,7 @@ if (document.querySelector(".category-swiper")) {
   });
 }
 
-
-
-// ===== Section: Product Details =====
+// ===== Swiper: Product Details =====
 if (document.querySelector(".product-thumbnail-swiper")) {
   var productThumbnailSwiper = new Swiper(".product-thumbnail-swiper", {
     loop: true,
@@ -115,6 +112,7 @@ if (document.querySelector(".product-thumbnail-swiper")) {
       },
     },
   });
+
   var productMediaSwiper = new Swiper(".product-media-main-swiper", {
     loop: true,
     spaceBetween: 10,

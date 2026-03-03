@@ -10,6 +10,7 @@ accordionDetails.forEach((detail) => {
                 item.removeAttribute("open");
             }
         });
+
         answer.classList.remove("active");
         void answer.offsetWidth;
         answer.classList.add("active");
