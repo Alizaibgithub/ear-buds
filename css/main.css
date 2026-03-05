@@ -4,6 +4,7 @@
 @import './base/global.css';
 
 /* ===== components ===== */
+@import './components/buttons.css';
 @import './common.css';
 @import './components/header.css';
 @import './components/footer.css';
@@ -20,7 +21,6 @@
 @import './components/accordion.css';
 @import './components/mission-vision.css';
 @import './components/team.css';
-@import './components/buttons.css';
 @import './components/swiper.css';
 
 
