@@ -36,7 +36,7 @@
   max-height: clamp(7rem, 16.5vw, 9rem);
   /* 4vw --> 1.922rem */
   aspect-ratio: 1 / 1;
-  border: 3px solid #fff;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   overflow: hidden;
 }

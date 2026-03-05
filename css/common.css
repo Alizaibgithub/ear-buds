@@ -62,7 +62,7 @@ body.no-scroll {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #00000099;
   opacity: 0;
   z-index: 9996;
   display: none;
@@ -189,7 +189,7 @@ body.no-scroll {
 
 .form-input:focus,
 .form-textarea:focus {
-  background-color: rgba(207, 15, 71, 0.05);
+  background-color: #CF0F470D;
   border-color: var(--color-primary);
 }
 

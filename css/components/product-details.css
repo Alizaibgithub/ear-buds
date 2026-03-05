@@ -29,8 +29,8 @@
 
 .product-media-main,
 .product-thumbnail {
-  background-color: #fff;
-  border: 2px solid #fff;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 6px;
 }
 
@@ -79,13 +79,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 6px;
   padding: 0.2rem 0.4rem;
 }
 
 .quantity-selector-wrapper:focus-within {
-  background-color: rgba(207, 15, 71, 0.05);
+  background-color: #CF0F470D;
   border-color: var(--color-primary);
 }
 
@@ -94,13 +94,9 @@
 }
 
 .btn-quantity i {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
-.btn-minus,
-.btn-plus {
-  font-size: var(--font-size-sm);
-}
 
 .quantity-count {
   width: 100%;
@@ -108,7 +104,7 @@
   text-align: center;
   outline: none;
   border: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -159,11 +155,11 @@
 }
 
 .color-swatch-visual-white {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .color-swatch-visual-black {
-  background-color: #000;
+  background-color: #000000;
 }
 
 .color-swatch-visual-red {

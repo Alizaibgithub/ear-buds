@@ -48,10 +48,10 @@
   position: absolute;
   top: -20%;
   right: -40%;
-  background-color: #fff;
-  border: 1.5px solid #000;
+  background-color: #ffffff;
+  border: 1.5px solid #000000;
   border-radius: 50%;
-  color: #000;
+  color: #000000;
 }
 
 .main-nav-list {
@@ -171,8 +171,8 @@
   .menu-header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #fff;
-    background-color: #000;
+    border-bottom: 1px solid #ffffff;
+    background-color: #000000;
     padding: 1rem 2rem;
   }
 
@@ -197,8 +197,8 @@
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
-    border-top: 1px solid #fff;
-    background-color: #000;
+    border-top: 1px solid #ffffff;
+    background-color: #000000;
     margin-top: auto;
   }
 

@@ -31,11 +31,11 @@
 
 .footer-logo {
   height: 100%;
-  border: 3px solid #000;
+  border: 3px solid #000000;
 }
 
 .footer-heading {
-  color: #000;
+  color: #000000;
 }
 
 .footer-nav-link {
@@ -53,17 +53,17 @@
 
 .footer-nav-link:hover,
 .footer-nav-link:hover span {
-  color: #000;
+  color: #000000;
 }
 
 .footer-nav-link.active,
 .footer-nav-link.active span {
-  color: #000;
+  color: #000000;
 }
 
 .news-letter-form {
   display: flex;
-  outline: 1px solid #000;
+  outline: 1px solid #000000;
 }
 
 .news-letter-form:focus-within {

@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
   background-color: var(--color-bg);
 }
 
@@ -70,7 +70,7 @@
 
 .price-input-wrapper:focus-within {
   width: 100%;
-  background-color: rgba(207, 15, 71, 0.05);
+  background-color: #CF0F470D;
   border: 2px solid var(--color-primary);
 }
 
@@ -92,7 +92,7 @@
   width: 100%;
   gap: 0.5rem;
   padding: 1rem;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ffffff;
   background-color: var(--color-bg);
   margin-top: auto;
 }

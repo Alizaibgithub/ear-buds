@@ -14,7 +14,7 @@
     border-radius: 17px;
     background: linear-gradient(180deg,
             var(--color-primary) -2.32%,
-            rgba(114, 57, 73, 0) 86.28%);
+            #72394900 86.28%);
 }
 
 .product-image-wrapper {
@@ -39,19 +39,19 @@
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 10px 0 0 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px #00000033;
 }
 
 .badge-new {
-    background-color: rgba(33, 150, 243, 0.75);
+    background-color: #2196F3BF;
 }
 
 .badge-sale {
-    background-color: rgba(229, 57, 53, 0.75);
+    background-color: #E53935BF;
 }
 
 .badge-mostsold {
-    background-color: rgba(200, 163, 58, 0.75);
+    background-color: #C8A33ABF;
 }
 
 .sale-percent {

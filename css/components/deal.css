@@ -19,7 +19,7 @@
     .deal-overlay {
         background: linear-gradient(90deg,
                 var(--color-primary) 1.71%,
-                rgba(255, 255, 255, 0) 100%);
+                #FFFFFF00 100%);
     }
 
     .deal-content {
