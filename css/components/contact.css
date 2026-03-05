@@ -18,44 +18,8 @@
   gap: 1.5rem;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form-required {
-  color: var(--color-primary);
-}
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  background: transparent;
-  border: 2px solid #1a1a1a;
-  border-radius: 12px;
-  outline: none;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  background-color: rgba(207, 15, 71, 0.05);
-  border-color: var(--color-primary);
-}
-
-.form-textarea {
-  resize: vertical;
-  min-height: 6rem;
-  max-height: 15rem;
-}
-
 .btn-submit {
   align-self: flex-start;
-}
-
-.contact-google-map-container {
-  height: 25rem;
 }
 
 .contact-info-wrapper {
@@ -69,6 +33,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .contact-info-icon {
@@ -85,12 +55,6 @@
   /* 3vw --> 1.44rem */
 }
 
-.contact-info-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .contact-info-label {
   color: #000;
   text-transform: capitalize;
@@ -98,4 +62,14 @@
 
 .contact-info-content a {
   font-weight: 300;
+}
+
+.contact-google-map-container {
+  height: 25rem;
+}
+/* ========== Media Queries ========== */
+@media screen and (max-width: 480px) {
+    .contact-google-map-container {
+        height: 15rem;
+      }
 }

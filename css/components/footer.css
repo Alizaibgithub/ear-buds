@@ -92,7 +92,7 @@
 .news-letter-btn {
   padding: 0.5rem 1rem;
   border: none;
-  background-color: var(--color-bg);  
+  background-color: var(--color-bg);
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -105,19 +105,23 @@
   gap: 0.25rem;
 }
 
-.social-icons-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.social-icon {
-  background-color: var(--color-bg);
-}
-
 .copy-right span {
   font-size: clamp(0.85rem, 2vw, 1rem);
   /* 2vw --> 0.962rem */
+}
+
+/* ========== Media Queries ========== */
+@media screen and (max-width: 480px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-logo-container {
+    align-self: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }

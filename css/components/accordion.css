@@ -1,0 +1,100 @@
+/* ===== Section: Accordion  ===== */
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 2vw, 1rem);
+    /* 2vw --> 0.96rem */
+    width: min(100%, 800px);
+}
+
+.accordion-item {
+    border: 2px solid rgba(207, 15, 71, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.accordion-item:hover {
+    border-color: rgba(207, 15, 71, 0.6);
+}
+
+.accordion-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    padding: clamp(0.8rem, 1.85vw, 1rem);
+    /* 1.85vw --> 0.888rem */
+    gap: 0.5rem;
+}
+
+.accordion-question:hover {
+    background-color: rgba(207, 15, 71, 0.08);
+}
+
+.accordion-question-text {
+    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+    /* 2.8vw --> 1.344rem */
+    color: var(--color-primary);
+}
+
+.accordion-question::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-icon {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    /* 2vw --> 0.962rem */
+    min-width: clamp(1.75rem, 4vw, 2rem);
+    /* 4vw --> 1.922rem */
+    min-height: clamp(1.75rem, 4vw, 2rem);
+    /* 4vw --> 1.922rem */
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-primary);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.accordion-details[open] {
+    background-color: rgba(207, 15, 71, 0.1);
+}
+
+.accordion-details[open] .accordion-icon {
+    transform: rotate(180deg);
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.accordion-answer {
+    padding: 0 clamp(0.8rem, 1.85vw, 1rem) clamp(0.8rem, 1.85vw, 1rem);
+    /* 1.85vw --> 0.888rem */
+}
+
+.accordion-answer.active {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

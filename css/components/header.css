@@ -12,7 +12,6 @@
   gap: 1.5rem;
 }
 
-/* ===== Logo Container ===== */
 .header-logo-container {
   height: 3rem;
 }
@@ -21,7 +20,6 @@
   height: 100%;
 }
 
-/* ===== Header Buttons ===== */
 .header-btn-list {
   display: flex;
   justify-content: center;
@@ -56,7 +54,6 @@
   color: #000;
 }
 
-/* ===== Nav List ===== */
 .main-nav-list {
   display: flex;
   justify-content: center;
@@ -87,4 +84,129 @@
 
 .menu-footer .copy-right {
   display: none;
+}
+
+/* ========== Media Queries ========== */
+@media screen and (max-width: 768px) {
+
+  /* ========== Section: Header ========== */
+  .header-section {
+    z-index: 9997;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header-logo-container {
+    justify-self: center;
+    order: 2;
+  }
+
+  .header-btn-list {
+    justify-self: flex-end;
+  }
+
+  .header-actions {
+    order: 3;
+  }
+
+  li:has(.header-btn-account) {
+    display: none;
+  }
+
+  /* ========== Mobile Menu ========== */
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-width: 30rem;
+    width: 75%;
+    height: 100%;
+    background-color: var(--color-bg);
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .main-nav.active {
+    transform: translateX(0%);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: none;
+    border-radius: 0;
+    color: var(--color-primary);
+  }
+
+  .btn-menu-toggle {
+    display: block;
+    order: 1;
+    justify-self: flex-start;
+  }
+
+  .menu-btn-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    padding: 1rem 2rem;
+  }
+
+  .menu-btn-account:hover,
+  .menu-btn-account:hover i,
+  .menu-btn-account:hover span {
+    color: var(--color-primary);
+  }
+
+  .menu-social-icons {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-social-icons .social-icon {
+    background-color: var(--color-primary);
+  }
+
+  .menu-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #fff;
+    background-color: #000;
+    margin-top: auto;
+  }
+
+  .menu-footer .copy-right {
+    display: block;
+  }
+
+  .menu-footer .copy-right span {
+    font-size: 0.65rem;
+  }
 }

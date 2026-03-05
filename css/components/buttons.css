@@ -1,0 +1,111 @@
+/* ===== Buttons ===== */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    max-width: 100%;
+    padding: 0.25rem 0.65rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: var(--color-primary);
+}
+
+.btn-primary span {
+    color: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: clamp(2.25rem, 4.75vw, 2.5rem);
+    min-height: clamp(2.25rem, 4.75vw, 2.5rem);
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    aspect-ratio: 1 / 1;
+}
+
+#btn-scrollToTop {
+    position: fixed;
+    right: 0.75rem;
+    bottom: 4.75rem;
+    z-index: 9995;
+    opacity: 0;
+    min-width: clamp(2.7rem, 5.8vw, 3rem);
+    /* 5.8vw --> 2.784rem */
+    min-height: clamp(2.7rem, 5.8vw, 3rem);
+    /* 5.8vw --> 2.784rem */
+    border: 1px solid #fff;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+#btn-scrollToTop i {
+    font-size: clamp(1.4rem, 3vw, 1.5rem);
+    /* 3vw --> 1.44rem */
+}
+
+#btn-scrollToTop.active {
+    opacity: 0.7;
+    transform: translateX(0%);
+}
+
+.btn-whatsapp {
+    position: fixed;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    min-width: clamp(2.9rem, 6.45vw, 3.2rem);
+    /* 6.45vw --> 3.096rem */
+    min-height: clamp(2.9rem, 6.45vw, 3.2rem);
+    /* 6.45vw --> 3.96rem */
+    z-index: 9993;
+    animation: pulse 2s infinite;
+    transition: transform 0.2s;
+}
+
+.btn-whatsapp i {
+    font-size: clamp(1.5rem, 3.4vw, 1.75rem);
+    /* 3.4vw --> 1.632rem */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 var(--color-primary);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ========== Media Queries ========== */
+@media screen and (max-width: 768px) {
+    #btn-scrollToTop {
+        bottom: 4.45rem;
+    }
+}

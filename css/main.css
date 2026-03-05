@@ -4,22 +4,26 @@
 @import './base/global.css';
 
 /* ===== Common ===== */
-@import './common.css';
 
 /* ===== components ===== */
+@import './components/swiper.css';
+@import './components/buttons.css';
+@import './common.css';
+@import './components/accordion.css';
 @import './components/header.css';
 @import './components/footer.css';
 @import './components/hero.css';
 @import './components/new-products.css';
 @import './components/deal.css';
-@import './components/missionVision.css';
-@import './components/teamCard.css';
+@import './components/mission-vision.css';
+@import './components/team.css';
 @import './components/contact.css';
 @import './components/category.css';
 @import './components/product-details.css';
-@import './components/checkout.css';
+@import './components/checkout-order.css';
 @import './components/cart.css';
 @import './components/product-filter.css';
+@import './components/products.css';
 
 /* ===== Responsive ===== */
 @import './base/responsive.css';

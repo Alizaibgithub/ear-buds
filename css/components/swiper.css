@@ -1,0 +1,73 @@
+/* ===== Section: Swiper Slider ===== */
+.new-product-swiper,
+.deal-swiper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+    /* 2.5vw --> 1.2rem */
+}
+
+.new-product-swiper-bottom,
+.deal-swiper-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-product-swiper-navigation,
+.deal-swiper-navigation {
+    display: flex;
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+    /* 2.5vw --> 1.2rem */
+}
+
+.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--color-muted);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+.team-swiper-pagination,
+.new-product-swiper-pagination,
+.category-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== Media Queries ========== */
+@media screen and (max-width: 768px) {
+    .new-product-img {
+        aspect-ratio: 3.5 / 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .swiper-btn,
+    .swiper-navigation {
+        display: none;
+    }
+
+    .swiper-action-buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .deal-swiper-bottom:has(.swiper-action-buttons) {
+        justify-content: center;
+    }
+
+    .deal-swiper-bottom .swiper-action-buttons {
+        width: auto;
+    }
+}

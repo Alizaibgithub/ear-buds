@@ -1,57 +1,53 @@
-/* ===== Section: New Deal ===== */
-.deal-slide {
-    /* width: 100%;
-    height: auto; */
-    border-radius: 17px;
-    overflow: hidden;
-}
+    /* ===== Section: New Deal ===== */
+    .deal-slide {
+        border-radius: 17px;
+        overflow: hidden;
+    }
 
-.deal-slide-1 {
-    background: var(--color-primary) url('../../assets/images/deal-slider/deal-slide-1.png') no-repeat center/cover;
-}
+    .deal-slide-1 {
+        background: var(--color-primary) url('../../assets/images/deal-slider/deal-slide-1.png') no-repeat center/cover;
+    }
 
-.deal-slide-2 {
-    background: var(--color-primary) url('../../assets/images/deal-slider/deal-slide-2.png') no-repeat center/cover;
-}
+    .deal-slide-2 {
+        background: var(--color-primary) url('../../assets/images/deal-slider/deal-slide-2.png') no-repeat center/cover;
+    }
 
-.deal-slide-3 {
-    background: var(--color-primary) url('../../assets/images/deal-slider/deal-slide-3.png') no-repeat center/cover;
-}
+    .deal-slide-3 {
+        background: var(--color-primary) url('../../assets/images/deal-slider/deal-slide-3.png') no-repeat center/cover;
+    }
 
-.deal-overlay {
-    /* width: 100%;
-    height: 100%; */
-    background: linear-gradient(90deg,
-            var(--color-primary) 1.71%,
-            rgba(255, 255, 255, 0) 100%);
-}
+    .deal-overlay {
+        background: linear-gradient(90deg,
+                var(--color-primary) 1.71%,
+                rgba(255, 255, 255, 0) 100%);
+    }
 
-.deal-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    padding: 1.5rem;
-    text-transform: uppercase;
-}
+    .deal-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.5rem;
+        text-transform: uppercase;
+    }
 
-.deal-content p,
-.deal-content span {
-    font-weight: 900;
-}
+    .deal-content p,
+    .deal-content span {
+        font-weight: 900;
+    }
 
-.deal-badge,
-.deal-description {
-    font-size: clamp(1.2rem, 3.6vw, 2rem);
-    /* 25vw --> 1.728rem */
-}
+    .deal-badge,
+    .deal-description {
+        font-size: clamp(1.2rem, 3.6vw, 2rem);
+        /* 25vw --> 1.728rem */
+    }
 
-.deal-percentage,
-.deal-discount {
-    font-size: clamp(1.8rem, 5vw, 3rem);
-    /* 5vw --> 2.4rem */
-}
+    .deal-percentage,
+    .deal-discount {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        /* 5vw --> 2.4rem */
+    }
 
-.deal-label {
-    font-size: clamp(4rem, 11vw, 7rem);
-    /* 11vw --> 5.28rem */
-}
+    .deal-label {
+        font-size: clamp(4rem, 11vw, 7rem);
+        /* 11vw --> 5.28rem */
+    }
