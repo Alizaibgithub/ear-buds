@@ -6,7 +6,6 @@
 /* ===== Common ===== */
 
 /* ===== components ===== */
-@import './components/swiper.css';
 @import './components/buttons.css';
 @import './common.css';
 @import './components/accordion.css';
@@ -24,6 +23,7 @@
 @import './components/cart.css';
 @import './components/product-filter.css';
 @import './components/products.css';
+@import './components/swiper.css';
 
 /* ===== Responsive ===== */
 @import './base/responsive.css';
