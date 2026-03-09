@@ -62,11 +62,10 @@ body.no-scroll {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #00000099;
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   z-index: 9996;
   display: none;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .background-overlay-section.active {
@@ -128,7 +127,7 @@ body.no-scroll {
 .image-text-media {
   flex: 1 1 46%;
   height: 100%;
-  border-radius: 17px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
@@ -159,9 +158,9 @@ body.no-scroll {
 /* ===== Google Map Container ===== */
 .google-map-container {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  background-color: #1a1a1a;
+  background-color: var(--color-surface);
 }
 
 /* ===== Form Styles ===== */
@@ -176,8 +175,8 @@ body.no-scroll {
   width: 100%;
   padding: 0.5rem;
   background: transparent;
-  border: 2px solid #1a1a1a;
-  border-radius: 12px;
+  border: 2px solid var(--color-surface);
+  border-radius: var(--radius-md);
   outline: none;
 }
 
@@ -189,7 +188,6 @@ body.no-scroll {
 
 .form-input:focus,
 .form-textarea:focus {
-  background-color: #CF0F470D;
   border-color: var(--color-primary);
 }
 

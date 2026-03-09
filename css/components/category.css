@@ -12,7 +12,7 @@
  }
 
  .category-card {
-   border-radius: 17px;
+   border-radius: var(--radius-lg);
  }
 
  .category-card:hover .category-image {
@@ -28,13 +28,13 @@
  }
 
  .category-image-wrapper {
-   border-radius: 17px;
+   border-radius: var(--radius-lg);
    overflow: hidden;
  }
 
  .category-image {
    aspect-ratio: 1 / 1;
-   transition: transform 0.3s ease;
+   transition: var(--transition-base);
  }
 
  .category-title {

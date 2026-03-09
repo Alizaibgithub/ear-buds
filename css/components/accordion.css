@@ -48,32 +48,29 @@
     min-height: clamp(1.75rem, 4vw, 2rem);
     /* 4vw --> 1.922rem */
     border: 2px solid var(--color-primary);
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     color: var(--color-primary);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .accordion-details {
-    border: 2px solid #CF0F474D;
-    border-radius: 12px;
+    border-bottom: 2px solid var(--color-surface);
     overflow: hidden;
-    transition: border-color 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .accordion-details:hover {
-    background-color: #CF0F470D;
     border-color: var(--color-primary);
 }
 
 .accordion-details[open] {
-    background-color: #CF0F470D;
     border-color: var(--color-primary);
 }
 
 .accordion-details[open] .accordion-icon {
     transform: rotate(180deg);
     background-color: var(--color-primary);
-    color: #ffffff;
+    color: var(--color-text);
 }
 
 .accordion-answer {
@@ -82,7 +79,7 @@
 }
 
 .accordion-answer.active {
-    animation: fadeIn 0.5s ease;
+    animation: fadeIn 0.3s ease;
 }
 
 @keyframes fadeIn {

@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 17px;
+    border-radius: var(--radius-lg);
     background: linear-gradient(180deg,
             var(--color-primary) -2.32%,
-            #72394900 86.28%);
+            rgba(114, 57, 73, 0) 86.28%);
 }
 
 .product-image-wrapper {
@@ -39,7 +39,7 @@
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 10px 0 0 10px;
-    box-shadow: 0 2px 6px #00000033;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .badge-new {
@@ -130,8 +130,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--color-text);
-    border-bottom: 1px solid var(--color-text);
+    border-top: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
     padding: clamp(0.7rem, 1.75vw, 1rem) 0;
     /* 1.75vw --> 0.84rem */
 }

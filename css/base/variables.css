@@ -2,9 +2,24 @@
 :root {
         /* === Colors === */
         --color-primary: #cf0f47;
-        --color-bg: #000;
-        --color-text: #fff;
+        --color-bg: #000000;
+        --color-surface: #1a1a1a;
+        --color-text: #ffffff;
+
+        --color-light: #ffffff;
+        --color-dark: #000000;
+
         --color-muted: #888888;
         --color-success: #28a745;
         --color-danger: #dc3545;
+
+        /* === Border Radius === */
+        --radius-sm: 6px;
+        --radius-md: 12px;
+        --radius-lg: 17px;
+        --radius-circle: 50%;
+
+        /* === Transitions === */
+        --transition-base: 0.3s ease;
+        --transition-slide: 0.5s ease-in-out;
 }
