@@ -3,9 +3,9 @@
 if (document.querySelector(".new-product-swiper")) {
   var newProductSwiper = new Swiper(".new-product-swiper", {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     navigation: {
@@ -19,14 +19,10 @@ if (document.querySelector(".new-product-swiper")) {
 if (document.querySelector(".deal-swiper")) {
   var newDealSwiper = new Swiper(".deal-swiper", {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".new-product-swiper-pagination",
-      clickable: true,
     },
     navigation: {
       nextEl: ".deal-swiper-btn-next",
@@ -39,10 +35,10 @@ if (document.querySelector(".deal-swiper")) {
 if (document.querySelector(".team-swiper")) {
   var teamSwiper = new Swiper(".team-swiper", {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
     watchOverflow: true,
     autoplay: {
-      delay: 2500,
+      delay: 3500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -102,20 +98,18 @@ if (document.querySelector(".category-swiper")) {
 if (document.querySelector(".product-thumbnail-swiper")) {
   var productThumbnailSwiper = new Swiper(".product-thumbnail-swiper", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
+    spaceBetween: 8,
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
-      1025: {
-        direction: 'vertical',
-      },
+      320: { slidesPerView: 3, direction: 'horizontal' },
+      1025: { slidesPerView: 4, direction: 'vertical' },
     },
   });
 
   var productMediaSwiper = new Swiper(".product-media-main-swiper", {
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 8,
     navigation: {
       nextEl: ".product-media-swiper-btn-next",
       prevEl: ".product-media-swiper-btn-prev",
