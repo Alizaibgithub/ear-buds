@@ -28,8 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: clamp(2.25rem, 4.75vw, 2.5rem);
-    min-height: clamp(2.25rem, 4.75vw, 2.5rem);
+    width: clamp(2.25rem, 4.75vw, 2.5rem);
+    height: clamp(2.25rem, 4.75vw, 2.5rem);
     /* 4.75vw --> 2.28rem (768px-tablet) */
     border-radius: var(--radius-circle);
     background-color: var(--color-primary);
@@ -43,8 +43,8 @@
     bottom: 4.75rem;
     z-index: 9995;
     opacity: 0;
-    min-width: clamp(2.7rem, 5.8vw, 3rem);
-    min-height: clamp(2.7rem, 5.8vw, 3rem);
+    width: clamp(2.7rem, 5.8vw, 3rem);
+    height: clamp(2.7rem, 5.8vw, 3rem);
     /* 5.8vw --> 2.784rem (768px-tablet) */
     border: 1px solid var(--color-light);
     transform: translateX(100%);
@@ -65,8 +65,8 @@
     position: fixed;
     right: 0.75rem;
     bottom: 0.75rem;
-    min-width: clamp(2.9rem, 6.45vw, 3.2rem);
-    min-height: clamp(2.9rem, 6.45vw, 3.2rem);
+    width: clamp(2.9rem, 6.45vw, 3.2rem);
+    height: clamp(2.9rem, 6.45vw, 3.2rem);
     /* 6.45vw --> 3.96rem (768px-tablet) */
     z-index: 9993;
     animation: pulse 2s infinite;

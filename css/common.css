@@ -148,7 +148,7 @@ body.no-scroll {
   flex-direction: column;
   gap: clamp(0.75rem, 2vw, 1rem);
   /* 2vw --> 0.96rem (768px-tablet) */
-  width: min(100%, 800px);
+  width: min(100%, 50rem);
 }
 
 .content-heading {

@@ -31,8 +31,8 @@
 }
 
 .team-image-container {
-  max-width: clamp(7rem, 16.5vw, 9rem);
-  max-height: clamp(7rem, 16.5vw, 9rem);
+  width: clamp(7rem, 16.5vw, 9rem);
+  height: clamp(7rem, 16.5vw, 9rem);
     /* 16.5vw --> 7.92rem (768px-tablet) */
   aspect-ratio: 1 / 1;
   border: 3px solid var(--color-light);

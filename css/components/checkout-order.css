@@ -21,9 +21,7 @@
    display: flex;
    flex-direction: column;
    gap: 1rem;
- }
-
- .customer-details-container {
+   height: 100%;
    max-width: 75%;
  }
 
@@ -66,10 +64,6 @@
    width: 100%;
  }
 
- .order-summary-details {
-   height: 100%;
-   max-width: 75%;
- }
 
  .order-summary-details summary {
    display: none;
@@ -126,7 +120,6 @@
  }
 
  .billing-radio-buttons {
-   display: flex;
    display: flex;
    flex-direction: column;
    gap: 0.5rem;
@@ -190,8 +183,8 @@
  }
 
  .checkout-item-count {
-   min-width: clamp(0.8rem, 2vw, 1rem);
-   min-height: clamp(0.8rem, 2vw, 1rem);
+   width: clamp(0.8rem, 2vw, 1rem);
+   height: clamp(0.8rem, 2vw, 1rem);
    /* 2vw --> 0.96 (768px-tablet) */
    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
    /* 1.5vw --> 0.72 (768px-tablet) */
@@ -201,10 +194,10 @@
    position: absolute;
    top: -5px;
    right: -5px;
-   background-color: var(--color-light);;
+   background-color: var(--color-light);
    border-radius: 4px;
    aspect-ratio: 1 / 1;
-   color: var(--color-dark );
+   color: var(--color-dark);
  }
 
  .order-summary-bottom {
@@ -308,12 +301,6 @@
 
  /* ========== Media Queries ========== */
  @media screen and (min-width: 768px) and (max-width:1023px) {
-
-   .customer-details-container,
-   .order-summary-details {
-     max-width: 100%;
-   }
-
    .checkout-items .cart-item {
      grid-template-columns: 1fr 6fr;
    }

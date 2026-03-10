@@ -20,8 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: clamp(4rem, 9.5vw, 5rem);
-    min-height: clamp(4rem, 9.5vw, 5rem);
+    width: clamp(4rem, 9.5vw, 5rem);
+    height: clamp(4rem, 9.5vw, 5rem);
     /* 9.5vw --> 4.56rem (768px-tablet) */
     background-color: var(--color-primary);
     border-radius: var(--radius-circle);

@@ -76,9 +76,8 @@ label {
 
 input[type="checkbox"],
 input[type="radio"] {
-    min-width: clamp(0.8rem, 1.88vw, 1rem);
-    /* 1.88vw --> 0.902rem (768px-tablet) */
-    min-height: clamp(0.8rem, 1.88vw, 1rem);
+    width: clamp(0.8rem, 1.88vw, 1rem);
+    height: clamp(0.8rem, 1.88vw, 1rem);
     /* 1.88vw --> 0.902rem (768px-tablet) */
     accent-color: var(--color-primary);
     cursor: pointer;
