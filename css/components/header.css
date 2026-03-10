@@ -37,11 +37,10 @@
 
 .cart-count {
   width: clamp(0.8rem, 2vw, 1rem);
-  /* 2vw --> 0.96 */
   height: clamp(0.8rem, 2vw, 1rem);
-  /* 2vw --> 0.96 */
+  /* 2vw --> 0.96 (768px-tablet) */
   font-size: clamp(0.6rem, 1.5vw, 0.8rem);
-  /* 1.5vw --> 0.72 */
+  /* 1.5vw --> 0.72 (768px-tablet) */
   display: flex;
   justify-content: center;
   align-items: center;

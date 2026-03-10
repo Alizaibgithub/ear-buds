@@ -73,7 +73,7 @@
 
 .product-title {
     font-size: clamp(1rem, 2.3vw, 1.2rem);
-    /* 2.3vw --> 1.104 */
+    /* 2.3vw --> 1.104 (768px-tablet) */
     text-transform: capitalize;
 }
 
@@ -98,13 +98,13 @@
 .price-sale .price-currency,
 .price-sale .price-amount {
     font-size: clamp(0.85rem, 2vw, 1rem);
-    /* 2vw --> 0.96 */
+    /* 2vw --> 0.96 (768px-tablet) */
 }
 
 .sale-product .price-regular .price-currency,
 .sale-product .price-regular .price-amount {
-    font-size: clamp(0.75rem, 2vw, 0.9rem);
-    /* 2vw --> Not woring, 0.9rem */
+    font-size: clamp(0.75rem, 1.75vw, 0.9rem);
+    /* 2vw --> 0.84rem (768px-tablet) */
     color: var(--color-danger);
 }
 
@@ -133,7 +133,7 @@
     border-top: 1px solid var(--color-light);
     border-bottom: 1px solid var(--color-light);
     padding: clamp(0.7rem, 1.75vw, 1rem) 0;
-    /* 1.75vw --> 0.84rem */
+    /* 1.75vw --> 0.84rem (768px-tablet) */
 }
 
 .sort-wrapper {
@@ -152,7 +152,7 @@
 .sort-select,
 .sort-select option {
     font-size: clamp(0.85rem, 2vw, 1rem);
-    /* 2vw --> 0.96 */
+    /* 2vw --> 0.96 (768px-tablet) */
 }
 
 .toolbar-right {

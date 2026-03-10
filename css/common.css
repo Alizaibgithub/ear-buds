@@ -86,17 +86,18 @@ body.no-scroll {
 
 .page-title {
   font-size: clamp(1.9rem, 5vw, 3rem);
-  /* 5vw --> 2.4rem */
+  /* 5vw --> 2.4rem (768px-tablet) */
 }
 
 .page-title span {
   text-transform: lowercase;
   font-size: clamp(1.9rem, 5vw, 3rem);
+    /* 5vw --> 2.4rem (768px-tablet) */
 }
 
 .page-subtitle {
   font-size: clamp(1.1rem, 2.8vw, 1.5rem);
-  /* 2.8vw --> 1.344rem */
+  /* 2.8vw --> 1.344rem (768px-tablet) */
 }
 
 /* ===== Section: Call to Action ===== */
@@ -146,7 +147,7 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   gap: clamp(0.75rem, 2vw, 1rem);
-  /* 2vw --> 0.96rem */
+  /* 2vw --> 0.96rem (768px-tablet) */
   width: min(100%, 800px);
 }
 

@@ -30,6 +30,7 @@
     align-items: center;
     min-width: clamp(2.25rem, 4.75vw, 2.5rem);
     min-height: clamp(2.25rem, 4.75vw, 2.5rem);
+    /* 4.75vw --> 2.28rem (768px-tablet) */
     border-radius: var(--radius-circle);
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -43,9 +44,8 @@
     z-index: 9995;
     opacity: 0;
     min-width: clamp(2.7rem, 5.8vw, 3rem);
-    /* 5.8vw --> 2.784rem */
     min-height: clamp(2.7rem, 5.8vw, 3rem);
-    /* 5.8vw --> 2.784rem */
+    /* 5.8vw --> 2.784rem (768px-tablet) */
     border: 1px solid var(--color-light);
     transform: translateX(100%);
     transition: var(--transition-base);
@@ -53,7 +53,7 @@
 
 #btn-scrollToTop i {
     font-size: clamp(1.4rem, 3vw, 1.5rem);
-    /* 3vw --> 1.44rem */
+    /* 3vw --> 1.44rem (768px-tablet) */
 }
 
 #btn-scrollToTop.active {
@@ -66,16 +66,15 @@
     right: 0.75rem;
     bottom: 0.75rem;
     min-width: clamp(2.9rem, 6.45vw, 3.2rem);
-    /* 6.45vw --> 3.096rem */
     min-height: clamp(2.9rem, 6.45vw, 3.2rem);
-    /* 6.45vw --> 3.96rem */
+    /* 6.45vw --> 3.96rem (768px-tablet) */
     z-index: 9993;
     animation: pulse 2s infinite;
 }
 
 .btn-whatsapp i {
     font-size: clamp(1.5rem, 3.4vw, 1.75rem);
-    /* 3.4vw --> 1.632rem */
+    /* 3.4vw --> 1.632rem (768px-tablet) */
 }
 
 @keyframes pulse {

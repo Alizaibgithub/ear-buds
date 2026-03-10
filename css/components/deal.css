@@ -38,16 +38,16 @@
     .deal-badge,
     .deal-description {
         font-size: clamp(1.2rem, 3.6vw, 2rem);
-        /* 25vw --> 1.728rem */
+        /* 25vw --> 1.728rem (768px-tablet) */
     }
 
     .deal-percentage,
     .deal-discount {
         font-size: clamp(1.8rem, 5vw, 3rem);
-        /* 5vw --> 2.4rem */
+        /* 5vw --> 2.4rem (768px-tablet) */
     }
 
     .deal-label {
         font-size: clamp(4rem, 11vw, 7rem);
-        /* 11vw --> 5.28rem */
+        /* 11vw --> 5.28rem (768px-tablet) */
     }

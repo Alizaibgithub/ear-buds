@@ -38,7 +38,8 @@
  }
 
  .category-title {
-   font-size: clamp(1rem, 2.2vw, 1.2rem);
+   font-size: clamp(1rem, 2.3vw, 1.2rem);
+   /* 2.2vw --> 1.104rem (768px-tablet) */
  }
 
  .category-info {

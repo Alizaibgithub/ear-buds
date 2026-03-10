@@ -25,7 +25,7 @@ h4,
 h5,
 h6 {
     font-size: clamp(1.2rem, 2.8vw, 1.5rem);
-    /* 2.8vw --> 1.344rem */
+    /* 2.8vw --> 1.344rem (768px-tablet) */
     font-weight: 900;
     text-transform: uppercase;
     color: var(--color-text);
@@ -44,13 +44,13 @@ select,
 option,
 legend {
     font-size: clamp(1rem, 2.3vw, 1.2rem);
-    /* 2.3vw --> 1.104rem */
+    /* 2.3vw --> 1.104rem (768px-tablet) */
     color: var(--color-text);
 }
 
 i {
     font-size: clamp(1rem, 2.3vw, 1.2rem);
-    /* 2.3vw --> 1.104rem */
+    /* 2.3vw --> 1.104rem (768px-tablet) */
 }
 
 img {
@@ -64,7 +64,7 @@ button,
 a span,
 button span {
     font-size: clamp(1rem, 2.3vw, 1.2rem);
-    /* 2.3vw --> 1.104rem */
+    /* 2.3vw --> 1.104rem (768px-tablet) */
     font-weight: 900;
     color: var(--color-text);
     cursor: pointer;
@@ -77,9 +77,9 @@ label {
 input[type="checkbox"],
 input[type="radio"] {
     min-width: clamp(0.8rem, 1.88vw, 1rem);
-    /* 1.88vw --> 0.902rem */
+    /* 1.88vw --> 0.902rem (768px-tablet) */
     min-height: clamp(0.8rem, 1.88vw, 1rem);
-    /* 1.88vw --> 0.902rem */
+    /* 1.88vw --> 0.902rem (768px-tablet) */
     accent-color: var(--color-primary);
     cursor: pointer;
 }

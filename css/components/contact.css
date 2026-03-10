@@ -43,16 +43,15 @@
 
 .contact-info-icon {
   min-width: clamp(2.7rem, 5.8vw, 3rem);
-  /* 5.8vw --> 2.784rem */
   min-height: clamp(2.7rem, 5.8vw, 3rem);
-  /* 5.8vw --> 2.784rem */
+  /* 5.8vw --> 2.784rem (768px-tablet) */
   background-color: var(--color-bg);
   aspect-ratio: 1 / 1;
 }
 
 .contact-info-icon i {
   font-size: clamp(1.4rem, 3vw, 1.5rem);
-  /* 3vw --> 1.44rem */
+  /* 3vw --> 1.44rem (768px-tablet) */
 }
 
 .contact-info-label {

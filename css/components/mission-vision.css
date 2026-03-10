@@ -21,9 +21,8 @@
     justify-content: center;
     align-items: center;
     min-width: clamp(4rem, 9.5vw, 5rem);
-    /* 9.5vw --> 4.56rem */
     min-height: clamp(4rem, 9.5vw, 5rem);
-    /* 9.5vw --> 4.56rem */
+    /* 9.5vw --> 4.56rem (768px-tablet) */
     background-color: var(--color-primary);
     border-radius: var(--radius-circle);
     aspect-ratio: 1 / 1;
@@ -31,7 +30,7 @@
 
 .mv-card-icon i {
     font-size: clamp(2rem, 4.6vw, 2.5rem);
-    /* 4.6vwvw --> 2.208rem */
+    /* 4.6vw --> 2.208rem (768px-tablet) */
 }
 
 .mv-card-info {

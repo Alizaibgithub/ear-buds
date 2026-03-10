@@ -108,7 +108,7 @@
 
 .btn-cart-item-delete i {
   font-size: clamp(0.9rem, 2vw, 1rem);
-  /* 2vw --> 0.96rem */
+  /* 2vw --> 0.96rem (768px-tablet) */
 }
 
 .cart-footer {
@@ -134,7 +134,8 @@
 
 .cart-btn-continue {
   text-decoration: underline;
-  font-size: clamp(0.75rem, 2vw, 0.9rem);
+  font-size: clamp(0.75rem, 1.75vw, 0.9rem);
+  /* 2vw --> 0.84rem (768px-tablet) */
 }
 
 .cart-page-footer {
@@ -146,7 +147,7 @@
 
 .tax-shipping-info {
   font-size: clamp(0.8rem, 2vw, 1rem);
-  /* 2vw --> 0.96rem */
+  /* 2vw --> 0.96rem (768px-tablet) */
 }
 
 /* ========== Media Queries ========== */

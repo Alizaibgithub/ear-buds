@@ -106,7 +106,7 @@
 .btn-product-filter span {
   font-weight: 300;
   font-size: clamp(0.85rem, 2vw, 1rem);
-  /* 2vw --> 0.96 */
+  /* 2vw --> 0.96 (768px-tablet) */
 }
 
 .product-filter-btn-clear {

@@ -59,7 +59,7 @@
  .sign-in-link {
    text-decoration: underline;
    font-size: clamp(0.75rem, 1.85vw, 0.9rem);
-   /* 1.85vw --> 0.888rem */
+   /* 1.85vw --> 0.888rem (768px-tablet) */
  }
 
  .order-summary-container {
@@ -171,7 +171,7 @@
  .order-nav-link {
    text-decoration: underline;
    font-size: clamp(0.75rem, 1.85vw, 0.9rem);
-   /* 1.85vw --> 0.888rem */
+   /* 1.85vw --> 0.888rem (768px-tablet) */
  }
 
  .order-summary {
@@ -191,11 +191,10 @@
 
  .checkout-item-count {
    min-width: clamp(0.8rem, 2vw, 1rem);
-   /* 2vw --> 0.96 */
    min-height: clamp(0.8rem, 2vw, 1rem);
-   /* 2vw --> 0.96 */
+   /* 2vw --> 0.96 (768px-tablet) */
    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
-   /* 1.5vw --> 0.72 */
+   /* 1.5vw --> 0.72 (768px-tablet) */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -259,7 +258,7 @@
 
  .customer-name {
    font-size: clamp(1.2rem, 2.8vw, 1.5rem);
-   /* 2.8vw --> 1.344rem */
+   /* 2.8vw --> 1.344rem (768px-tablet) */
  }
 
  .order-confirm-content,
@@ -271,7 +270,7 @@
 
  .order-confirm-content p {
    font-size: clamp(0.8rem, 1.85vw, 1rem);
-   /* 1.85vw --> 0.888rem */
+   /* 1.85vw --> 0.888rem (768px-tablet) */
  }
 
  .shipping-address-map-container {

@@ -27,14 +27,13 @@
   justify-content: center;
   align-items: center;
   padding: clamp(0.8rem, 1.85vw, 1rem) 0;
-  /* 1.85vw --> 0.888rem */
+  /* 1.85vw --> 0.888rem (768px-tablet) */
 }
 
 .team-image-container {
   max-width: clamp(7rem, 16.5vw, 9rem);
-  /* 16.5vw --> 7.92rem */
   max-height: clamp(7rem, 16.5vw, 9rem);
-  /* 4vw --> 1.922rem */
+    /* 16.5vw --> 7.92rem (768px-tablet) */
   aspect-ratio: 1 / 1;
   border: 3px solid var(--color-light);
   border-radius: var(--radius-circle);
@@ -44,7 +43,7 @@
 .team-card-body {
   text-align: center;
   padding: clamp(0.8rem, 1.85vw, 1rem);
-  /* 1.85vw --> 0.888rem */
+  /* 1.85vw --> 0.888rem (768px-tablet) */
   background-color: var(--color-surface);
 }
 
