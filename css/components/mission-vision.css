@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem 2rem;
+    width: min(100%, 60rem);
 }
 
 .mv-card {
@@ -38,6 +39,6 @@
     flex-direction: column;
     grid-area: 0.25rem;
 }
-.mv-card-title{
+.mv-card-title, .mv-card-text{
     text-align: center;
 }
