@@ -82,6 +82,20 @@
     animation: fadeIn 0.3s ease;
 }
 
+.accordion-answer ul {
+    padding-left: 1.25rem;
+}
+
+.accordion-answer li {
+    list-style: disc;
+    list-style-position: outside;
+}
+
+.accordion-answer li::marker {
+    color: var(--color-primary);
+    font-size: clamp(1rem, 2.3vw, 1.2rem);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
