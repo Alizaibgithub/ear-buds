@@ -272,7 +272,7 @@
 
  .order-details-container {
    display: flex;
-   gap: 1rem;
+   gap:0.5rem 1rem;
  }
 
  .order-details-container h2,
@@ -285,9 +285,14 @@
  .order-details-right {
    display: flex;
    flex-direction: column;
-   gap: 1rem;
  }
-
+ .order-details{
+  gap: 0.75rem;
+ }
+.order-details-left,
+ .order-details-right{
+  gap: 0.5rem;
+ }
  .customer-details-actions {
    display: flex;
    justify-content: space-between;
