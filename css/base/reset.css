@@ -35,6 +35,13 @@ option {
     outline: none;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-bg) inset !important;
+    -webkit-text-fill-color: var(--color-text) !important;
+    -webkit-background-clip: text !important;
+}
+
+
 ::selection {
     color: var(--color-text);
     background-color: var(--color-primary);
