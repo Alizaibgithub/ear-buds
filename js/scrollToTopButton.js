@@ -12,7 +12,6 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > halfPageHeight) {
     scrollBtn.classList.add("active");
   } else {
-    checkout - btn - cart
     scrollBtn.classList.remove("active");
   }
 });
