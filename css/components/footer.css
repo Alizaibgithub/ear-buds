@@ -62,11 +62,12 @@
 
 .news-letter-form {
   display: flex;
-  outline: 1px solid var(--color-dark );
+  border: 1px solid var(--color-dark );
 }
 
 .news-letter-form:focus-within {
-  outline-width: 2px;
+  outline: 1px solid var(--color-dark);
+  outline-offset: 0px;
 }
 
 .news-letter-input {
