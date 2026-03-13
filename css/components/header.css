@@ -72,7 +72,7 @@
 
 .menu-header,
 .btn-menu-toggle,
-.menu-btn-account,
+.btn-menu-account,
 .menu-social-icons {
   display: none;
 }
@@ -155,7 +155,7 @@
     justify-self: flex-start;
   }
 
-  .menu-btn-account {
+  .btn-menu-account {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,9 +170,9 @@
     padding: 1rem 2rem;
   }
 
-  .menu-btn-account:hover,
-  .menu-btn-account:hover i,
-  .menu-btn-account:hover span {
+  .btn-menu-account:hover,
+  .btn-menu-account:hover i,
+  .btn-menu-account:hover span {
     color: var(--color-primary);
   }
 

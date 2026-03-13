@@ -9,7 +9,7 @@
   <!--  ========== Stylesheets ========== -->
   <!-- ===== Third Party CSS Libraries ===== -->
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--  ===== Custom Stylesheets ===== -->
   <link rel="stylesheet" href="../css/main.css" />
 
@@ -38,13 +38,13 @@
   <header class="header-section">
     <div class="header-container">
       <div class="header-logo-container">
-        <a href="/"><img class="header-logo" src="../assets/images/logo.png" alt="EarBuds Logo" /></a>
+        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo"  /></a>
       </div>
       <nav class="main-nav">
         <div class="menu-header">
           <h2 class="menu-heading">Menu</h2>
           <button type="button" class="btn-menu-close" aria-label="Close Menu">
-            <i class="fa-solid fa-xmark"></i>
+<i class="fa-solid fa-xmark" aria-hidden="true"></i>
           </button>
         </div>
         <ul class="main-nav-list">
@@ -60,7 +60,7 @@
             <a href="/pages/contact.html" class="nav-link">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="menu-btn-account" aria-label="Sign In">
+            <button type="button" class="btn-menu-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i><span>Sign In</span>
             </button>
           </li>
@@ -83,7 +83,7 @@
             </ul>
           </div>
           <div class="copy-right">
-            <span>Copyright © 2025 EarBuds. All rights reserved.</span>
+            <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
           </div>
         </div>
       </nav>
@@ -362,7 +362,7 @@
       <hr class="footer-divider" />
       <div class="footer-top">
         <div class="footer-logo-container">
-          <a href="/"><img class="footer-logo" src="../assets/images/logo.png" alt="EarBuds Logo" /></a>
+          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo"  /></a>
         </div>
         <div class="footer-links">
           <h2 class="footer-heading">Shop</h2>
@@ -403,7 +403,7 @@
           </nav>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">COMPANY</h2>
+          <h2 class="footer-heading">Company</h2>
           <nav class="footer-nav footer-nav-help">
             <ul>
               <li>
@@ -419,9 +419,9 @@
           </nav>
         </div>
         <div class="news-letter">
-          <h2 class="footer-heading">News Letter</h2>
+          <h2 class="footer-heading">NewsLetter</h2>
           <form action="" class="news-letter-form">
-            <input name="news-letter-email" type="email" class="news-letter-input" placeholder="Email" />
+            <input type="email" name="news-letter-email" class="news-letter-input" placeholder="Email" aria-label="Email Address" />
             <button type="button" class="news-letter-btn">Subscribe</button>
           </form>
         </div>
