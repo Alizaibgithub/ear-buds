@@ -7,9 +7,8 @@ document.body.insertAdjacentHTML(
 const scrollBtn = document.getElementById("btn-scrollToTop");
 
 window.addEventListener("scroll", () => {
-  const halfPageHeight = document.documentElement.scrollHeight / 2;
 
-  if (window.scrollY > halfPageHeight) {
+  if (window.scrollY > 300) {
     scrollBtn.classList.add("active");
   } else {
     scrollBtn.classList.remove("active");
