@@ -79,7 +79,9 @@
   color: var(--color-text);
   text-transform: none;
 }
-
+.news-letter-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-primary) inset !important;
+}
 .news-letter-input::placeholder {
   color: var(--color-text);
   text-transform: uppercase;
