@@ -125,19 +125,19 @@
       <div class="contact-container">
         <!-- Contact Form -->
         <article class="contact-form-wrapper">
-          <form class="contact-form">
+          <form id="contact-form" action="#" class="contact-form">
             <div class="form-group">
-              <label for="fName" class="form-label">Name<span class="form-required"> *</span></label>
+              <label for="contact-fName" class="form-label">Name<span class="form-required"> *</span></label>
               <div class="full-name-input">
-                <input type="text" id="fName" name="fName" class="form-input" placeholder="First Name" required />
-                <input type="text" id="lName" name="lName" class="form-input" placeholder="Last Name" required />
+                <input type="text" id="contact-fName" name="contact-fName" class="form-input" placeholder="First Name" required />
+                <input type="text" id="contact-lName" name="contact-lName" class="form-input" placeholder="Last Name" required />
               </div>
             </div>
             <div class="form-group">
-              <label for="email" class="form-label">
+              <label for="contact-email" class="form-label">
                 Email<span class="form-required"> *</span>
               </label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="Enter Email" required />
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="Enter Email" required />
             </div>
             <div class="form-group">
               <label for="subject" class="form-label">
@@ -280,9 +280,10 @@
         </div>
         <div class="news-letter">
           <h2 class="footer-heading">NewsLetter</h2>
-          <form action="" class="news-letter-form">
-            <input type="email" name="news-letter-email" class="news-letter-input" placeholder="Email" aria-label="Email Address" />
-            <button type="button" class="news-letter-btn">Subscribe</button>
+          <form id="news-letter-form" action="#" class="news-letter-form">
+            <input type="news-letter-email" id="news-letter-email" name="news-letter-email" class="news-letter-input" placeholder="Email"
+              aria-label="Email Address" required />
+            <button type="submit" class="news-letter-btn">Subscribe</button>
           </form>
         </div>
       </div>

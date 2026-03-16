@@ -119,7 +119,7 @@ aria-label="Close Menu">
         </div>
         <div class="cart-body">
           <div class="cart-items">
-            <form class="cart-items-form" action="#" method="post">
+            <form id="cart-items-form" action="#" class="cart-items-form">
               <div class="cart-item sale-product">
                 <div class="cart-item-image-wrapper">
                   <a href="/pages/product-details.html">
@@ -397,9 +397,10 @@ aria-label="Close Menu">
         </div>
         <div class="news-letter">
           <h2 class="footer-heading">NewsLetter</h2>
-          <form action="" class="news-letter-form">
-            <input type="email" name="news-letter-email" class="news-letter-input" placeholder="Email" aria-label="Email Address" />
-            <button type="button" class="news-letter-btn">Subscribe</button>
+          <form id="news-letter-form" action="#" class="news-letter-form">
+            <input type="news-letter-email" id="news-letter-email" name="news-letter-email" class="news-letter-input" placeholder="Email"
+              aria-label="Email Address" required />
+            <button type="submit" class="news-letter-btn">Subscribe</button>
           </form>
         </div>
       </div>

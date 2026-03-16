@@ -37,14 +37,14 @@
               </a>
             </div>
             <div class="customer-details-main">
-              <form action="" method="post" class="customer-details-form">
+              <form id="checkout-form" action="#" class="checkout-form">
                 <div class="contact-wrapper form-group">
                   <div class="contact-header">
                     <h2 class="contact-heading">Contact</h2>
                     <a href="#" class="sign-in-link">Sign in</a>
                   </div>
                   <div class="contact-field">
-                    <input type="email" id="email" name="email" class="form-input" placeholder="Email" required />
+                    <input type="email" id="checkout-email" name="checkout-email" class="form-input" placeholder="Email" required />
                   </div>
                   <div class="form-checkbox">
                     <input type="checkbox" id="email-confirm" name="email-confirm" checked />
@@ -63,8 +63,8 @@
                     </select>
                   </div>
                   <div class="full-name-input">
-                    <input type="text" id="fName" name="fName" class="form-input" placeholder="First Name" required />
-                    <input type="text" id="lName" name="lName" class="form-input" placeholder="Last Name" required />
+                    <input type="text" id="checkout-fName" name="checkout-fName" class="form-input" placeholder="First Name" required />
+                    <input type="text" id="checkout-lName" name="checkout-fName" class="form-input" placeholder="Last Name" required />
                   </div>
                   <input type="text" id="address" name="address" class="form-input" placeholder="Address" required />
                   <div class="city-input">
@@ -285,10 +285,10 @@
               </div>
               <div class="order-summary-bottom">
                 <div class="discount-code-wrapper">
-                  <form action="" method="post" class="discount-code-form">
-                    <input name="discount-code" type="text" class="discount-code-input form-input"
-                      placeholder="Discount Code" />
-                    <button type="button" class="btn btn-secondary btn-discount-code">
+                  <form id="discount-code-form" action="#" class="discount-code-form">
+                    <input name="discount-code" id="discount-code" type="text" class="discount-code-input form-input"
+                      placeholder="Discount Code" required />
+                    <button type="submit" class="btn btn-secondary btn-discount-code">
                       Apply
                     </button>
                   </form>
