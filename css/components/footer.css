@@ -50,11 +50,6 @@
   transition: var(--transition-base);
 }
 
-.footer-nav-link:hover,
-.footer-nav-link:hover span {
-  color: var(--color-dark );
-}
-
 .footer-nav-link.active,
 .footer-nav-link.active span {
   color: var(--color-dark );
@@ -97,6 +92,7 @@
   background-color: var(--color-bg);
   text-transform: uppercase;
   cursor: pointer;
+  transition: var(--transition-base);
 }
 
 .footer-bottom {

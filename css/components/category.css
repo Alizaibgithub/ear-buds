@@ -15,10 +15,6 @@
    border-radius: var(--radius-lg);
  }
 
- .category-card:hover .category-image {
-   transform: scale(1.1);
- }
-
  .category-link {
    display: flex;
    flex-direction: column;

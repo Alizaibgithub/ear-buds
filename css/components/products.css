@@ -25,6 +25,7 @@
     height: auto;
     position: relative;
     top: -40%;
+    transition: var(--transition-base);
 }
 
 .product-badge {

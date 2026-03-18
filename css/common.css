@@ -92,7 +92,7 @@ body.no-scroll {
 .page-title span {
   text-transform: lowercase;
   font-size: clamp(1.9rem, 5vw, 3rem);
-    /* 5vw --> 2.4rem (768px-tablet) */
+  /* 5vw --> 2.4rem (768px-tablet) */
 }
 
 .page-subtitle {
@@ -214,8 +214,79 @@ body.no-scroll {
 
 .social-icon {
   background-color: var(--color-bg);
+  transition: 0.1s ease;
 }
 
+.social-icon::after {
+  background: transparent;
+}
+/* ========== Hover Effects ========== */
+@media (hover: hover) {
+
+  .header-icon:hover,
+  .checkout-btn-cart:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+
+  .nav-link:hover {
+    background-color: var(--color-primary);
+  }
+
+  .footer-nav-link:hover,
+  .footer-nav-link:hover span {
+    color: var(--color-dark);
+  }
+
+  .social-icon:hover {
+    outline: 2px solid var(--color-light);
+    outline-offset: 3px;
+  }
+
+  .btn:hover::after,
+  .btn-circle:hover::after {
+    bottom: 0;
+  }
+
+  .news-letter-btn:hover,
+  .cart-btn-close:hover,
+  .product-filter-btn-close:hover,
+  .menu-btn-close:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+
+  .btn-cart-item-delete:hover i {
+    color: var(--color-danger);
+  }
+
+  .product-filter-btn-clear:hover,
+  .sign-in-link:hover,
+  .order-nav-link:hover {
+    color: var(--color-primary)
+  }
+
+  .category-card:hover .category-image {
+    transform: scale(1.05);
+  }
+
+  .product-card:hover .product-image {
+    transform: scale(1.02);
+  }
+
+  .mv-card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  .site-name:hover {
+    color: var(--color-light);
+  }
+
+  .accordion-details:hover {
+    border-color: var(--color-primary);
+  }
+}
 /* ========== Media Queries ========== */
 @media screen and (max-width: 768px) {
 

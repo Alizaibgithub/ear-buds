@@ -15,6 +15,7 @@
     padding: 1rem;
     border-radius: var(--radius-lg);
     background-color: var(--color-surface);
+    transition: var(--transition-base);
 }
 
 .mv-card-icon {

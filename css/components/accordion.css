@@ -59,9 +59,6 @@
     transition: var(--transition-base);
 }
 
-.accordion-details:hover {
-    border-color: var(--color-primary);
-}
 
 .accordion-details[open] {
     border-color: var(--color-primary);
