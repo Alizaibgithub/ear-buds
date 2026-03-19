@@ -47,7 +47,9 @@ legend {
     /* 2.3vw --> 1.104rem (768px-tablet) */
     color: var(--color-text);
 }
-
+summary{
+    cursor: pointer;
+}
 i {
     font-size: clamp(1rem, 2.3vw, 1.2rem);
     /* 2.3vw --> 1.104rem (768px-tablet) */
