@@ -3,7 +3,16 @@ fetch("../partials/product-filter.html")
   .then((res) => res.text())
   .then((html) => {
     document.body.insertAdjacentHTML("beforeend", html);
+    
+    // === Form Submit ===
+    const productFilterForm = document.getElementById("product-filter-form");
 
+    if (productFilterForm) {
+      productFilterForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    }
+    
     const productFilterButton = document.querySelector(".btn-product-filter");
     const productFilterSection = document.querySelector(".product-filter-section");
     const productFilterCloseButton = document.querySelector(
