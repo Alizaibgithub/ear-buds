@@ -1,28 +1,25 @@
-/* ===== base ===== */
+/* ===== Base ===== */
 @import './base/variables.css';
 @import './base/reset.css';
 @import './base/global.css';
 
-/* ===== components ===== */
-@import './components/buttons.css';
+/* ===== Common ===== */
 @import './common.css';
+
+/* ===== Components ===== */
+@import './components/buttons.css';
 @import './components/header.css';
 @import './components/footer.css';
 @import './components/hero.css';
+@import './components/swiper.css';
+@import './components/category.css';
 @import './components/products.css';
 @import './components/product-filter.css';
 @import './components/product-details.css';
-@import './components/new-products.css';
 @import './components/deal.css';
-@import './components/category.css';
-@import './components/contact.css';
-@import './components/checkout-order.css';
-@import './components/cart.css';
 @import './components/accordion.css';
+@import './components/cart.css';
+@import './components/checkout-order.css';
+@import './components/contact.css';
 @import './components/mission-vision.css';
 @import './components/team.css';
-@import './components/swiper.css';
-
-
-/* ===== Responsive ===== */
-@import './base/responsive.css';

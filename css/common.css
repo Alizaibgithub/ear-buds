@@ -212,11 +212,6 @@ body.no-scroll {
   gap: 0.5rem;
 }
 
-.social-icon {
-  background-color: var(--color-bg);
-  transition: 0.1s ease;
-}
-
 .social-icon::after {
   background: transparent;
 }
