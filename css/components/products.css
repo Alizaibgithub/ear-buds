@@ -116,6 +116,7 @@
 .sale-product .price-regular {
     text-decoration: line-through;
     text-decoration-color: var(--color-danger);
+    align-self: flex-end;
 }
 
 .related-products-container {
