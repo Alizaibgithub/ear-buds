@@ -323,7 +323,6 @@
  }
 
  @media screen and (max-width: 768px) {
-
    .checkout-container,
    .order-confirm-container {
      display: flex;
@@ -339,7 +338,9 @@
      overflow: inherit;
      max-height: 100%;
    }
-
+.checkout-items .cart-item{
+  padding: 1rem 0;
+}
    .customer-details {
      justify-content: center;
      border-right: none;
@@ -370,6 +371,9 @@
 
    .order-summary-details[open] .order-summary-icon {
      transform: rotate(180deg);
+   }
+   .order-summary-bottom{
+    padding: 1rem 0;
    }
  }
 
