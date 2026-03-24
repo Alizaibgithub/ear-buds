@@ -91,7 +91,7 @@
 .price-regular,
 .price-sale {
     display: flex;
-    gap: 0 0.2rem;
+    /* gap: 0 0.2rem; */
 }
 
 .price-regular .price-currency,
@@ -107,6 +107,10 @@
     font-size: clamp(0.75rem, 1.75vw, 0.9rem);
     /* 2vw --> 0.84rem (768px-tablet) */
     color: var(--color-danger);
+}
+
+.price-currency::after {
+    content: '\00a0';
 }
 
 .sale-product .price-regular {
