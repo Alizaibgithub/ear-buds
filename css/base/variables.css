@@ -13,6 +13,34 @@
         --color-success: #28a745;
         --color-danger: #dc3545;
 
+        /*=== Alternative color schemes === */
+        /* === Colors === */
+        /* --color-primary: #1d4ed8;
+        --color-bg: #0b1220;
+        --color-surface: #111827;
+        --color-text: #e5e7eb;
+
+        --color-light: #ffffff;
+        --color-dark: #020617;
+
+        --color-muted: #9ca3af;
+        --color-success: #22c55e;
+        --color-danger: #ef4444; */
+
+        /* === Colors === */
+        /* --color-primary: #0f766e;
+        --color-bg: #0a0f14;
+        --color-surface: #111827;
+        --color-text: #e5e7eb;
+
+        --color-light: #ffffff;
+        --color-dark: #020617;
+
+        --color-muted: #94a3b8;
+        --color-success: #16a34a;
+        --color-danger: #ef4444; */
+
+
         /* === Border Radius === */
         --radius-sm: 6px;
         --radius-md: 12px;
