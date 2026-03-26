@@ -13,12 +13,12 @@ fetch("../partials/product-filter.html")
       });
     }
     
-    const productFilterButton = document.querySelector(".btn-product-filter");
+    const productFilterButton = document.querySelector(".btn-show-product-filter");
     const productFilterSection = document.querySelector(".product-filter-section");
     const productFilterCloseButton = document.querySelector(
-      ".product-filter-btn-close",
+      ".btn-product-filter-close",
     );
-    const productFilterApplyButton = document.querySelector(".product-filter-btn-apply");
+    const productFilterApplyButton = document.querySelector(".btn-product-filter-apply");
     const headerActions = document.querySelector(".header-actions");
     const headerLogo = document.querySelector(".header-logo-container");
 

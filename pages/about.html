@@ -44,13 +44,13 @@
   <!-- ===== Section: Header ===== -->
   <header class="header-section">
     <div class="header-container">
-      <div class="header-logo-container">
-        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo"  /></a>
+      <div class="header-logo-wrapper">
+        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo-image"  /></a>
       </div>
       <nav class="main-nav">
         <div class="menu-header">
           <h2 class="menu-heading">Menu</h2>
-          <button type="button" class="menu-btn-close" 
+          <button type="button" class="btn-close-menu" 
 aria-label="Close Menu">
 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
           </button>
@@ -70,13 +70,12 @@ aria-label="Close Menu">
             <a href="/pages/contact.html" class="nav-link">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="btn-menu-account" aria-label="Sign In">
+            <button type="button" class="menu-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i><span>Sign In</span>
             </button>
           </li>
         </ul>
         <div class="menu-footer">
-          <div class="menu-social-icons">
             <ul class="social-icons-list">
               <li>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -88,38 +87,30 @@ aria-label="Close Menu">
 <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
           <div class="copy-right">
             <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
           </div>
         </div>
       </nav>
       <div class="header-actions">
-        <ul class="header-btn-list">
-          <li>
-            <button type="button" class="header-icon header-btn-account" aria-label="Sign In">
+            <button type="button" class="header-btn header-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-search" aria-label="Search">
+            <button type="button" class="header-btn header-btn-search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-cart" aria-label="Open Cart Drawer">
+            <button type="button" class="header-btn header-btn-cart" aria-label="Open Cart Drawer">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
-<span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
+              <span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
             </button>
-          </li>
-        </ul>
       </div>
-<button type="button" class="btn-menu-toggle" aria-label="Open Menu">
+<button type="button" class="btn-open-menu" aria-label="Open Menu">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </div>
   </header>
-  <main>
+<!-- ===== Main Content ===== -->
+     <main>
     <!-- ===== Section: Page Header ===== -->
     <section class="page-header-section">
       <div class="page-header-container">
@@ -136,8 +127,8 @@ aria-label="Close Menu">
           <img src="../assets/images/about/about.png" alt="About EarBuds - Our Brand Story" class="image-text-image" />
         </div>
         <div class="image-text-content">
-          <h2 class="image-text-title">Who We Are?</h2>
-          <p class="image-text-text">
+          <h2 class="image-text-title">Who We Are</h2>
+          <p class="image-text-description">
 We are a modern audio technology brand creating stylish and high performance earbuds and headphones that deliver premium
 sound, comfort, and durability. By combining innovation, thoughtful design, and advanced engineering, we develop audio
 products that sound great, feel comfortable, and last longer. Our focus is on simple audio experiences with user
@@ -150,27 +141,27 @@ friendly controls, long battery life, and lightweight designs for reliable every
     <section class="mission-vision-section">
       <div class="mission-vision-container">
         <h2 class="section-title">Mission & Vision</h2>
-        <div class="mv-cards-grid">
-          <article class="mv-card">
-            <div class="mv-card-icon">
+        <div class="mission-vision-grid">
+          <article class="mission-vision-card">
+            <div class="mission-vision-card-icon">
               <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
             </div>
-            <div class="mv-card-info">
-              <h3 class="mv-card-title">Our Mission</h3>
-              <p class="mv-card-text">
+            <div class="mission-vision-card-info">
+              <h3 class="mission-vision-card-title">Our Mission</h3>
+              <p class="mission-vision-card-description">
 To deliver premium audio products with clear sound, lasting comfort, and modern design while maintaining reliable
 quality and affordable pricing.
 We focus on simple innovation and consistent performance to improve listening experiences.
               </p>
             </div>
           </article>
-          <article class="mv-card">
-            <div class="mv-card-icon">
+          <article class="mission-vision-card">
+            <div class="mission-vision-card-icon">
               <i class="fa-solid fa-eye" aria-hidden="true"></i>
             </div>
-            <div class="mv-card-info">
-              <h3 class="mv-card-title">Our Vision</h3>
-              <p class="mv-card-text">
+            <div class="mission-vision-card-info">
+              <h3 class="mission-vision-card-title">Our Vision</h3>
+              <p class="mission-vision-card-description">
 To become a trusted global audio brand through innovative sound technology, eco-friendly practices, and user-focused
 design. We strive to create reliable products that make quality sound easily accessible to more people worldwide.
               </p>
@@ -183,116 +174,96 @@ design. We strive to create reliable products that make quality sound easily acc
     <section class="team-section">
       <div class="team-container">
         <h2 class="section-title">Our Team</h2>
-        <div class="team-swiper-wrapper">
-          <div class="team-slider-btn-prev-wrapper">
-            <button type="button" class="btn-circle team-swiper-btn-prev swiper-btn" aria-label="Previous Slide">
+        <div class="team-swiper-cards">
+          <div class="team-btn-prev-wrapper">
+            <button type="button" class="team-swiper-btn-prev swiper-btn btn-circle" aria-label="Previous Slide">
               <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
             </button>
           </div>
           <div class="swiper team-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="team-card">
-                  <div class="team-card-header">
+                <article class="swiper-slide team-card">
                     <div class="team-card-media">
-                      <div class="team-image-container">
+                      <div class="team-card-image-wrapper">
                         <img src="../assets/images/team-cards/aiden-clarke.png" alt="Aiden - Engineer"
-                          class="team-image" loading="lazy" />
+                          class="team-card-image" loading="lazy" />
                       </div>
                     </div>
-                  </div>
-                  <div class="team-card-body">
-                    <h3 class="team-name">Aiden</h3>
-                    <h4 class="team-role">Engineer</h4>
-                    <p class="team-description">
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Aiden</h3>
+                    <h4 class="team-card-role">Engineer</h4>
+                    <p class="team-card-description">
                       Builds smart systems with precision and technical expertise. Improves sound clarity and product
                       lifespan.
                     </p>
                   </div>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="team-card">
-                  <div class="team-card-header">
+                <article class="swiper-slide team-card">
                     <div class="team-card-media">
-                      <div class="team-image-container">
+                      <div class="team-card-image-wrapper">
                         <img src="../assets/images/team-cards/ethan-walker.png" alt="Ethan - Designer"
-                          class="team-image" loading="lazy" />
+                          class="team-card-image" loading="lazy" />
                       </div>
-                    </div>
                   </div>
-                  <div class="team-card-body">
-                    <h3 class="team-name">Ethan</h3>
-                    <h4 class="team-role">Designer</h4>
-                    <p class="team-description">
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Ethan</h3>
+                    <h4 class="team-card-role">Designer</h4>
+                    <p class="team-card-description">
                       Creates brand visuals with creativity and strong concept. Enhances product image and market
                       appeal.
                     </p>
                   </div>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="team-card">
-                  <div class="team-card-header">
+                <article class="swiper-slide team-card">
                     <div class="team-card-media">
-                      <div class="team-image-container">
-                        <img src="../assets/images/team-cards/lucas-reed.png" alt="Lucas - Analyst" class="team-image"
+                      <div class="team-card-image-wrapper">
+                        <img src="../assets/images/team-cards/lucas-reed.png" alt="Lucas - Analyst" class="team-card-image"
                           loading="lazy" />
                       </div>
-                    </div>
                   </div>
-                  <div class="team-card-body">
-                    <h3 class="team-name">Lucas</h3>
-                    <h4 class="team-role">Analyst</h4>
-                    <p class="team-description">
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Lucas</h3>
+                    <h4 class="team-card-role">Analyst</h4>
+                    <p class="team-card-description">
                       Tests product output with accuracy and close attention. Ensures consistent quality levels and
                       safety.
                     </p>
                   </div>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="team-card">
-                  <div class="team-card-header">
+                <article class="swiper-slide team-card">
                     <div class="team-card-media">
-                      <div class="team-image-container">
+                      <div class="team-card-image-wrapper">
                         <img src="../assets/images/team-cards/lucas-carter.png" alt="Carter - Manager"
-                          class="team-image" loading="lazy" />
+                          class="team-card-image" loading="lazy" />
                       </div>
-                    </div>
                   </div>
-                  <div class="team-card-body">
-                    <h3 class="team-name">Carter</h3>
-                    <h4 class="team-role">Manager</h4>
-                    <p class="team-description">
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Carter</h3>
+                    <h4 class="team-card-role">Manager</h4>
+                    <p class="team-card-description">
                       Leads teams with strong vision and clear direction. Ensures smooth brand workflow and output.
                     </p>
                   </div>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="team-card">
-                  <div class="team-card-header">
+                <article class="swiper-slide team-card">
                     <div class="team-card-media">
-                      <div class="team-image-container">
-                        <img src="../assets/images/team-cards/blake.png" alt="Blake - Marketer" class="team-image"
+                      <div class="team-card-image-wrapper">
+                        <img src="../assets/images/team-cards/blake.png" alt="Blake - Marketer" class="team-card-image"
                           loading="lazy" />
-                      </div>
                     </div>
                   </div>
-                  <div class="team-card-body">
-                    <h3 class="team-name">Blake</h3>
-                    <h4 class="team-role">Marketer</h4>
-                    <p class="team-description">
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Blake</h3>
+                    <h4 class="team-card-role">Marketer</h4>
+                    <p class="team-card-description">
                       Promotes products with smart strategies and campaigns. Expands brand reach and audience growth.
                     </p>
                   </div>
                 </article>
-              </div>
             </div>
           </div>
-          <div class="team-slider-btn-next-wrapper">
-            <button type="button" class="btn-circle team-swiper-btn-next swiper-btn" aria-label="Next Slide">
+          <div class="team-btn-next-wrapper ">
+            <button type="button" class="team-swiper-btn-next swiper-btn btn-circle" aria-label="Next Slide">
               <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
             </button>
           </div>
@@ -305,7 +276,7 @@ design. We strive to create reliable products that make quality sound easily acc
       <div class="call-to-action-container">
         <h2 class="call-to-action-title">Your Sound Journey Starts Here</h2>
         <a href="products.html" class="btn btn-primary">
-          <span>Explore Products</span>
+          Explore Products
           <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
         </a>
       </div>
@@ -316,12 +287,12 @@ design. We strive to create reliable products that make quality sound easily acc
     <div class="footer-container">
       <hr class="footer-divider" />
       <div class="footer-top">
-        <div class="footer-logo-container">
-          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo"  /></a>
+        <div class="footer-logo-wrapper">
+          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo-image"  /></a>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Shop</h2>
-          <nav class="footer-nav footer-nav-pages">
+          <h3 class="footer-heading">Shop</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/categories.html" class="footer-nav-link">Categories</a>
@@ -339,8 +310,8 @@ design. We strive to create reliable products that make quality sound easily acc
           </nav>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Support</h2>
-          <nav class="footer-nav footer-nav-help">
+          <h3 class="footer-heading">Support</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
@@ -359,7 +330,7 @@ design. We strive to create reliable products that make quality sound easily acc
         </div>
         <div class="footer-links">
           <h2 class="footer-heading">Company</h2>
-          <nav class="footer-nav footer-nav-help">
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/about.html" class="footer-nav-link active">About Us</a>
@@ -373,12 +344,12 @@ design. We strive to create reliable products that make quality sound easily acc
             </ul>
           </nav>
         </div>
-        <div class="news-letter">
-          <h2 class="footer-heading">NewsLetter</h2>
-          <form id="news-letter-form" action="#" class="news-letter-form">
-            <input type="news-letter-email" id="news-letter-email" name="news-letter-email" class="news-letter-input" placeholder="Email"
+        <div class="newsletter-wrapper">
+          <h3 class="footer-heading">Newsletter</h3>
+          <form id="newsletter-form" action="#" class="newsletter-form">
+            <input type="email" id="newsletter-email" name="newsletter-email" class="newsletter-input" placeholder="Email"
               aria-label="Email Address" required />
-            <button type="submit" class="news-letter-btn">Subscribe</button>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
         </div>
       </div>
@@ -386,7 +357,6 @@ design. We strive to create reliable products that make quality sound easily acc
         <div class="copy-right">
           <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
         </div>
-        <div class="social-icons">
           <ul class="social-icons-list">
             <li>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -398,7 +368,6 @@ design. We strive to create reliable products that make quality sound easily acc
 <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
             </li>
           </ul>
-        </div>
       </div>
     </div>
   </footer>

@@ -1,7 +1,7 @@
 // ===== Swiper Slider =====
 // === Swiper: New Products ===
-if (document.querySelector(".new-product-swiper")) {
-  var newProductSwiper = new Swiper(".new-product-swiper", {
+if (document.querySelector(".new-products-swiper")) {
+  var newProductSwiper = new Swiper(".new-products-swiper", {
     loop: true,
     spaceBetween: 20,
     autoplay: {
@@ -9,8 +9,8 @@ if (document.querySelector(".new-product-swiper")) {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".new-product-swiper-btn-next",
-      prevEl: ".new-product-swiper-btn-prev",
+      nextEl: ".new-products-swiper-btn-next",
+      prevEl: ".new-products-swiper-btn-prev",
     },
   });
 }
@@ -107,7 +107,7 @@ if (document.querySelector(".product-thumbnail-swiper")) {
     },
   });
 
-  var productMediaSwiper = new Swiper(".product-media-main-swiper", {
+  var productMediaSwiper = new Swiper(".product-media-swiper", {
     loop: true,
     spaceBetween: 8,
     navigation: {

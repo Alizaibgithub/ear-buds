@@ -5,7 +5,7 @@ body.no-scroll {
 /* ===== Section ===== */
 .header-section,
 .hero-section,
-.most-sold-products-section,
+.most-sold-section,
 .new-products-section,
 .deal-section,
 .footer-section,
@@ -15,14 +15,14 @@ body.no-scroll {
 .cart-section,
 .categories-section,
 .contact-section,
-.products-toolbar-section,
+.product-toolbar-section,
 .deals-section,
 .accordion-section,
 .contact-google-map-section,
 .new-arrivals-section,
 .content-section,
 .product-details-section,
-.related-products,
+.related-products-section,
 .products-section,
 .image-text-section,
 .call-to-action-section {
@@ -37,10 +37,15 @@ body.no-scroll {
   align-self: flex-start;
   border-bottom: 2px solid var(--color-primary);
 }
+.related-products-section .section-title{
+  width: 100%;
+  text-align: center;
+  border: none;
+}
 
 /* ===== Container ===== */
 .hero-container,
-.most-sold-products-container,
+.most-sold-container,
 .products-container,
 .new-products-container,
 .new-arrivals-container,
@@ -218,7 +223,7 @@ body.no-scroll {
 /* ========== Hover Effects ========== */
 @media (hover: hover) {
 
-  .header-icon:hover,
+  .header-btn:hover,
   .checkout-btn-cart:hover {
     background-color: var(--color-primary);
     color: var(--color-light);
@@ -243,25 +248,25 @@ body.no-scroll {
     bottom: 0;
   }
 
-  .news-letter-btn:hover,
-  .cart-btn-close:hover,
-  .product-filter-btn-close:hover,
-  .menu-btn-close:hover {
+  .newsletter-btn:hover,
+  .btn-close-cart:hover,
+  .btn-product-filter-close:hover,
+  .btn-close-menu:hover {
     background-color: var(--color-light);
     color: var(--color-dark);
   }
 
-  .btn-cart-item-delete:hover i {
+  .btn-delete-item:hover i {
     color: var(--color-danger);
   }
 
-  .product-filter-btn-clear:hover,
+  .btn-product-filter-clear:hover,
   .sign-in-link:hover,
   .order-nav-link:hover {
     color: var(--color-primary)
   }
 
-  .category-card:hover .category-image {
+  .category-card:hover .category-card-image {
     transform: scale(1.05);
   }
 
@@ -269,7 +274,7 @@ body.no-scroll {
     transform: scale(1.02);
   }
 
-  .mv-card:hover {
+  .mission-vision-card:hover {
     transform: translateY(-5px);
   }
 
@@ -287,7 +292,7 @@ body.no-scroll {
 
   .header-section,
   .hero-section,
-  .most-sold-products-section,
+  .most-sold-section,
   .new-products-section,
   .deal-section,
   .footer-section,
@@ -297,14 +302,14 @@ body.no-scroll {
   .cart-section,
   .categories-section,
   .contact-section,
-  .products-toolbar-section,
+  .product-toolbar-section,
   .deals-section,
   .accordion-section,
   .contact-google-map-section,
   .new-arrivals-section,
   .content-section,
   .product-details-section,
-  .related-products,
+  .related-products-section,
   .products-section,
   .image-text-section,
   .call-to-action-section {
@@ -320,7 +325,7 @@ body.no-scroll {
 
   .header-section,
   .hero-section,
-  .most-sold-products-section,
+  .most-sold-section,
   .new-products-section,
   .deal-section,
   .footer-section,
@@ -330,7 +335,7 @@ body.no-scroll {
   .cart-section,
   .categories-section,
   .contact-section,
-  .products-toolbar-section,
+  .product-toolbar-section,
   .deals-section,
   .accordion-section,
   .contact-google-map-section,

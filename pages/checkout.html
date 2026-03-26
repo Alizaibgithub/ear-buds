@@ -38,14 +38,14 @@
                 <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
               </a>
             </div>
-            <div class="customer-details-main">
+            <div class="customer-details-body">
               <form id="checkout-form" action="#" class="checkout-form">
                 <div class="contact-wrapper form-group">
                   <div class="contact-header">
                     <h2 class="contact-heading">Contact</h2>
                     <a href="#" class="sign-in-link">Sign in</a>
                   </div>
-                  <div class="contact-field">
+                  <div class="contact-input">
                     <input type="email" id="checkout-email" name="checkout-email" class="form-input" placeholder="Email" required />
                   </div>
                   <div class="form-checkbox">
@@ -64,9 +64,9 @@
                       <option value="sindh">Sindh</option>
                     </select>
                   </div>
-                  <div class="full-name-input">
-                    <input type="text" id="checkout-fName" name="checkout-fName" class="form-input" placeholder="First Name" required />
-                    <input type="text" id="checkout-lName" name="checkout-fName" class="form-input" placeholder="Last Name" required />
+                  <div class="name-input-group">
+                    <input type="text" id="checkout-first-name" name="checkout-first-name" class="form-input" placeholder="First Name" required />
+                    <input type="text" id="checkout-last-name" name="checkout-last-name" class="form-input" placeholder="Last Name" required />
                   </div>
                   <input type="text" id="address" name="address" class="form-input" placeholder="Address" required />
                   <div class="city-input">
@@ -113,10 +113,10 @@
                           <option value="sindh">Sindh</option>
                         </select>
                       </div>
-                      <div class="full-name-input">
-                        <input type="text" id="billing-fName" name="billing-fName" class="form-input"
+                      <div class="name-input-group">
+                        <input type="text" id="billing-first-name" name="billing-first-name" class="form-input"
                           placeholder="First Name" required />
-                        <input type="text" id="billing-lName" name="billing-lName" class="form-input"
+                        <input type="text" id="billing-last-name" name="billing-last-name" class="form-input"
                           placeholder="Last Name" required />
                       </div>
                       <input type="text" id="billing-address" name="billing-address" class="form-input"
@@ -185,8 +185,8 @@
                     <div class="cart-item-details">
                       <div class="cart-item-info">
                         <h3 class="product-title">BassPods</h3>
-                        <div class="color-swatches-header">
-                          <span class="color-swatches-label">Color:</span>
+                        <div class="product-color">
+                          <span class="color-label">Color:</span>
                           <span class="color-selected">White</span>
                         </div>
                       </div>
@@ -214,8 +214,8 @@
                     <div class="cart-item-details">
                       <div class="cart-item-info">
                         <h3 class="product-title">Neckband</h3>
-                        <div class="color-swatches-header">
-                          <span class="color-swatches-label">Color:</span>
+                        <div class="product-color">
+                          <span class="color-label">Color:</span>
                           <span class="color-selected">Black</span>
                         </div>
                       </div>
@@ -239,8 +239,8 @@
                     <div class="cart-item-details">
                       <div class="cart-item-info">
                         <h3 class="product-title">NoiseCut</h3>
-                        <div class="color-swatches-header">
-                          <span class="color-swatches-label">Color:</span>
+                        <div class="product-color">
+                          <span class="color-label">Color:</span>
                           <span class="color-selected">Blue</span>
                         </div>
                       </div>
@@ -269,8 +269,8 @@
                     <div class="cart-item-details">
                       <div class="cart-item-info">
                         <h3 class="product-title">SonicPods</h3>
-                        <div class="color-swatches-header">
-                          <span class="color-swatches-label">Color:</span>
+                        <div class="product-color">
+                          <span class="color-label">Color:</span>
                           <span class="color-selected">Blue</span>
                         </div>
                       </div>
@@ -296,9 +296,9 @@
                   </form>
                 </div>
                 <div class="checkout-total-wrapper">
-                  <div class="cart-total">
+                  <div class="cart-total-wrapper">
                     <div class="cart-total-info">
-                      <h2 class="cart-total-title">Subtotal</h2>
+                      <h3 class="cart-total-title">Subtotal</h3>
                       <span class="cart-total-info-separator">·</span>
                       <span class="cart-item-count-wrapper"><span class="cart-item-count">4</span> Items</span>
                     </div>

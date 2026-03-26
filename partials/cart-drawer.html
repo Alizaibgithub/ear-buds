@@ -4,18 +4,18 @@
     <div class="cart-header">
       <div class="cart-header-left">
         <h2 class="cart-heading">Shopping Cart</h2>
-        <span class="cart-item-count-wraper" aria-live="polite" aria-atomic="true"><span
+        <span class="cart-item-count-wrapper" aria-live="polite" aria-atomic="true"><span
             class="cart-item-count">4</span>
           Items</span>
       </div>
       <div class="cart-header-right">
-        <button type="button" class="cart-btn-close" aria-label="Close Cart Drawer">
+        <button type="button" class="btn-close-cart" aria-label="Close Cart Drawer">
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
       </div>
     </div>
     <div class="cart-body">
-      <div class="cart-items">
+      <div class="cart-items-form-wrapper">
         <form id="cart-items-form" action="#" class="cart-items-form">
           <div class="cart-item sale-product">
             <div class="cart-item-image-wrapper">
@@ -28,8 +28,8 @@
               <div class="cart-item-details">
                 <div class="cart-item-info">
                   <h3 class="product-title">BassPods</h3>
-                  <div class="color-swatches-header">
-                    <span class="color-swatches-label">Color:</span>
+                  <div class="product-color">
+                    <span class="color-label">Color:</span>
                     <span class="color-selected">White</span>
                   </div>
                 </div>
@@ -46,7 +46,6 @@
               </div>
 
               <div class="cart-item-actions">
-                <div class="product-quantity-selector">
                   <div class="quantity-selector-wrapper">
                     <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                       <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -57,8 +56,7 @@
                       <i class="fa-solid fa-plus" aria-hidden="true"></i>
                     </button>
                   </div>
-                </div>
-                <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                <button type="button" class="btn-delete-item" aria-label="Remove Item">
                   <i class="fa-solid fa-trash" aria-hidden="true"></i>
                 </button>
               </div>
@@ -77,8 +75,8 @@
               <div class="cart-item-details">
                 <div class="cart-item-info">
                   <h3 class="product-title">Neckband</h3>
-                  <div class="color-swatches-header">
-                    <span class="color-swatches-label">Color:</span>
+                  <div class="product-color">
+                    <span class="color-label">Color:</span>
                     <span class="color-selected">Black</span>
                   </div>
                 </div>
@@ -92,7 +90,6 @@
               </div>
 
               <div class="cart-item-actions">
-                <div class="product-quantity-selector">
                   <div class="quantity-selector-wrapper">
                     <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                       <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -103,8 +100,7 @@
                       <i class="fa-solid fa-plus" aria-hidden="true"></i>
                     </button>
                   </div>
-                </div>
-                <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                <button type="button" class="btn-delete-item" aria-label="Remove Item">
                   <i class="fa-solid fa-trash" aria-hidden="true"></i>
                 </button>
               </div>
@@ -123,8 +119,8 @@
               <div class="cart-item-details">
                 <div class="cart-item-info">
                   <h3 class="product-title">NoiseCut</h3>
-                  <div class="color-swatches-header">
-                    <span class="color-swatches-label">Color:</span>
+                  <div class="product-color">
+                    <span class="color-label">Color:</span>
                     <span class="color-selected">Blue</span>
                   </div>
                 </div>
@@ -142,7 +138,6 @@
               </div>
 
               <div class="cart-item-actions">
-                <div class="product-quantity-selector">
                   <div class="quantity-selector-wrapper">
                     <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                       <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -153,8 +148,7 @@
                       <i class="fa-solid fa-plus" aria-hidden="true"></i>
                     </button>
                   </div>
-                </div>
-                <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                <button type="button" class="btn-delete-item" aria-label="Remove Item">
                   <i class="fa-solid fa-trash" aria-hidden="true"></i>
                 </button>
               </div>
@@ -173,8 +167,8 @@
               <div class="cart-item-details">
                 <div class="cart-item-info">
                   <h3 class="product-title">SonicPods</h3>
-                  <div class="color-swatches-header">
-                    <span class="color-swatches-label">Color:</span>
+                  <div class="product-color">
+                    <span class="color-label">Color:</span>
                     <span class="color-selected">Blue</span>
                   </div>
                 </div>
@@ -188,7 +182,6 @@
               </div>
 
               <div class="cart-item-actions">
-                <div class="product-quantity-selector">
                   <div class="quantity-selector-wrapper">
                     <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                       <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -199,8 +192,7 @@
                       <i class="fa-solid fa-plus" aria-hidden="true"></i>
                     </button>
                   </div>
-                </div>
-                <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                <button type="button" class="btn-delete-item" aria-label="Remove Item">
                   <i class="fa-solid fa-trash" aria-hidden="true"></i>
                 </button>
               </div>
@@ -211,8 +203,8 @@
     </div>
     <div class="cart-footer">
       <div class="cart-summary">
-        <div class="cart-total">
-          <h2 class="cart-total-title">Subtotal</h2>
+        <div class="cart-total-wrapper">
+          <h3 class="cart-total-title">Subtotal</h3>
           <div class="cart-total-price">
             <span class="price-currency">PKR</span>
             <span class="price-amount">17,496</span>

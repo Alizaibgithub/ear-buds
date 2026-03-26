@@ -5,11 +5,11 @@ fetch("../partials/cart-drawer.html")
     document.body.insertAdjacentHTML("beforeend", html);
 
     const cartButton = document.querySelector(".header-btn-cart");
-    const addToCartButtons = document.querySelectorAll(".btn-atc");
+    const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
     const cartSection = document.querySelector(".cart-drawer-section");
-    const cartCloseButton = document.querySelector(".cart-btn-close");
-    const menuToggleButton = document.querySelector(".btn-menu-toggle");
-    const headerLogo = document.querySelector(".header-logo-container");
+    const cartCloseButton = document.querySelector(".btn-close-cart");
+    const menuToggleButton = document.querySelector(".btn-open-menu");
+    const headerLogo = document.querySelector(".header-logo-wrapper");
 
     const openCart = () => toggleOverlay(cartSection, [menuToggleButton, headerLogo], true);
     const closeCart = () => toggleOverlay(cartSection, [menuToggleButton, headerLogo], false);

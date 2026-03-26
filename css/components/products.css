@@ -123,16 +123,16 @@
     gap: 7rem;
 }
 
-.most-sold-products-section .section-title {
+.most-sold-section .section-title {
     margin-bottom: 7rem;
 }
 
 /* ===== Section: Products Toolbar ===== */
-.products-toolbar-section {
+.product-toolbar-section {
     margin-bottom: 6rem;
 }
 
-.products-toolbar-container {
+.product-toolbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,12 +161,12 @@
     /* 2vw --> 0.96 (768px-tablet) */
 }
 
-.toolbar-right {
+.product-toolbar-right {
     display: flex;
     gap: 4rem;
 }
 
-.btn-view-grid-2 {
+.btn-view-2col {
     color: var(--color-muted);
 }
 

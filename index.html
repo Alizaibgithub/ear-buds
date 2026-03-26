@@ -47,13 +47,13 @@
   <!-- ===== Section: Header ===== -->
   <header class="header-section">
     <div class="header-container">
-      <div class="header-logo-container">
-        <a href="/"><img src="./assets/images/logo.png" alt="EarBuds Logo" class="header-logo" /></a>
+      <div class="header-logo-wrapper">
+        <a href="/"><img src="./assets/images/logo.png" alt="EarBuds Logo" class="header-logo-image" /></a>
       </div>
       <nav class="main-nav">
         <div class="menu-header">
           <h2 class="menu-heading">Menu</h2>
-          <button type="button" class="menu-btn-close" aria-label="Close Menu">
+          <button type="button" class="btn-close-menu" aria-label="Close Menu">
             <i class="fa-solid fa-xmark" aria-hidden="true"></i>
           </button>
         </div>
@@ -70,13 +70,12 @@
             <a href="/pages/contact.html" class="nav-link">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="btn-menu-account" aria-label="Sign In">
+            <button type="button" class="menu-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i><span>Sign In</span>
             </button>
           </li>
         </ul>
         <div class="menu-footer">
-          <div class="menu-social-icons">
             <ul class="social-icons-list">
               <li>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
@@ -94,69 +93,61 @@
                     aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
           <div class="copy-right">
             <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
           </div>
         </div>
       </nav>
       <div class="header-actions">
-        <ul class="header-btn-list">
-          <li>
-            <button type="button" class="header-icon header-btn-account" aria-label="Sign In">
+            <button type="button" class="header-btn header-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-search" aria-label="Search">
+            <button type="button" class="header-btn header-btn-search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-cart" aria-label="Open Cart Drawer">
+            <button type="button" class="header-btn header-btn-cart" aria-label="Open Cart Drawer">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
               <span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
             </button>
-          </li>
-        </ul>
       </div>
-      <button type="button" class="btn-menu-toggle" aria-label="Open Menu">
+      <button type="button" class="btn-open-menu" aria-label="Open Menu">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </div>
   </header>
-  <main>
+<!-- ===== Main Content ===== -->
+    <main>
     <!-- ===== Section: Hero ===== -->
     <section class="hero-section">
       <div class="hero-container">
         <div class="hero-content">
-          <div class="hero-text-container">
+          <div class="hero-text-wrapper">
             <h1 class="hero-heading">EarBuds<br />EarBuds</h1>
           </div>
-          <div class="hero-images-container">
+          <div class="hero-images-wrapper">
             <div class="hero-left-image-wrapper">
               <img src="./assets/images/hero/ear-bud-left.png" alt="EarBuds Left Earbud"
-                class="hero-image hero-image-left" />
+                class="hero-left-image" />
             </div>
             <div class="hero-right-image-wrapper">
               <img src="./assets/images/hero/ear-bud-right.png" alt="EarBuds Right Earbud"
-                class="hero-image hero-image-right" />
+                class="hero-right-image" />
             </div>
           </div>
         </div>
         <div class="action-buttons">
           <a href="/pages/product-details.html" class="btn btn-primary">
-            <span>See Details</span> <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+            See Details <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
           </a>
-          <button type="button" class="btn btn-secondary btn-atc">
+          <button type="button" class="btn btn-secondary btn-add-to-cart">
             Buy Now<i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
           </button>
         </div>
       </div>
     </section>
     <!-- ===== Section: Most Sold Products ===== -->
-    <section class="most-sold-products-section">
-      <div class="most-sold-products-container">
+    <section class="most-sold-section">
+      <div class="most-sold-container">
         <h2 class="section-title">Most Sold</h2>
         <div class="products-grid">
           <article class="product-card">
@@ -177,10 +168,10 @@
               </div>
               <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
                   <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -202,12 +193,12 @@
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
                   <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -231,10 +222,10 @@
               </div>
               <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
                   <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -256,12 +247,12 @@
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
                   <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -283,12 +274,12 @@
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
                   <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -310,12 +301,12 @@
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
                   <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -333,49 +324,43 @@
     <section class="new-products-section">
       <div class="new-products-container">
         <h2 class="section-title">New Products</h2>
-        <div class="swiper new-product-swiper">
+        <div class="swiper new-products-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="new-product-slide">
-                <div class="new-product-image-container">
+            <article class="swiper-slide">
+                <div class="new-product-image-wrapper">
                   <img src="./assets/images/new-products-slider/new-product-slide-1.png" alt="New Products Slide 1"
-                    class="new-product-img" loading="lazy" />
+                    class="new-product-image" loading="lazy" />
                 </div>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="new-product-slide">
-                <div class="new-product-image-container">
+            </article>
+            <article class="swiper-slide">
+                <div class="new-product-image-wrapper">
                   <img src="./assets/images/new-products-slider/new-product-slide-2.png" alt="New Products Slide 2"
-                    class="new-product-img" loading="lazy" />
+                    class="new-product-image" loading="lazy" />
                 </div>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="new-product-slide">
-                <div class="new-product-image-container">
+            </article>
+            <article class="swiper-slide">
+                <div class="new-product-image-wrapper">
                   <img src="./assets/images/new-products-slider/new-product-slide-3.png" alt="New Products Slide 3"
-                    class="new-product-img" loading="lazy" />
+                    class="new-product-image" loading="lazy" />
                 </div>
-              </article>
-            </div>
+            </article>
           </div>
-          <div class="new-product-swiper-bottom">
+          <div class="new-products-swiper-bottom">
             <div class="action-buttons swiper-action-buttons">
               <a href="/pages/product-details.html" class="btn btn-primary">
-                <span>See Details</span>
+                See Details
                 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               </a>
-              <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+              <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                 <i class="fa-solid fa-plus" aria-hidden="true"></i>
               </button>
             </div>
-            <div class="new-product-swiper-navigation swiper-navigation">
-              <button type="button" class="btn-circle new-product-swiper-btn-prev swiper-btn"
+            <div class="new-products-swiper-navigation swiper-navigation">
+              <button type="button" class="btn-circle swiper-btn new-products-swiper-btn-prev"
                 aria-label="Previous Slide">
                 <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
               </button>
-              <button type="button" class="btn-circle new-product-swiper-btn-next swiper-btn" aria-label="Next Slide">
+              <button type="button" class="btn-circle swiper-btn new-products-swiper-btn-next" aria-label="Next Slide">
                 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               </button>
             </div>
@@ -388,8 +373,7 @@
       <div class="deal-container">
         <div class="swiper deal-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="deal-slide deal-slide-1">
+            <article class="swiper-slide deal-slide deal-slide-1">
                 <div class="deal-overlay">
                   <div class="deal-content">
                     <span class="deal-badge">New Deal</span>
@@ -403,10 +387,8 @@
                     <p class="deal-description">On Premium Selection</p>
                   </div>
                 </div>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="deal-slide deal-slide-2">
+            </article>
+            <article class="swiper-slide deal-slide deal-slide-2">
                 <div class="deal-overlay">
                   <div class="deal-content">
                     <span class="deal-badge">New Deal</span>
@@ -420,10 +402,8 @@
                     <p class="deal-description">On Premium Selection</p>
                   </div>
                 </div>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="deal-slide deal-slide-3">
+            </article>
+            <article class="swiper-slide deal-slide deal-slide-3">
                 <div class="deal-overlay">
                   <div class="deal-content">
                     <span class="deal-badge">New Deal</span>
@@ -437,21 +417,20 @@
                     <p class="deal-description">On Premium Selection</p>
                   </div>
                 </div>
-              </article>
-            </div>
+            </article>
           </div>
           <div class="deal-swiper-bottom">
             <div class="swiper-action-buttons">
               <a href="/pages/deals.html" class="btn btn-primary">
-                <span>View Deals</span>
+                View Deals
                 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               </a>
             </div>
             <div class="deal-swiper-navigation swiper-navigation">
-              <button type="button" class="btn-circle deal-swiper-btn-prev swiper-btn" aria-label="Previous Slide">
+              <button type="button" class="btn-circle swiper-btn deal-swiper-btn-prev" aria-label="Previous Slide">
                 <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
               </button>
-              <button type="button" class="btn-circle deal-swiper-btn-next swiper-btn" aria-label="Next Slide">
+              <button type="button" class="btn-circle swiper-btn deal-swiper-btn-next" aria-label="Next Slide">
                 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               </button>
             </div>
@@ -465,12 +444,12 @@
     <div class="footer-container">
       <hr class="footer-divider" />
       <div class="footer-top">
-        <div class="footer-logo-container">
-          <a href="/"><img src="./assets/images/logo.png" alt="EarBuds Logo" class="footer-logo" /></a>
+        <div class="footer-logo-wrapper">
+          <a href="/"><img src="./assets/images/logo.png" alt="EarBuds Logo" class="footer-logo-image" /></a>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Shop</h2>
-          <nav class="footer-nav footer-nav-pages">
+          <h3 class="footer-heading">Shop</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/categories.html" class="footer-nav-link">Categories</a>
@@ -488,8 +467,8 @@
           </nav>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Support</h2>
-          <nav class="footer-nav footer-nav-help">
+          <h3 class="footer-heading">Support</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
@@ -508,7 +487,7 @@
         </div>
         <div class="footer-links">
           <h2 class="footer-heading">Company</h2>
-          <nav class="footer-nav footer-nav-help">
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/about.html" class="footer-nav-link">About Us</a>
@@ -520,14 +499,14 @@
                 <a href="/pages/terms-conditions.html" class="footer-nav-link">Terms & Conditions</a>
               </li>
             </ul>
-          </nav>
+          </nav>  
         </div>
-        <div class="news-letter">
-          <h2 class="footer-heading">NewsLetter</h2>
-          <form id="news-letter-form" action="#" class="news-letter-form">
-            <input type="news-letter-email" id="news-letter-email" name="news-letter-email" class="news-letter-input"
+        <div class="newsletter-wrapper">
+          <h3 class="footer-heading">Newsletter</h3>
+          <form id="newsletter-form" action="#" class="newsletter-form">
+            <input type="email" id="newsletter-email" name="newsletter-email" class="newsletter-input"
               placeholder="Email" aria-label="Email Address" required />
-            <button type="submit" class="news-letter-btn">Subscribe</button>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
         </div>
       </div>
@@ -535,7 +514,6 @@
         <div class="copy-right">
           <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
         </div>
-        <div class="social-icons">
           <ul class="social-icons-list">
             <li>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
@@ -553,7 +531,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </div>
   </footer>
 </body>

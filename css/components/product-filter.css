@@ -32,7 +32,7 @@
   border-bottom: 1px solid var(--color-light);
   background-color: var(--color-bg);
 }
-.product-filter-btn-close{
+.btn-product-filter-close{
     transition: var(--transition-base);
       border-radius: var(--radius-circle);
       width: clamp(1.67rem, 4vw, 2rem);
@@ -46,20 +46,20 @@
   background-color: var(--color-bg);
 }
 
-.filter-group {
+.product-filter-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
 }
 
-.price-filter-group {
+.price-range-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.price-count-wrapper {
+.price-input-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -99,20 +99,20 @@
   margin-top: auto;
 }
 
-.btn-product-filter {
+.btn-show-product-filter {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.35rem;
 }
 
-.btn-product-filter span {
+.btn-show-product-filter span {
   font-weight: 300;
   font-size: clamp(0.85rem, 2vw, 1rem);
   /* 2vw --> 0.96 (768px-tablet) */
 }
 
-.product-filter-btn-clear {
+.btn-product-filter-clear {
   text-decoration: underline;
   transition: var(--transition-base);
 }

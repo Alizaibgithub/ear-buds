@@ -36,13 +36,13 @@
   <!-- ===== Section: Header ===== -->
   <header class="header-section">
     <div class="header-container">
-      <div class="header-logo-container">
-        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo"  /></a>
+      <div class="header-logo-wrapper">
+        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo-image"  /></a>
       </div>
       <nav class="main-nav">
         <div class="menu-header">
           <h2 class="menu-heading">Menu</h2>
-          <button type="button" class="menu-btn-close" 
+          <button type="button" class="btn-close-menu" 
 aria-label="Close Menu">
 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
           </button>
@@ -62,13 +62,12 @@ aria-label="Close Menu">
             <a href="/pages/contact.html" class="nav-link">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="btn-menu-account" aria-label="Sign In">
+            <button type="button" class="menu-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i><span>Sign In</span>
             </button>
           </li>
         </ul>
         <div class="menu-footer">
-          <div class="menu-social-icons">
             <ul class="social-icons-list">
               <li>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -80,47 +79,39 @@ aria-label="Close Menu">
 <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
           <div class="copy-right">
             <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
           </div>
         </div>
       </nav>
       <div class="header-actions">
-        <ul class="header-btn-list">
-          <li>
-            <button type="button" class="header-icon header-btn-account" aria-label="Sign In">
+            <button type="button" class="header-btn header-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-search" aria-label="Search">
+            <button type="button" class="header-btn header-btn-search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-cart" aria-label="Open Cart Drawer">
+            <button type="button" class="header-btn header-btn-cart" aria-label="Open Cart Drawer">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
-<span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
+              <span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
             </button>
-          </li>
-        </ul>
       </div>
-<button type="button" class="btn-menu-toggle" aria-label="Open Menu">
+<button type="button" class="btn-open-menu" aria-label="Open Menu">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </div>
   </header>
-  <main>
+<!-- ===== Main Content ===== -->
+     <main>
     <!-- ===== Section: Cart ===== -->
     <section class="cart-section">
       <div class="cart-container">
         <div class="cart-header cart-page-header">
           <h2 class="cart-heading">Shopping Cart</h2>
-          <a href="/pages/products.html" class="cart-btn-continue">Continue Shopping</a>
+          <a href="/pages/products.html" class="btn-continue-shopping">Continue Shopping</a>
         </div>
         <div class="cart-body">
-          <div class="cart-items">
+          <div class="cart-items-form-wrapper">
             <form id="cart-items-form" action="#" class="cart-items-form">
               <div class="cart-item sale-product">
                 <div class="cart-item-image-wrapper">
@@ -134,8 +125,8 @@ aria-label="Close Menu">
                   <div class="cart-item-details">
                     <div class="cart-item-info">
                       <h3 class="product-title">BassPods</h3>
-                      <div class="color-swatches-header">
-                        <span class="color-swatches-label">Color:</span>
+                      <div class="product-color">
+                        <span class="color-label">Color:</span>
                         <span class="color-selected">White</span>
                       </div>
                     </div>
@@ -153,7 +144,6 @@ aria-label="Close Menu">
                   </div>
 
                   <div class="cart-item-actions">
-                    <div class="product-quantity-selector">
                       <div class="quantity-selector-wrapper">
                         <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                           <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -164,8 +154,7 @@ aria-label="Close Menu">
                           <i class="fa-solid fa-plus" aria-hidden="true"></i>
                         </button>
                       </div>
-                    </div>
-                    <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                    <button type="button" class="btn-delete-item" aria-label="Remove Item">
                       <i class="fa-solid fa-trash" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -184,8 +173,8 @@ aria-label="Close Menu">
                   <div class="cart-item-details">
                     <div class="cart-item-info">
                       <h3 class="product-title">Neckband</h3>
-                      <div class="color-swatches-header">
-                        <span class="color-swatches-label">Color:</span>
+                      <div class="product-color">
+                        <span class="color-label">Color:</span>
                         <span class="color-selected">Black</span>
                       </div>
                     </div>
@@ -199,7 +188,6 @@ aria-label="Close Menu">
                   </div>
 
                   <div class="cart-item-actions">
-                    <div class="product-quantity-selector">
                       <div class="quantity-selector-wrapper">
                         <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                           <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -210,8 +198,7 @@ aria-label="Close Menu">
                           <i class="fa-solid fa-plus" aria-hidden="true"></i>
                         </button>
                       </div>
-                    </div>
-                    <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                    <button type="button" class="btn-delete-item" aria-label="Remove Item">
                       <i class="fa-solid fa-trash" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -230,8 +217,8 @@ aria-label="Close Menu">
                   <div class="cart-item-details">
                     <div class="cart-item-info">
                       <h3 class="product-title">NoiseCut</h3>
-                      <div class="color-swatches-header">
-                        <span class="color-swatches-label">Color:</span>
+                      <div class="product-color">
+                        <span class="color-label">Color:</span>
                         <span class="color-selected">Blue</span>
                       </div>
                     </div>
@@ -249,7 +236,6 @@ aria-label="Close Menu">
                   </div>
 
                   <div class="cart-item-actions">
-                    <div class="product-quantity-selector">
                       <div class="quantity-selector-wrapper">
                         <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                           <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -260,8 +246,7 @@ aria-label="Close Menu">
                           <i class="fa-solid fa-plus" aria-hidden="true"></i>
                         </button>
                       </div>
-                    </div>
-                    <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                    <button type="button" class="btn-delete-item" aria-label="Remove Item">
                       <i class="fa-solid fa-trash" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -280,8 +265,8 @@ aria-label="Close Menu">
                   <div class="cart-item-details">
                     <div class="cart-item-info">
                       <h3 class="product-title">SonicPods</h3>
-                      <div class="color-swatches-header">
-                        <span class="color-swatches-label">Color:</span>
+                      <div class="product-color">
+                        <span class="color-label">Color:</span>
                         <span class="color-selected">Blue</span>
                       </div>
                     </div>
@@ -295,7 +280,6 @@ aria-label="Close Menu">
                   </div>
 
                   <div class="cart-item-actions">
-                    <div class="product-quantity-selector">
                       <div class="quantity-selector-wrapper">
                         <button type="button" class="btn-quantity btn-minus" aria-label="Decrease Quantity">
                           <i class="fa-solid fa-minus" aria-hidden="true"></i>
@@ -306,8 +290,7 @@ aria-label="Close Menu">
                           <i class="fa-solid fa-plus" aria-hidden="true"></i>
                         </button>
                       </div>
-                    </div>
-                    <button type="button" class="btn-cart-item-delete" aria-label="Remove Item">
+                    <button type="button" class="btn-delete-item" aria-label="Remove Item">
                       <i class="fa-solid fa-trash" aria-hidden="true"></i>
                     </button>
                   </div>
@@ -318,8 +301,8 @@ aria-label="Close Menu">
         </div>
         <div class="cart-footer cart-page-footer">
           <div class="cart-summary">
-            <div class="cart-total">
-              <h2 class="cart-total-title">Subtotal</h2>
+            <div class="cart-total-wrapper" >
+              <h3 class="cart-total-title">Subtotal</h3>
               <div class="cart-total-price">
                 <span class="price-currency">PKR</span>
                 <span class="price-amount">17,496</span>
@@ -340,12 +323,12 @@ aria-label="Close Menu">
     <div class="footer-container">
       <hr class="footer-divider" />
       <div class="footer-top">
-        <div class="footer-logo-container">
-          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo"  /></a>
+        <div class="footer-logo-wrapper">
+          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo-image"  /></a>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Shop</h2>
-          <nav class="footer-nav footer-nav-pages">
+          <h3 class="footer-heading">Shop</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/categories.html" class="footer-nav-link">Categories</a>
@@ -363,8 +346,8 @@ aria-label="Close Menu">
           </nav>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Support</h2>
-          <nav class="footer-nav footer-nav-help">
+          <h3 class="footer-heading">Support</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
@@ -383,7 +366,7 @@ aria-label="Close Menu">
         </div>
         <div class="footer-links">
           <h2 class="footer-heading">Company</h2>
-          <nav class="footer-nav footer-nav-help">
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/about.html" class="footer-nav-link">About Us</a>
@@ -397,12 +380,12 @@ aria-label="Close Menu">
             </ul>
           </nav>
         </div>
-        <div class="news-letter">
-          <h2 class="footer-heading">NewsLetter</h2>
-          <form id="news-letter-form" action="#" class="news-letter-form">
-            <input type="news-letter-email" id="news-letter-email" name="news-letter-email" class="news-letter-input" placeholder="Email"
+        <div class="newsletter-wrapper">
+          <h3 class="footer-heading">Newsletter</h3>
+          <form id="newsletter-form" action="#" class="newsletter-form">
+            <input type="email" id="newsletter-email" name="newsletter-email" class="newsletter-input" placeholder="Email"
               aria-label="Email Address" required />
-            <button type="submit" class="news-letter-btn">Subscribe</button>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
         </div>
       </div>
@@ -410,7 +393,6 @@ aria-label="Close Menu">
         <div class="copy-right">
           <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
         </div>
-        <div class="social-icons">
           <ul class="social-icons-list">
             <li>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -422,7 +404,6 @@ aria-label="Close Menu">
 <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
             </li>
           </ul>
-        </div>
       </div>
     </div>
   </footer>

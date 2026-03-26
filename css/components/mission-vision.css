@@ -1,12 +1,12 @@
 /* ========== Section: Mission & Vision ========== */
-.mv-cards-grid {
+.mission-vision-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem 2rem;
     width: min(100%, 60rem);
 }
 
-.mv-card {
+.mission-vision-card {
     flex: 1 1 47%;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     transition: var(--transition-base);
 }
 
-.mv-card-icon {
+.mission-vision-card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,16 +30,16 @@
     aspect-ratio: 1 / 1;
 }
 
-.mv-card-icon i {
+.mission-vision-card-icon i {
     font-size: clamp(2rem, 4.6vw, 2.5rem);
     /* 4.6vw --> 2.208rem (768px-tablet) */
 }
 
-.mv-card-info {
+.mission-vision-card-info {
     display: flex;
     flex-direction: column;
     grid-area: 0.25rem;
 }
-.mv-card-title, .mv-card-text{
+.mission-vision-card-title, .mission-vision-card-description{
     text-align: center;
 }

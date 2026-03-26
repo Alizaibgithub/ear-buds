@@ -1,7 +1,7 @@
 // ===== Menu Toggle =====
-const menuToggleButton = document.querySelector(".btn-menu-toggle");
+const menuToggleButton = document.querySelector(".btn-open-menu");
 const mainNavSection = document.querySelector(".main-nav");
-const menuCloseButton = document.querySelector(".menu-btn-close");
+const menuCloseButton = document.querySelector(".btn-close-menu");
 const headerActions = document.querySelector(".header-actions");
 
 const openMenu = () => toggleOverlay(mainNavSection, [headerActions], true);

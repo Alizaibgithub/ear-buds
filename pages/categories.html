@@ -44,13 +44,13 @@
   <!-- ===== Section: Header ===== -->
   <header class="header-section">
     <div class="header-container">
-      <div class="header-logo-container">
-        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo"  /></a>
+      <div class="header-logo-wrapper">
+        <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="header-logo-image"  /></a>
       </div>
       <nav class="main-nav">
         <div class="menu-header">
           <h2 class="menu-heading">Menu</h2>
-          <button type="button" class="menu-btn-close" 
+          <button type="button" class="btn-close-menu" 
 aria-label="Close Menu">
 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
           </button>
@@ -68,13 +68,12 @@ aria-label="Close Menu">
             <a href="/pages/contact.html" class="nav-link">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="btn-menu-account" aria-label="Sign In">
+            <button type="button" class="menu-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i><span>Sign In</span>
             </button>
           </li>
         </ul>
         <div class="menu-footer">
-          <div class="menu-social-icons">
             <ul class="social-icons-list">
               <li>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -86,38 +85,30 @@ aria-label="Close Menu">
 <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
               </li>
             </ul>
-          </div>
           <div class="copy-right">
             <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
           </div>
         </div>
       </nav>
       <div class="header-actions">
-        <ul class="header-btn-list">
-          <li>
-            <button type="button" class="header-icon header-btn-account" aria-label="Sign In">
+            <button type="button" class="header-btn header-btn-account" aria-label="Sign In">
               <i class="fa-solid fa-user" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-search" aria-label="Search">
+            <button type="button" class="header-btn header-btn-search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
-          </li>
-          <li>
-            <button type="button" class="header-icon header-btn-cart" aria-label="Open Cart Drawer">
+            <button type="button" class="header-btn header-btn-cart" aria-label="Open Cart Drawer">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
-<span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
+              <span class="cart-count" aria-live="polite" aria-atomic="true">4</span>
             </button>
-          </li>
-        </ul>
       </div>
-<button type="button" class="btn-menu-toggle" aria-label="Open Menu">
+<button type="button" class="btn-open-menu" aria-label="Open Menu">
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </div>
   </header>
-  <main>
+<!-- ===== Main Content ===== -->
+     <main>
     <!-- ===== Section: Page Header ===== -->
     <section class="page-header-section">
       <div class="page-header-container">
@@ -131,20 +122,19 @@ aria-label="Close Menu">
     <section class="categories-section">
       <div class="categories-container">
         <h2 class="section-title">Categories</h2>
-        <div class="category-swiper-wrapper">
-          <div class="category-slider-btn-prev-wrapper">
-            <button type="button" class="btn-circle category-swiper-btn-prev swiper-btn" aria-label="Previous Slide">
+        <div class="category-swiper-cards">
+          <div class="category-btn-prev-wrapper swiper-navigation">
+            <button type="button" class="btn-circle swiper-btn category-swiper-btn-prev" aria-label="Previous Slide">
               <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
             </button>
           </div>
           <div class="swiper category-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="category-card">
-                  <a href="/pages/products.html" class="category-link">
-                    <div class="category-image-wrapper">
+                <article class="swiper-slide category-card">
+                  <a href="/pages/products.html" class="category-card-link">
+                    <div class="category-card-image-wrapper">
                       <img src="../assets/images/categories/all-products.png" alt="All Products"
-                        class="category-image" />
+                        class="category-card-image" />
                     </div>
                     <div class="category-info">
                       <h3 class="category-title">All Products</h3>
@@ -152,12 +142,10 @@ aria-label="Close Menu">
                     </div>
                   </a>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="category-card">
-                  <a href="/pages/products.html" class="category-link">
-                    <div class="category-image-wrapper">
-                      <img src="../assets/images/categories/earpods.png" alt="Earpods" class="category-image" />
+                <article class="swiper-slide category-card">
+                  <a href="/pages/products.html" class="category-card-link">
+                    <div class="category-card-image-wrapper">
+                      <img src="../assets/images/categories/earpods.png" alt="Earpods" class="category-card-image" />
                     </div>
                     <div class="category-info">
                       <h3 class="category-title">Earpods</h3>
@@ -165,13 +153,11 @@ aria-label="Close Menu">
                     </div>
                   </a>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="category-card">
-                  <a href="/pages/products.html" class="category-link">
-                    <div class="category-image-wrapper">
+                <article class="swiper-slide category-card">
+                  <a href="/pages/products.html" class="category-card-link">
+                    <div class="category-card-image-wrapper">
                       <img src="../assets/images/categories/neckband-wireless.png" alt="Neckband Wireless"
-                        class="category-image" />
+                        class="category-card-image" />
                     </div>
                     <div class="category-info">
                       <h3 class="category-title">Neckbands</h3>
@@ -179,13 +165,11 @@ aria-label="Close Menu">
                     </div>
                   </a>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="category-card">
-                  <a href="/pages/products.html" class="category-link">
-                    <div class="category-image-wrapper">
+                <article class="swiper-slide category-card">
+                  <a href="/pages/products.html" class="category-card-link">
+                    <div class="category-card-image-wrapper">
                       <img src="../assets/images/categories/in-ear-earphones.png" alt="In-Ear Earphones"
-                        class="category-image" />
+                        class="category-card-image" />
                     </div>
                     <div class="category-info">
                       <h3 class="category-title">Earphones</h3>
@@ -193,12 +177,10 @@ aria-label="Close Menu">
                     </div>
                   </a>
                 </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="category-card">
-                  <a href="/pages/products.html" class="category-link">
-                    <div class="category-image-wrapper">
-                      <img src="../assets/images/categories/headphones.png" alt="Headphones" class="category-image" />
+                <article class="swiper-slide category-card">
+                  <a href="/pages/products.html" class="category-card-link">
+                    <div class="category-card-image-wrapper">
+                      <img src="../assets/images/categories/headphones.png" alt="Headphones" class="category-card-image" />
                     </div>
                     <div class="category-info">
                       <h3 class="category-title">Headphones</h3>
@@ -206,11 +188,10 @@ aria-label="Close Menu">
                     </div>
                   </a>
                 </article>
-              </div>
             </div>
           </div>
-          <div class="category-slider-btn-next-wrapper">
-            <button type="button" class="btn-circle category-swiper-btn-next swiper-btn" aria-label="Next Slide">
+          <div class="category-btn-next-wrapper swiper-navigation">
+            <button type="button" class="btn-circle swiper-btn category-swiper-btn-next" aria-label="Next Slide">
               <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
             </button>
           </div>
@@ -219,8 +200,8 @@ aria-label="Close Menu">
       </div>
     </section>
     <!-- ===== Section: Most Sold Products ===== -->
-    <section class="most-sold-products-section">
-      <div class="most-sold-products-container">
+    <section class="most-sold-section">
+      <div class="most-sold-container">
         <h2 class="section-title">Most Sold</h2>
         <div class="products-grid">
           <article class="product-card">
@@ -241,10 +222,10 @@ aria-label="Close Menu">
               </div>
               <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -266,12 +247,12 @@ aria-label="Close Menu">
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -295,10 +276,10 @@ aria-label="Close Menu">
               </div>
               <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -320,12 +301,12 @@ aria-label="Close Menu">
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -347,12 +328,12 @@ aria-label="Close Menu">
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -374,12 +355,12 @@ aria-label="Close Menu">
                   </span>
                 </div>
               </div>
-              <div class="action-buttons product-actions">
+              <div class="action-buttons">
                 <a href="/pages/product-details.html" class="btn btn-primary">
-                  <span>See Details</span>
+                  See Details
 <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
                 </a>
-                <button type="button" class="btn-circle btn-atc" aria-label="Add To Cart">
+                <button type="button" class="btn-circle btn-add-to-cart" aria-label="Add To Cart">
                   <i class="fa-solid fa-plus" aria-hidden="true"></i>
                 </button>
               </div>
@@ -399,12 +380,12 @@ aria-label="Close Menu">
     <div class="footer-container">
       <hr class="footer-divider" />
       <div class="footer-top">
-        <div class="footer-logo-container">
-          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo"  /></a>
+        <div class="footer-logo-wrapper">
+          <a href="/"><img src="../assets/images/logo.png" alt="EarBuds Logo" class="footer-logo-image"  /></a>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Shop</h2>
-          <nav class="footer-nav footer-nav-pages">
+          <h3 class="footer-heading">Shop</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/categories.html" class="footer-nav-link active">Categories</a>
@@ -422,8 +403,8 @@ aria-label="Close Menu">
           </nav>
         </div>
         <div class="footer-links">
-          <h2 class="footer-heading">Support</h2>
-          <nav class="footer-nav footer-nav-help">
+          <h3 class="footer-heading">Support</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/faqs.html" class="footer-nav-link">FAQ<span>s</span></a>
@@ -442,7 +423,7 @@ aria-label="Close Menu">
         </div>
         <div class="footer-links">
           <h2 class="footer-heading">Company</h2>
-          <nav class="footer-nav footer-nav-help">
+          <nav class="footer-nav">
             <ul>
               <li>
                 <a href="/pages/about.html" class="footer-nav-link">About Us</a>
@@ -456,12 +437,12 @@ aria-label="Close Menu">
             </ul>
           </nav>
         </div>
-        <div class="news-letter">
-          <h2 class="footer-heading">NewsLetter</h2>
-          <form id="news-letter-form" action="#" class="news-letter-form">
-            <input type="news-letter-email" id="news-letter-email" name="news-letter-email" class="news-letter-input" placeholder="Email"
+        <div class="newsletter-wrapper">
+          <h3 class="footer-heading">Newsletter</h3>
+          <form id="newsletter-form" action="#" class="newsletter-form">
+            <input type="email" id="newsletter-email" name="newsletter-email" class="newsletter-input" placeholder="Email"
               aria-label="Email Address" required />
-            <button type="submit" class="news-letter-btn">Subscribe</button>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
         </div>
       </div>
@@ -469,7 +450,6 @@ aria-label="Close Menu">
         <div class="copy-right">
           <span>Copyright &copy; 2025 EarBuds. All rights reserved.</span>
         </div>
-        <div class="social-icons">
           <ul class="social-icons-list">
             <li>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -481,7 +461,6 @@ aria-label="Close Menu">
 <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon btn-circle" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
             </li>
           </ul>
-        </div>
       </div>
     </div>
   </footer>
