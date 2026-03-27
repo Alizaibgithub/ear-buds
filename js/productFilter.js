@@ -21,7 +21,7 @@ fetch("../partials/product-filter.html")
     );
     const productFilterApplyButton = document.querySelector(".btn-product-filter-apply");
     const headerActions = document.querySelector(".header-actions");
-    const headerLogo = document.querySelector(".header-logo-container");
+    const headerLogo = document.querySelector(".header-logo-wrapper");
 
     const openProductFilter = () => toggleOverlay(productFilterSection, [headerActions, headerLogo], true);
     const closeProductFilter = () => toggleOverlay(productFilterSection, [headerActions, headerLogo], false);
