@@ -1,4 +1,5 @@
 // ===== Scroll To Top Button =====
+
 document.body.insertAdjacentHTML(
   "beforeend",
   `<button id="btn-scrollToTop" class="btn-circle" aria-label="Scroll To Top"><i class="fa-solid fa-angle-up" aria-hidden="true"></i></button>`

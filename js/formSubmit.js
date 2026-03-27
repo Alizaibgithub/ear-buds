@@ -1,4 +1,5 @@
 // ===== Form Submit =====
+
 const forms = document.querySelectorAll("form");
 
 forms.forEach(form => {

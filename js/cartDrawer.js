@@ -1,4 +1,5 @@
 // ===== Cart Drawer =====
+
 fetch("../partials/cart-drawer.html")
   .then((res) => res.text())
   .then((html) => {

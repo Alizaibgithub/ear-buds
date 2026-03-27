@@ -1,3 +1,5 @@
+// ===== Accordion Toggle =====
+
 const accordionDetails = document.querySelectorAll(".accordion-details");
 
 accordionDetails.forEach((detail) => {

@@ -1,6 +1,6 @@
 /* ===== Section: Swiper Slider ===== */
 
-.new-products-swiper,
+.new-arrival-swiper,
 .deal-swiper {
     display: flex;
     width: 100%;
@@ -9,14 +9,14 @@
     /* 2.5vw --> 1.2rem (768px-tablet) */
 }
 
-.new-products-swiper-bottom,
+.new-arrival-swiper-bottom,
 .deal-swiper-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.new-products-swiper-navigation,
+.new-arrival-swiper-navigation,
 .deal-swiper-navigation {
     display: flex;
     gap: clamp(1rem, 2.5vw, 1.5rem);
@@ -24,7 +24,7 @@
 }
 
 .team-swiper-pagination,
-.new-products-swiper-pagination,
+.new-arrival-swiper-pagination,
 .category-swiper-pagination {
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
 
 /* ========== Media Queries ========== */
 @media screen and (max-width: 768px) {
-    .new-product-image {
+    .new-arrival-image {
         aspect-ratio: 3.5 / 2;
     }
 }

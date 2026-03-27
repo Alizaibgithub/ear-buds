@@ -2,33 +2,33 @@
 
 .mission-vision-grid {
     display: flex;
+    width: min(100%, 60rem);
     flex-wrap: wrap;
     gap: 1.25rem 2rem;
-    width: min(100%, 60rem);
 }
 
 .mission-vision-card {
-    flex: 1 1 47%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
     padding: 1rem;
+    flex: 1 1 47%;
     border-radius: var(--radius-lg);
     background-color: var(--color-surface);
     transition: var(--transition-base);
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .mission-vision-card-icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: clamp(4rem, 9.5vw, 5rem);
     height: clamp(4rem, 9.5vw, 5rem);
     /* 9.5vw --> 4.56rem (768px-tablet) */
     background-color: var(--color-primary);
     border-radius: var(--radius-circle);
     aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .mission-vision-card-icon i {

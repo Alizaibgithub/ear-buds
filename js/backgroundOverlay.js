@@ -1,4 +1,5 @@
-// ===== Background Overlay =====
+// ===== Section: Background Overlay =====
+
 document.body.insertAdjacentHTML(
   "beforeend",
   `<!-- ===== Section: Background Overlay ===== -->

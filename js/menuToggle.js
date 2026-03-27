@@ -1,4 +1,5 @@
 // ===== Menu Toggle =====
+
 const menuToggleButton = document.querySelector(".btn-open-menu");
 const mainNavSection = document.querySelector(".main-nav");
 const menuCloseButton = document.querySelector(".btn-close-menu");

@@ -1,4 +1,5 @@
 // ===== Order Summary Toggle =====
+
 const orderSummaries = document.querySelectorAll(".order-summary-details");
 
 const handleResponsiveDetails = () => {

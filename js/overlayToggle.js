@@ -1,4 +1,5 @@
 // ===== Overlay Toggle =====
+
 const toggleOverlay = (section, elements, isOpen) => {
     section.classList.toggle("active", isOpen);
     backgroundOverlay.classList.toggle("active", isOpen);

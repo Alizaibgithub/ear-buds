@@ -1,7 +1,8 @@
 // ===== Swiper Slider =====
-// === Swiper: New Products ===
-if (document.querySelector(".new-products-swiper")) {
-  var newProductSwiper = new Swiper(".new-products-swiper", {
+
+// === Swiper: New Arrival ===
+if (document.querySelector(".new-arrival-swiper")) {
+  var newProductSwiper = new Swiper(".new-arrival-swiper", {
     loop: true,
     spaceBetween: 20,
     autoplay: {
@@ -9,13 +10,13 @@ if (document.querySelector(".new-products-swiper")) {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".new-products-swiper-btn-next",
-      prevEl: ".new-products-swiper-btn-prev",
+      nextEl: ".new-arrival-swiper-btn-next",
+      prevEl: ".new-arrival-swiper-btn-prev",
     },
   });
 }
 
-// === Swiper: Deal ===
+// ===== Swiper: Deal ===
 if (document.querySelector(".deal-swiper")) {
   var newDealSwiper = new Swiper(".deal-swiper", {
     loop: true,

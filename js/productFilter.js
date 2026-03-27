@@ -1,9 +1,10 @@
 // ===== Product Filter =====
+
 fetch("../partials/product-filter.html")
   .then((res) => res.text())
   .then((html) => {
     document.body.insertAdjacentHTML("beforeend", html);
-    
+
     // === Form Submit ===
     const productFilterForm = document.getElementById("product-filter-form");
 
@@ -12,7 +13,7 @@ fetch("../partials/product-filter.html")
         e.preventDefault();
       });
     }
-    
+
     const productFilterButton = document.querySelector(".btn-show-product-filter");
     const productFilterSection = document.querySelector(".product-filter-section");
     const productFilterCloseButton = document.querySelector(
