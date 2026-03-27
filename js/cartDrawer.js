@@ -7,21 +7,21 @@ fetch("../partials/cart-drawer.html")
 
     const cartButton = document.querySelector(".header-btn-cart");
     const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
-    const cartSection = document.querySelector(".cart-drawer-section");
+    const cartDrawerSection = document.querySelector(".cart-drawer-section");
     const cartCloseButton = document.querySelector(".btn-cart-close");
     const menuToggleButton = document.querySelector(".btn-open-menu");
     const headerLogo = document.querySelector(".header-logo-wrapper");
 
-    const openCart = () => toggleOverlay(cartSection, [menuToggleButton, headerLogo], true);
-    const closeCart = () => toggleOverlay(cartSection, [menuToggleButton, headerLogo], false);
+    const openCartDrawer = () => toggleOverlay(cartDrawerSection, [menuToggleButton, headerLogo], true);
+    const closeCartDrawer = () => toggleOverlay(cartDrawerSection, [menuToggleButton, headerLogo], false);
 
-    cartButton.addEventListener("click", openCart);
+    cartButton.addEventListener("click", openCartDrawer);
     addToCartButtons.forEach((addToCartButton) => {
-      addToCartButton.addEventListener("click", openCart)
+      addToCartButton.addEventListener("click", openCartDrawer)
     })
 
-    cartCloseButton.addEventListener("click", closeCart);
-    backgroundOverlay.addEventListener("click", closeCart);
+    cartCloseButton.addEventListener("click", closeCartDrawer);
+    backgroundOverlay.addEventListener("click", closeCartDrawer);
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
