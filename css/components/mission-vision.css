@@ -1,4 +1,5 @@
 /* ========== Section: Mission & Vision ========== */
+
 .mission-vision-grid {
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-        gap: 0.5rem;
+    gap: 0.5rem;
     padding: 1rem;
     border-radius: var(--radius-lg);
     background-color: var(--color-surface);
@@ -40,6 +41,8 @@
     flex-direction: column;
     grid-area: 0.25rem;
 }
-.mission-vision-card-title, .mission-vision-card-description{
+
+.mission-vision-card-title,
+.mission-vision-card-description {
     text-align: center;
 }

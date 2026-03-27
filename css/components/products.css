@@ -1,4 +1,5 @@
 /* ===== Section: Products Grid ===== */
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,27 +18,16 @@
             rgba(114, 57, 73, 0) 86.28%);
 }
 
-.product-image-wrapper {
-    max-height: 18rem;
-}
-
-.product-image {
-    height: auto;
-    position: relative;
-    top: -40%;
-    transition: var(--transition-base);
-}
-
 .product-badge {
     position: absolute;
     top: 15px;
     right: 0;
     z-index: 10;
-    padding: 0.2rem 0.3rem;
     min-width: 17%;
-    text-align: center;
+    padding: 0.2rem 0.3rem;
     font-size: 0.7rem;
     font-weight: 500;
+    text-align: center;
     text-transform: uppercase;
     border-radius: 10px 0 0 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -55,8 +45,15 @@
     background-color: #C8A33ABF;
 }
 
-.sale-percent {
-    font-size: 0.8rem;
+.product-image-wrapper {
+    max-height: 18rem;
+}
+
+.product-image {
+    position: relative;
+    top: -40%;
+    height: auto;
+    transition: var(--transition-base);
 }
 
 .product-content {
@@ -80,8 +77,8 @@
 
 .product-price {
     display: flex;
-    gap: 0 0.3rem;
     align-items: baseline;
+    gap: 0 0.3rem;
 }
 
 .product-card .product-price {
@@ -91,7 +88,6 @@
 .price-regular,
 .price-sale {
     display: flex;
-    /* gap: 0 0.2rem; */
 }
 
 .price-regular .price-currency,
@@ -119,11 +115,15 @@
     align-self: flex-end;
 }
 
+.product-image-wrapper {
+    max-height: 18rem;
+}
+
 .related-products-container {
     gap: 7rem;
 }
 
-.most-sold-section .section-title {
+.most-sold-products-section .section-title {
     margin-bottom: 7rem;
 }
 
@@ -136,10 +136,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--color-light);
-    border-bottom: 1px solid var(--color-light);
     padding: clamp(0.7rem, 1.75vw, 1rem) 0;
     /* 1.75vw --> 0.84rem (768px-tablet) */
+    border-top: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
 }
 
 .sort-wrapper {
@@ -185,5 +185,4 @@
     .view-toggle {
         display: none;
     }
-
 }

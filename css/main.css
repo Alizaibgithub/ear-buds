@@ -1,3 +1,5 @@
+/* ===== Main Stylesheet ===== */
+
 /* ===== Base ===== */
 @import './base/variables.css';
 @import './base/reset.css';
@@ -12,7 +14,7 @@
 @import './components/footer.css';
 @import './components/hero.css';
 @import './components/swiper.css';
-@import './components/category.css';
+@import './components/categories.css';
 @import './components/products.css';
 @import './components/product-filter.css';
 @import './components/product-details.css';

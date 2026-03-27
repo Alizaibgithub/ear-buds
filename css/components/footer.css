@@ -1,8 +1,9 @@
 /* ===== Section: Footer ===== */
+
 .footer-section {
-  background-color: var(--color-primary);
   position: relative;
   z-index: 9994;
+  background-color: var(--color-primary);
 }
 
 .footer-container {
@@ -20,14 +21,14 @@
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 0.5rem;
 }
 
 .footer-logo-wrapper {
   height: 6rem;
-    border: 3px solid var(--color-dark);
+  border: 3px solid var(--color-dark);
 }
 
 .footer-heading {
@@ -59,26 +60,28 @@
 
 .newsletter-form:focus-within {
   outline: 1px solid var(--color-dark);
-  outline-offset: 0px;
+  outline-offset: 0;
 }
 
 .newsletter-input {
   width: 100%;
   padding: 0.5rem;
+
   border: none;
   background: transparent;
+
   font-size: 1.2rem;
   color: var(--color-text);
   text-transform: none;
 }
 
-.newsletter-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px var(--color-primary) inset !important;
-}
-
 .newsletter-input::placeholder {
   color: var(--color-text);
   text-transform: uppercase;
+}
+
+.newsletter-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-primary) inset !important;
 }
 
 .newsletter-input:focus {
@@ -96,9 +99,9 @@
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
   gap: 0.25rem;
 }
 

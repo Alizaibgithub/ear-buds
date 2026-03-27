@@ -1,4 +1,5 @@
-/* =====Section: Cart Drawer ===== */
+/* ===== Section: Cart Drawer ===== */
+
 .cart-drawer-section {
   position: fixed;
   top: 0;
@@ -35,15 +36,17 @@
 .cart-item-count {
   color: var(--color-muted);
 }
-.btn-close-cart{
-    transition: var(--transition-base);
-    border-radius: var(--radius-circle);
-    width: clamp(1.67rem, 4vw, 2rem);
-    height: clamp(1.67rem, 4vw, 2rem);
-    /* 4vw --> 1.922rem (768px-tablet) */
-    aspect-ratio: 1 / 1;
-    border: 1px solid var(--color-light);
+
+.btn-cart-close {
+  transition: var(--transition-base);
+  border-radius: var(--radius-circle);
+  width: clamp(1.67rem, 4vw, 2rem);
+  height: clamp(1.67rem, 4vw, 2rem);
+  /* 4vw --> 1.922rem (768px-tablet) */
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--color-light);
 }
+
 .cart-body {
   overflow-y: auto;
   background-color: var(--color-bg);
@@ -67,18 +70,8 @@
 
 .cart-item-image-wrapper {
   position: relative;
-  height: auto;
   border: 1px solid var(--color-light);
   border-radius: var(--radius-md);
-}
-
-.cart-item-details,
-.cart-item-actions {
-  display: flex;
-  justify-content: space-between;
-  flex: 1 1 40%;
-  align-items: center;
-  line-height: 1.1;
 }
 
 .cart-item-content {
@@ -91,6 +84,15 @@
   flex: 1 1 100%;
   display: flex;
   flex-direction: column;
+}
+
+.cart-item-details,
+.cart-item-actions {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 40%;
+  align-items: center;
+  line-height: 1.1;
 }
 
 .cart-item .color-label,
@@ -111,9 +113,11 @@
 .cart-item-actions .quantity-selector-wrapper {
   max-width: 50%;
 }
-.btn-delete-item{
+
+.btn-delete-item {
   transition: var(--transition-base);
 }
+
 .btn-delete-item i {
   font-size: clamp(0.9rem, 2vw, 1rem);
   /* 2vw --> 0.96rem (768px-tablet) */
@@ -134,7 +138,12 @@
   justify-content: space-between;
 }
 
-/* =====Section: Cart --> Cart Pgae ===== */
+.tax-shipping-info {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  /* 2vw --> 0.96rem (768px-tablet) */
+}
+
+/* ===== Section: Cart(Cart Page Specific) ===== */
 .cart-page-header {
   align-items: baseline;
 }
@@ -151,13 +160,8 @@
   border: none;
 }
 
-.tax-shipping-info {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  /* 2vw --> 0.96rem (768px-tablet) */
-}
-
-/* ========== Media Queries ========== */
-@media screen and (min-width:768px) {
+/* ===== Media Queries ===== */
+@media screen and (min-width: 768px) {
   .cart-container .cart-item {
     grid-template-columns: 1fr 6fr;
   }

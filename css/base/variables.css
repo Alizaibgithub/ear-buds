@@ -1,53 +1,46 @@
 /* ===== CSS Variables (Root) ===== */
+
 :root {
-        /* === Colors === */
+        /* ===== Colors ===== */
         --color-primary: #cf0f47;
         --color-bg: #000000;
         --color-surface: #1a1a1a;
         --color-text: #ffffff;
-
         --color-light: #ffffff;
         --color-dark: #000000;
-
         --color-muted: #888888;
         --color-success: #28a745;
         --color-danger: #dc3545;
 
-        /*=== Alternative color schemes === */
-        /* === Colors === */
+        /* ===== Alternative Colors ===== */
         /* --color-primary: #1d4ed8;
         --color-bg: #0b1220;
         --color-surface: #111827;
         --color-text: #e5e7eb;
-
         --color-light: #ffffff;
         --color-dark: #020617;
-
         --color-muted: #9ca3af;
         --color-success: #22c55e;
         --color-danger: #ef4444; */
 
-        /* === Colors === */
         /* --color-primary: #0f766e;
         --color-bg: #0a0f14;
         --color-surface: #111827;
         --color-text: #e5e7eb;
-
         --color-light: #ffffff;
         --color-dark: #020617;
-
         --color-muted: #94a3b8;
         --color-success: #16a34a;
         --color-danger: #ef4444; */
 
 
-        /* === Border Radius === */
+        /* ===== Border Radius ===== */
         --radius-sm: 6px;
         --radius-md: 12px;
         --radius-lg: 17px;
         --radius-circle: 50%;
 
-        /* === Transitions === */
+        /* ===== Transitions ===== */
         --transition-base: 0.3s ease;
-        --transition-slide: 0.5s ease-in-out;
+        --transition-slide: 0.35s ease-in-out;
 }

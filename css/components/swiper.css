@@ -1,9 +1,10 @@
 /* ===== Section: Swiper Slider ===== */
+
 .new-products-swiper,
 .deal-swiper {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     gap: clamp(1rem, 2.5vw, 1.5rem);
     /* 2.5vw --> 1.2rem (768px-tablet) */
 }
@@ -22,6 +23,14 @@
     /* 2.5vw --> 1.2rem (768px-tablet) */
 }
 
+.team-swiper-pagination,
+.new-products-swiper-pagination,
+.category-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .swiper-button-disabled {
     opacity: 0.3;
     cursor: not-allowed;
@@ -34,14 +43,6 @@
 
 .swiper-pagination-bullet-active {
     background-color: var(--color-primary);
-}
-
-.team-swiper-pagination,
-.new-products-swiper-pagination,
-.category-swiper-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* ========== Media Queries ========== */

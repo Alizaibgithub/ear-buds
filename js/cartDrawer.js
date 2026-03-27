@@ -7,7 +7,7 @@ fetch("../partials/cart-drawer.html")
     const cartButton = document.querySelector(".header-btn-cart");
     const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
     const cartSection = document.querySelector(".cart-drawer-section");
-    const cartCloseButton = document.querySelector(".btn-close-cart");
+    const cartCloseButton = document.querySelector(".btn-cart-close");
     const menuToggleButton = document.querySelector(".btn-open-menu");
     const headerLogo = document.querySelector(".header-logo-wrapper");
 
