@@ -41,6 +41,10 @@
     background-color: #E53935BF;
 }
 
+.sale-percent {
+    font-size: 0.7rem;
+}
+
 .badge-mostsold {
     background-color: #C8A33ABF;
 }
